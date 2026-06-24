@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>緊急救護課程彙整 | EMS Course Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans TC',system-ui,sans-serif;background:#f5f6f8;color:#1a1a1a;font-size:14px}
+
+/* ── Header ── */
+#hd{background:#1a56b0;padding:12px 16px 10px}
+#hd-badge{font-size:10px;color:rgba(255,255,255,.7)}
+#hd-title{font-size:18px;font-weight:700;color:#fff;margin:3px 0}
+#hd-motto{font-size:11px;color:#FFD600;font-style:italic;font-weight:500;margin-bottom:8px}
+#hd-meta{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px}
+#updated{font-size:10.5px;color:rgba(255,255,255,.75)}
+.rss-btn{font-size:11px;padding:3px 10px;background:#f97316;color:#fff;border:none;border-radius:20px;text-decoration:none;display:inline-flex;align-items:center;gap:4px}
+
+/* ── Tab bar ── */
+#tabs{background:#fff;border-bottom:1px solid #e5e7eb;display:flex;overflow-x:auto}
+#tabs::-webkit-scrollbar{display:none}
+.tab{padding:10px 18px;font-size:13px;font-weight:500;color:#666;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;flex-shrink:0}
+.tab.on{color:#1a56b0;border-bottom-color:#1a56b0}
+
+/* ── Filters ── */
+#filters{background:#fff;border-bottom:1px solid #e5e7eb;padding:8px 12px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.si{position:relative;flex:1;min-width:160px;max-width:260px}
+.si span{position:absolute;left:8px;top:50%;transform:translateY(-50%);pointer-events:none}
+.si input{width:100%;padding:5px 10px 5px 26px;font-size:12px;border:1px solid #d1d5db;border-radius:20px;font-family:inherit;background:#f9fafb}
+.si input:focus{outline:2px solid #3b82f6;border-color:transparent;background:#fff}
+select{font-size:12px;padding:5px 10px;border:1px solid #d1d5db;border-radius:20px;font-family:inherit;background:#f9fafb;color:#555;cursor:pointer}
+select:focus{outline:2px solid #3b82f6}
+label{display:flex;align-items:center;gap:5px;font-size:12px;color:#555;cursor:pointer}
+#filter-count{font-size:11.5px;color:#888;margin-left:auto}
+
+/* ── Course list ── */
+main{padding:12px 12px 40px;max-width:1100px;margin:0 auto}
+#list-view{}
+.course-item{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:11px 14px;margin-bottom:8px;display:flex;gap:12px;align-items:flex-start;transition:box-shadow .15s}
+.course-item:hover{box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.ci-date{flex-shrink:0;text-align:center;background:#f0f4ff;border-radius:8px;padding:6px 10px;min-width:54px}
+.ci-month{font-size:10px;color:#1a56b0;font-weight:600;text-transform:uppercase}
+.ci-day{font-size:20px;font-weight:700;color:#1a56b0;line-height:1}
+.ci-nodate{font-size:10px;color:#aaa;padding:10px 6px}
+.ci-body{flex:1;min-width:0}
+.ci-title{font-size:13px;font-weight:600;color:#111;line-height:1.4;margin-bottom:4px}
+.ci-title a{color:inherit;text-decoration:none}
+.ci-title a:hover{color:#1a56b0}
+.ci-meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.ci-source{font-size:10px;color:#555;background:#f0f2f5;border-radius:20px;padding:1px 8px}
+.ci-cat{font-size:10px;border-radius:20px;padding:1px 8px;font-weight:500}
+.cat-tw-assoc{background:#d1fae5;color:#065f46}
+.cat-tw-ems{background:#fef3c7;color:#92400e}
+.cat-tw-med{background:#ede9fe;color:#5b21b6}
+.cat-intl{background:#dbeafe;color:#1e40af}
+.cat-tccc{background:#fee2e2;color:#991b1b}
+.ci-expired{opacity:.45}
+.badge-expired{font-size:9px;background:#fee2e2;color:#b91c1c;border-radius:20px;padding:1px 6px}
+
+/* ── Calendar ── */
+#cal-view{display:none}
+#cal-nav{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:12px}
+#cal-nav button{background:none;border:1px solid #d1d5db;border-radius:8px;padding:4px 12px;cursor:pointer;font-size:13px}
+#cal-label{font-size:15px;font-weight:600;color:#111}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.cal-head{text-align:center;font-size:11px;font-weight:600;color:#888;padding:4px}
+.cal-cell{min-height:60px;background:#fff;border:1px solid #e5e7eb;border-radius:6px;padding:4px 5px}
+.cal-cell.other-month{background:#f9fafb;opacity:.5}
+.cal-cell.today{border-color:#1a56b0;border-width:2px}
+.cal-day-num{font-size:11px;color:#666;margin-bottom:2px}
+.cal-event{font-size:9px;background:#dbeafe;color:#1e40af;border-radius:3px;padding:1px 4px;margin-bottom:2px;cursor:pointer;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.cal-event.tccc{background:#fee2e2;color:#991b1b}
+.cal-event.tw{background:#d1fae5;color:#065f46}
+
+/* ── Empty / loading ── */
+.empty{text-align:center;padding:40px;color:#aaa;font-size:13px}
+.loading{text-align:center;padding:30px;color:#1a56b0;font-size:13px}
+
+/* ── Footer ── */
+footer{text-align:center;padding:14px;font-size:11px;color:#aaa;border-top:1px solid #e5e7eb;background:#fff;line-height:1.9}
+footer strong{color:#666}
+footer a{color:#1a56b0;text-decoration:none}
+</style>
+</head>
+<body>
+
+<div id="hd">
+  <div id="hd-badge">Emergency Medical Services Information Portal</div>
+  <div id="hd-title">緊急救護課程彙整</div>
+  <div id="hd-motto">－「你現在所做的學習，將有機會挽救生命。」</div>
+  <div id="hd-meta">
+    <span id="updated">⏱ 載入中…</span>
+    <a class="rss-btn" href="feed.xml" target="_blank">📡 訂閱 RSS</a>
+  </div>
+</div>
+
+<div id="tabs">
+  <div class="tab on" onclick="switchTab('list',this)">📋 課程列表</div>
+  <div class="tab" onclick="switchTab('cal',this)">📅 活動行事曆</div>
+</div>
+
+<div id="filters">
+  <div class="si"><span>🔍</span><input id="q" placeholder="搜尋課程名稱…" oninput="applyFilters()"></div>
+  <select id="f-cat" onchange="applyFilters()">
+    <option value="">全部分類</option>
+    <option value="台灣學會">台灣學會</option>
+    <option value="台灣協會">台灣協會</option>
+    <option value="台灣急救社群">台灣急救社群</option>
+    <option value="戰術救護">戰術救護</option>
+    <option value="國際期刊/組織">國際期刊/組織</option>
+  </select>
+  <select id="f-src" onchange="applyFilters()">
+    <option value="">全部來源</option>
+  </select>
+  <label><input type="checkbox" id="f-hide-expired" onchange="applyFilters()"> 隱藏已過期</label>
+  <span id="filter-count"></span>
+</div>
+
+<main>
+  <!-- 課程列表 -->
+  <div id="list-view">
+    <div class="loading">⏳ 載入課程資料中…</div>
+  </div>
+
+  <!-- 行事曆 -->
+  <div id="cal-view">
+    <div id="cal-nav">
+      <button onclick="calPrev()">‹ 上個月</button>
+      <span id="cal-label"></span>
+      <button onclick="calNext()">下個月 ›</button>
+    </div>
+    <div class="cal-grid" id="cal-grid"></div>
+  </div>
+</main>
+
+<footer>
+  <div>
+    <img src="https://hits.sh/emsipbyluke.netlify.app.svg?label=%E7%80%8F%E8%A6%BD%E4%BA%BA%E6%AC%A1&color=1a56b0&labelColor=555555&style=flat-square" alt="瀏覽人次" style="height:20px;vertical-align:middle">
+  </div>
+  <div>資料自動彙整自各單位公開公告頁，僅顯示標題與連結並導回原站</div>
+  <div>製作：<strong>臺南市救護義消 陳冠言</strong> · 2026 &nbsp;·&nbsp; <a href="mailto:luke01791910@gmail.com">📩 回饋意見</a> &nbsp;·&nbsp; <a href="https://emsipbyluke.netlify.app">🌐 資訊入口網</a></div>
+</footer>
+
+<script>
+// ── 全域狀態 ─────────────────────────────────────────────
+let ALL = [];
+let FILTERED = [];
+let CAL_YEAR = new Date().getFullYear();
+let CAL_MONTH = new Date().getMonth(); // 0-based
+let CUR_TAB = 'list';
+
+const MONTHS_ZH = ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
+const DAYS_ZH   = ['日','一','二','三','四','五','六'];
+
+// ── 載入資料 ─────────────────────────────────────────────
+async function loadData() {
+  try {
+    const res = await fetch('https://raw.githubusercontent.com/EMS-LukeChen/ems-course-portal/main/data/courses.json');
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const json = await res.json();
+    ALL = json.items || [];
+    document.getElementById('updated').textContent =
+      '⏱ 最後更新：' + (json.updated ? json.updated.replace('T',' ').slice(0,16) + ' UTC' : '未知');
+    buildSourceFilter();
+    applyFilters();
+  } catch(e) {
+    document.getElementById('list-view').innerHTML =
+      '<div class="empty">⚠️ 無法載入資料，請稍後再試。<br><small>' + e.message + '</small></div>';
+    document.getElementById('updated').textContent = '⚠️ 載入失敗';
+  }
+}
+
+// ── 來源篩選選單 ─────────────────────────────────────────
+function buildSourceFilter() {
+  const sel = document.getElementById('f-src');
+  const sources = [...new Set(ALL.map(i => i.source))].sort();
+  sources.forEach(s => {
+    const o = document.createElement('option');
+    o.value = s; o.textContent = s;
+    sel.appendChild(o);
+  });
+}
+
+// ── 過濾 ─────────────────────────────────────────────────
+function applyFilters() {
+  const q    = document.getElementById('q').value.toLowerCase().trim();
+  const cat  = document.getElementById('f-cat').value;
+  const src  = document.getElementById('f-src').value;
+  const hideExpired = document.getElementById('f-hide-expired').checked;
+  const today = new Date().toISOString().slice(0,10);
+
+  FILTERED = ALL.filter(it => {
+    if (q   && !it.title.toLowerCase().includes(q) && !it.source.toLowerCase().includes(q)) return false;
+    if (cat  && it.cat !== cat) return false;
+    if (src  && it.source !== src) return false;
+    if (hideExpired && it.date && it.date < today) return false;
+    return true;
+  });
+
+  document.getElementById('filter-count').textContent = `顯示 ${FILTERED.length} / ${ALL.length} 筆`;
+
+  if (CUR_TAB === 'list') renderList();
+  else renderCal();
+}
+
+// ── 日期工具 ─────────────────────────────────────────────
+function fmtDate(dateStr) {
+  if (!dateStr) return null;
+  const [y,m,d] = dateStr.split('-').map(Number);
+  return { y, m, d, mo: MONTHS_ZH[m-1] };
+}
+
+function isExpired(dateStr) {
+  if (!dateStr) return false;
+  return dateStr < new Date().toISOString().slice(0,10);
+}
+
+// ── 分類 class ───────────────────────────────────────────
+function catClass(cat) {
+  const map = {
+    '台灣學會':'cat-tw-med','台灣協會':'cat-tw-assoc',
+    '台灣急救社群':'cat-tw-ems','戰術救護':'cat-tccc','國際期刊/組織':'cat-intl'
+  };
+  return map[cat] || 'cat-intl';
+}
+
+// ── 渲染列表 ─────────────────────────────────────────────
+function renderList() {
+  const el = document.getElementById('list-view');
+  if (!FILTERED.length) {
+    el.innerHTML = '<div class="empty">😶 目前沒有符合條件的課程</div>';
+    return;
+  }
+  const today = new Date().toISOString().slice(0,10);
+  el.innerHTML = FILTERED.map(it => {
+    const expired = it.date && it.date < today;
+    const d = fmtDate(it.date);
+    const dateBox = d
+      ? `<div class="ci-date"><div class="ci-month">${d.mo}</div><div class="ci-day">${d.d}</div></div>`
+      : `<div class="ci-date"><div class="ci-nodate">日期未定</div></div>`;
+    const expBadge = expired ? '<span class="badge-expired">已過期</span>' : '';
+    return `<div class="course-item ${expired?'ci-expired':''}">
+      ${dateBox}
+      <div class="ci-body">
+        <div class="ci-title"><a href="${it.url||'#'}" target="_blank" rel="noopener">${it.title}</a></div>
+        <div class="ci-meta">
+          <span class="ci-source">${it.source}</span>
+          <span class="ci-cat ${catClass(it.cat)}">${it.cat}</span>
+          ${expBadge}
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ── 行事曆 ───────────────────────────────────────────────
+function renderCal() {
+  document.getElementById('cal-label').textContent = `${CAL_YEAR} 年 ${MONTHS_ZH[CAL_MONTH]}`;
+
+  // Build date → items map
+  const byDate = {};
+  FILTERED.forEach(it => {
+    if (!it.date) return;
+    const [y,m] = it.date.split('-').map(Number);
+    if (y === CAL_YEAR && m-1 === CAL_MONTH) {
+      if (!byDate[it.date]) byDate[it.date] = [];
+      byDate[it.date].push(it);
+    }
+  });
+
+  const grid = document.getElementById('cal-grid');
+  const today = new Date().toISOString().slice(0,10);
+
+  // Header
+  let html = DAYS_ZH.map(d => `<div class="cal-head">${d}</div>`).join('');
+
+  const first = new Date(CAL_YEAR, CAL_MONTH, 1);
+  const startPad = first.getDay(); // 0=Sun
+  const daysInMonth = new Date(CAL_YEAR, CAL_MONTH+1, 0).getDate();
+  const prevDays = new Date(CAL_YEAR, CAL_MONTH, 0).getDate();
+
+  // Prev month padding
+  for (let i = startPad-1; i >= 0; i--) {
+    html += `<div class="cal-cell other-month"><div class="cal-day-num">${prevDays-i}</div></div>`;
+  }
+
+  // Current month
+  for (let d = 1; d <= daysInMonth; d++) {
+    const ds = `${CAL_YEAR}-${String(CAL_MONTH+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+    const isToday = ds === today;
+    const events = byDate[ds] || [];
+    const evHtml = events.slice(0,3).map(it => {
+      const cls = it.cat === '戰術救護' ? 'cal-event tccc' : it.cat.startsWith('台灣') ? 'cal-event tw' : 'cal-event';
+      return `<div class="${cls}" title="${it.title}" onclick="window.open('${it.url||'#'}','_blank')">${it.title}</div>`;
+    }).join('') + (events.length > 3 ? `<div style="font-size:9px;color:#888">+${events.length-3} 筆</div>` : '');
+    html += `<div class="cal-cell${isToday?' today':''}"><div class="cal-day-num">${d}</div>${evHtml}</div>`;
+  }
+
+  // Next month padding
+  const totalCells = startPad + daysInMonth;
+  const nextPad = 7 - (totalCells % 7);
+  if (nextPad < 7) {
+    for (let d = 1; d <= nextPad; d++) {
+      html += `<div class="cal-cell other-month"><div class="cal-day-num">${d}</div></div>`;
+    }
+  }
+
+  grid.innerHTML = html;
+}
+
+function calPrev() { if (CAL_MONTH-- === 0) { CAL_MONTH=11; CAL_YEAR--; } renderCal(); }
+function calNext() { if (++CAL_MONTH === 12) { CAL_MONTH=0;  CAL_YEAR++; } renderCal(); }
+
+// ── Tab 切換 ─────────────────────────────────────────────
+function switchTab(tab, btn) {
+  CUR_TAB = tab;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('on'));
+  btn.classList.add('on');
+  document.getElementById('list-view').style.display = tab==='list' ? 'block' : 'none';
+  document.getElementById('cal-view').style.display  = tab==='cal'  ? 'block' : 'none';
+  if (tab==='cal') renderCal();
+}
+
+// ── 啟動 ─────────────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>
