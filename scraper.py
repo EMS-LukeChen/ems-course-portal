@@ -24,18 +24,70 @@ def make_id(title, source):
 def clean(t):
     return re.sub(r"\s+", " ", t or "").strip()
 
-def parse_date(text):
-    if not text: return None
+def extract_all_dates(text):
+    """從文字中抽取所有有效日期，回傳 sorted list"""
+    if not text: return []
+    dates = []
     for pat in [
         r"(\d{4})[./-](\d{1,2})[./-](\d{1,2})",
         r"(\d{4})年\s*(\d{1,2})月\s*(\d{1,2})日",
     ]:
-        m = re.search(pat, text)
-        if m:
-            y,mo,d = int(m.group(1)),int(m.group(2)),int(m.group(3))
-            try: return f"{y:04d}-{mo:02d}-{d:02d}"
-            except: pass
-    return None
+        for m in re.finditer(pat, text):
+            try:
+                y,mo,d = int(m.group(1)),int(m.group(2)),int(m.group(3))
+                if 2020 <= y <= 2035 and 1 <= mo <= 12 and 1 <= d <= 31:
+                    dates.append(f"{y:04d}-{mo:02d}-{d:02d}")
+            except:
+                pass
+    return sorted(set(dates))
+
+def parse_dates_from_title(title):
+    """
+    從標題解析活動日與報名截止日
+    回傳 dict: {event_date, deadline}
+    規則：
+      - 含「報名截止」「截止」「deadline」關鍵字前的日期 → deadline
+      - 其餘日期中最晚的 → event_date
+    """
+    title = title or ""
+    result = {"event_date": None, "deadline": None}
+
+    # 找「截止」關鍵字位置
+    deadline_kw = re.search(r"報名截止|截止|deadline|Deadline", title)
+
+    if deadline_kw:
+        # 截止關鍵字前後各找日期
+        before = title[:deadline_kw.start()]
+        after  = title[deadline_kw.end():]
+        before_dates = extract_all_dates(before)
+        after_dates  = extract_all_dates(after)
+
+        # 截止日：關鍵字前最後一個日期，或關鍵字後第一個日期
+        if before_dates:
+            result["deadline"] = before_dates[-1]
+        elif after_dates:
+            result["deadline"] = after_dates[0]
+
+        # 活動日：剩餘日期中最晚的（排除截止日）
+        all_dates = extract_all_dates(title)
+        remaining = [d for d in all_dates if d != result["deadline"]]
+        if remaining:
+            result["event_date"] = sorted(remaining)[-1]
+        elif all_dates:
+            # 只有一個日期且是截止日，就當活動日
+            result["event_date"] = all_dates[-1]
+    else:
+        # 沒有截止關鍵字，最晚日期當活動日
+        all_dates = extract_all_dates(title)
+        if all_dates:
+            result["event_date"] = all_dates[-1]
+
+    return result
+
+def parse_date(text):
+    """相容舊介面：只回傳活動日"""
+    r = parse_dates_from_title(text)
+    return r["event_date"]
 
 def fetch(url, timeout=15):
     try:
@@ -53,8 +105,21 @@ def resolve(href, base):
     from urllib.parse import urljoin
     return urljoin(base, href)
 
-def item(title, source, cat, url, date=None):
-    return {"id":make_id(title,source),"title":clean(title),"source":source,"cat":cat,"date":date,"url":url}
+def item(title, source, cat, url, date=None, deadline=None):
+    """建立單筆課程資料，自動從 title 解析活動日與報名截止日"""
+    title_clean = clean(title)
+    dates = parse_dates_from_title(title_clean)
+    event_date  = date     or dates["event_date"]
+    reg_deadline = deadline or dates["deadline"]
+    return {
+        "id":       make_id(title_clean, source),
+        "title":    title_clean,
+        "source":   source,
+        "cat":      cat,
+        "date":     event_date,    # 活動日（行事曆依此排序）
+        "deadline": reg_deadline,  # 報名截止日
+        "url":      url,
+    }
 
 # ══════════════════════════════════════════════════════════
 # 各單位爬蟲
