@@ -1,9 +1,49 @@
 {
-  "updated": "2026-06-24T14:26:28.921775+00:00",
-  "count": 118,
-  "course_count": 83,
-  "news_count": 35,
+  "updated": "2026-06-24T14:34:25.308312+00:00",
+  "count": 200,
+  "course_count": 130,
+  "news_count": 70,
   "items": [
+    {
+      "id": "62570103abc2",
+      "title": "JCMIT 2026 國際醫學資訊聯合研討會",
+      "source": "台灣醫學資訊學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-12-19",
+      "deadline": null,
+      "url": "https://jcmit2026.medinfo.org.tw/"
+    },
+    {
+      "id": "c1772c700f8e",
+      "title": "2026 台灣實證醫學學會學術年會",
+      "source": "台灣實證醫學學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-11-14",
+      "deadline": null,
+      "url": "https://www.tebma.org.tw/event/list/view/2c1a39f064c4a01a76c81be6669b0392"
+    },
+    {
+      "id": "009c255ace66",
+      "title": "2026台灣實證醫學學會種子師資培訓工作坊",
+      "source": "台灣實證醫學學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-10-04",
+      "deadline": null,
+      "url": "https://www.tebma.org.tw/event/list/view/f456947948c27dbfad9369cf46e4452b"
+    },
+    {
+      "id": "6c12a2120576",
+      "title": "2026系統性文獻回顧與統合分析工作坊(秋季班)",
+      "source": "台灣實證醫學學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-09-20",
+      "deadline": null,
+      "url": "https://www.tebma.org.tw/event/list/view/11642ac2dab56a383c16166183e39187"
+    },
     {
       "id": "83a2707bc95d",
       "title": "115年師資培育工作坊 (中區) 社團法人台灣急診醫學會、中山醫學大學附設醫院 2026/07/28 積分 4 學會主辦 尚有 31 名額",
@@ -13,6 +53,16 @@
       "date": "2026-07-28",
       "deadline": null,
       "url": "https://www.sem.org.tw/Activity/A/Details/32647"
+    },
+    {
+      "id": "5bd23fc6becf",
+      "title": "2026 Ai實證簡報力工作坊",
+      "source": "台灣實證醫學學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-25",
+      "deadline": null,
+      "url": "https://www.tebma.org.tw/event/list/view/4cb9057694d6a3a1b49e6cf5da5743e2"
     },
     {
       "id": "468c49ab963b",
@@ -33,6 +83,16 @@
       "date": "2026-07-08",
       "deadline": null,
       "url": "https://www.sem.org.tw/Activity/A/Details/33048"
+    },
+    {
+      "id": "01578a9a012c",
+      "title": "【訊息轉知】2026馬偕醫學大學厚生健康學院-永續厚生健康論壇2026/6/23(二)至2026/7/3(五)假MS Teams辦理，歡迎踴躍參加。",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-07-03",
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=492"
     },
     {
       "id": "d82ce83cd617",
@@ -73,6 +133,16 @@
       "date": "2026-06-23",
       "deadline": "2026-06-23",
       "url": "https://www.sem.org.tw/Activity/A/Details/32865"
+    },
+    {
+      "id": "189d1f45e37b",
+      "title": "台灣急重症模擬醫學會第四屆第二次會員大會暨學術研討會 4/20",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2024-04-20",
+      "deadline": null,
+      "url": "https://simulation.org.tw/annualconference2024/"
     },
     {
       "id": "8a590d4016ac",
@@ -655,6 +725,66 @@
       "url": "https://forms.gle/z1btPpugtf6cfouw6"
     },
     {
+      "id": "a9ab09ee6a61",
+      "title": "台灣急重症模擬醫學會第四屆第二次會員大會暨學術研討會時間表 4/20",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://simulation.org.tw/annualconference2024-3/"
+    },
+    {
+      "id": "3577e5206397",
+      "title": "台灣急重症模擬醫學會第四屆第二次會員大會暨學術研討會歡迎報名參加 4/20",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://simulation.org.tw/annualconference2024-2/"
+    },
+    {
+      "id": "cc41c445b0a8",
+      "title": "台灣急重症模擬醫學會第四屆第一次會員大會暨學術研討會時間表 12/03",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://simulation.org.tw/annualconference2022-schedule/"
+    },
+    {
+      "id": "97776574ba48",
+      "title": "台灣急重症模擬醫學會第四屆第一次會員大會暨學術研討會 12/03",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://simulation.org.tw/annualconference2022/"
+    },
+    {
+      "id": "3e07947c5fd5",
+      "title": "公告第四屆理、監事候選人名單及政見",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://simulation.org.tw/the_fourth_list_politics/"
+    },
+    {
+      "id": "00e2298de2ee",
+      "title": "第一屆全國醫學生高擬真競賽得獎名單",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://simulation.org.tw/winners-list_2022/"
+    },
+    {
       "id": "2ddf05f4fe17",
       "title": "公告本會第四屆理、監事候選人自我推薦辦法",
       "source": "台灣急重症模擬醫學會",
@@ -675,104 +805,494 @@
       "url": "https://simulation.org.tw/20220907news001/"
     },
     {
-      "id": "5446190a4c6b",
-      "title": "台灣復甦照護學會",
-      "source": "復甦照護小學堂",
-      "cat": "台灣急救社群",
+      "id": "f800c6082abf",
+      "title": "12/26 模擬醫學在超音波導引血管穿刺術的應用工作坊取消公告",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://simulation.org.tw/class1226-2-cancel/"
+    },
+    {
+      "id": "8c706ef18095",
+      "title": "非會員請把握工作坊限時優惠！",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://simulation.org.tw/adv_122601/"
+    },
+    {
+      "id": "25e33b5cdf3c",
+      "title": "重災訓練計劃",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/news/tp_list.asp"
+    },
+    {
+      "id": "792affea4863",
+      "title": "政府單位公告",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.tsorcc.org.tw/首頁"
+      "url": "https://www.tsccm.org.tw/news/gov_list.asp"
     },
     {
-      "id": "a8949ae88118",
-      "title": "2023年活動花絮集",
-      "source": "復甦照護小學堂",
-      "cat": "台灣急救社群",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.tsorcc.org.tw/活動花絮/2023年活動花絮集"
-    },
-    {
-      "id": "b6d24821eda6",
-      "title": "2024年活動花絮集",
-      "source": "復甦照護小學堂",
-      "cat": "台灣急救社群",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.tsorcc.org.tw/活動花絮/2024年活動花絮集"
-    },
-    {
-      "id": "0fb6e755bf0f",
-      "title": "2025年活動花絮集",
-      "source": "復甦照護小學堂",
-      "cat": "台灣急救社群",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.tsorcc.org.tw/活動花絮/2025年活動花絮集"
-    },
-    {
-      "id": "dba5d1125d87",
-      "title": "2026年活動花絮集",
-      "source": "復甦照護小學堂",
-      "cat": "台灣急救社群",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.tsorcc.org.tw/活動花絮/2026年活動花絮集"
-    },
-    {
-      "id": "c7f92f399b5e",
-      "title": "不只救命…更陪伴重生！台大首創「復甦科學中心」串連生命之鏈、打造完整救命流程",
-      "source": "復甦照護小學堂",
-      "cat": "台灣急救社群",
+      "id": "1f34601426c5",
+      "title": "國內外相關訊息",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.google.com/url?q=https%3A%2F%2Fwww.cmmedia.com.tw%2Fhome%2Farticles%2F54096&sa=D&sntz=1&usg=AOvVaw2UWMcFMNCvNsJMK1QffFv8"
+      "url": "https://www.tsccm.org.tw/news/df_list.asp"
     },
     {
-      "id": "0c74e4a451bd",
-      "title": "40歲男跑馬拉松倒地無心跳 康復後再創完賽奇蹟 | 生活 | 中央社 CNA40歲宋先生1年多前參加台北馬拉松突然倒地，當場失去呼吸與心跳，如今卻能重返賽道，除歸功於現場搶救，還有台大醫院急救復甦環環相扣，以溫控治療緩解後遺症，助患者康復。",
-      "source": "復甦照護小學堂",
-      "cat": "台灣急救社群",
+      "id": "42691a55a353",
+      "title": "理監事選舉專區",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.google.com/url?q=https%3A%2F%2Fwww.cna.com.tw%2Fnews%2Fahel%2F202504280120.aspx&sa=D&sntz=1&usg=AOvVaw0jvek_Yw4OkSr8bUHclodX"
+      "url": "https://www.tsccm.org.tw/news/bds_list.asp"
     },
     {
-      "id": "2020c3b19dcc",
-      "title": "2026年會賦活節暨學術研討會",
-      "source": "復甦照護小學堂",
-      "cat": "台灣急救社群",
+      "id": "2092c9366b98",
+      "title": "重症照護新知(115.6.23更新)",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/news_info.asp?/974.html"
+    },
+    {
+      "id": "04610a6ec9df",
+      "title": "115.6.15 衛福部公告「重症醫學科專科醫師甄審原則」",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/news_info.asp?/970.html"
+    },
+    {
+      "id": "1863a0fe2f19",
+      "title": "衛福部召開「重症醫學專科醫師訓練及甄審籌備委員會」第一次會議 六大醫學會攜手推動重症醫學專科制度新里程",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
       "type": "course",
       "date": null,
       "deadline": null,
-      "url": "https://www.tsorcc.org.tw/活動花絮/2026411-賦活節"
+      "url": "https://www.tsccm.org.tw/news_info.asp?/962.html"
     },
     {
-      "id": "7f1a6312ec40",
-      "title": "護甦感恩節-護理研討會",
-      "source": "復甦照護小學堂",
-      "cat": "台灣急救社群",
+      "id": "7ced2dd237d2",
+      "title": "【走向世界！KSCCM -ACCC 2026 年會參與暨國際交流紀實】🌏🤝",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/news_info.asp?/960.html"
+    },
+    {
+      "id": "26bb29bfe116",
+      "title": "年度盛會登場！ 「SECC Congress 2026 Taipei」暨 「急重症聯合學術年會」＋「第十屆亞太早期復健會議」 👉 論文投稿延至7/15！",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/news_info.asp?/932.html"
+    },
+    {
+      "id": "1058cd8fb33c",
+      "title": "衛生福利部於中華民國115年4月28日公告修正《專科醫師分科及甄審辦法》，正式將重症醫學科納入專科醫師分科",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/news_info.asp?/929.html"
+    },
+    {
+      "id": "5653f5428a7c",
+      "title": "【部定專科後相關配套說明】",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/news_info.asp?/922.html"
+    },
+    {
+      "id": "6706269be89a",
+      "title": "衛福部部定專科增列重症醫學、感染科 健保給付有望調整!",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/news_info.asp?/923.html"
+    },
+    {
+      "id": "7eec1d1686ba",
+      "title": "2026春季會照片花絮及學分證明開放下載",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/news_info.asp?/930.html"
+    },
+    {
+      "id": "5ddae5a72419",
+      "title": "ACLS 2007新課程規範",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
       "type": "course",
       "date": null,
       "deadline": null,
-      "url": "https://www.tsorcc.org.tw/活動花絮/20251122-護甦感恩節照片"
+      "url": "https://www.tsccm.org.tw/Academic/acls01.asp"
     },
     {
-      "id": "c827b5c91108",
-      "title": "民眾衛教課程集錦",
-      "source": "復甦照護小學堂",
-      "cat": "台灣急救社群",
+      "id": "a12cd0974482",
+      "title": "ACLS 課程推薦書籍",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
       "type": "course",
       "date": null,
       "deadline": null,
-      "url": "https://www.tsorcc.org.tw/活動花絮/民眾衛教照片集"
+      "url": "https://www.tsccm.org.tw/Academic/acls02.asp"
+    },
+    {
+      "id": "effdca75c4e6",
+      "title": "重症課程(重症學分)",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/od/Academic/index.asp?act_kindid=1"
+    },
+    {
+      "id": "a5ab109f670c",
+      "title": "聯甄課程(聯甄學分)",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/od/Academic/index.asp?act_kindid=2"
+    },
+    {
+      "id": "4549c581deae",
+      "title": "線上課程【登入】",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/course/pwd.asp"
+    },
+    {
+      "id": "3b0a9ad4f32f",
+      "title": "重症臨床訓練機構資格",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/file/Union/重症臨床訓練機構資格及內容.pdf"
+    },
+    {
+      "id": "3752eb366a7e",
+      "title": "重症臨床訓練機構名單",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/Union/tp_list.asp"
+    },
+    {
+      "id": "c8a1efa58844",
+      "title": "歷年聯甄學分課程",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/file/Union/93_108.pdf"
+    },
+    {
+      "id": "8a19655063da",
+      "title": "各式訓練課程證書申請須知",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/file/apply_C/certificate11403_01.pdf"
+    },
+    {
+      "id": "e26c426db8e8",
+      "title": "訓練課程證書補發須知",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/file/apply_C/certificate11105_02.pdf"
+    },
+    {
+      "id": "703ad1f89163",
+      "title": "通知各訓練計畫提報截至115/6/30在職之指導醫師名單",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/news/sp_info.asp?/965.html"
+    },
+    {
+      "id": "aa21c5bbaa65",
+      "title": "【訓練醫院改制後效期展延年限表, 及各訓練單位效期總表】",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/news/sp_info.asp?/925.html"
+    },
+    {
+      "id": "2dd9f7f04680",
+      "title": "\"已截止報名\"「災難護理：全災害指揮與危機應變決策 研討會」 及工作坊公告",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/news/tp_info.asp?/957.html"
+    },
+    {
+      "id": "af7851050bca",
+      "title": "2025重大災難照護課程上課影片上線",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsccm.org.tw/news/tp_info.asp?/909.html"
+    },
+    {
+      "id": "c821ef8b683c",
+      "title": "祕書處公告",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/news/news_list.asp?NType=3"
+    },
+    {
+      "id": "8c7d20147e3f",
+      "title": "長照積分申請專區",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/news/news_list.asp?NType=4"
+    },
+    {
+      "id": "c64a3c618e92",
+      "title": "【徵稿公告】第八屆第二次會員大會暨學術研討會海報論文徵稿",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=489"
+    },
+    {
+      "id": "e5c1a45a9c07",
+      "title": "【訊息轉知】115年度「獎勵提供心血管疾病病人戒菸服務」暨「獎勵基層醫療院所提供病人戒菸服務」競賽報名",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=490"
+    },
+    {
+      "id": "ed1b91ad4060",
+      "title": "【學會公告】本會提升期刊影響力貢獻獎申請公告",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=487"
+    },
+    {
+      "id": "0a84b9e6c535",
+      "title": "【長照積分申請表格】本會更新長照積分申請表格，請下載114年度114.8.1起適用版本提出申請。",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=472"
+    },
+    {
+      "id": "8d3e1d729df3",
+      "title": "【重要公告】老人衛教照護個管師認証課程證書展延辦法公佈",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=222"
+    },
+    {
+      "id": "caed0e3769f1",
+      "title": "【重要公告】老人長照（LTCT）種子教官人員證書展延辦法公佈",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=117"
+    },
+    {
+      "id": "f09cecc1c54c",
+      "title": "【重要公告】老人急重症專科醫師審查規劃辦法",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=420"
+    },
+    {
+      "id": "0d0e390cf858",
+      "title": "【重要公告】專科醫師換證申請表",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=105"
+    },
+    {
+      "id": "9510b518bf05",
+      "title": "TAMIS Academy",
+      "source": "台灣心肌梗塞學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://tamis.org.tw/activity/41"
+    },
+    {
+      "id": "0a85c8dd90b9",
+      "title": "特選環球會議",
+      "source": "台灣心肌梗塞學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://tamis.org.tw/activity/42"
+    },
+    {
+      "id": "47f965572631",
+      "title": "國際學術研討會",
+      "source": "台灣心肌梗塞學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://tamis.org.tw/activity/60"
+    },
+    {
+      "id": "32dbb30467e3",
+      "title": "★★★ 學會醫事課程開課一覽表 ★★★",
+      "source": "臺灣醫事繼續教育學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tmed.com.tw/site_item_content_2.php?site_map_item_id=3"
+    },
+    {
+      "id": "9e13e8fac463",
+      "title": "★★★ 高雄中山、鳯山、路竹、台中教室長照課程開課一覽表 ★★★",
+      "source": "臺灣醫事繼續教育學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tmed.com.tw/site_item_content_2.php?site_map_item_id=106"
+    },
+    {
+      "id": "fbce3e42c088",
+      "title": "訂購《醫療資訊雜誌》價格調漲公告！",
+      "source": "台灣醫學資訊學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.medinfo.org.tw"
+    },
+    {
+      "id": "d45d9fa81b2e",
+      "title": "【代轉】大語言模型與串接醫療 AI 應用系列課程即將推出",
+      "source": "台灣醫學資訊學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.medinfo.org.tw"
+    },
+    {
+      "id": "e5677d4220ac",
+      "title": "本會合辦「2026年亞太醫學資訊學會年會（APAMI 2026）」，歡迎報名參加！",
+      "source": "台灣醫學資訊學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.medinfo.org.tw"
+    },
+    {
+      "id": "f7cb8f1a3ec8",
+      "title": "【代轉】臺大醫院舉辦「臺大醫院131週年院慶-數位與智慧醫療國 際研討會」，歡迎報名參加！",
+      "source": "台灣醫學資訊學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.medinfo.org.tw"
+    },
+    {
+      "id": "b3f9851ab73d",
+      "title": "2026下半年醫學資訊管理師/分析師證照考試簡章公告，歡迎線上報名！",
+      "source": "台灣醫學資訊學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.medinfo.org.tw"
     },
     {
       "id": "16948ea49071",
@@ -983,6 +1503,306 @@
       "date": null,
       "deadline": null,
       "url": "https://www.tana.org.tw/news/learn_info.asp?/786.html"
+    },
+    {
+      "id": "91790bdbec7d",
+      "title": "CPR+AED完整版3小時課程",
+      "source": "台灣運動安全暨急救技能推廣協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://sfast.innosoft.com.tw/iplm/pages/b.aspx?page=in_Meeting_list_A.html&method=In_MeetingUserResponse&in_meetingid=297C8E0AF68B4B609134923DF1F22659"
+    },
+    {
+      "id": "bf3f0e1ba292",
+      "title": "AED管理員4小時教育訓練",
+      "source": "台灣運動安全暨急救技能推廣協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://reurl.cc/qKa2WE"
+    },
+    {
+      "id": "e0f77ddf7472",
+      "title": "基本救命術指導員BLS-I課程",
+      "source": "台灣運動安全暨急救技能推廣協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://reurl.cc/eVQggR"
+    },
+    {
+      "id": "5bc9921519e2",
+      "title": "基本救命術BLS4小時課程",
+      "source": "台灣運動安全暨急救技能推廣協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://reurl.cc/4bYO9v"
+    },
+    {
+      "id": "a2470c9c35e4",
+      "title": "基本救命術BLS8小時課程",
+      "source": "台灣運動安全暨急救技能推廣協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://reurl.cc/aMEgWl"
+    },
+    {
+      "id": "9b0c8c7af87d",
+      "title": "大人、小孩與毛小孩之基本救命術課程",
+      "source": "台灣運動安全暨急救技能推廣協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://reurl.cc/gnN3qR"
+    },
+    {
+      "id": "2d17c4249a0b",
+      "title": "急救人員安全衛生教育訓練課程 全新課程",
+      "source": "台灣運動安全暨急救技能推廣協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.sfast.org/product_d.php?lang=tw&tb=2&id=149"
+    },
+    {
+      "id": "cb078e84f4ff",
+      "title": "臺北市政府衛生局委託辦理AED管理員課程 免費課程",
+      "source": "台灣運動安全暨急救技能推廣協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://sfast.innosoft.com.tw/iplm/pages/b.aspx?page=in_Meeting_list_A.html&method=In_MeetingUserResponse&in_meetingid=EF7E1AE09E5D4832BAF7DA7ED8FF6BDF"
+    },
+    {
+      "id": "0850df67d2e8",
+      "title": "臺北市政府衛生局委託辦理BLS-I指導員課程 免費課程",
+      "source": "台灣運動安全暨急救技能推廣協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://sfast.innosoft.com.tw/iplm/pages/b.aspx?page=in_Meeting_list_A.html&method=In_MeetingUserResponse&in_meetingid=13DFB137CCB54EA2A5B6BF61F160EB51"
+    },
+    {
+      "id": "714b60d47f31",
+      "title": "BLS基本救命術指導員改版訓練 2025AHA指引更新",
+      "source": "台灣運動安全暨急救技能推廣協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://sfast.innosoft.com.tw/iplm/pages/b.aspx?page=in_Meeting_list_A.html&method=In_MeetingUserResponse&in_meetingid=EB7BD83DDE9D441EB255A0D44B3C45B3"
+    },
+    {
+      "id": "acb979cd351a",
+      "title": "專區｜基礎急救教育",
+      "source": "彰化縣防災協會（DPAC）",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://dpac.org.tw/opg/basic_first_aid"
+    },
+    {
+      "id": "e20d31f1f660",
+      "title": "關注｜聽語障急救",
+      "source": "彰化縣防災協會（DPAC）",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://dpac.org.tw/opg/vulnerable"
+    },
+    {
+      "id": "d452be88049a",
+      "title": "全國｜內政部防災士",
+      "source": "彰化縣防災協會（DPAC）",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://dpac.org.tw/opg/dpacdrv"
+    },
+    {
+      "id": "c30d0dad7535",
+      "title": "緊急救援隊(115)招募中！",
+      "source": "彰化縣防災協會（DPAC）",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://dpac.org.tw/opg/rescue"
+    },
+    {
+      "id": "5bf2e36429eb",
+      "title": "台灣緊急應變管理協會",
+      "source": "台灣緊急應變管理協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://webtema.org"
+    },
+    {
+      "id": "5446190a4c6b",
+      "title": "台灣復甦照護學會",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsorcc.org.tw/首頁"
+    },
+    {
+      "id": "a8949ae88118",
+      "title": "2023年活動花絮集",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsorcc.org.tw/活動花絮/2023年活動花絮集"
+    },
+    {
+      "id": "b6d24821eda6",
+      "title": "2024年活動花絮集",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsorcc.org.tw/活動花絮/2024年活動花絮集"
+    },
+    {
+      "id": "0fb6e755bf0f",
+      "title": "2025年活動花絮集",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsorcc.org.tw/活動花絮/2025年活動花絮集"
+    },
+    {
+      "id": "dba5d1125d87",
+      "title": "2026年活動花絮集",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsorcc.org.tw/活動花絮/2026年活動花絮集"
+    },
+    {
+      "id": "c7f92f399b5e",
+      "title": "不只救命…更陪伴重生！台大首創「復甦科學中心」串連生命之鏈、打造完整救命流程",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.google.com/url?q=https%3A%2F%2Fwww.cmmedia.com.tw%2Fhome%2Farticles%2F54096&sa=D&sntz=1&usg=AOvVaw2UWMcFMNCvNsJMK1QffFv8"
+    },
+    {
+      "id": "0c74e4a451bd",
+      "title": "40歲男跑馬拉松倒地無心跳 康復後再創完賽奇蹟 | 生活 | 中央社 CNA40歲宋先生1年多前參加台北馬拉松突然倒地，當場失去呼吸與心跳，如今卻能重返賽道，除歸功於現場搶救，還有台大醫院急救復甦環環相扣，以溫控治療緩解後遺症，助患者康復。",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.google.com/url?q=https%3A%2F%2Fwww.cna.com.tw%2Fnews%2Fahel%2F202504280120.aspx&sa=D&sntz=1&usg=AOvVaw0jvek_Yw4OkSr8bUHclodX"
+    },
+    {
+      "id": "2020c3b19dcc",
+      "title": "2026年會賦活節暨學術研討會",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsorcc.org.tw/活動花絮/2026411-賦活節"
+    },
+    {
+      "id": "7f1a6312ec40",
+      "title": "護甦感恩節-護理研討會",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsorcc.org.tw/活動花絮/20251122-護甦感恩節照片"
+    },
+    {
+      "id": "c827b5c91108",
+      "title": "民眾衛教課程集錦",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tsorcc.org.tw/活動花絮/民眾衛教照片集"
+    },
+    {
+      "id": "9a9995a5da7d",
+      "title": "安妮怎麼了？－急救教育設計服務",
+      "source": "安妮怎麼了",
+      "cat": "台灣急救社群",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.anne.education/"
+    },
+    {
+      "id": "74618323376f",
+      "title": "無意識且沒有正常呼吸(CPR+AED)",
+      "source": "安妮怎麼了",
+      "cat": "台灣急救社群",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.anne.education/f1ohca.html"
+    },
+    {
+      "id": "17dbb796794e",
+      "title": "翻轉急救｜CPR+AED",
+      "source": "安妮怎麼了",
+      "cat": "台灣急救社群",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.anne.education/flippedcpr.html"
+    },
+    {
+      "id": "77986d080e7b",
+      "title": "校園急救教育支持計畫",
+      "source": "安妮怎麼了",
+      "cat": "台灣急救社群",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.anne.education/campus.html"
+    },
+    {
+      "id": "da649436ac75",
+      "title": "安妮急救營－偏鄉急救教育",
+      "source": "安妮怎麼了",
+      "cat": "台灣急救社群",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.anne.education/schoolcamp.html"
     },
     {
       "id": "d7c182893afb",
