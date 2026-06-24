@@ -1,5 +1,502 @@
 {
-  "updated": "2026-06-24T13:36:45.517735+00:00",
-  "count": 0,
-  "items": []
+  "updated": "2026-06-24T13:51:49.239135+00:00",
+  "count": 62,
+  "items": [
+    {
+      "id": "7efd47590b2a",
+      "title": "急性中毒救命課程（AILS Training Course）-115年第2場 社團法人台灣急診醫學會 2026/06/23 積分 15 學會主辦 報名截止",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "date": "2026-06-23",
+      "url": "https://www.sem.org.tw/Activity/A/Details/32865"
+    },
+    {
+      "id": "67a71146f5a4",
+      "title": "115年災難應變與醫療聯合討論會(淡馬場) 社團法人台灣急診醫學會 2026/06/24 學會主辦 報名截止",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "date": "2026-06-23",
+      "url": "https://www.sem.org.tw/Activity/A/Details/33012"
+    },
+    {
+      "id": "97e501dc9e46",
+      "title": "2026第十七屆第一次會員大會暨學術研討會 社團法人台灣急診醫學會 2026/06/26 積分 16 學會主辦 報名截止",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "date": "2026-06-23",
+      "url": "https://www.sem.org.tw/Activity/A/Details/32620"
+    },
+    {
+      "id": "d82ce83cd617",
+      "title": "115年住院醫師初階災難訓練課程(南區)【線上+實體】 社團法人台灣急診醫學會 2026/07/02 積分 13 學會主辦 報名截止",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "date": "2026-06-23",
+      "url": "https://www.sem.org.tw/Activity/A/Details/33032"
+    },
+    {
+      "id": "8829b8516b58",
+      "title": "夏季山域溪谷自救搜救知能安全講習 社團法人台灣急診醫學會、馬偕紀念醫院急診醫學部野外醫學中心 2026/07/08 積分 7 學會主辦 尚有 10 名額",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "date": "2026-06-23",
+      "url": "https://www.sem.org.tw/Activity/A/Details/33048"
+    },
+    {
+      "id": "468c49ab963b",
+      "title": "115年度中毒個案討論會–中區 社團法人台灣急診醫學會、秀傳紀念醫院 2026/07/20 積分 3 學會主辦 尚有 7 名額",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "date": "2026-06-23",
+      "url": "https://www.sem.org.tw/Activity/A/Details/32964"
+    },
+    {
+      "id": "83a2707bc95d",
+      "title": "115年師資培育工作坊 (中區) 社團法人台灣急診醫學會、中山醫學大學附設醫院 2026/07/28 積分 4 學會主辦 尚有 31 名額",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "date": "2026-06-23",
+      "url": "https://www.sem.org.tw/Activity/A/Details/32647"
+    },
+    {
+      "id": "d59a6ef4bc78",
+      "title": "衛福部公告",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://www.seccm.org.tw/orgNews/gov_list.asp"
+    },
+    {
+      "id": "777bb0ea3587",
+      "title": "ACLS課程舉辦單位",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://www.seccm.org.tw/news/acls_class.asp"
+    },
+    {
+      "id": "608a0c0bea96",
+      "title": "聯甄課程承辦單位",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://www.seccm.org.tw/news/acls_union.asp"
+    },
+    {
+      "id": "10036d1b70ae",
+      "title": "非聯甄課程",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://www.seccm.org.tw/news/acls_NotUnion.asp"
+    },
+    {
+      "id": "d6398c092143",
+      "title": "ACLS委員會課程",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://www.seccm.org.tw/news/acls_course.asp"
+    },
+    {
+      "id": "aebdf64c64c1",
+      "title": "課程證明收據下載",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://www.seccm.org.tw/news/acls_print.asp"
+    },
+    {
+      "id": "30afaab34bb4",
+      "title": "相關公告及大補帖",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://www.seccm.org.tw/orgNews/News_wuhan.asp?/kd/1/1.html"
+    },
+    {
+      "id": "7c91a31ccdfc",
+      "title": "訓練醫院規範",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://www.seccm.org.tw/union/trainH.asp"
+    },
+    {
+      "id": "cfd43f391167",
+      "title": "ACLS課程",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://www.seccm.org.tw/news/acls_class.asp"
+    },
+    {
+      "id": "ebe50fe852b7",
+      "title": "衛福部公告重症醫學科專科醫師甄審原則(如附件)並自即日生效",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://www.seccm.org.tw/orgNews/news_info.asp?/808.html#here"
+    },
+    {
+      "id": "f2d34a9b9a5d",
+      "title": "【重症聯甄】超值價!即日開放報名~急救重症傷口皮膚照護工作坊-115.07.25 秀傳紀念醫院",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://www.seccm.org.tw/orgNews/news_info.asp?/804.html#here"
+    },
+    {
+      "id": "470fefc6d8ac",
+      "title": "【新聞稿-115年6月2日／臺北訊】衛福部召開「重症醫學專科醫師訓練及甄審籌備委員會」第一次會議 六大醫學會攜手推動重症醫學專科制度新里程",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://www.seccm.org.tw/orgNews/news_info.asp?/803.html#here"
+    },
+    {
+      "id": "26138c8efa38",
+      "title": "【重症復健聯甄課程-無需積分,免費參加!】東區「重症運動會」重症早期復健研討會-115.07.04花蓮慈濟醫院",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://www.seccm.org.tw/orgNews/news_info.asp?/802.html#here"
+    },
+    {
+      "id": "f6c85576748d",
+      "title": "【重症聯甄課程】2026重症呼吸器實作課程115.07.04-台中榮總教學大樓1樓",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://www.seccm.org.tw/orgNews/news_info.asp?/801.html#here"
+    },
+    {
+      "id": "9afcb996c69a",
+      "title": "【南&北區-開放報名】115年高級心臟救命術學員課程示範教學 ACLS Provider Demo Course",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://www.seccm.org.tw/orgNews/news_info.asp?/800.html#here"
+    },
+    {
+      "id": "c79f1f73f270",
+      "title": "115年度高級心臟救命術指導員課程通過名單及試教須知",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://www.seccm.org.tw/orgNews/news_info.asp?/799.html#here"
+    },
+    {
+      "id": "3826b68f876d",
+      "title": "【公告】部定專科「重症醫學科」相關事宜",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://www.seccm.org.tw/orgNews/news_info.asp?/796.html#here"
+    },
+    {
+      "id": "15398861885b",
+      "title": "【重症聯甄】2026年血液動力學重症聯甄工作坊-115.06.06(免費參加)",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://www.seccm.org.tw/orgNews/news_info.asp?/794.html#here"
+    },
+    {
+      "id": "5a9940c69179",
+      "title": "台灣急救加護醫學會參加國際學術交流活動-獎勵投稿論文辦法_113.01.05",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://www.seccm.org.tw/orgNews/news_info.asp?/638.html#here"
+    },
+    {
+      "id": "89d1f48331fb",
+      "title": "教育訓練 Education 報名最新持續教育 (CPD) 等各類進階專業救護課程。 Register for ACLS, CPD, and advanced paramedic courses.",
+      "source": "台灣醫療救護學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://twparamedicine.org/training.html"
+    },
+    {
+      "id": "a93d14badeea",
+      "title": "機構:醫療指導醫師繼續教育訓練認證申請連結https://forms.gle/wRpfnT6FwUaPYZ7j8",
+      "source": "台灣緊急救護醫療指導醫師學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://forms.gle/wRpfnT6FwUaPYZ7j8"
+    },
+    {
+      "id": "7163a55f8d96",
+      "title": "活動照片回顧",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://simulation.org.tw/photogallery/"
+    },
+    {
+      "id": "a9ab09ee6a61",
+      "title": "台灣急重症模擬醫學會第四屆第二次會員大會暨學術研討會時間表 4/20",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://simulation.org.tw/annualconference2024-3/"
+    },
+    {
+      "id": "3577e5206397",
+      "title": "台灣急重症模擬醫學會第四屆第二次會員大會暨學術研討會歡迎報名參加 4/20",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://simulation.org.tw/annualconference2024-2/"
+    },
+    {
+      "id": "189d1f45e37b",
+      "title": "台灣急重症模擬醫學會第四屆第二次會員大會暨學術研討會 4/20",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://simulation.org.tw/annualconference2024/"
+    },
+    {
+      "id": "cc41c445b0a8",
+      "title": "台灣急重症模擬醫學會第四屆第一次會員大會暨學術研討會時間表 12/03",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://simulation.org.tw/annualconference2022-schedule/"
+    },
+    {
+      "id": "97776574ba48",
+      "title": "台灣急重症模擬醫學會第四屆第一次會員大會暨學術研討會 12/03",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://simulation.org.tw/annualconference2022/"
+    },
+    {
+      "id": "3e07947c5fd5",
+      "title": "公告第四屆理、監事候選人名單及政見",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://simulation.org.tw/the_fourth_list_politics/"
+    },
+    {
+      "id": "2ddf05f4fe17",
+      "title": "公告本會第四屆理、監事候選人自我推薦辦法",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://simulation.org.tw/20220907news002/"
+    },
+    {
+      "id": "f800c6082abf",
+      "title": "12/26 模擬醫學在超音波導引血管穿刺術的應用工作坊取消公告",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://simulation.org.tw/class1226-2-cancel/"
+    },
+    {
+      "id": "8c706ef18095",
+      "title": "非會員請把握工作坊限時優惠！",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "date": null,
+      "url": "https://simulation.org.tw/adv_122601/"
+    },
+    {
+      "id": "7aeb46cd46ad",
+      "title": "認識課程/開課資訊",
+      "source": "中華緊急救護技術員協會",
+      "cat": "台灣協會",
+      "date": null,
+      "url": "https://www.emt.org.tw"
+    },
+    {
+      "id": "e7bc1f8cda78",
+      "title": "會務公告了解更多",
+      "source": "中華緊急救護技術員協會",
+      "cat": "台灣協會",
+      "date": null,
+      "url": "https://www.emt.org.tw"
+    },
+    {
+      "id": "cbaffeeb8985",
+      "title": "課務公告了解更多",
+      "source": "中華緊急救護技術員協會",
+      "cat": "台灣協會",
+      "date": null,
+      "url": "https://www.emt.org.tw"
+    },
+    {
+      "id": "5446190a4c6b",
+      "title": "台灣復甦照護學會",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
+      "date": null,
+      "url": "https://www.tsorcc.org.tw/首頁"
+    },
+    {
+      "id": "7856f2200f9f",
+      "title": "課程講義下載",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
+      "date": null,
+      "url": "https://www.tsorcc.org.tw/學術活動/課程講義下載"
+    },
+    {
+      "id": "a8949ae88118",
+      "title": "2023年活動花絮集",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
+      "date": null,
+      "url": "https://www.tsorcc.org.tw/活動花絮/2023年活動花絮集"
+    },
+    {
+      "id": "b6d24821eda6",
+      "title": "2024年活動花絮集",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
+      "date": null,
+      "url": "https://www.tsorcc.org.tw/活動花絮/2024年活動花絮集"
+    },
+    {
+      "id": "0fb6e755bf0f",
+      "title": "2025年活動花絮集",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
+      "date": null,
+      "url": "https://www.tsorcc.org.tw/活動花絮/2025年活動花絮集"
+    },
+    {
+      "id": "dba5d1125d87",
+      "title": "2026年活動花絮集",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
+      "date": null,
+      "url": "https://www.tsorcc.org.tw/活動花絮/2026年活動花絮集"
+    },
+    {
+      "id": "c7f92f399b5e",
+      "title": "不只救命…更陪伴重生！台大首創「復甦科學中心」串連生命之鏈、打造完整救命流程",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
+      "date": null,
+      "url": "https://www.google.com/url?q=https%3A%2F%2Fwww.cmmedia.com.tw%2Fhome%2Farticles%2F54096&sa=D&sntz=1&usg=AOvVaw2UWMcFMNCvNsJMK1QffFv8"
+    },
+    {
+      "id": "0c74e4a451bd",
+      "title": "40歲男跑馬拉松倒地無心跳 康復後再創完賽奇蹟 | 生活 | 中央社 CNA40歲宋先生1年多前參加台北馬拉松突然倒地，當場失去呼吸與心跳，如今卻能重返賽道，除歸功於現場搶救，還有台大醫院急救復甦環環相扣，以溫控治療緩解後遺症，助患者康復。",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
+      "date": null,
+      "url": "https://www.google.com/url?q=https%3A%2F%2Fwww.cna.com.tw%2Fnews%2Fahel%2F202504280120.aspx&sa=D&sntz=1&usg=AOvVaw0jvek_Yw4OkSr8bUHclodX"
+    },
+    {
+      "id": "2020c3b19dcc",
+      "title": "2026年會賦活節暨學術研討會",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
+      "date": null,
+      "url": "https://www.tsorcc.org.tw/活動花絮/2026411-賦活節"
+    },
+    {
+      "id": "d7c182893afb",
+      "title": "Course Administration",
+      "source": "NAEMT",
+      "cat": "戰術救護",
+      "date": null,
+      "url": "https://www.naemt.org/course-administration/course-administration-overview"
+    },
+    {
+      "id": "677d171a7468",
+      "title": "Authorized NAEMT Training Centers",
+      "source": "NAEMT",
+      "cat": "戰術救護",
+      "date": null,
+      "url": "https://www.naemt.org/education/authorized-naemt-training-centers"
+    },
+    {
+      "id": "b635584cd2a0",
+      "title": "Locate a Course",
+      "source": "NAEMT",
+      "cat": "戰術救護",
+      "date": null,
+      "url": "https://www.naemt.org/education/CourseDirectory"
+    },
+    {
+      "id": "9a89cb01d1ff",
+      "title": "keyboard_double_arrow_left",
+      "source": "ERC",
+      "cat": "國際期刊/組織",
+      "date": null,
+      "url": "https://www.erc.edu/news?page=1&pageSize=9"
+    },
+    {
+      "id": "b08f307cec1b",
+      "title": "keyboard_arrow_left",
+      "source": "ERC",
+      "cat": "國際期刊/組織",
+      "date": null,
+      "url": "https://www.erc.edu/news?page=1&pageSize=9"
+    },
+    {
+      "id": "e30c589a1719",
+      "title": "keyboard_arrow_right",
+      "source": "ERC",
+      "cat": "國際期刊/組織",
+      "date": null,
+      "url": "https://www.erc.edu/news?page=2&pageSize=9"
+    },
+    {
+      "id": "0967a314a8a4",
+      "title": "keyboard_double_arrow_right",
+      "source": "ERC",
+      "cat": "國際期刊/組織",
+      "date": null,
+      "url": "https://www.erc.edu/news?page=3&pageSize=9"
+    },
+    {
+      "id": "f54a091f6a36",
+      "title": "2026 WMS Summer Conference In-Person",
+      "source": "Wilderness Medical Society",
+      "cat": "國際期刊/組織",
+      "date": null,
+      "url": "https://wms.org/WMS/WMS/Attend/Conferences/SC26/Master_Summer_2026.aspx"
+    },
+    {
+      "id": "2bf887ec0347",
+      "title": "2026 WMS Summer Conference Virtual",
+      "source": "Wilderness Medical Society",
+      "cat": "國際期刊/組織",
+      "date": null,
+      "url": "https://wms.org/WMS/Attend/Conferences/SC26/25-Virtual-Summer/Master_Virtual_Summer_2026.aspx"
+    },
+    {
+      "id": "4a6c51faaed4",
+      "title": "2026 Partner Rescue at Looking Glass Rock Pre-Conference",
+      "source": "Wilderness Medical Society",
+      "cat": "國際期刊/組織",
+      "date": null,
+      "url": "https://wms.org"
+    },
+    {
+      "id": "2df98071b351",
+      "title": "2026 Swift Water Rescue Post-Conference",
+      "source": "Wilderness Medical Society",
+      "cat": "國際期刊/組織",
+      "date": null,
+      "url": "https://wms.org"
+    },
+    {
+      "id": "a48a802d78f5",
+      "title": "Events",
+      "source": "Wilderness Medical Society",
+      "cat": "國際期刊/組織",
+      "date": null,
+      "url": "https://wms.org/Shared_Content/Events/Events_List.aspx"
+    }
+  ]
 }
