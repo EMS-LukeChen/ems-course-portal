@@ -8,16 +8,16 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Noto Sans TC',system-ui,sans-serif;background:#f5f6f8;color:#1a1a1a;font-size:14px}
-#hd{background:#1a56b0;padding:12px 16px 10px}
+#hd{background:#1a7a3a;padding:12px 16px 10px}
 #hd-badge{font-size:10px;color:rgba(255,255,255,.7)}
 #hd-title{font-size:18px;font-weight:700;color:#fff;margin:3px 0}
+#hd-sub{font-size:11.5px;color:rgba(255,255,255,.85);margin-bottom:4px}
 #hd-motto{font-size:11px;color:#FFD600;font-style:italic;font-weight:500;margin-bottom:8px}
 #hd-meta{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px}
 #updated{font-size:10.5px;color:rgba(255,255,255,.75)}
-.rss-btn{font-size:11px;padding:3px 10px;background:#f97316;color:#fff;border:none;border-radius:20px;text-decoration:none;display:inline-flex;align-items:center;gap:4px}
 
 /* ── Type tabs（課程/消息）── */
-#type-tabs{background:#1a3a6b;display:flex;padding:0 12px}
+#type-tabs{background:#145c2a;display:flex;padding:0 12px}
 .type-tab{padding:8px 18px;font-size:12.5px;font-weight:600;color:rgba(255,255,255,.6);cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap}
 .type-tab.on{color:#fff;border-bottom-color:#FFD600}
 
@@ -92,12 +92,12 @@ footer a{color:#1a56b0;text-decoration:none}
 <body>
 
 <div id="hd">
-  <div id="hd-badge">Emergency Medical Services Information Portal</div>
-  <div id="hd-title">緊急救護課程彙整</div>
+  <div id="hd-badge">Emergency Medical Services | Emergency Medicine | Supply Station</div>
+  <div id="hd-title">緊急救護｜急診醫學｜補給站</div>
+  <div id="hd-sub">彙整課程活動與最新消息</div>
   <div id="hd-motto">－「你現在所做的學習，將有機會挽救生命。」</div>
   <div id="hd-meta">
     <span id="updated">⏱ 載入中…</span>
-    <a class="rss-btn" href="feed.xml" target="_blank">📡 訂閱 RSS</a>
   </div>
 </div>
 
@@ -171,7 +171,13 @@ async function loadData(){
     if(!res.ok)throw new Error('HTTP '+res.status);
     const j=await res.json();
     ALL=j.items||[];
-    document.getElementById('updated').textContent='⏱ 最後更新：'+(j.updated?j.updated.replace('T',' ').slice(0,16)+' UTC':'未知');
+    if(j.updated){
+      const utc=new Date(j.updated);
+      const tw=new Date(utc.getTime()+8*60*60*1000);
+      const pad=n=>String(n).padStart(2,'0');
+      const twStr=tw.getUTCFullYear()+'/'+pad(tw.getUTCMonth()+1)+'/'+pad(tw.getUTCDate())+' '+pad(tw.getUTCHours())+':'+pad(tw.getUTCMinutes())+' (台灣時間)';
+      document.getElementById('updated').textContent='⏱ 最後更新：'+twStr;
+    }else{document.getElementById('updated').textContent='⏱ 最後更新：未知';}
     document.getElementById('s-course').textContent=j.course_count||ALL.filter(i=>i.type==='course').length;
     document.getElementById('s-news').textContent=j.news_count||ALL.filter(i=>i.type==='news').length;
     document.getElementById('s-total').textContent=j.count||ALL.length;
