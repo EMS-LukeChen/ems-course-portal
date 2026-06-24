@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T13:51:49.239135+00:00",
+  "updated": "2026-06-24T14:06:50.577063+00:00",
   "count": 62,
   "items": [
     {
@@ -7,7 +7,8 @@
       "title": "急性中毒救命課程（AILS Training Course）-115年第2場 社團法人台灣急診醫學會 2026/06/23 積分 15 學會主辦 報名截止",
       "source": "台灣急診醫學會",
       "cat": "台灣學會",
-      "date": "2026-06-23",
+      "date": "2026-07-28",
+      "deadline": "2026-06-23",
       "url": "https://www.sem.org.tw/Activity/A/Details/32865"
     },
     {
@@ -15,7 +16,8 @@
       "title": "115年災難應變與醫療聯合討論會(淡馬場) 社團法人台灣急診醫學會 2026/06/24 學會主辦 報名截止",
       "source": "台灣急診醫學會",
       "cat": "台灣學會",
-      "date": "2026-06-23",
+      "date": "2026-07-28",
+      "deadline": "2026-06-24",
       "url": "https://www.sem.org.tw/Activity/A/Details/33012"
     },
     {
@@ -23,7 +25,8 @@
       "title": "2026第十七屆第一次會員大會暨學術研討會 社團法人台灣急診醫學會 2026/06/26 積分 16 學會主辦 報名截止",
       "source": "台灣急診醫學會",
       "cat": "台灣學會",
-      "date": "2026-06-23",
+      "date": "2026-07-28",
+      "deadline": "2026-06-26",
       "url": "https://www.sem.org.tw/Activity/A/Details/32620"
     },
     {
@@ -31,7 +34,8 @@
       "title": "115年住院醫師初階災難訓練課程(南區)【線上+實體】 社團法人台灣急診醫學會 2026/07/02 積分 13 學會主辦 報名截止",
       "source": "台灣急診醫學會",
       "cat": "台灣學會",
-      "date": "2026-06-23",
+      "date": "2026-07-28",
+      "deadline": "2026-07-02",
       "url": "https://www.sem.org.tw/Activity/A/Details/33032"
     },
     {
@@ -39,7 +43,8 @@
       "title": "夏季山域溪谷自救搜救知能安全講習 社團法人台灣急診醫學會、馬偕紀念醫院急診醫學部野外醫學中心 2026/07/08 積分 7 學會主辦 尚有 10 名額",
       "source": "台灣急診醫學會",
       "cat": "台灣學會",
-      "date": "2026-06-23",
+      "date": "2026-07-28",
+      "deadline": null,
       "url": "https://www.sem.org.tw/Activity/A/Details/33048"
     },
     {
@@ -47,7 +52,8 @@
       "title": "115年度中毒個案討論會–中區 社團法人台灣急診醫學會、秀傳紀念醫院 2026/07/20 積分 3 學會主辦 尚有 7 名額",
       "source": "台灣急診醫學會",
       "cat": "台灣學會",
-      "date": "2026-06-23",
+      "date": "2026-07-28",
+      "deadline": null,
       "url": "https://www.sem.org.tw/Activity/A/Details/32964"
     },
     {
@@ -55,7 +61,8 @@
       "title": "115年師資培育工作坊 (中區) 社團法人台灣急診醫學會、中山醫學大學附設醫院 2026/07/28 積分 4 學會主辦 尚有 31 名額",
       "source": "台灣急診醫學會",
       "cat": "台灣學會",
-      "date": "2026-06-23",
+      "date": "2026-07-28",
+      "deadline": null,
       "url": "https://www.sem.org.tw/Activity/A/Details/32647"
     },
     {
@@ -64,6 +71,7 @@
       "source": "台灣急救加護醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://www.seccm.org.tw/orgNews/gov_list.asp"
     },
     {
@@ -72,6 +80,7 @@
       "source": "台灣急救加護醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://www.seccm.org.tw/news/acls_class.asp"
     },
     {
@@ -80,6 +89,7 @@
       "source": "台灣急救加護醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://www.seccm.org.tw/news/acls_union.asp"
     },
     {
@@ -88,6 +98,7 @@
       "source": "台灣急救加護醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://www.seccm.org.tw/news/acls_NotUnion.asp"
     },
     {
@@ -96,6 +107,7 @@
       "source": "台灣急救加護醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://www.seccm.org.tw/news/acls_course.asp"
     },
     {
@@ -104,6 +116,7 @@
       "source": "台灣急救加護醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://www.seccm.org.tw/news/acls_print.asp"
     },
     {
@@ -112,6 +125,7 @@
       "source": "台灣急救加護醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://www.seccm.org.tw/orgNews/News_wuhan.asp?/kd/1/1.html"
     },
     {
@@ -120,6 +134,7 @@
       "source": "台灣急救加護醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://www.seccm.org.tw/union/trainH.asp"
     },
     {
@@ -128,6 +143,7 @@
       "source": "台灣急救加護醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://www.seccm.org.tw/news/acls_class.asp"
     },
     {
@@ -136,6 +152,7 @@
       "source": "台灣急救加護醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://www.seccm.org.tw/orgNews/news_info.asp?/808.html#here"
     },
     {
@@ -144,6 +161,7 @@
       "source": "台灣急救加護醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://www.seccm.org.tw/orgNews/news_info.asp?/804.html#here"
     },
     {
@@ -152,6 +170,7 @@
       "source": "台灣急救加護醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://www.seccm.org.tw/orgNews/news_info.asp?/803.html#here"
     },
     {
@@ -160,6 +179,7 @@
       "source": "台灣急救加護醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://www.seccm.org.tw/orgNews/news_info.asp?/802.html#here"
     },
     {
@@ -168,6 +188,7 @@
       "source": "台灣急救加護醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://www.seccm.org.tw/orgNews/news_info.asp?/801.html#here"
     },
     {
@@ -176,6 +197,7 @@
       "source": "台灣急救加護醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://www.seccm.org.tw/orgNews/news_info.asp?/800.html#here"
     },
     {
@@ -184,6 +206,7 @@
       "source": "台灣急救加護醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://www.seccm.org.tw/orgNews/news_info.asp?/799.html#here"
     },
     {
@@ -192,6 +215,7 @@
       "source": "台灣急救加護醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://www.seccm.org.tw/orgNews/news_info.asp?/796.html#here"
     },
     {
@@ -200,6 +224,7 @@
       "source": "台灣急救加護醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://www.seccm.org.tw/orgNews/news_info.asp?/794.html#here"
     },
     {
@@ -208,6 +233,7 @@
       "source": "台灣急救加護醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://www.seccm.org.tw/orgNews/news_info.asp?/638.html#here"
     },
     {
@@ -216,6 +242,7 @@
       "source": "台灣醫療救護學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://twparamedicine.org/training.html"
     },
     {
@@ -224,6 +251,7 @@
       "source": "台灣緊急救護醫療指導醫師學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://forms.gle/wRpfnT6FwUaPYZ7j8"
     },
     {
@@ -232,6 +260,7 @@
       "source": "台灣急重症模擬醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://simulation.org.tw/photogallery/"
     },
     {
@@ -240,6 +269,7 @@
       "source": "台灣急重症模擬醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://simulation.org.tw/annualconference2024-3/"
     },
     {
@@ -248,6 +278,7 @@
       "source": "台灣急重症模擬醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://simulation.org.tw/annualconference2024-2/"
     },
     {
@@ -256,6 +287,7 @@
       "source": "台灣急重症模擬醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://simulation.org.tw/annualconference2024/"
     },
     {
@@ -264,6 +296,7 @@
       "source": "台灣急重症模擬醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://simulation.org.tw/annualconference2022-schedule/"
     },
     {
@@ -272,6 +305,7 @@
       "source": "台灣急重症模擬醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://simulation.org.tw/annualconference2022/"
     },
     {
@@ -280,6 +314,7 @@
       "source": "台灣急重症模擬醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://simulation.org.tw/the_fourth_list_politics/"
     },
     {
@@ -288,6 +323,7 @@
       "source": "台灣急重症模擬醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://simulation.org.tw/20220907news002/"
     },
     {
@@ -296,6 +332,7 @@
       "source": "台灣急重症模擬醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://simulation.org.tw/class1226-2-cancel/"
     },
     {
@@ -304,6 +341,7 @@
       "source": "台灣急重症模擬醫學會",
       "cat": "台灣學會",
       "date": null,
+      "deadline": null,
       "url": "https://simulation.org.tw/adv_122601/"
     },
     {
@@ -312,6 +350,7 @@
       "source": "中華緊急救護技術員協會",
       "cat": "台灣協會",
       "date": null,
+      "deadline": null,
       "url": "https://www.emt.org.tw"
     },
     {
@@ -320,6 +359,7 @@
       "source": "中華緊急救護技術員協會",
       "cat": "台灣協會",
       "date": null,
+      "deadline": null,
       "url": "https://www.emt.org.tw"
     },
     {
@@ -328,6 +368,7 @@
       "source": "中華緊急救護技術員協會",
       "cat": "台灣協會",
       "date": null,
+      "deadline": null,
       "url": "https://www.emt.org.tw"
     },
     {
@@ -336,6 +377,7 @@
       "source": "復甦照護小學堂",
       "cat": "台灣急救社群",
       "date": null,
+      "deadline": null,
       "url": "https://www.tsorcc.org.tw/首頁"
     },
     {
@@ -344,6 +386,7 @@
       "source": "復甦照護小學堂",
       "cat": "台灣急救社群",
       "date": null,
+      "deadline": null,
       "url": "https://www.tsorcc.org.tw/學術活動/課程講義下載"
     },
     {
@@ -352,6 +395,7 @@
       "source": "復甦照護小學堂",
       "cat": "台灣急救社群",
       "date": null,
+      "deadline": null,
       "url": "https://www.tsorcc.org.tw/活動花絮/2023年活動花絮集"
     },
     {
@@ -360,6 +404,7 @@
       "source": "復甦照護小學堂",
       "cat": "台灣急救社群",
       "date": null,
+      "deadline": null,
       "url": "https://www.tsorcc.org.tw/活動花絮/2024年活動花絮集"
     },
     {
@@ -368,6 +413,7 @@
       "source": "復甦照護小學堂",
       "cat": "台灣急救社群",
       "date": null,
+      "deadline": null,
       "url": "https://www.tsorcc.org.tw/活動花絮/2025年活動花絮集"
     },
     {
@@ -376,6 +422,7 @@
       "source": "復甦照護小學堂",
       "cat": "台灣急救社群",
       "date": null,
+      "deadline": null,
       "url": "https://www.tsorcc.org.tw/活動花絮/2026年活動花絮集"
     },
     {
@@ -384,6 +431,7 @@
       "source": "復甦照護小學堂",
       "cat": "台灣急救社群",
       "date": null,
+      "deadline": null,
       "url": "https://www.google.com/url?q=https%3A%2F%2Fwww.cmmedia.com.tw%2Fhome%2Farticles%2F54096&sa=D&sntz=1&usg=AOvVaw2UWMcFMNCvNsJMK1QffFv8"
     },
     {
@@ -392,6 +440,7 @@
       "source": "復甦照護小學堂",
       "cat": "台灣急救社群",
       "date": null,
+      "deadline": null,
       "url": "https://www.google.com/url?q=https%3A%2F%2Fwww.cna.com.tw%2Fnews%2Fahel%2F202504280120.aspx&sa=D&sntz=1&usg=AOvVaw0jvek_Yw4OkSr8bUHclodX"
     },
     {
@@ -400,6 +449,7 @@
       "source": "復甦照護小學堂",
       "cat": "台灣急救社群",
       "date": null,
+      "deadline": null,
       "url": "https://www.tsorcc.org.tw/活動花絮/2026411-賦活節"
     },
     {
@@ -408,6 +458,7 @@
       "source": "NAEMT",
       "cat": "戰術救護",
       "date": null,
+      "deadline": null,
       "url": "https://www.naemt.org/course-administration/course-administration-overview"
     },
     {
@@ -416,6 +467,7 @@
       "source": "NAEMT",
       "cat": "戰術救護",
       "date": null,
+      "deadline": null,
       "url": "https://www.naemt.org/education/authorized-naemt-training-centers"
     },
     {
@@ -424,6 +476,7 @@
       "source": "NAEMT",
       "cat": "戰術救護",
       "date": null,
+      "deadline": null,
       "url": "https://www.naemt.org/education/CourseDirectory"
     },
     {
@@ -432,6 +485,7 @@
       "source": "ERC",
       "cat": "國際期刊/組織",
       "date": null,
+      "deadline": null,
       "url": "https://www.erc.edu/news?page=1&pageSize=9"
     },
     {
@@ -440,6 +494,7 @@
       "source": "ERC",
       "cat": "國際期刊/組織",
       "date": null,
+      "deadline": null,
       "url": "https://www.erc.edu/news?page=1&pageSize=9"
     },
     {
@@ -448,6 +503,7 @@
       "source": "ERC",
       "cat": "國際期刊/組織",
       "date": null,
+      "deadline": null,
       "url": "https://www.erc.edu/news?page=2&pageSize=9"
     },
     {
@@ -456,6 +512,7 @@
       "source": "ERC",
       "cat": "國際期刊/組織",
       "date": null,
+      "deadline": null,
       "url": "https://www.erc.edu/news?page=3&pageSize=9"
     },
     {
@@ -464,6 +521,7 @@
       "source": "Wilderness Medical Society",
       "cat": "國際期刊/組織",
       "date": null,
+      "deadline": null,
       "url": "https://wms.org/WMS/WMS/Attend/Conferences/SC26/Master_Summer_2026.aspx"
     },
     {
@@ -472,6 +530,7 @@
       "source": "Wilderness Medical Society",
       "cat": "國際期刊/組織",
       "date": null,
+      "deadline": null,
       "url": "https://wms.org/WMS/Attend/Conferences/SC26/25-Virtual-Summer/Master_Virtual_Summer_2026.aspx"
     },
     {
@@ -480,6 +539,7 @@
       "source": "Wilderness Medical Society",
       "cat": "國際期刊/組織",
       "date": null,
+      "deadline": null,
       "url": "https://wms.org"
     },
     {
@@ -488,6 +548,7 @@
       "source": "Wilderness Medical Society",
       "cat": "國際期刊/組織",
       "date": null,
+      "deadline": null,
       "url": "https://wms.org"
     },
     {
@@ -496,6 +557,7 @@
       "source": "Wilderness Medical Society",
       "cat": "國際期刊/組織",
       "date": null,
+      "deadline": null,
       "url": "https://wms.org/Shared_Content/Events/Events_List.aspx"
     }
   ]
