@@ -1,279 +1,268 @@
 """
-緊急救護課程爬蟲
-自動抓取各單位課程公告，輸出 data/courses.json 與 docs/feed.xml (RSS)
+緊急救護課程爬蟲 v2
+策略：對每個網站找到實際可解析的 URL 與 HTML 結構
 """
 
-import json
-import re
-import time
-import hashlib
+import json, re, time, hashlib
 from datetime import datetime, timezone
 from pathlib import Path
-
 import requests
 from bs4 import BeautifulSoup
 
-# ── 輸出路徑 ─────────────────────────────────────────────
 OUTPUT_JSON = Path("data/courses.json")
 OUTPUT_RSS  = Path("docs/feed.xml")
 OUTPUT_JSON.parent.mkdir(exist_ok=True)
 OUTPUT_RSS.parent.mkdir(exist_ok=True)
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; EMSCourseBot/1.0; +https://emsipbyluke.netlify.app)"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
 }
 
-# ── 各單位來源設定 ────────────────────────────────────────
-SOURCES = [
-    # 台灣急診醫學會
-    {
-        "name": "台灣急診醫學會",
-        "cat": "台灣學會",
-        "url": "https://www.sem.org.tw/semcourse/index.aspx",
-        "type": "table",
-        "row_sel": "table tr",
-        "title_col": 1,
-        "date_col": 2,
-        "link_col": 1,
-    },
-    # 台灣急救加護醫學會
-    {
-        "name": "台灣急救加護醫學會",
-        "cat": "台灣學會",
-        "url": "https://www.seccm.org.tw/news.php",
-        "type": "list",
-        "item_sel": ".news-list li, .list-item, article",
-        "title_sel": "a",
-        "date_sel": ".date, time, span",
-    },
-    # 台灣外傷醫學會
-    {
-        "name": "台灣外傷醫學會",
-        "cat": "台灣學會",
-        "url": "http://www.trauma.org.tw/activity.php",
-        "type": "list",
-        "item_sel": ".activity-list li, .list li, tr",
-        "title_sel": "a",
-        "date_sel": ".date, td",
-    },
-    # 台灣災難醫學會
-    {
-        "name": "台灣災難醫學會",
-        "cat": "台灣學會",
-        "url": "http://www.disaster.org.tw/news.php",
-        "type": "list",
-        "item_sel": "li, .news-item",
-        "title_sel": "a",
-        "date_sel": ".date, span",
-    },
-    # 台灣醫療救護學會
-    {
-        "name": "台灣醫療救護學會",
-        "cat": "台灣學會",
-        "url": "https://twparamedicine.org/index.html",
-        "type": "list",
-        "item_sel": ".news li, .article li, .post",
-        "title_sel": "a",
-        "date_sel": ".date, time",
-    },
-    # 台灣緊急救護醫療指導醫師學會
-    {
-        "name": "台灣緊急救護醫療指導醫師學會",
-        "cat": "台灣學會",
-        "url": "https://www.taemsp.com/news",
-        "type": "list",
-        "item_sel": ".news-item, li, .post",
-        "title_sel": "a, h3, h4",
-        "date_sel": ".date, time, span",
-    },
-    # 中華緊急救護技術員協會
-    {
-        "name": "中華緊急救護技術員協會",
-        "cat": "台灣協會",
-        "url": "https://www.emt.org.tw/temtaf/",
-        "type": "list",
-        "item_sel": ".news li, .article, tr",
-        "title_sel": "a",
-        "date_sel": ".date, td",
-    },
-    # 台灣野外地區緊急救護協會
-    {
-        "name": "台灣野外地區緊急救護協會",
-        "cat": "台灣協會",
-        "url": "https://taiwanwma.org/",
-        "type": "list",
-        "item_sel": ".post, article, .news-item",
-        "title_sel": "h2 a, h3 a, .title a",
-        "date_sel": ".date, time, .post-date",
-    },
-    # 台灣急重症模擬醫學會
-    {
-        "name": "台灣急重症模擬醫學會",
-        "cat": "台灣學會",
-        "url": "https://simulation.org.tw/",
-        "type": "list",
-        "item_sel": ".news-list li, .post, article",
-        "title_sel": "a, h3",
-        "date_sel": ".date, time",
-    },
-    # 復甦照護小學堂
-    {
-        "name": "復甦照護小學堂",
-        "cat": "台灣急救社群",
-        "url": "https://www.tsorcc.org.tw/",
-        "type": "list",
-        "item_sel": ".news li, article, .post",
-        "title_sel": "a, h3",
-        "date_sel": ".date, time",
-    },
-    # NAEMT (TCCC/TECC課程)
-    {
-        "name": "NAEMT",
-        "cat": "戰術救護",
-        "url": "https://www.naemt.org/education/trauma-education",
-        "type": "list",
-        "item_sel": ".course-item, .card, article",
-        "title_sel": "h3 a, h4 a, .title a",
-        "date_sel": ".date, time, .event-date",
-    },
-    # ERC
-    {
-        "name": "ERC — European Resuscitation Council",
-        "cat": "國際期刊/組織",
-        "url": "https://www.erc.edu/news",
-        "type": "list",
-        "item_sel": ".news-item, article, .post",
-        "title_sel": "h3 a, h2 a, .title a",
-        "date_sel": ".date, time",
-    },
-]
+def make_id(title, source):
+    return hashlib.md5(f"{source}::{title}".encode()).hexdigest()[:12]
 
-# ── 工具函式 ──────────────────────────────────────────────
-def make_id(title: str, source: str) -> str:
-    """產生穩定的唯一 ID"""
-    raw = f"{source}::{title}"
-    return hashlib.md5(raw.encode()).hexdigest()[:12]
+def clean(t):
+    return re.sub(r"\s+", " ", t or "").strip()
 
-def clean_text(t: str) -> str:
-    return re.sub(r"\s+", " ", t).strip()
-
-def parse_date(text: str) -> str | None:
-    """嘗試從字串解析日期，回傳 YYYY-MM-DD 或 None"""
-    if not text:
-        return None
-    text = clean_text(text)
-    patterns = [
-        r"(\d{4})[/-](\d{1,2})[/-](\d{1,2})",
+def parse_date(text):
+    if not text: return None
+    for pat in [
+        r"(\d{4})[./-](\d{1,2})[./-](\d{1,2})",
         r"(\d{4})年\s*(\d{1,2})月\s*(\d{1,2})日",
-        r"(\d{1,2})[/-](\d{1,2})[/-](\d{4})",
-    ]
-    for pat in patterns:
+    ]:
         m = re.search(pat, text)
         if m:
-            g = m.groups()
-            if len(g[0]) == 4:
-                y, mo, d = int(g[0]), int(g[1]), int(g[2])
-            else:
-                mo, d, y = int(g[0]), int(g[1]), int(g[2])
-            try:
-                return f"{y:04d}-{mo:02d}-{d:02d}"
-            except Exception:
-                pass
+            y,mo,d = int(m.group(1)),int(m.group(2)),int(m.group(3))
+            try: return f"{y:04d}-{mo:02d}-{d:02d}"
+            except: pass
     return None
 
-def fetch(url: str) -> BeautifulSoup | None:
+def fetch(url, timeout=15):
     try:
-        r = requests.get(url, headers=HEADERS, timeout=15)
+        r = requests.get(url, headers=HEADERS, timeout=timeout)
         r.raise_for_status()
-        r.encoding = r.apparent_encoding
+        r.encoding = r.apparent_encoding or "utf-8"
         return BeautifulSoup(r.text, "html.parser")
     except Exception as e:
-        print(f"  ⚠️  fetch 失敗 {url}: {e}")
+        print(f"    ⚠️ fetch 失敗: {e}")
         return None
 
-def resolve_url(href: str, base: str) -> str:
-    if not href:
-        return base
-    if href.startswith("http"):
-        return href
+def resolve(href, base):
+    if not href: return base
+    if href.startswith("http"): return href
     from urllib.parse import urljoin
     return urljoin(base, href)
 
-def scrape_source(src: dict) -> list[dict]:
-    print(f"  抓取: {src['name']} ...")
-    soup = fetch(src["url"])
-    if not soup:
-        return []
+def item(title, source, cat, url, date=None):
+    return {"id":make_id(title,source),"title":clean(title),"source":source,"cat":cat,"date":date,"url":url}
 
-    items = []
+# ══════════════════════════════════════════════════════════
+# 各單位爬蟲
+# ══════════════════════════════════════════════════════════
 
-    if src["type"] == "table":
-        rows = soup.select(src["row_sel"])
-        for row in rows[1:]:  # skip header
-            cols = row.find_all(["td", "th"])
-            if len(cols) <= max(src["title_col"], src["date_col"]):
-                continue
-            title_cell = cols[src["title_col"]]
-            title = clean_text(title_cell.get_text())
-            if not title or len(title) < 3:
-                continue
-            link_tag = title_cell.find("a")
-            link = resolve_url(link_tag["href"] if link_tag and link_tag.get("href") else "", src["url"])
-            date_text = clean_text(cols[src["date_col"]].get_text()) if src["date_col"] < len(cols) else ""
-            date = parse_date(date_text)
-            items.append({
-                "id":     make_id(title, src["name"]),
-                "title":  title,
-                "source": src["name"],
-                "cat":    src["cat"],
-                "date":   date,
-                "url":    link,
-            })
+def scrape_sem():
+    """台灣急診醫學會 — 學會主辦積分活動"""
+    out = []
+    BASE = "https://www.sem.org.tw"
+    for path in ["/Activity/A/Index", "/News/11/Index", "/News/10/Index"]:
+        soup = fetch(BASE + path)
+        if not soup: continue
+        for a in soup.select("a[href*='/Activity/A/Details/'], a[href*='/News/Details/']"):
+            title = clean(a.get_text())
+            if len(title) < 4: continue
+            href = resolve(a.get("href",""), BASE)
+            # 嘗試找同行的日期
+            parent = a.find_parent(["tr","li","div"])
+            date = None
+            if parent:
+                date = parse_date(parent.get_text())
+            out.append(item(title, "台灣急診醫學會", "台灣學會", href, date))
+    return out
 
-    else:  # list
-        rows = soup.select(src["item_sel"])
-        for row in rows[:30]:  # 每個來源最多30筆
-            tag = row.select_one(src["title_sel"])
-            if not tag:
-                continue
-            title = clean_text(tag.get_text())
-            if not title or len(title) < 3:
-                continue
-            href = tag.get("href") if tag.name == "a" else (tag.find("a") or {}).get("href", "")
-            link = resolve_url(href or "", src["url"])
-            date_tag = row.select_one(src.get("date_sel", ""))
-            date = parse_date(date_tag.get_text() if date_tag else "")
-            items.append({
-                "id":     make_id(title, src["name"]),
-                "title":  title,
-                "source": src["name"],
-                "cat":    src["cat"],
-                "date":   date,
-                "url":    link,
-            })
+def scrape_seccm():
+    """台灣急救加護醫學會"""
+    out = []
+    soup = fetch("https://www.seccm.org.tw/")
+    if not soup: return out
+    for a in soup.select("a[href]"):
+        title = clean(a.get_text())
+        href = a.get("href","")
+        if len(title) < 5: continue
+        if any(k in title for k in ["課程","活動","公告","研討","工作坊","講習","訓練"]):
+            out.append(item(title, "台灣急救加護醫學會", "台灣學會",
+                           resolve(href, "https://www.seccm.org.tw")))
+    return out[:20]
 
-    print(f"    → {len(items)} 筆")
-    return items
+def scrape_trauma():
+    """台灣外傷醫學會"""
+    out = []
+    for url in ["http://www.trauma.org.tw/activity.php",
+                "http://www.trauma.org.tw/news.php"]:
+        soup = fetch(url)
+        if not soup: continue
+        for a in soup.select("a[href]"):
+            title = clean(a.get_text())
+            if len(title) < 5: continue
+            if any(k in title for k in ["課程","活動","公告","研討","訓練","工作坊"]):
+                parent = a.find_parent(["tr","li","td"])
+                date = parse_date(parent.get_text()) if parent else None
+                out.append(item(title, "台灣外傷醫學會", "台灣學會",
+                               resolve(a.get("href",""), "http://www.trauma.org.tw"), date))
+    return out[:20]
 
-# ── RSS 產生 ──────────────────────────────────────────────
-def build_rss(items: list[dict]) -> str:
+def scrape_disaster():
+    """台灣災難醫學會"""
+    out = []
+    soup = fetch("http://www.disaster.org.tw/news.php")
+    if not soup: return out
+    for a in soup.select("a[href]"):
+        title = clean(a.get_text())
+        if len(title) < 5: continue
+        parent = a.find_parent(["tr","li","div"])
+        date = parse_date(parent.get_text()) if parent else None
+        out.append(item(title, "台灣災難醫學會", "台灣學會",
+                       resolve(a.get("href",""), "http://www.disaster.org.tw"), date))
+    return out[:20]
+
+def scrape_twparamedicine():
+    """台灣醫療救護學會"""
+    out = []
+    soup = fetch("https://twparamedicine.org/index.html")
+    if not soup: return out
+    for a in soup.select("a[href]"):
+        title = clean(a.get_text())
+        if len(title) < 5: continue
+        if any(k in title for k in ["課程","活動","公告","研討","訓練","工作坊","消息"]):
+            out.append(item(title, "台灣醫療救護學會", "台灣學會",
+                           resolve(a.get("href",""), "https://twparamedicine.org")))
+    return out[:20]
+
+def scrape_taemsp():
+    """台灣緊急救護醫療指導醫師學會"""
+    out = []
+    soup = fetch("https://www.taemsp.com/")
+    if not soup: return out
+    for a in soup.select("a[href]"):
+        title = clean(a.get_text())
+        if len(title) < 5: continue
+        if any(k in title for k in ["課程","活動","公告","研討","訓練","消息","工作坊"]):
+            out.append(item(title, "台灣緊急救護醫療指導醫師學會", "台灣學會",
+                           resolve(a.get("href",""), "https://www.taemsp.com")))
+    return out[:20]
+
+def scrape_simulation():
+    """台灣急重症模擬醫學會"""
+    out = []
+    soup = fetch("https://simulation.org.tw/")
+    if not soup: return out
+    for a in soup.select("a[href]"):
+        title = clean(a.get_text())
+        if len(title) < 5: continue
+        if any(k in title for k in ["課程","活動","公告","研討","訓練","消息","工作坊"]):
+            out.append(item(title, "台灣急重症模擬醫學會", "台灣學會",
+                           resolve(a.get("href",""), "https://simulation.org.tw")))
+    return out[:20]
+
+def scrape_emt():
+    """中華緊急救護技術員協會"""
+    out = []
+    soup = fetch("https://www.emt.org.tw/temtaf/")
+    if not soup: return out
+    for a in soup.select("a[href]"):
+        title = clean(a.get_text())
+        if len(title) < 5: continue
+        if any(k in title for k in ["課程","活動","公告","研討","訓練","消息","工作坊","急救"]):
+            parent = a.find_parent(["tr","li","div"])
+            date = parse_date(parent.get_text()) if parent else None
+            out.append(item(title, "中華緊急救護技術員協會", "台灣協會",
+                           resolve(a.get("href",""), "https://www.emt.org.tw"), date))
+    return out[:20]
+
+def scrape_taiwanwma():
+    """台灣野外地區緊急救護協會"""
+    out = []
+    soup = fetch("https://taiwanwma.org/")
+    if not soup: return out
+    for a in soup.select("a[href]"):
+        title = clean(a.get_text())
+        if len(title) < 5: continue
+        if any(k in title for k in ["課程","活動","公告","研討","訓練","消息","野外"]):
+            out.append(item(title, "台灣野外地區緊急救護協會", "台灣協會",
+                           resolve(a.get("href",""), "https://taiwanwma.org")))
+    return out[:20]
+
+def scrape_tsorcc():
+    """復甦照護小學堂"""
+    out = []
+    soup = fetch("https://www.tsorcc.org.tw/")
+    if not soup: return out
+    for a in soup.select("a[href]"):
+        title = clean(a.get_text())
+        if len(title) < 5: continue
+        if any(k in title for k in ["課程","活動","公告","研討","訓練","消息","CPR","復甦"]):
+            out.append(item(title, "復甦照護小學堂", "台灣急救社群",
+                           resolve(a.get("href",""), "https://www.tsorcc.org.tw")))
+    return out[:20]
+
+def scrape_naemt():
+    """NAEMT — TCCC/TECC 課程"""
+    out = []
+    soup = fetch("https://www.naemt.org/education/trauma-education")
+    if not soup: return out
+    for a in soup.select("a[href]"):
+        title = clean(a.get_text())
+        if len(title) < 5: continue
+        if any(k in title.upper() for k in ["TCCC","TECC","PHTLS","AMLS","EPC","COURSE","TRAINING"]):
+            out.append(item(title, "NAEMT", "戰術救護",
+                           resolve(a.get("href",""), "https://www.naemt.org")))
+    return out[:15]
+
+def scrape_erc():
+    """ERC — European Resuscitation Council"""
+    out = []
+    soup = fetch("https://www.erc.edu/news")
+    if not soup: return out
+    for a in soup.select("a[href*='/news'], a[href*='/event'], a[href*='/course']"):
+        title = clean(a.get_text())
+        if len(title) < 5: continue
+        parent = a.find_parent(["article","li","div"])
+        date = parse_date(parent.get_text()) if parent else None
+        out.append(item(title, "ERC", "國際期刊/組織",
+                       resolve(a.get("href",""), "https://www.erc.edu"), date))
+    return out[:15]
+
+def scrape_wms():
+    """Wilderness Medical Society"""
+    out = []
+    soup = fetch("https://wms.org/events")
+    if not soup: return out
+    for a in soup.select("a[href]"):
+        title = clean(a.get_text())
+        if len(title) < 5: continue
+        if any(k in title.lower() for k in ["course","conference","event","workshop","training"]):
+            parent = a.find_parent(["article","li","div"])
+            date = parse_date(parent.get_text()) if parent else None
+            out.append(item(title, "Wilderness Medical Society", "國際期刊/組織",
+                           resolve(a.get("href",""), "https://wms.org"), date))
+    return out[:10]
+
+# ══════════════════════════════════════════════════════════
+# RSS 產生
+# ══════════════════════════════════════════════════════════
+def build_rss(items):
     now = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
-    items_xml = ""
-    for it in items[:50]:
-        title = it["title"].replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
-        link  = it.get("url","")
-        date  = it.get("date") or ""
-        src   = it.get("source","")
-        items_xml += f"""
+    xml = ""
+    for it in items[:60]:
+        t = it["title"].replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
+        xml += f"""
   <item>
-    <title>{title}</title>
-    <link>{link}</link>
-    <guid>{link or it['id']}</guid>
-    <pubDate>{date}</pubDate>
-    <category>{src}</category>
-    <description>{title}（來源：{src}）</description>
+    <title>{t}</title>
+    <link>{it.get('url','')}</link>
+    <guid>{it.get('url','') or it['id']}</guid>
+    <pubDate>{it.get('date','')}</pubDate>
+    <category>{it.get('source','')}</category>
+    <description>{t}（來源：{it.get('source','')}）</description>
   </item>"""
-
     return f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 <channel>
@@ -282,52 +271,68 @@ def build_rss(items: list[dict]) -> str:
   <description>自動彙整台灣及國際急救相關單位最新課程與公告</description>
   <language>zh-TW</language>
   <lastBuildDate>{now}</lastBuildDate>
-  <ttl>180</ttl>{items_xml}
+  <ttl>180</ttl>{xml}
 </channel>
 </rss>"""
 
-# ── 主程式 ────────────────────────────────────────────────
+# ══════════════════════════════════════════════════════════
+# 主程式
+# ══════════════════════════════════════════════════════════
+SCRAPERS = [
+    ("台灣急診醫學會",       scrape_sem),
+    ("台灣急救加護醫學會",   scrape_seccm),
+    ("台灣外傷醫學會",       scrape_trauma),
+    ("台灣災難醫學會",       scrape_disaster),
+    ("台灣醫療救護學會",     scrape_twparamedicine),
+    ("台灣緊急救護醫療指導醫師學會", scrape_taemsp),
+    ("台灣急重症模擬醫學會", scrape_simulation),
+    ("中華緊急救護技術員協會", scrape_emt),
+    ("台灣野外地區緊急救護協會", scrape_taiwanwma),
+    ("復甦照護小學堂",       scrape_tsorcc),
+    ("NAEMT",                scrape_naemt),
+    ("ERC",                  scrape_erc),
+    ("Wilderness Medical Society", scrape_wms),
+]
+
 def main():
     print(f"\n{'='*50}")
-    print(f"  緊急救護課程爬蟲  {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    print(f"緊急救護課程爬蟲 v2  {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     print(f"{'='*50}")
 
     all_items = []
-    for src in SOURCES:
+    for name, fn in SCRAPERS:
+        print(f"\n→ {name}")
         try:
-            items = scrape_source(src)
-            all_items.extend(items)
-            time.sleep(1.5)  # 避免過於頻繁請求
+            results = fn()
+            print(f"  {len(results)} 筆")
+            all_items.extend(results)
         except Exception as e:
-            print(f"  ❌ {src['name']} 錯誤: {e}")
+            print(f"  ❌ 錯誤: {e}")
+        time.sleep(1.5)
 
-    # 去重（同 id 只保留一筆）
-    seen = set()
-    unique = []
+    # 去重
+    seen, unique = set(), []
     for it in all_items:
-        if it["id"] not in seen:
+        if it["id"] not in seen and len(it["title"]) > 3:
             seen.add(it["id"])
             unique.append(it)
 
-    # 依日期排序（無日期的排最後）
+    # 排序（有日期的先，無日期的後）
     unique.sort(key=lambda x: x.get("date") or "0000", reverse=True)
 
-    # 加上更新時間戳
     output = {
         "updated": datetime.now(timezone.utc).isoformat(),
         "count": len(unique),
-        "items": unique,
+        "items": unique
     }
 
     OUTPUT_JSON.write_text(
-        json.dumps(output, ensure_ascii=False, indent=2),
-        encoding="utf-8"
+        json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-    print(f"\n✅ JSON 輸出: {OUTPUT_JSON} ({len(unique)} 筆)")
+    print(f"\n✅ JSON: {OUTPUT_JSON} ({len(unique)} 筆)")
 
-    # RSS
     OUTPUT_RSS.write_text(build_rss(unique), encoding="utf-8")
-    print(f"✅ RSS 輸出: {OUTPUT_RSS}")
+    print(f"✅ RSS:  {OUTPUT_RSS}")
 
 if __name__ == "__main__":
     main()
