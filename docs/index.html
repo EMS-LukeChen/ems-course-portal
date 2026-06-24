@@ -152,7 +152,7 @@ footer a{color:#1a56b0;text-decoration:none}
 </main>
 
 <footer>
-  <div><img src="https://hits.sh/emsipbyluke.netlify.app.svg?label=%E7%80%8F%E8%A6%BD%E4%BA%BA%E6%AC%A1&color=1a56b0&labelColor=555555&style=flat-square" alt="瀏覽人次" style="height:20px;vertical-align:middle"></div>
+  <div><img src="https://hits.sh/ems-luke.github.io/ems-supply-station.svg?label=%E7%80%8F%E8%A6%BD%E4%BA%BA%E6%AC%A1&color=1a7a3a&labelColor=555555&style=flat-square" alt="瀏覽人次" style="height:20px;vertical-align:middle"></div>
   <div>顯示資料僅供參考，請以各官方網站公告為準</div>
   <div>製作：<strong>臺南市救護義消 陳冠言</strong> · 2026 &nbsp;·&nbsp; <a href="mailto:luke01791910@gmail.com">📩 回饋意見</a> &nbsp;·&nbsp; <a href="https://emsipbyluke.netlify.app">🌐 資訊入口網</a></div>
 </footer>
@@ -167,7 +167,7 @@ const DAY_ZH=['日','一','二','三','四','五','六'];
 
 async function loadData(){
   try{
-    const res=await fetch('https://raw.githubusercontent.com/EMS-LukeChen/ems-course-portal/main/data/courses.json');
+    const res=await fetch('https://raw.githubusercontent.com/ems-luke/ems-supply-station/main/data/courses.json');
     if(!res.ok)throw new Error('HTTP '+res.status);
     const j=await res.json();
     ALL=j.items||[];
