@@ -1122,19 +1122,58 @@ SCRAPERS = [
     ("Trilogy EMS",                 scrape_trilogy),
 ]
 
+MAX_PER_MONTH = 5  # 每個單位每月同類型最多5筆
+
+def limit_per_source(results):
+    """
+    課程：同月份最多5筆，未來月份無上限全部保留
+    消息：同月份最多5筆
+    """
+    from collections import defaultdict
+    today = datetime.now().strftime("%Y-%m")
+
+    # ── 課程 ──────────────────────────────────────────
+    courses = [r for r in results if r.get("type") == "course"]
+    future_courses = []
+    month_bucket_c = defaultdict(list)
+    for c in courses:
+        d = (c.get("date") or "")[:7]
+        if d and d > today:
+            future_courses.append(c)   # 未來月份：無上限全保留
+        else:
+            month_bucket_c[d or "0000-00"].append(c)
+    past_courses = []
+    for mo, items in sorted(month_bucket_c.items(), reverse=True):
+        past_courses.extend(items[:MAX_PER_MONTH])
+    out_courses = future_courses + past_courses
+
+    # ── 消息：同月份最多5筆 ───────────────────────────
+    news = [r for r in results if r.get("type") == "news"]
+    month_bucket_n = defaultdict(list)
+    for n in news:
+        d = (n.get("date") or "")[:7]
+        month_bucket_n[d or "0000-00"].append(n)
+    out_news = []
+    for mo, items in sorted(month_bucket_n.items(), reverse=True):
+        out_news.extend(items[:MAX_PER_MONTH])
+
+    return out_courses + out_news
+
 def main():
     print(f"\n{'='*55}")
     print(f"緊急救護課程爬蟲 v3  {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    print(f"每單位：課程(同月最多{MAX_PER_MONTH}筆,未來無限) + 消息(同月最多{MAX_PER_MONTH}筆)")
     print(f"{'='*55}")
 
     all_items = []
     for name, fn in SCRAPERS:
         print(f"\n→ {name}")
         try:
-            results = fn()
+            raw = fn()
+            results = limit_per_source(raw)
             courses = [r for r in results if r.get("type")=="course"]
             news    = [r for r in results if r.get("type")=="news"]
-            print(f"  課程:{len(courses)}  消息:{len(news)}")
+            print(f"  課程:{len(courses)}  消息:{len(news)}  (原始:{len(raw)}筆)")
             all_items.extend(results)
         except Exception as e:
             print(f"  ❌ {e}")
