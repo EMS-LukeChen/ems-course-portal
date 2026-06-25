@@ -1,8 +1,8 @@
 {
-  "updated": "2026-06-25T10:33:28.173684+00:00",
-  "count": 197,
-  "course_count": 104,
-  "news_count": 93,
+  "updated": "2026-06-25T11:50:17.313780+00:00",
+  "count": 231,
+  "course_count": 110,
+  "news_count": 121,
   "items": [
     {
       "id": "97e501dc9e46",
@@ -985,56 +985,6 @@
       "url": "https://www.tana.org.tw/news/learn_info.asp?/786.html"
     },
     {
-      "id": "91790bdbec7d",
-      "title": "CPR+AED完整版3小時課程",
-      "source": "台灣運動安全暨急救技能推廣協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://sfast.innosoft.com.tw/iplm/pages/b.aspx?page=in_Meeting_list_A.html&method=In_MeetingUserResponse&in_meetingid=297C8E0AF68B4B609134923DF1F22659"
-    },
-    {
-      "id": "bf3f0e1ba292",
-      "title": "AED管理員4小時教育訓練",
-      "source": "台灣運動安全暨急救技能推廣協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://reurl.cc/qKa2WE"
-    },
-    {
-      "id": "e0f77ddf7472",
-      "title": "基本救命術指導員BLS-I課程",
-      "source": "台灣運動安全暨急救技能推廣協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://reurl.cc/eVQggR"
-    },
-    {
-      "id": "5bc9921519e2",
-      "title": "基本救命術BLS4小時課程",
-      "source": "台灣運動安全暨急救技能推廣協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://reurl.cc/4bYO9v"
-    },
-    {
-      "id": "a2470c9c35e4",
-      "title": "基本救命術BLS8小時課程",
-      "source": "台灣運動安全暨急救技能推廣協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://reurl.cc/aMEgWl"
-    },
-    {
       "id": "acb979cd351a",
       "title": "專區｜基礎急救教育",
       "source": "彰化縣防災協會（DPAC）",
@@ -1765,6 +1715,246 @@
       "url": "https://cbrnprofessionals.com/cbrn-resource-links/"
     },
     {
+      "id": "c7d756e8c157",
+      "title": "JTS News",
+      "source": "CoTCCC",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://jts.health.mil/index.cfm/about/news"
+    },
+    {
+      "id": "5fa4716fb864",
+      "title": "Clinical Practice Guidelines (CPGs)",
+      "source": "CoTCCC",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://jts.health.mil/index.cfm/CPGs/cpgs"
+    },
+    {
+      "id": "2d3e67e9f8e5",
+      "title": "CoTCCC News",
+      "source": "CoTCCC",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://jts.health.mil/index.cfm/committees/cotccc/news"
+    },
+    {
+      "id": "a65270674647",
+      "title": "TCCC Education",
+      "source": "CoTCCC",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://jts.health.mil/index.cfm/committees/cotccc/education"
+    },
+    {
+      "id": "fcb63538cb27",
+      "title": "Guidelines",
+      "source": "CoTCCC",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://jts.health.mil/index.cfm/committees/cotccc/guidelines"
+    },
+    {
+      "id": "248ccb0bf55f",
+      "title": "2026 In-Person Training",
+      "source": "Crisis Medicine",
+      "cat": "戰術救護",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.crisis-medicine.com/events/"
+    },
+    {
+      "id": "6c6abe110aaa",
+      "title": "Tactical Casualty Care – ONLINE",
+      "source": "Crisis Medicine",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.crisis-medicine.com/course/tactical-casualty-care/"
+    },
+    {
+      "id": "d9bc8ac90df4",
+      "title": "Advanced TC2 – ONLINE",
+      "source": "Crisis Medicine",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.crisis-medicine.com/course/advanced-tactical-casualty-care/"
+    },
+    {
+      "id": "2e9c39ca708e",
+      "title": "Complete TC2 -ONLINE",
+      "source": "Crisis Medicine",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.crisis-medicine.com/course/complete-tactical-casualty-care/"
+    },
+    {
+      "id": "134e8c2deb73",
+      "title": "Improvised TECC/TCCC",
+      "source": "Crisis Medicine",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.crisis-medicine.com/course/improvised-tecc-tccc/"
+    },
+    {
+      "id": "17bebb77dab9",
+      "title": "K9 Tactical Casualty Care for Humans – ONLINE",
+      "source": "Crisis Medicine",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.crisis-medicine.com/course/k9-tactical-casualty-care-for-human-providers/"
+    },
+    {
+      "id": "48c630a34218",
+      "title": "CTOMS Academy Online Training Online Training",
+      "source": "CTOMS",
+      "cat": "戰術救護",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://ctomsacademy.skillbuilder.co/"
+    },
+    {
+      "id": "087eb9f506ed",
+      "title": "Available Online Courses",
+      "source": "CTOMS",
+      "cat": "戰術救護",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://ctomsinc.com/collections/lms-products"
+    },
+    {
+      "id": "a040994638c9",
+      "title": "Shop Training Products",
+      "source": "CTOMS",
+      "cat": "戰術救護",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://ctomsinc.com/collections/training-products"
+    },
+    {
+      "id": "55977415f8ec",
+      "title": "Training",
+      "source": "CTOMS",
+      "cat": "戰術救護",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://ctomsinc.com/pages/training"
+    },
+    {
+      "id": "08b05e7d9778",
+      "title": "CTOMS Academy™ - Online Training",
+      "source": "CTOMS",
+      "cat": "戰術救護",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://ctomsinc.com/pages/ctoms-academy"
+    },
+    {
+      "id": "ab859c7d3df3",
+      "title": "Tactical Medicine",
+      "source": "CTOMS",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://ctomsinc.com/pages/tactical-medicine"
+    },
+    {
+      "id": "ba4820a5a7f9",
+      "title": "Tactical Equipment",
+      "source": "CTOMS",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://ctomsinc.com/collections/tactical-equipment"
+    },
+    {
+      "id": "45ab60bb7fac",
+      "title": "Tactical Clothing",
+      "source": "CTOMS",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://ctomsinc.com/collections/tactical-clothing"
+    },
+    {
+      "id": "df37b5e4d0b7",
+      "title": "Defense Committees on Trauma",
+      "source": "JTS — Joint Trauma System",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://jts.health.mil/index.cfm/committees/dcot"
+    },
+    {
+      "id": "2456a0f7da29",
+      "title": "Joint Trauma Education and Training (JTET) Branch",
+      "source": "JTS — Joint Trauma System",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://jts.health.mil/index.cfm/education/jtet_branch"
+    },
+    {
+      "id": "a461b6dfd9fe",
+      "title": "Trauma Care Resources",
+      "source": "JTS — Joint Trauma System",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://jts.health.mil/index.cfm/education/resources"
+    },
+    {
+      "id": "c60c443544a6",
+      "title": "Clinical Practice Guidelines (CPGs)",
+      "source": "JTS — Joint Trauma System",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://jts.health.mil/index.cfm/CPGs/cpgs"
+    },
+    {
+      "id": "3f6989d40c6b",
+      "title": "Joint Trauma System The Department of Defense Center of Excellence for Trauma Bold, Responsible Practice of Battlefield Medicine",
+      "source": "JTS — Joint Trauma System",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://jts.health.mil/"
+    },
+    {
       "id": "1d5a35aee639",
       "title": "Future Training and Education Events",
       "source": "SOMA",
@@ -1885,6 +2075,66 @@
       "url": "https://www.narescue.com/education/product-information-sheets.html"
     },
     {
+      "id": "bf84bf2b2a81",
+      "title": "The Evolution of Combat Medicine",
+      "source": "Safeguard Medical",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://safeguardmedical.com/blogs/news/the-evolution-of-combat-medicine"
+    },
+    {
+      "id": "4110ccb750ce",
+      "title": "Tasmanian Tiger Medic Assault Pack - MK II (Standard)",
+      "source": "Tactical Medicine Training & Equipment",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tactical-medicine.com/products/tasmanian-tiger-medic-assault-pack-mk-ii-standard"
+    },
+    {
+      "id": "c7e010eeb627",
+      "title": "The HEMGUARD® Targeted Pressure Bandage",
+      "source": "Tactical Medicine Training & Equipment",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tactical-medicine.com/products/thehemguard-r-targeted-pressure-bandage"
+    },
+    {
+      "id": "59b9bcaf3a5b",
+      "title": "Elite Bags PARAMED Backpack",
+      "source": "Tactical Medicine Training & Equipment",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tactical-medicine.com/products/elite-bags-paramed-backpack"
+    },
+    {
+      "id": "0694954ed379",
+      "title": "MED-TAC ALS Oxygen Trauma Backpack w/Modular Pouch System",
+      "source": "Tactical Medicine Training & Equipment",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tactical-medicine.com/products/med-tac-als-oxygen-trauma-backpack-w-modular-pouch-system"
+    },
+    {
+      "id": "7f27b5999ba6",
+      "title": "Tasmanian Tiger Modular Medic Combat Pack 18",
+      "source": "Tactical Medicine Training & Equipment",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tactical-medicine.com/products/tasmanian-tiger-modular-medic-combat-pack-18"
+    },
+    {
       "id": "715383a36e2a",
       "title": "TacMed Solutions™ Gains Airworthiness Certification for US Army & Navy Airframes",
       "source": "TacMed Solutions",
@@ -1973,6 +2223,96 @@
       "date": null,
       "deadline": null,
       "url": "https://trilogyems.com/courses/teccinstructor"
+    },
+    {
+      "id": "67b694b172c8",
+      "title": "americanemtacademy@gmail.com",
+      "source": "American EMT Academy",
+      "cat": "國際期刊/組織",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "mailto:americanemtacademy@gmail.com"
+    },
+    {
+      "id": "37f7c8e3654e",
+      "title": "(EMT) Emergency Medical Technician – Basic",
+      "source": "American EMT Academy",
+      "cat": "國際期刊/組織",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://americanemtacademy.com/emt-program-emergency-medical-technician-basic/"
+    },
+    {
+      "id": "7d03b842c725",
+      "title": "Sign Up For A Class",
+      "source": "American EMT Academy",
+      "cat": "國際期刊/組織",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://americanemtacademy.com/emt-classes/"
+    },
+    {
+      "id": "7e1e1383bef2",
+      "title": "EMT Prep Course",
+      "source": "American EMT Academy",
+      "cat": "國際期刊/組織",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://americanemtacademy.com/emt-prep-course/"
+    },
+    {
+      "id": "1577cb4e5b37",
+      "title": "Hybrid Online EMT course",
+      "source": "American EMT Academy",
+      "cat": "國際期刊/組織",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://americanemtacademy.com/hybrid-online-emt-course/"
+    },
+    {
+      "id": "42f64ad0e369",
+      "title": "Read more",
+      "source": "BMJ Journals",
+      "cat": "國際期刊/組織",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "http://jnnp.bmj.com/cgi/content/short/jnnp-2026-338790v1?rss=1"
+    },
+    {
+      "id": "8d656ad77115",
+      "title": "Latest content",
+      "source": "Emergency Medicine Journal",
+      "cat": "國際期刊/組織",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://emj.bmj.com/content/early/recent"
+    },
+    {
+      "id": "d700ad2a5902",
+      "title": "Current issue",
+      "source": "Emergency Medicine Journal",
+      "cat": "國際期刊/組織",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://emj.bmj.com/content/current"
+    },
+    {
+      "id": "1c1df425b317",
+      "title": "Prev issue",
+      "source": "Emergency Medicine Journal",
+      "cat": "國際期刊/組織",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://emj.bmj.com/content/43/5"
     }
   ]
 }
