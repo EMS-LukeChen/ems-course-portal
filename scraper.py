@@ -100,137 +100,178 @@ def mk(title, source, cat, url, item_type=None, date=None, deadline=None):
 # ══════════════════════════════════════════════════════
 
 def scrape_sem():
-    """台灣急診醫學會"""
+    """台灣急診醫學會 — 完整課程與消息"""
     out = []
     BASE = "https://www.sem.org.tw"
-    # 課程
-    for path in ["/Activity/A/Index", "/Activity/AHA/Index"]:
+    # 課程：學會主辦積分活動、AHA課程、其他活動
+    course_paths = [
+        "/Activity/A/Index",    # 學會主辦積分活動
+        "/Activity/AHA/Index",  # AHA課程
+        "/Activity/B/Index",    # 其他活動
+    ]
+    for path in course_paths:
         soup = fetch(BASE + path)
         if not soup: continue
-        for a in soup.select("a[href*='/Activity/']"):
+        for row in soup.select("table tr"):
+            a = row.find("a", href=lambda h: h and "/Activity/" in h)
+            if not a: continue
             t = clean(a.get_text())
-            if len(t) < 5: continue
+            if len(t) < 5 or len(t) > 200: continue
+            date = extract_all_dates(row.get_text())
             out.append(mk(t, "台灣急診醫學會", "台灣學會",
-                          resolve(a.get("href",""), BASE), "course"))
+                          resolve(a.get("href",""), BASE), "course",
+                          date[-1] if date else None))
     # 最新消息
     for path in ["/News/11/Index", "/News/10/Index", "/News/9/Index"]:
         soup = fetch(BASE + path)
         if not soup: continue
-        for a in soup.select("a[href*='/News/Details/']"):
+        for row in soup.select("table tr"):
+            a = row.find("a", href=lambda h: h and "/News/Details/" in h)
+            if not a: continue
             t = clean(a.get_text())
-            if len(t) < 5: continue
-            parent = a.find_parent(["tr","li","div"])
-            row_text = parent.get_text() if parent else ""
-            date = extract_all_dates(row_text)
+            if len(t) < 5 or len(t) > 200: continue
+            date = extract_all_dates(row.get_text())
             out.append(mk(t, "台灣急診醫學會", "台灣學會",
                           resolve(a.get("href",""), BASE), "news",
                           date[-1] if date else None))
-    return out
+    seen, unique = set(), []
+    for it in out:
+        if it["id"] not in seen:
+            seen.add(it["id"])
+            unique.append(it)
+    return unique[:60]
 
 def scrape_seccm():
-    """台灣急救加護醫學會"""
+    """台灣急救加護醫學會 — 正確表格結構"""
     out = []
     BASE = "https://www.seccm.org.tw"
-    # 課程 - ACLS
-    for path in ["/news/acls_class.asp", "/news/acls_course.asp", "/news/acls_NotUnion.asp"]:
+    # 各類課程列表頁（表格：日期 / 標題 / 地點）
+    course_pages = [
+        "/news/acls_course.asp",       # ACLS委員會課程
+        "/news/acls_union.asp",        # 聯甄課程
+        "/news/acls_class.asp",        # ACLS課程舉辦單位
+        "/news/acls_NotUnion.asp",     # 非聯甄課程
+    ]
+    for path in course_pages:
         soup = fetch(BASE + path)
         if not soup: continue
-        for a in soup.select("a[href]"):
+        for row in soup.select("table tr"):
+            cols = row.find_all(["td","th"])
+            if len(cols) < 2: continue
+            # 找標題欄位（含連結或文字）
+            for i, col in enumerate(cols):
+                a = col.find("a")
+                t = clean(col.get_text())
+                if a:
+                    t = clean(a.get_text())
+                if len(t) < 8 or len(t) > 200: continue
+                if any(k in t for k in ["課程","ACLS","PALS","訓練","工作坊","研討","Provider","Instructor"]):
+                    # 日期從其他欄位取得
+                    all_text = row.get_text()
+                    date = extract_all_dates(all_text)
+                    href = resolve(a.get("href","") if a else "", BASE)
+                    out.append(mk(t, "台灣急救加護醫學會", "台灣學會",
+                                  href, "course", date[-1] if date else None))
+                    break
+    # 最新消息（公告列表）
+    soup2 = fetch(BASE + "/orgNews/News_list.asp")
+    if soup2:
+        for row in soup2.select("table tr"):
+            a = row.find("a")
+            if not a: continue
             t = clean(a.get_text())
             if len(t) < 5: continue
-            if any(k in t for k in ["ACLS","課程","訓練","工作坊","研討"]):
-                parent = a.find_parent(["tr","li","td"])
-                date = extract_all_dates(parent.get_text() if parent else "")
-                out.append(mk(t, "台灣急救加護醫學會", "台灣學會",
-                              resolve(a.get("href",""), BASE), "course",
-                              date[-1] if date else None))
-    # 最新消息
-    soup = fetch(BASE + "/orgNews/News_list.asp")
-    if soup:
-        for a in soup.select("a[href*='orgNews'], a[href*='News_detail']"):
-            t = clean(a.get_text())
-            if len(t) < 5: continue
-            parent = a.find_parent(["tr","li","td"])
-            date = extract_all_dates(parent.get_text() if parent else "")
+            date = extract_all_dates(row.get_text())
             out.append(mk(t, "台灣急救加護醫學會", "台灣學會",
-                          resolve(a.get("href",""), BASE), None,
+                          resolve(a.get("href",""), BASE), "news",
                           date[-1] if date else None))
-    return out[:40]
+    # 去重
+    seen, unique = set(), []
+    for it in out:
+        if it["id"] not in seen:
+            seen.add(it["id"])
+            unique.append(it)
+    return unique[:50]
 
 def scrape_trauma():
-    """台灣外傷醫學會"""
+    """台灣外傷醫學會 — 正確表格結構"""
     out = []
     BASE = "http://www.trauma.org.tw"
-    # 課程
-    for path in ["/active/listA.asp", "/active/listB.asp"]:
+    # 最新消息（學會公告列表）— 正確URL
+    for path, item_type in [
+        ("/news/listA.asp", None),      # 學會公告（含課程公告）
+        ("/news/listB.asp", None),      # 其他消息
+    ]:
         soup = fetch(BASE + path)
         if not soup: continue
-        for li in soup.select("li"):
-            a = li.find("a")
+        for row in soup.select("table tr"):
+            a = row.find("a")
             if not a: continue
             t = clean(a.get_text())
-            if len(t) < 5: continue
-            date = extract_all_dates(li.get_text())
+            if len(t) < 5 or len(t) > 200: continue
+            date = extract_all_dates(row.get_text())
             out.append(mk(t, "台灣外傷醫學會", "台灣學會",
-                          resolve(a.get("href",""), BASE), "course",
+                          resolve(a.get("href",""), BASE), item_type,
                           date[-1] if date else None))
-    # 最新消息
-    soup = fetch(BASE + "/news/listA.asp")
-    if soup:
-        for li in soup.select("li"):
-            a = li.find("a")
-            if not a: continue
-            t = clean(a.get_text())
-            if len(t) < 5: continue
-            date = extract_all_dates(li.get_text())
-            out.append(mk(t, "台灣外傷醫學會", "台灣學會",
-                          resolve(a.get("href",""), BASE), None,
-                          date[-1] if date else None))
-    return out[:40]
+    seen, unique = set(), []
+    for it in out:
+        if it["id"] not in seen:
+            seen.add(it["id"])
+            unique.append(it)
+    return unique[:40]
 
 def scrape_disaster():
-    """台灣災難醫學會"""
+    """台灣災難醫學會 — 學術活動 + 教育訓練"""
     out = []
     BASE = "http://disaster.org.tw"
-    # 此網站課程頁面為動態，嘗試抓公告
-    soup = fetch(BASE + "/index/index.aspx")
-    if soup:
-        for a in soup.select("a[href]"):
+    # 本會學術活動列表
+    for path, itype in [
+        ("/U100/Ch4_1.aspx", "course"),    # 本會學術活動
+        ("/chinese/other/plan.htm", "course"), # 本會教育訓練
+    ]:
+        soup = fetch(BASE + path)
+        if not soup: continue
+        for row in soup.select("table tr, li, .item"):
+            a = row.find("a")
+            if not a: continue
             t = clean(a.get_text())
-            if len(t) < 5 or len(t) > 100: continue
-            href = a.get("href","")
-            if any(k in href for k in ["class","News","bulletin","notice","Ch4"]):
-                date = extract_all_dates(t)
-                out.append(mk(t, "台灣災難醫學會", "台灣學會",
-                              resolve(href, BASE), None,
-                              date[-1] if date else None))
-    return out[:20]
+            if len(t) < 5 or len(t) > 200: continue
+            if any(skip in t for skip in ["關於","聯絡","首頁","登入"]): continue
+            date = extract_all_dates(row.get_text())
+            out.append(mk(t, "台灣災難醫學會", "台灣學會",
+                          resolve(a.get("href",""), BASE), itype,
+                          date[-1] if date else None))
+    return out[:25]
 
 def scrape_twparamedicine():
-    """台灣醫療救護學會 - 課程在 training.html，消息在首頁"""
+    """台灣醫療救護學會 — 課程與最新消息"""
     out = []
     BASE = "https://twparamedicine.org"
-    # 課程
-    soup = fetch(BASE + "/training.html")
-    if soup:
-        for a in soup.select("a[href]"):
+    # 課程頁面
+    for path, itype in [
+        ("/training.html", "course"),
+        ("/index.html", None),
+        ("/news.html", "news"),
+    ]:
+        soup = fetch(BASE + path)
+        if not soup: continue
+        for row in soup.select("article, .post, li, tr"):
+            a = row.find("a")
+            if not a: continue
             t = clean(a.get_text())
-            if len(t) < 5: continue
-            if any(k in t for k in ["課程","ACLS","CPD","TCCC","TECC","PHTLS","訓練","工作坊"]):
-                date = extract_all_dates(t)
-                out.append(mk(t, "台灣醫療救護學會", "台灣學會",
-                              resolve(a.get("href",""), BASE), "course",
-                              date[-1] if date else None))
-    # 消息（首頁動態載入，改抓靜態可見連結）
-    soup2 = fetch(BASE + "/")
-    if soup2:
-        for a in soup2.select("a[href]"):
-            t = clean(a.get_text())
-            if len(t) < 5 or len(t) > 100: continue
-            if any(k in t for k in ["公告","消息","通知","聲明"]):
-                out.append(mk(t, "台灣醫療救護學會", "台灣學會",
-                              resolve(a.get("href",""), BASE), "news"))
-    return out[:30]
+            if len(t) < 8 or len(t) > 200: continue
+            # 過濾導覽連結
+            if any(skip in t for skip in ["關於","聯絡","首頁","登入","English"]): continue
+            date = extract_all_dates(row.get_text())
+            out.append(mk(t, "台灣醫療救護學會", "台灣學會",
+                          resolve(a.get("href",""), BASE), itype,
+                          date[-1] if date else None))
+    seen, unique = set(), []
+    for it in out:
+        if it["id"] not in seen:
+            seen.add(it["id"])
+            unique.append(it)
+    return unique[:30]
 
 def scrape_taemsp():
     """台灣緊急救護醫療指導醫師學會"""
@@ -269,50 +310,74 @@ def scrape_simulation():
     return out[:20]
 
 def scrape_emt():
-    """中華緊急救護技術員協會"""
+    """中華緊急救護技術員協會 — 課程與公告"""
     out = []
     BASE = "https://www.emt.org.tw/temtaf"
-    # 課程列表頁
-    for course in ["EMT-1","EMT-1A","EMT-2","EMTP","BLS","AED","CPR"]:
-        soup = fetch(f"{BASE}/LeCourseList?course={course}")
-        if not soup: continue
-        for a in soup.select("a[href*='LeCourse']"):
-            t = clean(a.get_text())
-            if len(t) < 5: continue
-            parent = a.find_parent(["tr","li","td"])
-            date = extract_all_dates(parent.get_text() if parent else "")
-            out.append(mk(t, "中華緊急救護技術員協會", "台灣協會",
-                          resolve(a.get("href",""), BASE), "course",
-                          date[-1] if date else None))
-        time.sleep(0.5)
-    # 公告
-    soup2 = fetch(f"{BASE}/GpBulletinList")
-    if soup2:
-        for a in soup2.select("a[href*='Bulletin']"):
-            t = clean(a.get_text())
-            if len(t) < 5: continue
-            parent = a.find_parent(["tr","li","td"])
-            date = extract_all_dates(parent.get_text() if parent else "")
-            out.append(mk(t, "中華緊急救護技術員協會", "台灣協會",
-                          resolve(a.get("href",""), BASE), None,
-                          date[-1] if date else None))
-    return out[:40]
-
-def scrape_taiwanwma():
-    """台灣野外地區緊急救護協會"""
-    out = []
-    BASE = "https://taiwanwma.org"
-    for path in ["/", "/news", "/events", "/course"]:
+    # 課程列表
+    for path, itype in [
+        ("/LeCourseList", "course"),
+        ("/LeCourseList?course=EMT-1", "course"),
+        ("/LeCourseList?course=EMT-2", "course"),
+        ("/LeCourseList?course=EMTP", "course"),
+        ("/LeCourseList?course=BLS", "course"),
+    ]:
         soup = fetch(BASE + path)
         if not soup: continue
-        for a in soup.select("article a, .post a, .entry a, h2 a, h3 a"):
+        for row in soup.select("table tr"):
+            a = row.find("a")
+            if not a: continue
             t = clean(a.get_text())
-            if len(t) < 5: continue
-            date = extract_all_dates(t)
-            out.append(mk(t, "台灣野外地區緊急救護協會", "台灣協會",
-                          resolve(a.get("href",""), BASE), None,
+            if len(t) < 5 or len(t) > 200: continue
+            date = extract_all_dates(row.get_text())
+            out.append(mk(t, "中華緊急救護技術員協會", "台灣協會",
+                          resolve(a.get("href",""), BASE), itype,
                           date[-1] if date else None))
-    return out[:20]
+        time.sleep(0.5)
+    # 公告列表
+    for path in ["/GpBulletinList", "/GpNewsList"]:
+        soup2 = fetch(BASE + path)
+        if not soup2: continue
+        for row in soup2.select("table tr"):
+            a = row.find("a")
+            if not a: continue
+            t = clean(a.get_text())
+            if len(t) < 5 or len(t) > 200: continue
+            date = extract_all_dates(row.get_text())
+            out.append(mk(t, "中華緊急救護技術員協會", "台灣協會",
+                          resolve(a.get("href",""), BASE), "news",
+                          date[-1] if date else None))
+    seen, unique = set(), []
+    for it in out:
+        if it["id"] not in seen:
+            seen.add(it["id"])
+            unique.append(it)
+    return unique[:40]
+
+def scrape_taiwanwma():
+    """台灣野外地區緊急救護協會 — WordPress 結構"""
+    out = []
+    BASE = "https://taiwanwma.org"
+    for path, itype in [
+        ("/category/course/", "course"),
+        ("/category/news/", "news"),
+        ("/", None),
+    ]:
+        soup = fetch(BASE + path)
+        if not soup: continue
+        for a in soup.select("h2 a, h3 a, .entry-title a, article h2 a"):
+            t = clean(a.get_text())
+            if len(t) < 5 or len(t) > 200: continue
+            parent = a.find_parent(["article","div"])
+            date = extract_all_dates(parent.get_text() if parent else t)
+            out.append(mk(t, "台灣野外地區緊急救護協會", "台灣協會",
+                          resolve(a.get("href",""), BASE), itype,
+                          date[-1] if date else None))
+    seen, unique = set(), []
+    for it in out:
+        if it["id"] not in seen:
+            seen.add(it["id"])
+            unique.append(it)
+    return unique[:25]
 
 def scrape_tsorcc():
     """復甦照護小學堂"""
@@ -447,33 +512,47 @@ def scrape_wms():
 
 
 def scrape_tsccm():
-    """中華民國重症醫學會"""
+    """中華民國重症醫學會 — 正確頁面結構"""
     out = []
     BASE = "https://www.tsccm.org.tw"
-    # 課程
-    soup = fetch(BASE + "/news/news_list.asp")
+    COURSE_BASE = "http://course.tsccm.org.tw"
+    # 1. 學術活動：其他學會申請重症學分課程（有日期/標題結構）
+    soup = fetch(BASE + "/Academic/index_other.asp")
     if soup:
-        for a in soup.select("a[href*='news']"):
-            t = clean(a.get_text())
-            if len(t) < 5 or len(t) > 150: continue
-            parent = a.find_parent(["tr","li","td","div"])
-            date = extract_all_dates(parent.get_text() if parent else "")
+        # 每筆課程在 table 中，格式：日期 / 主辦單位 / 課程名稱 / 地點 / 學分
+        for row in soup.select("table tr"):
+            cols = row.find_all("td")
+            if len(cols) < 2: continue
+            row_text = row.get_text()
+            date = extract_all_dates(row_text)
+            # 找課程名稱（通常是最長的欄位）
+            title_col = max(cols, key=lambda c: len(c.get_text().strip()), default=None)
+            if not title_col: continue
+            a = title_col.find("a")
+            t = clean(a.get_text() if a else title_col.get_text())
+            if len(t) < 8 or len(t) > 200: continue
+            href = resolve(a.get("href","") if a else "", BASE)
             out.append(mk(t, "中華民國重症醫學會", "台灣學會",
-                          resolve(a.get("href",""), BASE), None,
-                          date[-1] if date else None))
-    # 從首頁抓課程公告
-    soup2 = fetch(BASE + "/")
+                          href, "course", date[-1] if date else None))
+    # 2. 訊息公告（國內外相關訊息）
+    soup2 = fetch(COURSE_BASE + "/news/df_list.asp")
     if soup2:
-        for a in soup2.select("a[href]"):
+        for row in soup2.select("table tr, .news-item, li"):
+            a = row.find("a")
+            if not a: continue
             t = clean(a.get_text())
-            if len(t) < 8 or len(t) > 150: continue
-            if any(k in t for k in ["課程","研討","工作坊","訓練","活動","公告","災難"]):
-                parent = a.find_parent(["li","div","td"])
-                date = extract_all_dates(parent.get_text() if parent else t)
-                out.append(mk(t, "中華民國重症醫學會", "台灣學會",
-                              resolve(a.get("href",""), BASE), None,
-                              date[-1] if date else None))
-    return out[:30]
+            if len(t) < 8 or len(t) > 200: continue
+            date = extract_all_dates(row.get_text())
+            out.append(mk(t, "中華民國重症醫學會", "台灣學會",
+                          resolve(a.get("href",""), COURSE_BASE), "news",
+                          date[-1] if date else None))
+    # 去重
+    seen, unique = set(), []
+    for it in out:
+        if it["id"] not in seen:
+            seen.add(it["id"])
+            unique.append(it)
+    return unique[:40]
 
 def scrape_sgecm():
     """台灣老人急重症醫學會 — 學術活動列表（ASP表格結構）"""
@@ -585,45 +664,60 @@ def scrape_medinfo():
     return out[:20]
 
 def scrape_simulation_v2():
-    """台灣急重症模擬醫學會 (改良版)"""
+    """台灣急重症模擬醫學會 — WordPress 結構"""
     out = []
     BASE = "https://simulation.org.tw"
-    for path in ["/news/", "/activity/", "/"]:
+    # 最新消息列表（WordPress 文章列表）
+    for path, itype in [
+        ("/?cat=2", "course"),   # 學術活動分類
+        ("/?cat=1", "news"),     # 最新消息分類
+        ("/", None),             # 首頁
+    ]:
         soup = fetch(BASE + path)
         if not soup: continue
-        for a in soup.select("a[href]"):
+        # WordPress 標準文章連結
+        for a in soup.select("h2 a, h3 a, .entry-title a, .post-title a"):
             t = clean(a.get_text())
-            if len(t) < 8 or len(t) > 150: continue
-            href = a.get("href","")
-            # 跳過導覽與重複連結
-            if any(skip in t for skip in ["委員介紹","委員會","首頁","關於","聯絡","友站","協力","加入"]): continue
-            if any(k in t for k in ["課程","活動","研討","訓練","工作坊","公告","消息","競賽","年會"]):
-                parent = a.find_parent(["li","div","article"])
-                date = extract_all_dates(parent.get_text() if parent else t)
-                out.append(mk(t, "台灣急重症模擬醫學會", "台灣學會",
-                              resolve(href, BASE), None,
-                              date[-1] if date else None))
-    return out[:25]
+            if len(t) < 5 or len(t) > 200: continue
+            parent = a.find_parent(["article","div","li"])
+            date = extract_all_dates(parent.get_text() if parent else t)
+            out.append(mk(t, "台灣急重症模擬醫學會", "台灣學會",
+                          resolve(a.get("href",""), BASE), itype,
+                          date[-1] if date else None))
+    seen, unique = set(), []
+    for it in out:
+        if it["id"] not in seen:
+            seen.add(it["id"])
+            unique.append(it)
+    return unique[:25]
 
 def scrape_tafm():
-    """台灣家庭醫學醫學會"""
+    """台灣家庭醫學醫學會 — 課程與消息"""
     out = []
     BASE = "https://www.tafm.org.tw"
-    # 課程列表（已知格式）
-    for path in ["/ehc-tafm/s/w/edu/scheduleInfo1",
-                 "/ehc-tafm/s/w/news_news/articleList"]:
+    # 課程列表
+    for path, itype in [
+        ("/ehc-tafm/s/w/edu/scheduleInfo1", "course"),    # 教育課程列表
+        ("/ehc-tafm/s/w/news_news/articleList", "news"),  # 最新消息
+    ]:
         soup = fetch(BASE + path)
         if not soup: continue
-        for a in soup.select("a[href]"):
+        # 表格或列表結構
+        for row in soup.select("tr, li, .list-item, article"):
+            a = row.find("a")
+            if not a: continue
             t = clean(a.get_text())
-            if len(t) < 5 or len(t) > 150: continue
-            if any(k in t for k in ["課程","活動","研討","訓練","工作坊","公告","消息"]):
-                parent = a.find_parent(["li","div","tr"])
-                date = extract_all_dates(parent.get_text() if parent else t)
-                out.append(mk(t, "台灣家庭醫學醫學會", "台灣學會",
-                              resolve(a.get("href",""), BASE), None,
-                              date[-1] if date else None))
-    return out[:25]
+            if len(t) < 5 or len(t) > 200: continue
+            date = extract_all_dates(row.get_text())
+            out.append(mk(t, "台灣家庭醫學醫學會", "台灣學會",
+                          resolve(a.get("href",""), BASE), itype,
+                          date[-1] if date else None))
+    seen, unique = set(), []
+    for it in out:
+        if it["id"] not in seen:
+            seen.add(it["id"])
+            unique.append(it)
+    return unique[:30]
 
 def scrape_sfast():
     """台灣運動安全暨急救技能推廣協會"""
@@ -691,32 +785,31 @@ def scrape_anne():
 
 
 def scrape_mgems():
-    """中華民國大型活動緊急救護協會"""
+    """中華民國大型活動緊急救護協會 — WordPress"""
     out = []
     BASE = "https://www.mgems.org"
-    # 課程
-    for path in ["/category/ems-course/", "/category/on-line-checkin/"]:
+    for path, itype in [
+        ("/category/ems-course/", "course"),
+        ("/category/on-line-checkin/", "course"),
+        ("/category/news/", "news"),
+        ("/", None),
+    ]:
         soup = fetch(BASE + path)
         if not soup: continue
-        for a in soup.select("h2 a, h3 a, .entry-title a, article a"):
+        for a in soup.select("h2 a, h3 a, .entry-title a, article h2 a, article h3 a"):
             t = clean(a.get_text())
-            if len(t) < 5 or len(t) > 150: continue
+            if len(t) < 5 or len(t) > 200: continue
             parent = a.find_parent(["article","div"])
             date = extract_all_dates(parent.get_text() if parent else t)
             out.append(mk(t, "中華民國大型活動緊急救護協會", "台灣協會",
-                          resolve(a.get("href",""), BASE), "course",
+                          resolve(a.get("href",""), BASE), itype,
                           date[-1] if date else None))
-    # 最新消息（所有文章）
-    soup2 = fetch(BASE + "/")
-    if soup2:
-        for a in soup2.select("h2 a, h3 a, .entry-title a"):
-            t = clean(a.get_text())
-            if len(t) < 5 or len(t) > 150: continue
-            date = extract_all_dates(t)
-            out.append(mk(t, "中華民國大型活動緊急救護協會", "台灣協會",
-                          resolve(a.get("href",""), BASE), None,
-                          date[-1] if date else None))
-    return out[:30]
+    seen, unique = set(), []
+    for it in out:
+        if it["id"] not in seen:
+            seen.add(it["id"])
+            unique.append(it)
+    return unique[:30]
 
 def scrape_ntuch():
     """臺大兒童醫院急重症兒童轉院外接醫療團隊"""
