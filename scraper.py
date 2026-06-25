@@ -100,60 +100,92 @@ def mk(title, source, cat, url, item_type=None, date=None, deadline=None):
 # ══════════════════════════════════════════════════════
 
 def scrape_sem():
-    """台灣急診醫學會 — 課程列表頁直接抓取"""
+    """台灣急診醫學會 — 直接呼叫後端 JSON API（網站為 SPA，靜態爬蟲無效）"""
     out = []
-    BASE = "http://www.sem.org.tw"
-    # 課程頁面（確認正確URL）
-    for path, itype in [
-        ("/Activity/A/Index", "course"),   # 學會主辦積分活動
-        ("/Activity/B/Index", "course"),   # 非學會主辦積分活動
-        ("/Activity/AHA/Index", "course"), # AHA急救教育訓練
-        ("/Activity/C/Index", "course"),   # 國際學術活動
-    ]:
-        soup = fetch(BASE + path)
-        if not soup: continue
-        # 課程列表為 div/article 結構（非 table）
-        for a in soup.select("a[href*='/Activity/Details/'], a[href*='/Activity/A/'], a[href*='Detail']"):
-            t = clean(a.get_text())
-            if len(t) < 5 or len(t) > 200: continue
-            parent = a.find_parent(["div","li","tr","article"])
-            date = extract_all_dates(parent.get_text() if parent else t)
-            out.append(mk(t, "台灣急診醫學會", "台灣學會",
-                          resolve(a.get("href",""), BASE), itype,
-                          date[-1] if date else None))
-        # 也抓所有含積分資訊的連結
-        for item in soup.select(".course-item, .activity-item, li, tr"):
-            a = item.find("a")
-            if not a: continue
-            t = clean(a.get_text())
-            if len(t) < 8 or len(t) > 200: continue
-            if any(skip in t for skip in ["學術活動","新聞公告","關於學會","入會","登入","首頁"]): continue
-            date = extract_all_dates(item.get_text())
-            out.append(mk(t, "台灣急診醫學會", "台灣學會",
-                          resolve(a.get("href",""), BASE), itype,
-                          date[-1] if date else None))
-    # 最新消息
-    for path, itype in [
-        ("/News/11/Index", "news"),  # 學會公告
-        ("/News/10/Index", "news"),  # 秘書處公告
-        ("/News/12/Index", "news"),  # 年會專區
-    ]:
-        soup = fetch(BASE + path)
-        if not soup: continue
-        for a in soup.select("a[href*='/News/Details/']"):
-            t = clean(a.get_text())
-            if len(t) < 5 or len(t) > 200: continue
-            parent = a.find_parent(["div","li","tr"])
-            date = extract_all_dates(parent.get_text() if parent else t)
-            out.append(mk(t, "台灣急診醫學會", "台灣學會",
-                          resolve(a.get("href",""), BASE), itype,
-                          date[-1] if date else None))
+    BASE = "https://www.sem.org.tw"
+    import json as _json
+
+    # 嘗試各種可能的 API 端點格式
+    api_candidates = [
+        f"{BASE}/Activity/GetActivityList",
+        f"{BASE}/api/Activity/List",
+        f"{BASE}/Activity/List",
+        f"{BASE}/News/GetNewsList",
+        f"{BASE}/api/News/List",
+    ]
+
+    # 活動 API
+    for act_type, itype in [("A","course"),("B","course"),("AHA","course"),("C","course")]:
+        for api in [
+            f"{BASE}/Activity/GetActivityList?actType={act_type}&pageIndex=1&pageSize=20",
+            f"{BASE}/Activity/GetList?type={act_type}&page=1&pageSize=20",
+            f"{BASE}/api/Activity?type={act_type}&page=1",
+        ]:
+            try:
+                import requests as _req
+                r = _req.get(api, headers=HEADERS, timeout=10)
+                if r.status_code == 200 and 'json' in r.headers.get('Content-Type',''):
+                    data = r.json()
+                    items = data if isinstance(data, list) else data.get('data', data.get('items', data.get('list',[])))
+                    for it in items[:20]:
+                        t = clean(it.get('title','') or it.get('name','') or it.get('subject',''))
+                        if len(t) < 5: continue
+                        date = it.get('date','') or it.get('startDate','') or it.get('actDate','')
+                        if date: date = str(date)[:10].replace('/','-')
+                        link = it.get('url','') or it.get('link','')
+                        if not link and it.get('id'):
+                            link = f"{BASE}/Activity/Details/{it.get('id')}"
+                        out.append(mk(t, "台灣急診醫學會", "台灣學會", link or BASE, itype, date or None))
+                    if out: break
+            except: pass
+
+    # 新聞 API
+    for news_type, itype in [("11","news"),("10","news"),("12","news")]:
+        for api in [
+            f"{BASE}/News/GetNewsList?newsType={news_type}&pageIndex=1&pageSize=20",
+            f"{BASE}/api/News?type={news_type}&page=1",
+        ]:
+            try:
+                r = _req.get(api, headers=HEADERS, timeout=10)
+                if r.status_code == 200 and 'json' in r.headers.get('Content-Type',''):
+                    data = r.json()
+                    items = data if isinstance(data, list) else data.get('data', data.get('items', []))
+                    for it in items[:10]:
+                        t = clean(it.get('title','') or it.get('subject',''))
+                        if len(t) < 5: continue
+                        date = it.get('date','') or it.get('publishDate','')
+                        if date: date = str(date)[:10].replace('/','-')
+                        link = it.get('url','') or (f"{BASE}/News/Details/{it.get('id')}" if it.get('id') else '')
+                        out.append(mk(t, "台灣急診醫學會", "台灣學會", link or BASE, itype, date or None))
+                    if out: break
+            except: pass
+
+    # 若 API 都失敗，改抓 Google 搜尋索引（備用方案）
+    if not out:
+        # 直接構建已知課程頁的連結列表（從 Google 搜尋得知的已知 ID 範圍）
+        # 抓最近的詳細頁（已知 ID 格式 /Activity/Details/{id}）
+        for detail_id in range(32700, 32730):
+            url = f"{BASE}/Activity/Details/{detail_id}"
+            try:
+                r = _req.get(url, headers=HEADERS, timeout=8)
+                if r.status_code == 200:
+                    soup = BeautifulSoup(r.text, 'html.parser')
+                    # 嘗試從頁面 meta 或 og 標籤取得標題
+                    og_title = soup.find('meta', property='og:title')
+                    title_tag = soup.find('title')
+                    t = og_title.get('content','') if og_title else (title_tag.get_text() if title_tag else '')
+                    t = clean(t.replace('台灣急診醫學會 - ','').replace('課程列表',''))
+                    if len(t) > 5:
+                        out.append(mk(t, "台灣急診醫學會", "台灣學會", url, "course"))
+            except: pass
+            time.sleep(0.3)
+
     seen, unique = set(), []
     for it in out:
         if it["id"] not in seen and len(it.get("title","")) > 4:
             seen.add(it["id"])
             unique.append(it)
-    return unique[:60]
+    return unique[:30]
 
 def scrape_seccm():
     """台灣急救加護醫學會 — 正確表格結構"""
