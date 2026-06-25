@@ -1,48 +1,18 @@
 {
-  "updated": "2026-06-25T20:39:23.307104+00:00",
-  "count": 227,
-  "course_count": 111,
-  "news_count": 116,
+  "updated": "2026-06-25T20:49:08.145191+00:00",
+  "count": 201,
+  "course_count": 86,
+  "news_count": 115,
   "items": [
     {
-      "id": "97e501dc9e46",
-      "title": "2026第十七屆第一次會員大會暨學術研討會 社團法人台灣急診醫學會 2026/06/26 積分 16 學會主辦 報名截止",
-      "source": "台灣急診醫學會",
+      "id": "452b7eab7397",
+      "title": "2026.7.18 台灣復甦照護學會Holistic and Patient-Centered Critical Care研討會及工作坊開放報名",
+      "source": "中華民國重症醫學會",
       "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-06-26",
-      "deadline": "2026-06-26",
-      "url": "https://www.sem.org.tw/Activity/A/Details/32620"
-    },
-    {
-      "id": "d82ce83cd617",
-      "title": "115年住院醫師初階災難訓練課程(南區)【線上+實體】 社團法人台灣急診醫學會 2026/07/02 積分 13 學會主辦 報名截止",
-      "source": "台灣急診醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-07-02",
-      "deadline": "2026-07-02",
-      "url": "https://www.sem.org.tw/Activity/A/Details/33032"
-    },
-    {
-      "id": "ea80a7531ef4",
-      "title": "夏季山域溪谷自救搜救知能安全講習 社團法人台灣急診醫學會、馬偕紀念醫院急診醫學部野外醫學中心 2026/07/08 積分 7 學會主辦 尚有 7 名額",
-      "source": "台灣急診醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-07-08",
+      "type": "news",
+      "date": "2026-07-18",
       "deadline": null,
-      "url": "https://www.sem.org.tw/Activity/A/Details/33048"
-    },
-    {
-      "id": "468c49ab963b",
-      "title": "115年度中毒個案討論會–中區 社團法人台灣急診醫學會、秀傳紀念醫院 2026/07/20 積分 3 學會主辦 尚有 7 名額",
-      "source": "台灣急診醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-07-20",
-      "deadline": null,
-      "url": "https://www.sem.org.tw/Activity/A/Details/32964"
+      "url": "http://course.tsccm.org.tw/df_info.asp?/967.html"
     },
     {
       "id": "5bd23fc6becf",
@@ -55,14 +25,24 @@
       "url": "https://www.tebma.org.tw/event/list/view/4cb9057694d6a3a1b49e6cf5da5743e2"
     },
     {
-      "id": "c7c1da8f40a7",
-      "title": "115年師資培育工作坊 (中區) 社團法人台灣急診醫學會、中山醫學大學附設醫院 2026/07/28 積分 4 學會主辦 尚有 30 名額",
-      "source": "台灣急診醫學會",
+      "id": "289ecb43dfc6",
+      "title": "重症會員早鳥報名優惠-2026.9.18~20 【第七屆亞太急性腎損傷與連續性腎替代療法大會】",
+      "source": "中華民國重症醫學會",
       "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-07-28",
+      "type": "news",
+      "date": "2026-09-18",
       "deadline": null,
-      "url": "https://www.sem.org.tw/Activity/A/Details/32647"
+      "url": "http://course.tsccm.org.tw/df_info.asp?/968.html"
+    },
+    {
+      "id": "83ad24e5b303",
+      "title": "徵稿中~~2026.9.18-20 International Conference on Digital Health and Medical Analytics（DHA 2026）",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-09-18",
+      "deadline": null,
+      "url": "http://course.tsccm.org.tw/df_info.asp?/906.html"
     },
     {
       "id": "6c12a2120576",
@@ -105,6 +85,16 @@
       "url": "https://jcmit2026.medinfo.org.tw/"
     },
     {
+      "id": "2847c76d4063",
+      "title": "2026.4.22-23 6th World Sepsis Congress 各專題錄影, 歡迎觀看分享",
+      "source": "中華民國重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-04-22",
+      "deadline": null,
+      "url": "http://course.tsccm.org.tw/df_info.asp?/931.html"
+    },
+    {
       "id": "24c8f9118e81",
       "title": "2026年台北初級救護技術員繼續教育訓練",
       "source": "中華民國大型活動緊急救護協會",
@@ -113,26 +103,6 @@
       "date": "2026-05-26",
       "deadline": null,
       "url": "https://www.mgems.org/260424_t1_course/"
-    },
-    {
-      "id": "d366b681d956",
-      "title": "閱讀全文2026年台北初級救護技術員繼續教育訓練",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": "2026-05-26",
-      "deadline": null,
-      "url": "https://www.mgems.org/260424_t1_course/"
-    },
-    {
-      "id": "10d05d13b906",
-      "title": "緊急救護課程",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": "2026-06-02",
-      "deadline": null,
-      "url": "https://www.mgems.org/category/ems-course/"
     },
     {
       "id": "26eb3bb8e0c5",
@@ -145,224 +115,54 @@
       "url": "https://www.mgems.org/260514_yushan_t1f/"
     },
     {
-      "id": "b12fac0d7db5",
-      "title": "閱讀全文2026年玉山管理處初級救護技術員繼續教育訓練",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": "2026-06-02",
-      "deadline": null,
-      "url": "https://www.mgems.org/260514_yushan_t1f/"
-    },
-    {
-      "id": "8a590d4016ac",
-      "title": "學會主辦積分活動",
-      "source": "台灣急診醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.sem.org.tw/Activity/A/Index"
-    },
-    {
-      "id": "d2be17971b56",
-      "title": "非學會主辦積分活動",
-      "source": "台灣急診醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.sem.org.tw/Activity/B/Index"
-    },
-    {
-      "id": "fb506e28a43c",
-      "title": "AHA急救教育訓練",
-      "source": "台灣急診醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.sem.org.tw/Activity/AHA/Index"
-    },
-    {
-      "id": "7bdd226cd243",
-      "title": "國際學術活動",
-      "source": "台灣急診醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.sem.org.tw/Activity/C/Index"
-    },
-    {
-      "id": "777bb0ea3587",
-      "title": "ACLS課程舉辦單位",
-      "source": "台灣急救加護醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.seccm.org.tw/news/acls_class.asp"
-    },
-    {
-      "id": "608a0c0bea96",
-      "title": "聯甄課程承辦單位",
-      "source": "台灣急救加護醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.seccm.org.tw/news/acls_union.asp"
-    },
-    {
-      "id": "10036d1b70ae",
-      "title": "非聯甄課程",
-      "source": "台灣急救加護醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.seccm.org.tw/news/acls_NotUnion.asp"
-    },
-    {
-      "id": "d6398c092143",
-      "title": "ACLS委員會課程",
-      "source": "台灣急救加護醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.seccm.org.tw/news/acls_course.asp"
-    },
-    {
-      "id": "aebdf64c64c1",
-      "title": "課程證明收據下載",
-      "source": "台灣急救加護醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.seccm.org.tw/news/acls_print.asp"
-    },
-    {
-      "id": "0f6f36b5436d",
-      "title": "理監事名單",
-      "source": "台灣外傷醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "http://www.trauma.org.tw/about/index_03.asp"
-    },
-    {
-      "id": "c29799d397e2",
-      "title": "委員會名單",
-      "source": "台灣外傷醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "http://www.trauma.org.tw/about/index_04.asp"
-    },
-    {
-      "id": "b8640fa7ae4c",
-      "title": "本會學術教育活動",
-      "source": "台灣外傷醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "http://www.trauma.org.tw"
-    },
-    {
-      "id": "0d2f5785ff57",
-      "title": "學術研討會",
-      "source": "台灣外傷醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "http://www.trauma.org.tw/active/listB.asp"
-    },
-    {
-      "id": "f458e17f64f8",
-      "title": "其他單位活動",
-      "source": "台灣外傷醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "http://www.trauma.org.tw/active/listC.asp"
-    },
-    {
-      "id": "d698963fee3b",
-      "title": "積分申請辦法",
-      "source": "台灣外傷醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "http://www.trauma.org.tw/eduScore/edu_index.asp"
-    },
-    {
-      "id": "a028e5d5ca93",
-      "title": "申請進度查詢",
-      "source": "台灣外傷醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "http://www.trauma.org.tw/eduScore/edu_list.asp"
-    },
-    {
-      "id": "4db960ec54df",
-      "title": "線上積分申請",
-      "source": "台灣外傷醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "http://www.trauma.org.tw/eduScore/edu_reg.asp"
-    },
-    {
-      "id": "c976cdfe8951",
-      "title": "▪本會學術活動",
+      "id": "576b1178525a",
+      "title": "▪成立宗旨",
       "source": "台灣災難醫學會",
       "cat": "台灣學會",
       "type": "course",
       "date": null,
       "deadline": null,
-      "url": "http://disaster.org.tw/index/classList.aspx"
+      "url": "http://disaster.org.tw/U100/Ch1_1.aspx"
     },
     {
-      "id": "e92d158a74a0",
-      "title": "▪年會學術專區",
+      "id": "9470ba41d390",
+      "title": "▪學會章程",
       "source": "台灣災難醫學會",
       "cat": "台灣學會",
-      "type": "news",
+      "type": "course",
       "date": null,
       "deadline": null,
-      "url": "http://disaster.org.tw/U100/Ch4_1.aspx"
+      "url": "http://disaster.org.tw/U100/Ch1_2.aspx"
     },
     {
-      "id": "5178111a7732",
-      "title": "▪國內外相關學術",
+      "id": "2e59d5221296",
+      "title": "▪學會記事",
       "source": "台灣災難醫學會",
       "cat": "台灣學會",
-      "type": "news",
+      "type": "course",
       "date": null,
       "deadline": null,
-      "url": "http://disaster.org.tw/index/class2List.aspx"
+      "url": "http://disaster.org.tw/U100/Ch1_3.aspx"
     },
     {
-      "id": "91d1d080ce02",
-      "title": "本會第九屆理、監事選舉業已圓滿完成，敬請各界不吝指教與支持。",
+      "id": "a581626e5a5d",
+      "title": "▪加入會員",
       "source": "台灣災難醫學會",
       "cat": "台灣學會",
-      "type": "news",
+      "type": "course",
       "date": null,
       "deadline": null,
-      "url": "http://disaster.org.tw/indexNews.aspx?mod=DF154394585AFB3F&newsSeq=BA5E965F171C5170"
+      "url": "http://disaster.org.tw/U100/Ch1_4.aspx"
+    },
+    {
+      "id": "9e8034b2f50d",
+      "title": "▪理監事名冊",
+      "source": "台灣災難醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "http://disaster.org.tw/U100/Ch2_6.aspx"
     },
     {
       "id": "a93d14badeea",
@@ -425,194 +225,54 @@
       "url": "https://forms.gle/RxQobu2FoVewH6Qs5"
     },
     {
-      "id": "a9ab09ee6a61",
-      "title": "台灣急重症模擬醫學會第四屆第二次會員大會暨學術研討會時間表 4/20",
-      "source": "台灣急重症模擬醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://simulation.org.tw/annualconference2024-3/"
-    },
-    {
-      "id": "3577e5206397",
-      "title": "台灣急重症模擬醫學會第四屆第二次會員大會暨學術研討會歡迎報名參加 4/20",
-      "source": "台灣急重症模擬醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://simulation.org.tw/annualconference2024-2/"
-    },
-    {
-      "id": "cc41c445b0a8",
-      "title": "台灣急重症模擬醫學會第四屆第一次會員大會暨學術研討會時間表 12/03",
-      "source": "台灣急重症模擬醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://simulation.org.tw/annualconference2022-schedule/"
-    },
-    {
-      "id": "97776574ba48",
-      "title": "台灣急重症模擬醫學會第四屆第一次會員大會暨學術研討會 12/03",
-      "source": "台灣急重症模擬醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://simulation.org.tw/annualconference2022/"
-    },
-    {
-      "id": "f800c6082abf",
-      "title": "12/26 模擬醫學在超音波導引血管穿刺術的應用工作坊取消公告",
-      "source": "台灣急重症模擬醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://simulation.org.tw/class1226-2-cancel/"
-    },
-    {
-      "id": "3e07947c5fd5",
-      "title": "公告第四屆理、監事候選人名單及政見",
-      "source": "台灣急重症模擬醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://simulation.org.tw/the_fourth_list_politics/"
-    },
-    {
-      "id": "00e2298de2ee",
-      "title": "第一屆全國醫學生高擬真競賽得獎名單",
-      "source": "台灣急重症模擬醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://simulation.org.tw/winners-list_2022/"
-    },
-    {
-      "id": "2ddf05f4fe17",
-      "title": "公告本會第四屆理、監事候選人自我推薦辦法",
-      "source": "台灣急重症模擬醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://simulation.org.tw/20220907news002/"
-    },
-    {
-      "id": "88270ccdb739",
-      "title": "全國醫學生高擬真競賽",
-      "source": "台灣急重症模擬醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://simulation.org.tw/20220907news001/"
-    },
-    {
-      "id": "25e33b5cdf3c",
-      "title": "重災訓練計劃",
-      "source": "中華民國重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.tsccm.org.tw/news/tp_list.asp"
-    },
-    {
-      "id": "1863a0fe2f19",
-      "title": "衛福部召開「重症醫學專科醫師訓練及甄審籌備委員會」第一次會議 六大醫學會攜手推動重症醫學專科制度新里程",
-      "source": "中華民國重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.tsccm.org.tw/news_info.asp?/962.html"
-    },
-    {
       "id": "5ddae5a72419",
       "title": "ACLS 2007新課程規範",
       "source": "中華民國重症醫學會",
       "cat": "台灣學會",
-      "type": "course",
+      "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.tsccm.org.tw/Academic/acls01.asp"
+      "url": "http://course.tsccm.org.tw/Academic/acls01.asp"
     },
     {
       "id": "a12cd0974482",
       "title": "ACLS 課程推薦書籍",
       "source": "中華民國重症醫學會",
       "cat": "台灣學會",
-      "type": "course",
+      "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.tsccm.org.tw/Academic/acls02.asp"
+      "url": "http://course.tsccm.org.tw/Academic/acls02.asp"
     },
     {
       "id": "effdca75c4e6",
       "title": "重症課程(重症學分)",
       "source": "中華民國重症醫學會",
       "cat": "台灣學會",
-      "type": "course",
+      "type": "news",
       "date": null,
       "deadline": null,
       "url": "https://www.tsccm.org.tw/od/Academic/index.asp?act_kindid=1"
     },
     {
-      "id": "792affea4863",
-      "title": "政府單位公告",
+      "id": "a5ab109f670c",
+      "title": "聯甄課程(聯甄學分)",
       "source": "中華民國重症醫學會",
       "cat": "台灣學會",
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.tsccm.org.tw/news/gov_list.asp"
+      "url": "https://www.tsccm.org.tw/od/Academic/index.asp?act_kindid=2"
     },
     {
-      "id": "1f34601426c5",
-      "title": "國內外相關訊息",
+      "id": "3b881f2cc9c2",
+      "title": "申請學分(重症學分)",
       "source": "中華民國重症醫學會",
       "cat": "台灣學會",
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.tsccm.org.tw/news/df_list.asp"
-    },
-    {
-      "id": "42691a55a353",
-      "title": "理監事選舉專區",
-      "source": "中華民國重症醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.tsccm.org.tw/news/bds_list.asp"
-    },
-    {
-      "id": "2092c9366b98",
-      "title": "重症照護新知(115.6.23更新)",
-      "source": "中華民國重症醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.tsccm.org.tw/news_info.asp?/974.html"
-    },
-    {
-      "id": "04610a6ec9df",
-      "title": "115.6.15 衛福部公告「重症醫學科專科醫師甄審原則」",
-      "source": "中華民國重症醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.tsccm.org.tw/news_info.asp?/970.html"
+      "url": "http://course.tsccm.org.tw/Academic/index_other.asp"
     },
     {
       "id": "9510b518bf05",
@@ -905,6 +565,66 @@
       "url": "https://www.tana.org.tw/news/learn_info.asp?/786.html"
     },
     {
+      "id": "c882249c61ba",
+      "title": "2025年青山宮繞境活動",
+      "source": "中華民國大型活動緊急救護協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.mgems.org/251210_festival/"
+    },
+    {
+      "id": "140fdaafeed9",
+      "title": "2026年臺北101公益垂直馬拉松",
+      "source": "中華民國大型活動緊急救護協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.mgems.org/260509_taipei-101/"
+    },
+    {
+      "id": "b68c7da13251",
+      "title": "2026年台新女生路跑",
+      "source": "中華民國大型活動緊急救護協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.mgems.org/26-04-12-women-run/"
+    },
+    {
+      "id": "8d4b48f3d817",
+      "title": "2026 南山人壽臺北國道馬拉松",
+      "source": "中華民國大型活動緊急救護協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.mgems.org/2026-taipei-highway-marathron/"
+    },
+    {
+      "id": "cb82e9f03a2b",
+      "title": "2026年舒跑杯路跑賽",
+      "source": "中華民國大型活動緊急救護協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.mgems.org/260510_sports-run/"
+    },
+    {
+      "id": "f88b895cb5ea",
+      "title": "2026年台灣資安大會",
+      "source": "中華民國大型活動緊急救護協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.mgems.org/260505-7_taiwan-cyber-security/"
+    },
+    {
       "id": "91790bdbec7d",
       "title": "CPR+AED完整版3小時課程",
       "source": "台灣運動安全暨急救技能推廣協會",
@@ -1193,6 +913,26 @@
       "date": null,
       "deadline": null,
       "url": "https://www.hear-aed.com.tw/news/event-news/%e3%80%90%e8%81%bd%e8%a6%8baed%e3%80%91line%e6%95%91%e6%8f%b4%e9%80%9a%e7%9f%a5%e7%b3%bb%e7%b5%b12026%e5%b9%b45%e6%9c%88%e6%88%90%e6%9e%9c%e5%a0%b1%e5%91%8a/"
+    },
+    {
+      "id": "c302a6b91021",
+      "title": "Learn CPR",
+      "source": "AHA — American Heart Association",
+      "cat": "國際期刊/組織",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://cpr.heart.org/en/"
+    },
+    {
+      "id": "e73de285a210",
+      "title": "CPR & ECC",
+      "source": "AHA — American Heart Association",
+      "cat": "國際期刊/組織",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://cpr.heart.org/en/"
     },
     {
       "id": "b22c2e9061fd",
