@@ -1,8 +1,8 @@
 {
-  "updated": "2026-06-25T11:50:17.313780+00:00",
-  "count": 231,
-  "course_count": 110,
-  "news_count": 121,
+  "updated": "2026-06-25T19:25:24.462270+00:00",
+  "count": 237,
+  "course_count": 115,
+  "news_count": 122,
   "items": [
     {
       "id": "97e501dc9e46",
@@ -35,8 +35,8 @@
       "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=492"
     },
     {
-      "id": "5666ada9fe79",
-      "title": "夏季山域溪谷自救搜救知能安全講習 社團法人台灣急診醫學會、馬偕紀念醫院急診醫學部野外醫學中心 2026/07/08 積分 7 學會主辦 尚有 9 名額",
+      "id": "ea80a7531ef4",
+      "title": "夏季山域溪谷自救搜救知能安全講習 社團法人台灣急診醫學會、馬偕紀念醫院急診醫學部野外醫學中心 2026/07/08 積分 7 學會主辦 尚有 7 名額",
       "source": "台灣急診醫學會",
       "cat": "台灣學會",
       "type": "course",
@@ -985,6 +985,56 @@
       "url": "https://www.tana.org.tw/news/learn_info.asp?/786.html"
     },
     {
+      "id": "91790bdbec7d",
+      "title": "CPR+AED完整版3小時課程",
+      "source": "台灣運動安全暨急救技能推廣協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://sfast.innosoft.com.tw/iplm/pages/b.aspx?page=in_Meeting_list_A.html&method=In_MeetingUserResponse&in_meetingid=297C8E0AF68B4B609134923DF1F22659"
+    },
+    {
+      "id": "bf3f0e1ba292",
+      "title": "AED管理員4小時教育訓練",
+      "source": "台灣運動安全暨急救技能推廣協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://reurl.cc/qKa2WE"
+    },
+    {
+      "id": "e0f77ddf7472",
+      "title": "基本救命術指導員BLS-I課程",
+      "source": "台灣運動安全暨急救技能推廣協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://reurl.cc/eVQggR"
+    },
+    {
+      "id": "5bc9921519e2",
+      "title": "基本救命術BLS4小時課程",
+      "source": "台灣運動安全暨急救技能推廣協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://reurl.cc/4bYO9v"
+    },
+    {
+      "id": "a2470c9c35e4",
+      "title": "基本救命術BLS8小時課程",
+      "source": "台灣運動安全暨急救技能推廣協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://reurl.cc/aMEgWl"
+    },
+    {
       "id": "acb979cd351a",
       "title": "專區｜基礎急救教育",
       "source": "彰化縣防災協會（DPAC）",
@@ -1303,6 +1353,16 @@
       "date": null,
       "deadline": null,
       "url": "https://www.jems.com/news/news-feed/"
+    },
+    {
+      "id": "98860142062c",
+      "title": "Headlines",
+      "source": "JEMS",
+      "cat": "國際期刊/組織",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.jems.com/news/"
     },
     {
       "id": "fa7bfbf49367",
