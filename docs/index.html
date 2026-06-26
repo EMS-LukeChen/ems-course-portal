@@ -55,7 +55,7 @@ body{font-family:'Noto Sans TC',system-ui,sans-serif;background:#f5f6f8;color:#1
 .si input:focus{outline:2px solid #3b82f6;border-color:transparent;background:#fff}
 select{font-size:12px;padding:5px 10px;border:1px solid #d1d5db;border-radius:20px;font-family:inherit;background:#f9fafb;color:#555;cursor:pointer}
 label{display:flex;align-items:center;gap:5px;font-size:12px;color:#555;cursor:pointer}
-#filter-count{font-size:11px;color:#888;margin-left:auto;white-space:nowrap}
+#filter-count{font-size:11px;color:#888;white-space:nowrap}
 
 /* ── List ── */
 main{padding:10px 12px 40px;max-width:1100px;margin:0 auto}
@@ -172,7 +172,6 @@ footer a{color:#1a56b0;text-decoration:none}
 
 <!-- 篩選 -->
 <div id="filters">
-  <div class="si"><span>🔍</span><input id="q" placeholder="搜尋標題…" oninput="applyFilters()" autocomplete="off"></div>
   <select id="f-cat" onchange="applyFilters()">
     <option value="">全部分類</option>
     <option value="台灣學會">台灣學會</option>
@@ -184,6 +183,7 @@ footer a{color:#1a56b0;text-decoration:none}
   <select id="f-src" onchange="applyFilters()">
     <option value="">全部來源</option>
   </select>
+  <div class="si"><span>🔍</span><input id="q" placeholder="搜尋標題…" oninput="applyFilters()" autocomplete="off"></div>
   <label><input type="checkbox" id="f-hide-expired" onchange="applyFilters()"> 隱藏已結束</label>
   <span id="filter-count"></span>
 </div>
