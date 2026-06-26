@@ -124,12 +124,37 @@ def mk(title, source, cat, url, item_type=None, date=None, deadline=None):
 # ══════════════════════════════════════════════════════
 
 def scrape_sem():
-    """台灣急診醫學會 — 直接爬各列表頁（HTML 靜態渲染，無需 API 或 ID 掃描）"""
+    """台灣急診醫學會 — 列表頁取課程，詳細頁取截止日"""
     import re as _re
     out = []
     BASE = "https://www.sem.org.tw"
 
-    # ── 課程/活動（三個分類，各自取對應 href 的 <a>）───────────────────────
+    def _parse_sem_deadline(detail_soup, event_date):
+        """從詳細頁內文解析報名截止日（需早於活動日）"""
+        if not detail_soup: return None
+        text = detail_soup.get_text(" ", strip=True)
+        # 台灣急診醫學會格式：「即日起至115年6月30日」或「至YYYY/MM/DD」
+        for pat in [
+            r"至\s*(\d{3})年(\d{1,2})月(\d{1,2})日",        # 民國年：至115年6月30日
+            r"至\s*(\d{4})/(\d{1,2})/(\d{1,2})",             # 西元：至2026/06/30
+            r"截止.*?(\d{4})[/.](\d{1,2})[/.](\d{1,2})",    # 截止...2026/06/30
+            r"(\d{4})[/.](\d{1,2})[/.](\d{1,2}).*?(?:截止|止)",
+        ]:
+            m = _re.search(pat, text)
+            if not m: continue
+            try:
+                y = int(m.group(1))
+                if y < 200: y += 1911   # 民國轉西元
+                mo, d = int(m.group(2)), int(m.group(3))
+                if not (2024 <= y <= 2035 and 1 <= mo <= 12 and 1 <= d <= 31): continue
+                candidate = f"{y:04d}-{mo:02d}-{d:02d}"
+                # 截止日必須早於活動日
+                if event_date is None or candidate <= event_date:
+                    return candidate
+            except: pass
+        return None
+
+    # ── 課程/活動：列表頁取基本資訊，詳細頁取截止日 ───────────────────────
     course_pages = [
         ("/Activity/A/Index",   "course"),   # 學會主辦積分活動
         ("/Activity/B/Index",   "course"),   # 非學會主辦積分活動
@@ -141,18 +166,20 @@ def scrape_sem():
         for a in soup.select("a[href*='/Activity/'][href*='/Details/']"):
             raw = clean(a.get_text())
             if len(raw) < 5: continue
-            # 文字格式：「標題 主辦單位 YYYY/MM/DD 積分N 類型 狀態」
-            # 取出日期
+            # 列表頁文字格式：「標題 主辦單位 YYYY/MM/DD 積分N 類型 狀態」
             m = _re.search(r"(\d{4})/(\d{1,2})/(\d{1,2})", raw)
             date_str = f"{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}" if m else None
-            # 取出標題（日期前的部分，去掉多餘空白）
             title = raw[:m.start()].strip() if m else raw
-            # 過濾掉純導覽文字（太短或無日期）
             if len(title) < 4: continue
             href = resolve(a.get("href",""), BASE)
-            out.append(mk(title, "台灣急診醫學會", "台灣學會", href, itype, date_str))
+            # 進詳細頁抓截止日
+            detail_soup = fetch(href)
+            deadline = _parse_sem_deadline(detail_soup, date_str)
+            time.sleep(0.3)
+            out.append(mk(title, "台灣急診醫學會", "台灣學會", href, itype,
+                          date=date_str, deadline=deadline))
 
-    # ── 最新消息（學會公告 + 秘書處公告）─────────────────────────────────
+    # ── 最新消息：列表頁直接取日期，不需進詳細頁 ─────────────────────────
     news_pages = [
         ("/News/11/Index", "news"),   # 學會公告
         ("/News/10/Index", "news"),   # 秘書處公告
@@ -165,16 +192,13 @@ def scrape_sem():
             t = clean(a.get_text())
             if len(t) < 5 or len(t) > 200: continue
             if any(skip in t for skip in ["學會公告","秘書處公告","年會專區","公文來函","AHA專區"]): continue
-            # 從父元素取日期
-            # 日期在同一 <tr> 行的其他 <td> 中
             row = a.find_parent("tr")
-            date_text = row.get_text() if row else (a.find_parent().get_text() if a.find_parent() else "")
+            date_text = row.get_text() if row else ""
             m = _re.search(r"(\d{4})/(\d{1,2})/(\d{1,2})", date_text)
             date_str = f"{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}" if m else None
             href = resolve(a.get("href",""), BASE)
-            out.append(mk(t, "台灣急診醫學會", "台灣學會", href, itype, date_str))
+            out.append(mk(t, "台灣急診醫學會", "台灣學會", href, itype, date=date_str))
 
-    # 去重
     seen, unique = set(), []
     for it in out:
         if it["id"] not in seen and len(it.get("title","")) > 3:
@@ -235,40 +259,91 @@ def scrape_seccm():
     return unique[:50]
 
 def scrape_trauma():
-    """台灣外傷醫學會 — 課程活動 + 學會公告"""
+    """台灣外傷醫學會 — 課程活動 + 學會公告，從連結文字解析日期與截止日"""
+    import re as _re
     out = []
     BASE = "http://www.trauma.org.tw"
-    # 課程/活動頁（/active/ 區塊）
+    SKIP = {"回首頁","關於學會","最新消息","活動專區","會員專區","積分申請","專科甄審",
+            "聯絡我們","分享","噗浪","twitter","line","facebook"}
+
+    def _parse_trauma_dates(text):
+        """從外傷醫學會連結文字解析：活動日期（民國/西元）和截止日"""
+        # 西元日期
+        dates_ce = []
+        for m in _re.finditer(r"(\d{4})年(\d{1,2})月(\d{1,2})日", text):
+            y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+            if 2024 <= y <= 2035 and 1 <= mo <= 12 and 1 <= d <= 31:
+                dates_ce.append((f"{y:04d}-{mo:02d}-{d:02d}", m.start()))
+        for m in _re.finditer(r"(\d{4})/(\d{1,2})/(\d{1,2})", text):
+            y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+            if 2024 <= y <= 2035 and 1 <= mo <= 12 and 1 <= d <= 31:
+                dates_ce.append((f"{y:04d}-{mo:02d}-{d:02d}", m.start()))
+        # 民國年
+        for m in _re.finditer(r"(\d{2,3})年(\d{1,2})月(\d{1,2})日", text):
+            y_roc = int(m.group(1))
+            if 110 <= y_roc <= 120:   # 民國110~120 = 西元2021~2031
+                y, mo, d = y_roc + 1911, int(m.group(2)), int(m.group(3))
+                if 1 <= mo <= 12 and 1 <= d <= 31:
+                    dates_ce.append((f"{y:04d}-{mo:02d}-{d:02d}", m.start()))
+
+        if not dates_ce:
+            return None, None
+
+        dates_ce.sort(key=lambda x: x[0])  # 依日期排序
+        all_dates = [d for d, _ in dates_ce]
+
+        # 截止日判斷：在「至...止」結構中的日期
+        deadline = None
+        dl_m = _re.search(r"至(\d{2,4})年(\d{1,2})月(\d{1,2})日.*?止", text)
+        if dl_m:
+            y_r = int(dl_m.group(1))
+            if y_r < 200: y_r += 1911
+            mo, d = int(dl_m.group(2)), int(dl_m.group(3))
+            if 2024 <= y_r <= 2035:
+                deadline = f"{y_r:04d}-{mo:02d}-{d:02d}"
+
+        # 活動日：排除截止日後，取最大（最晚）的日期（即課程當天）
+        if deadline:
+            rest = [d for d in all_dates if d != deadline]
+            event_date = sorted(rest)[-1] if rest else all_dates[-1]
+        else:
+            event_date = all_dates[-1] if all_dates else None
+
+        return event_date, deadline
+
+    # ── 課程/活動 ─────────────────────────────────────────────────────────
     for path, item_type in [
-        ("/active/listA.asp", "course"),   # 教育課程（外傷教育課程、ATLS 等）
+        ("/active/listA.asp", "course"),   # 教育課程
         ("/active/listB.asp", "course"),   # 學術研討會
         ("/active/listC.asp", "course"),   # 其他單位活動
     ]:
         soup = fetch(BASE + path)
         if not soup: continue
-        # 列表結構：每筆為含連結的 <a>，上方有日期數字（dd Mon 格式）
         for a in soup.select("a[href]"):
-            t = clean(a.get_text())
-            if len(t) < 5 or len(t) > 300: continue
-            if any(skip in t for skip in ["回首頁","關於學會","最新消息","活動專區","會員專區","積分申請","專科甄審","聯絡我們","分享","噗浪","twitter","line","facebook"]): continue
+            raw = clean(a.get_text())
+            if len(raw) < 5 or len(raw) > 500: continue
+            if any(skip in raw for skip in SKIP): continue
             href = resolve(a.get("href",""), BASE)
-            # 日期從周圍文字取（父元素包含日期數字）
-            parent_text = a.find_parent().get_text() if a.find_parent() else ""
-            date = extract_all_dates(parent_text)
-            out.append(mk(t, "台灣外傷醫學會", "台灣學會",
+            event_date, deadline = _parse_trauma_dates(raw)
+            # 標題：取截止日相關文字前的部分
+            title = raw.split("一、")[0].strip() if "一、" in raw else raw[:80].strip()
+            if len(title) < 5:
+                title = raw[:60].strip()
+            out.append(mk(title, "台灣外傷醫學會", "台灣學會",
                           href, item_type,
-                          date[-1] if date else None))
-    # 學會公告（消息）
+                          date=event_date, deadline=deadline))
+
+    # ── 學會公告（消息）───────────────────────────────────────────────────
     for path, item_type in [
-        ("/news/listA.asp", "news"),       # 學會公告
-        ("/news/listC.asp", "news"),       # 轉知訊息
+        ("/news/listA.asp", "news"),
+        ("/news/listC.asp", "news"),
     ]:
         soup = fetch(BASE + path)
         if not soup: continue
         for a in soup.select("a[href]"):
             t = clean(a.get_text())
             if len(t) < 5 or len(t) > 300: continue
-            if any(skip in t for skip in ["回首頁","關於學會","最新消息","活動專區","會員專區","積分申請","專科甄審","聯絡我們","分享","噗浪","twitter","line","facebook"]): continue
+            if any(skip in t for skip in SKIP): continue
             href = resolve(a.get("href",""), BASE)
             parent_text = a.find_parent().get_text() if a.find_parent() else ""
             date = extract_all_dates(parent_text)
