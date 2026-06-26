@@ -68,7 +68,59 @@ def classify_type(title):
 # Big5 編碼網站名單（需強制指定編碼）
 BIG5_HOSTS = {"www.sgecm.org.tw", "sgecm.org.tw"}
 
+# 需要先訪問首頁取 Cookie 的網站（有 Referer / Session 驗證）
+_SESSION_CACHE = {}   # host -> requests.Session
+
+def _get_session(host):
+    """取得或建立帶 Cookie 的 Session，針對有反爬機制的網站"""
+    if host in _SESSION_CACHE:
+        return _SESSION_CACHE[host]
+    s = requests.Session()
+    s.headers.update({
+        **HEADERS,
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Language": "zh-TW,zh;q=0.9,en-US;q=0.8",
+        "Accept-Encoding": "gzip, deflate",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1",
+        "Cache-Control": "max-age=0",
+    })
+    try:
+        # 先訪問首頁，讓伺服器設定 Session Cookie
+        s.get(f"http://{host}/", timeout=10, allow_redirects=True)
+        time.sleep(0.5)
+    except: pass
+    _SESSION_CACHE[host] = s
+    return s
+
+# 使用 Session + Referer 的網站清單
+SESSION_HOSTS = {"www.trauma.org.tw", "trauma.org.tw"}
+
 def fetch(url, timeout=15, encoding=None):
+    from urllib.parse import urlparse as _up
+    _host = _up(url).netloc
+
+    # 自動偵測 Big5 網站
+    if _host in BIG5_HOSTS:
+        encoding = "big5"
+
+    # 有反爬機制的網站使用 Session + Cookie
+    if _host in SESSION_HOSTS:
+        _s = _get_session(_host)
+        _s.headers["Referer"] = f"http://{_host}/"
+        for attempt in range(2):
+            try:
+                r = _s.get(url, timeout=timeout, allow_redirects=True)
+                r.raise_for_status()
+                r.encoding = encoding or r.apparent_encoding or "utf-8"
+                return BeautifulSoup(r.text, "html.parser")
+            except Exception as e:
+                if attempt == 0:
+                    time.sleep(1)
+                    continue
+                print(f"    ⚠️ fetch 失敗: {e}")
+                return None
+
     _headers = {
         **HEADERS,
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -77,14 +129,6 @@ def fetch(url, timeout=15, encoding=None):
         "Connection": "keep-alive",
         "Upgrade-Insecure-Requests": "1",
     }
-    # 自動偵測 Big5 網站
-    try:
-        from urllib.parse import urlparse as _up
-        _host = _up(url).netloc
-        if _host in BIG5_HOSTS:
-            encoding = "big5"
-    except: pass
-
     for attempt in range(2):  # 最多重試一次
         try:
             r = requests.get(url, headers=_headers, timeout=timeout, allow_redirects=True)
@@ -504,30 +548,65 @@ def scrape_emt():
     return unique[:40]
 
 def scrape_taiwanwma():
-    """台灣野外地區緊急救護協會 — WordPress 結構"""
-    out = []
+    """台灣野外緊急救護協會
+    網站為 Vue SPA，活動資料硬編碼於 JS bundle（index-Cppx5rTh.js），無後端 API。
+    直接對應網站實際的 6 筆活動，連結指向各活動詳細頁。
+    """
     BASE = "https://taiwanwma.org"
-    for path, itype in [
-        ("/category/course/", "course"),
-        ("/category/news/", "news"),
-        ("/", None),
-    ]:
-        soup = fetch(BASE + path)
-        if not soup: continue
-        for a in soup.select("h2 a, h3 a, .entry-title a, article h2 a"):
-            t = clean(a.get_text())
-            if len(t) < 5 or len(t) > 200: continue
-            parent = a.find_parent(["article","div"])
-            date = extract_all_dates(parent.get_text() if parent else t)
-            out.append(mk(t, "台灣野外地區緊急救護協會", "台灣協會",
-                          resolve(a.get("href",""), BASE), itype,
-                          date[-1] if date else None))
-    seen, unique = set(), []
-    for it in out:
-        if it["id"] not in seen:
-            seen.add(it["id"])
-            unique.append(it)
-    return unique[:25]
+    ACTIVITIES_PAGE = BASE + "/activities"
+
+    # 對應網站 JS 中 ws = ae([...]) 的 6 筆活動
+    activities = [
+        {
+            "id": 1,
+            "title": "台灣野外緊急救護協會 Facebook 粉絲專頁公告",
+            "type": "news",
+            "date": None,
+        },
+        {
+            "id": 2,
+            "title": "野編公告｜協會 LINE 官方帳號、Threads、WEMS 課程整合通知",
+            "type": "news",
+            "date": None,
+        },
+        {
+            "id": 3,
+            "title": "2022年高山PAC攜帶型加壓艙建置計畫 相關媒體報導",
+            "type": "news",
+            "date": None,
+        },
+        {
+            "id": 4,
+            "title": "115年度 PAC攜帶型加壓艙操作者認證課程 報名開放中",
+            "type": "course",
+            "date": "2026-01-01",
+        },
+        {
+            "id": 5,
+            "title": "115年度 BLS基本救命術暨野外活動常見傷害與急救密集訓練班 報名開放中",
+            "type": "course",
+            "date": "2026-01-01",
+        },
+        {
+            "id": 6,
+            "title": "115年度 WMAI國際野外急救課程（WFA / WAFA / Bridge to WFR）報名開放中",
+            "type": "course",
+            "date": "2026-01-01",
+        },
+    ]
+
+    out = []
+    for act in activities:
+        url = f"{ACTIVITIES_PAGE}?activity={act['id']}"
+        out.append(mk(
+            act["title"],
+            "台灣野外緊急救護協會",
+            "台灣協會",
+            url,
+            act["type"],
+            date=act["date"],
+        ))
+    return out
 
 def scrape_tsorcc():
     """台灣復甦照護學會（www.tsorcc.org.tw，舊 tsorcc.org 已失效）"""
