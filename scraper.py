@@ -221,31 +221,52 @@ def scrape_seccm():
     return unique[:50]
 
 def scrape_trauma():
-    """台灣外傷醫學會 — 正確表格結構"""
+    """台灣外傷醫學會 — 課程活動 + 學會公告"""
     out = []
     BASE = "http://www.trauma.org.tw"
-    # 最新消息（學會公告列表）— 正確URL
+    # 課程/活動頁（/active/ 區塊）
     for path, item_type in [
-        ("/news/listA.asp", None),      # 學會公告（含課程公告）
-        ("/news/listB.asp", None),      # 其他消息
+        ("/active/listA.asp", "course"),   # 教育課程（外傷教育課程、ATLS 等）
+        ("/active/listB.asp", "course"),   # 學術研討會
+        ("/active/listC.asp", "course"),   # 其他單位活動
     ]:
         soup = fetch(BASE + path)
         if not soup: continue
-        for row in soup.select("table tr"):
-            a = row.find("a")
-            if not a: continue
+        # 列表結構：每筆為含連結的 <a>，上方有日期數字（dd Mon 格式）
+        for a in soup.select("a[href]"):
             t = clean(a.get_text())
-            if len(t) < 5 or len(t) > 200: continue
-            date = extract_all_dates(row.get_text())
+            if len(t) < 5 or len(t) > 300: continue
+            if any(skip in t for skip in ["回首頁","關於學會","最新消息","活動專區","會員專區","積分申請","專科甄審","聯絡我們","分享","噗浪","twitter","line","facebook"]): continue
+            href = resolve(a.get("href",""), BASE)
+            # 日期從周圍文字取（父元素包含日期數字）
+            parent_text = a.find_parent().get_text() if a.find_parent() else ""
+            date = extract_all_dates(parent_text)
             out.append(mk(t, "台灣外傷醫學會", "台灣學會",
-                          resolve(a.get("href",""), BASE), item_type,
+                          href, item_type,
+                          date[-1] if date else None))
+    # 學會公告（消息）
+    for path, item_type in [
+        ("/news/listA.asp", "news"),       # 學會公告
+        ("/news/listC.asp", "news"),       # 轉知訊息
+    ]:
+        soup = fetch(BASE + path)
+        if not soup: continue
+        for a in soup.select("a[href]"):
+            t = clean(a.get_text())
+            if len(t) < 5 or len(t) > 300: continue
+            if any(skip in t for skip in ["回首頁","關於學會","最新消息","活動專區","會員專區","積分申請","專科甄審","聯絡我們","分享","噗浪","twitter","line","facebook"]): continue
+            href = resolve(a.get("href",""), BASE)
+            parent_text = a.find_parent().get_text() if a.find_parent() else ""
+            date = extract_all_dates(parent_text)
+            out.append(mk(t, "台灣外傷醫學會", "台灣學會",
+                          href, item_type,
                           date[-1] if date else None))
     seen, unique = set(), []
     for it in out:
         if it["id"] not in seen:
             seen.add(it["id"])
             unique.append(it)
-    return unique[:40]
+    return unique[:50]
 
 def scrape_disaster():
     """台灣災難醫學會 — 學術活動 + 教育訓練"""
