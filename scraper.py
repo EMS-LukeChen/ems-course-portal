@@ -428,10 +428,10 @@ def scrape_taiwanwma():
     return unique[:25]
 
 def scrape_tsorcc():
-    """復甦照護小學堂"""
+    """台灣復甦照護學會（www.tsorcc.org.tw，舊 tsorcc.org 已失效）"""
     out = []
     BASE = "https://www.tsorcc.org.tw"
-    soup = fetch(BASE + "/")
+    soup = fetch(BASE + "/%E5%AD%B8%E8%A1%93%E6%B4%BB%E5%8B%95")  # 學術活動頁
     if not soup: return out
     for a in soup.select("a[href]"):
         t = clean(a.get_text())
@@ -444,10 +444,10 @@ def scrape_tsorcc():
     return out[:20]
 
 def scrape_burn():
-    """臺灣燒傷暨傷口照護學會"""
+    """臺灣燒傷暨傷口照護學會（www.burn.org.tw，www.burnwound.org.tw 已失效）"""
     out = []
     BASE = "https://www.burn.org.tw"
-    soup = fetch(BASE + "/")
+    soup = fetch(BASE + "/index.php/news")  # 最新消息頁
     if not soup: return out
     for a in soup.select("a[href]"):
         t = clean(a.get_text())
@@ -605,9 +605,9 @@ def scrape_tsccm():
 def scrape_sgecm():
     """台灣老人急重症醫學會 — 學術活動列表（ASP表格結構）"""
     out = []
-    BASE = "http://www.sgecm.org.tw"
-    # 學術活動列表頁（表格結構）
-    soup = fetch(BASE + "/htm/cont_1_2.asp")
+    BASE = "http://www.sgecm.org.tw"   # https 無效，使用 http
+    # 學術活動列表頁（正確路徑）
+    soup = fetch(BASE + "/educate/edu_list.asp?SPONSERFLAG=0")
     if soup:
         for row in soup.select("table tr"):
             cols = row.find_all("td")
@@ -629,7 +629,7 @@ def scrape_sgecm():
                 out.append(mk(t, "台灣老人急重症醫學會", "台灣學會",
                               BASE, "course", date))
     # 最新消息
-    soup2 = fetch(BASE + "/htm/cont_2_1.asp")
+    soup2 = fetch(BASE + "/news/news_list.asp")
     if soup2:
         for a in soup2.select("a[href]"):
             t = clean(a.get_text())
@@ -677,20 +677,31 @@ def scrape_tebma():
     return out[:20]
 
 def scrape_tmed():
-    """臺灣醫事繼續教育學會"""
+    """臺灣醫事繼續教育學會 — 正確網址 www.tmed.com.tw"""
     out = []
     BASE = "https://www.tmed.com.tw"
-    soup = fetch(BASE + "/")
-    if not soup: return out
-    for a in soup.select("a[href]"):
-        t = clean(a.get_text())
-        if len(t) < 8 or len(t) > 150: continue
-        if any(k in t for k in ["課程","活動","研討","訓練","工作坊","報名","公告","消息"]):
-            date = extract_all_dates(t)
-            out.append(mk(t, "臺灣醫事繼續教育學會", "台灣學會",
-                          resolve(a.get("href",""), BASE), None,
-                          date[-1] if date else None))
-    return out[:20]
+    # 課程列表頁
+    for path, itype in [
+        ("/site_item_list_1.php", "course"),   # 課程活動
+        ("/", None),
+    ]:
+        soup = fetch(BASE + path)
+        if not soup: continue
+        for a in soup.select("a[href]"):
+            t = clean(a.get_text())
+            if len(t) < 8 or len(t) > 200: continue
+            if any(skip in t for skip in ["登入","登出","首頁","關於","聯絡","隱私","服務"]): continue
+            if any(k in t for k in ["課程","活動","研討","訓練","工作坊","報名","公告","消息","護理","醫事"]):
+                date = extract_all_dates(t)
+                out.append(mk(t, "臺灣醫事繼續教育學會", "台灣學會",
+                              resolve(a.get("href",""), BASE), itype,
+                              date[-1] if date else None))
+    seen, unique = set(), []
+    for it in out:
+        if it["id"] not in seen:
+            seen.add(it["id"])
+            unique.append(it)
+    return unique[:20]
 
 def scrape_medinfo():
     """台灣醫學資訊學會"""
@@ -822,7 +833,7 @@ def scrape_dpac():
     return unique[:20]
 
 def scrape_webtema():
-    """台灣緊急應變管理協會 — WordPress"""
+    """台灣緊急應變管理協會 — WordPress（webtema.org，無 www）"""
     out = []
     BASE = "https://webtema.org"
     for path, itype in [
@@ -878,14 +889,13 @@ def scrape_anne():
 
 
 def scrape_mgems():
-    """中華民國大型活動緊急救護協會 — WordPress"""
+    """中華民國大型活動緊急救護協會 — WordPress（www.mgems.org）"""
     out = []
     BASE = "https://www.mgems.org"
     for path, itype in [
-        ("/category/ems-course/", "course"),
-        ("/category/on-line-checkin/", "course"),
-        ("/category/news/", "news"),
-        ("/", None),
+        ("/category/on-line-checkin/", "course"),  # 線上報名頁（含各課程）
+        ("/category/ems-course/", "course"),        # EMS課程分類
+        ("/", None),                                # 首頁（含最新活動）
     ]:
         soup = fetch(BASE + path)
         if not soup: continue
@@ -905,20 +915,30 @@ def scrape_mgems():
     return unique[:30]
 
 def scrape_ntuch():
-    """臺大兒童醫院急重症兒童轉院外接醫療團隊"""
+    """臺大兒童醫院 — 最新消息（www.ntuh.gov.tw/ntuch）"""
     out = []
     BASE = "https://www.ntuh.gov.tw"
-    soup = fetch(BASE + "/ntuch/Index.action")
-    if not soup: return out
-    for a in soup.select("a[href]"):
-        t = clean(a.get_text())
-        if len(t) < 8 or len(t) > 150: continue
-        if any(k in t for k in ["課程","活動","研討","訓練","公告","消息","轉院","外接"]):
-            date = extract_all_dates(t)
-            out.append(mk(t, "臺大兒童醫院急重症外接醫療團隊", "台灣急救社群",
-                          resolve(a.get("href",""), BASE), None,
-                          date[-1] if date else None))
-    return out[:15]
+    for path, itype in [
+        ("/ntuch/News.action", "news"),    # 最新消息
+        ("/ntuch/Index.action", None),     # 首頁
+    ]:
+        soup = fetch(BASE + path)
+        if not soup: continue
+        for a in soup.select("a[href]"):
+            t = clean(a.get_text())
+            if len(t) < 8 or len(t) > 200: continue
+            if any(skip in t for skip in ["掛號","交通","地圖","聯絡","English","醫療團隊","醫師查詢","就醫"]): continue
+            if any(k in t for k in ["課程","活動","研討","訓練","公告","消息","兒科","急診","CPR","PALS","NRP"]):
+                date = extract_all_dates(t)
+                out.append(mk(t, "臺大兒童醫院", "台灣急救社群",
+                              resolve(a.get("href",""), BASE), itype,
+                              date[-1] if date else None))
+    seen, unique = set(), []
+    for it in out:
+        if it["id"] not in seen:
+            seen.add(it["id"])
+            unique.append(it)
+    return unique[:15]
 
 def scrape_hear_aed():
     """臺灣愛陌生安全推廣協會（聽見你我的AED）"""
@@ -1193,7 +1213,7 @@ def scrape_cbrn():
     return out[:10]
 
 def scrape_soma():
-    """SOMA — Special Operations Medical Association"""
+    """SOMA — Special Operations Medical Association（specialoperationsmedicine.org）"""
     out = []
     BASE = "https://specialoperationsmedicine.org"
     for path in ["/events", "/news", "/"]:
@@ -1210,7 +1230,7 @@ def scrape_soma():
     return out[:10]
 
 def scrape_ngcm():
-    """Next Generation Combat Medic"""
+    """Next Generation Combat Medic（nextgencombatmedic.com，舊網址 ngcombatmedic.com 已失效）"""
     out = []
     BASE = "https://nextgencombatmedic.com"
     soup = fetch(BASE + "/")
