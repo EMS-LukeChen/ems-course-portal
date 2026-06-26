@@ -1,8 +1,8 @@
 {
-  "updated": "2026-06-26T12:22:44.438169+00:00",
-  "count": 231,
-  "course_count": 102,
-  "news_count": 129,
+  "updated": "2026-06-26T14:32:36.006472+00:00",
+  "count": 204,
+  "course_count": 90,
+  "news_count": 114,
   "items": [
     {
       "id": "271c7e786ba4",
@@ -73,6 +73,16 @@
       "date": "2026-07-18",
       "deadline": null,
       "url": "http://course.tsccm.org.tw/df_info.asp?/967.html"
+    },
+    {
+      "id": "c399275a2bc5",
+      "title": "2026/07/18 國泰工作坊",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": "2026-07-18",
+      "deadline": null,
+      "url": "https://www.tsorcc.org.tw/學術活動/課程列表/20260718-國泰工作坊"
     },
     {
       "id": "6581b870efd0",
@@ -315,16 +325,6 @@
       "url": "https://www.sem.org.tw/News/11/Details/1586"
     },
     {
-      "id": "24c8f9118e81",
-      "title": "2026年台北初級救護技術員繼續教育訓練",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": "2026-05-26",
-      "deadline": null,
-      "url": "https://www.mgems.org/260424_t1_course/"
-    },
-    {
       "id": "47fe445af3a6",
       "title": "轉知 疾病管制署公告「女性及母嬰垂直感染性傳染病防治臨床指引2026版」",
       "source": "台灣急診醫學會",
@@ -333,16 +333,6 @@
       "date": "2026-06-02",
       "deadline": null,
       "url": "https://www.sem.org.tw/News/5/Details/1598"
-    },
-    {
-      "id": "26eb3bb8e0c5",
-      "title": "2026年玉山管理處初級救護技術員繼續教育訓練",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": "2026-06-02",
-      "deadline": null,
-      "url": "https://www.mgems.org/260514_yushan_t1f/"
     },
     {
       "id": "6938acf9f093",
@@ -445,16 +435,6 @@
       "url": "http://www.trauma.org.tw/news/index.asp?/35.html"
     },
     {
-      "id": "86005a8326cc",
-      "title": "本學會災難醫學專科甄審辦法 🔗",
-      "source": "台灣災難醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://drive.google.com/file/d/1jg_csfv2mdUllqJx2EEkWvPDWHy_LO27/view?usp=sharing"
-    },
-    {
       "id": "a93d14badeea",
       "title": "機構:醫療指導醫師繼續教育訓練認證申請連結https://forms.gle/wRpfnT6FwUaPYZ7j8",
       "source": "台灣緊急救護醫療指導醫師學會",
@@ -463,56 +443,6 @@
       "date": null,
       "deadline": null,
       "url": "https://forms.gle/wRpfnT6FwUaPYZ7j8"
-    },
-    {
-      "id": "75b24c5b342a",
-      "title": "理監事會及秘書處",
-      "source": "台灣緊急救護醫療指導醫師學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.taemsp.com/my-project-4"
-    },
-    {
-      "id": "41f18ecac7bc",
-      "title": "Notifications",
-      "source": "台灣緊急救護醫療指導醫師學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.taemsp.com/notifications"
-    },
-    {
-      "id": "e7a0def5d3c9",
-      "title": "taemsp2017@gmail.com",
-      "source": "台灣緊急救護醫療指導醫師學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "mailto:taemsp2017@gmail.com"
-    },
-    {
-      "id": "8909e27f00b3",
-      "title": "指導醫師資訊整合系統 登入頁 (nfa.gov.tw)",
-      "source": "台灣緊急救護醫療指導醫師學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://nfaemsap3.nfa.gov.tw/MMS/"
-    },
-    {
-      "id": "db4a0970f71b",
-      "title": "個人:醫療指導醫師入會申請連結https://forms.gle/RxQobu2FoVewH6Qs5",
-      "source": "台灣緊急救護醫療指導醫師學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://forms.gle/RxQobu2FoVewH6Qs5"
     },
     {
       "id": "5ddae5a72419",
@@ -965,66 +895,6 @@
       "url": "https://www.tasm.org.tw/EL/seminar.asp"
     },
     {
-      "id": "c882249c61ba",
-      "title": "2025年青山宮繞境活動",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.mgems.org/251210_festival/"
-    },
-    {
-      "id": "140fdaafeed9",
-      "title": "2026年臺北101公益垂直馬拉松",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.mgems.org/260509_taipei-101/"
-    },
-    {
-      "id": "b68c7da13251",
-      "title": "2026年台新女生路跑",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.mgems.org/26-04-12-women-run/"
-    },
-    {
-      "id": "8d4b48f3d817",
-      "title": "2026 南山人壽臺北國道馬拉松",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.mgems.org/2026-taipei-highway-marathron/"
-    },
-    {
-      "id": "cb82e9f03a2b",
-      "title": "2026年舒跑杯路跑賽",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.mgems.org/260510_sports-run/"
-    },
-    {
-      "id": "f88b895cb5ea",
-      "title": "2026年台灣資安大會",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.mgems.org/260505-7_taiwan-cyber-security/"
-    },
-    {
       "id": "e45a5f6063e9",
       "title": "台灣野外緊急救護協會 Facebook 粉絲專頁公告",
       "source": "台灣野外緊急救護協會",
@@ -1055,54 +925,14 @@
       "url": "https://taiwanwma.org/activities?activity=3"
     },
     {
-      "id": "91790bdbec7d",
-      "title": "CPR+AED完整版3小時課程",
-      "source": "台灣運動安全暨急救技能推廣協會",
-      "cat": "台灣協會",
+      "id": "5446190a4c6b",
+      "title": "台灣復甦照護學會",
+      "source": "復甦照護小學堂",
+      "cat": "台灣急救社群",
       "type": "course",
       "date": null,
       "deadline": null,
-      "url": "https://sfast.innosoft.com.tw/iplm/pages/b.aspx?page=in_Meeting_list_A.html&method=In_MeetingUserResponse&in_meetingid=297C8E0AF68B4B609134923DF1F22659"
-    },
-    {
-      "id": "bf3f0e1ba292",
-      "title": "AED管理員4小時教育訓練",
-      "source": "台灣運動安全暨急救技能推廣協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://reurl.cc/qKa2WE"
-    },
-    {
-      "id": "e0f77ddf7472",
-      "title": "基本救命術指導員BLS-I課程",
-      "source": "台灣運動安全暨急救技能推廣協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://reurl.cc/eVQggR"
-    },
-    {
-      "id": "5bc9921519e2",
-      "title": "基本救命術BLS4小時課程",
-      "source": "台灣運動安全暨急救技能推廣協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://reurl.cc/4bYO9v"
-    },
-    {
-      "id": "a2470c9c35e4",
-      "title": "基本救命術BLS8小時課程",
-      "source": "台灣運動安全暨急救技能推廣協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://reurl.cc/aMEgWl"
+      "url": "https://www.tsorcc.org.tw/首頁"
     },
     {
       "id": "a8949ae88118",
@@ -1145,74 +975,74 @@
       "url": "https://www.tsorcc.org.tw/活動花絮/2026年活動花絮集"
     },
     {
-      "id": "5446190a4c6b",
-      "title": "台灣復甦照護學會",
+      "id": "c7f92f399b5e",
+      "title": "不只救命…更陪伴重生！台大首創「復甦科學中心」串連生命之鏈、打造完整救命流程",
       "source": "復甦照護小學堂",
       "cat": "台灣急救社群",
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.tsorcc.org.tw/首頁"
+      "url": "https://www.google.com/url?q=https%3A%2F%2Fwww.cmmedia.com.tw%2Fhome%2Farticles%2F54096&sa=D&sntz=1&usg=AOvVaw2UWMcFMNCvNsJMK1QffFv8"
     },
     {
-      "id": "9a9995a5da7d",
-      "title": "安妮怎麼了？－急救教育設計服務",
-      "source": "安妮怎麼了",
-      "cat": "台灣急救社群",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.anne.education/"
-    },
-    {
-      "id": "ed3caa0dfe34",
-      "title": "全民學急救",
-      "source": "安妮怎麼了",
-      "cat": "台灣急救社群",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.anne.education/firstaid.html"
-    },
-    {
-      "id": "74618323376f",
-      "title": "無意識且沒有正常呼吸(CPR+AED)",
-      "source": "安妮怎麼了",
-      "cat": "台灣急救社群",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.anne.education/f1ohca.html"
-    },
-    {
-      "id": "17dbb796794e",
-      "title": "翻轉急救｜CPR+AED",
-      "source": "安妮怎麼了",
-      "cat": "台灣急救社群",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.anne.education/flippedcpr.html"
-    },
-    {
-      "id": "77986d080e7b",
-      "title": "校園急救教育支持計畫",
-      "source": "安妮怎麼了",
-      "cat": "台灣急救社群",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.anne.education/campus.html"
-    },
-    {
-      "id": "c9bc7d463306",
-      "title": "翻轉CPR",
-      "source": "安妮怎麼了",
+      "id": "0c74e4a451bd",
+      "title": "40歲男跑馬拉松倒地無心跳 康復後再創完賽奇蹟 | 生活 | 中央社 CNA40歲宋先生1年多前參加台北馬拉松突然倒地，當場失去呼吸與心跳，如今卻能重返賽道，除歸功於現場搶救，還有台大醫院急救復甦環環相扣，以溫控治療緩解後遺症，助患者康復。",
+      "source": "復甦照護小學堂",
       "cat": "台灣急救社群",
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.anne.education/flippedcpr.html"
+      "url": "https://www.google.com/url?q=https%3A%2F%2Fwww.cna.com.tw%2Fnews%2Fahel%2F202504280120.aspx&sa=D&sntz=1&usg=AOvVaw0jvek_Yw4OkSr8bUHclodX"
+    },
+    {
+      "id": "b105b4b84b16",
+      "title": "翻轉急救｜CPR+AED 線上知識課程（第一階段）",
+      "source": "安妮怎麼了",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://school.anne.education/courses/cpraed/"
+    },
+    {
+      "id": "268b5ec38d5d",
+      "title": "翻轉急救｜CPR+AED 實體練習測驗（台北）",
+      "source": "安妮怎麼了",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://school.anne.education/courses/cpraedpractice/"
+    },
+    {
+      "id": "c147ba3dd730",
+      "title": "翻轉急救｜CPR+AED 實體練習測驗（台中）",
+      "source": "安妮怎麼了",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://school.anne.education/courses/cpraedpracticeTC/"
+    },
+    {
+      "id": "950dba15b970",
+      "title": "翻轉急救｜緊急止血 線上知識課程",
+      "source": "安妮怎麼了",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://school.anne.education/courses/stb/"
+    },
+    {
+      "id": "42f8f9149e38",
+      "title": "翻轉急救｜緊急止血 實體練習（台北）",
+      "source": "安妮怎麼了",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://school.anne.education/courses/stbpractice/"
     },
     {
       "id": "1a7323e30be9",
@@ -1283,46 +1113,6 @@
       "date": null,
       "deadline": null,
       "url": "https://www.ntuh.gov.tw/ntuh/News.action?q_type=-1&q_itemCode=18245"
-    },
-    {
-      "id": "4a9057508daa",
-      "title": "聽見AED 六月活動",
-      "source": "臺灣愛陌生安全推廣協會",
-      "cat": "台灣急救社群",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.hear-aed.com.tw/news/event-news/%e8%81%bd%e8%a6%8baed-%e5%85%ad%e6%9c%88%e6%b4%bb%e5%8b%95-2/"
-    },
-    {
-      "id": "77517feee91a",
-      "title": "【守護生命更便利！聽見AED正式上架7-ELEVEN「把愛找回來」公益平台】",
-      "source": "臺灣愛陌生安全推廣協會",
-      "cat": "台灣急救社群",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.hear-aed.com.tw/news/%e6%9c%80%e6%96%b0%e6%b6%88%e6%81%af%e5%8f%8a%e5%85%ac%e5%91%8a/%e3%80%90%e5%ae%88%e8%ad%b7%e7%94%9f%e5%91%bd%e6%9b%b4%e4%be%bf%e5%88%a9%ef%bc%81%e8%81%bd%e8%a6%8baed%e6%ad%a3%e5%bc%8f%e4%b8%8a%e6%9e%b67-eleven%e3%80%8c%e6%8a%8a%e6%84%9b%e6%89%be%e5%9b%9e%e4%be%86/"
-    },
-    {
-      "id": "0c6610f61fd2",
-      "title": "【解密台北市救命網路：聽見AED攜手台大醫院，用數據實證生命韌性】",
-      "source": "臺灣愛陌生安全推廣協會",
-      "cat": "台灣急救社群",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.hear-aed.com.tw/news/%e6%9c%80%e6%96%b0%e6%b6%88%e6%81%af%e5%8f%8a%e5%85%ac%e5%91%8a/%e3%80%90%e8%a7%a3%e5%af%86%e5%8f%b0%e5%8c%97%e5%b8%82%e6%95%91%e5%91%bd%e7%b6%b2%e8%b7%af%ef%bc%9a%e8%81%bd%e8%a6%8baed%e6%94%9c%e6%89%8b%e5%8f%b0%e5%a4%a7%e9%86%ab%e9%99%a2%ef%bc%8c%e7%94%a8/"
-    },
-    {
-      "id": "ae886fede740",
-      "title": "【聽見AED】LINE@救援通知系統2026年5月成果報告",
-      "source": "臺灣愛陌生安全推廣協會",
-      "cat": "台灣急救社群",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.hear-aed.com.tw/news/event-news/%e3%80%90%e8%81%bd%e8%a6%8baed%e3%80%91line%e6%95%91%e6%8f%b4%e9%80%9a%e7%9f%a5%e7%b3%bb%e7%b5%b12026%e5%b9%b45%e6%9c%88%e6%88%90%e6%9e%9c%e5%a0%b1%e5%91%8a/"
     },
     {
       "id": "c302a6b91021",
@@ -1413,66 +1203,6 @@
       "date": null,
       "deadline": null,
       "url": "https://www.jems.com/news/"
-    },
-    {
-      "id": "fa7bfbf49367",
-      "title": "TX Firefighter Saves Airline Passenger Mid-Flight",
-      "source": "JEMS",
-      "cat": "國際期刊/組織",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.jems.com/news/tx-firefighter-saves-airline-passenger-mid-flight/"
-    },
-    {
-      "id": "cc05242f9202",
-      "title": "Event & Expedition Medic Provision",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/event-expedition-medic-provision/"
-    },
-    {
-      "id": "36dc95e80ac8",
-      "title": "Courses",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/extreme-medicine-courses/"
-    },
-    {
-      "id": "cdc892f17af7",
-      "title": "Expedition & Wilderness Medicine",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/product-category/extreme-medicine-courses/expedition-wilderness-medicine/"
-    },
-    {
-      "id": "55342de8b5f8",
-      "title": "WEMFund Prolonged Field Care Course",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/extreme-medicine-courses/wemf-prolonged-field-care-course"
-    },
-    {
-      "id": "17f164e2e04b",
-      "title": "All Extreme Medicine Courses",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/product-category/extreme-medicine-courses/all-courses/"
     },
     {
       "id": "b8d5eb07b1d3",

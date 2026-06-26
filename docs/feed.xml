@@ -5,7 +5,7 @@
   <link>https://emsipbyluke.netlify.app</link>
   <description>自動彙整台灣及國際急救相關單位課程與最新消息</description>
   <language>zh-TW</language>
-  <lastBuildDate>Fri, 26 Jun 2026 12:22:44 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 26 Jun 2026 14:32:36 +0000</lastBuildDate>
   <ttl>180</ttl>
   <item>
     <title>【課程】2026第十七屆第一次會員大會暨學術研討會 社團法人台灣急診醫學會</title>
@@ -62,6 +62,14 @@
     <pubDate>2026-07-18</pubDate>
     <category>中華民國重症醫學會 - 台灣學會</category>
     <description>【消息】2026.7.18 台灣復甦照護學會Holistic and Patient-Centered Critical Care研討會及工作坊開放報名（來源：中華民國重症醫學會）</description>
+  </item>
+  <item>
+    <title>【課程】2026/07/18 國泰工作坊</title>
+    <link>https://www.tsorcc.org.tw/學術活動/課程列表/20260718-國泰工作坊</link>
+    <guid>https://www.tsorcc.org.tw/學術活動/課程列表/20260718-國泰工作坊</guid>
+    <pubDate>2026-07-18</pubDate>
+    <category>復甦照護小學堂 - 台灣急救社群</category>
+    <description>【課程】2026/07/18 國泰工作坊（來源：復甦照護小學堂）</description>
   </item>
   <item>
     <title>【課程】115年度中毒個案討論會–中區 社團法人台灣急診醫學會、秀傳紀念醫院</title>
@@ -256,28 +264,12 @@
     <description>【消息】台灣EMS相關的中英對照詞彙表（來源：台灣急診醫學會）</description>
   </item>
   <item>
-    <title>【課程】2026年台北初級救護技術員繼續教育訓練</title>
-    <link>https://www.mgems.org/260424_t1_course/</link>
-    <guid>https://www.mgems.org/260424_t1_course/</guid>
-    <pubDate>2026-05-26</pubDate>
-    <category>中華民國大型活動緊急救護協會 - 台灣協會</category>
-    <description>【課程】2026年台北初級救護技術員繼續教育訓練（來源：中華民國大型活動緊急救護協會）</description>
-  </item>
-  <item>
     <title>【消息】轉知 疾病管制署公告「女性及母嬰垂直感染性傳染病防治臨床指引2026版」</title>
     <link>https://www.sem.org.tw/News/5/Details/1598</link>
     <guid>https://www.sem.org.tw/News/5/Details/1598</guid>
     <pubDate>2026-06-02</pubDate>
     <category>台灣急診醫學會 - 台灣學會</category>
     <description>【消息】轉知 疾病管制署公告「女性及母嬰垂直感染性傳染病防治臨床指引2026版」（來源：台灣急診醫學會）</description>
-  </item>
-  <item>
-    <title>【課程】2026年玉山管理處初級救護技術員繼續教育訓練</title>
-    <link>https://www.mgems.org/260514_yushan_t1f/</link>
-    <guid>https://www.mgems.org/260514_yushan_t1f/</guid>
-    <pubDate>2026-06-02</pubDate>
-    <category>中華民國大型活動緊急救護協會 - 台灣協會</category>
-    <description>【課程】2026年玉山管理處初級救護技術員繼續教育訓練（來源：中華民國大型活動緊急救護協會）</description>
   </item>
   <item>
     <title>【課程】115年度家庭暴力、性侵害防治與兒童保護案件實務教育訓練 衛生福利部桃園醫院</title>
@@ -360,60 +352,12 @@
     <description>【消息】【ATLS報名】115年度「再認證」課程報名資訊（含報名表）115.06.04更新...（來源：台灣外傷醫學會）</description>
   </item>
   <item>
-    <title>【消息】本學會災難醫學專科甄審辦法 🔗</title>
-    <link>https://drive.google.com/file/d/1jg_csfv2mdUllqJx2EEkWvPDWHy_LO27/view?usp=sharing</link>
-    <guid>https://drive.google.com/file/d/1jg_csfv2mdUllqJx2EEkWvPDWHy_LO27/view?usp=sharing</guid>
-    <pubDate>None</pubDate>
-    <category>台灣災難醫學會 - 台灣學會</category>
-    <description>【消息】本學會災難醫學專科甄審辦法 🔗（來源：台灣災難醫學會）</description>
-  </item>
-  <item>
     <title>【課程】機構:醫療指導醫師繼續教育訓練認證申請連結https://forms.gle/wRpfnT6FwUaPYZ7j8</title>
     <link>https://forms.gle/wRpfnT6FwUaPYZ7j8</link>
     <guid>https://forms.gle/wRpfnT6FwUaPYZ7j8</guid>
     <pubDate>None</pubDate>
     <category>台灣緊急救護醫療指導醫師學會 - 台灣學會</category>
     <description>【課程】機構:醫療指導醫師繼續教育訓練認證申請連結https://forms.gle/wRpfnT6FwUaPYZ7j8（來源：台灣緊急救護醫療指導醫師學會）</description>
-  </item>
-  <item>
-    <title>【消息】理監事會及秘書處</title>
-    <link>https://www.taemsp.com/my-project-4</link>
-    <guid>https://www.taemsp.com/my-project-4</guid>
-    <pubDate>None</pubDate>
-    <category>台灣緊急救護醫療指導醫師學會 - 台灣學會</category>
-    <description>【消息】理監事會及秘書處（來源：台灣緊急救護醫療指導醫師學會）</description>
-  </item>
-  <item>
-    <title>【消息】Notifications</title>
-    <link>https://www.taemsp.com/notifications</link>
-    <guid>https://www.taemsp.com/notifications</guid>
-    <pubDate>None</pubDate>
-    <category>台灣緊急救護醫療指導醫師學會 - 台灣學會</category>
-    <description>【消息】Notifications（來源：台灣緊急救護醫療指導醫師學會）</description>
-  </item>
-  <item>
-    <title>【消息】taemsp2017@gmail.com</title>
-    <link>mailto:taemsp2017@gmail.com</link>
-    <guid>mailto:taemsp2017@gmail.com</guid>
-    <pubDate>None</pubDate>
-    <category>台灣緊急救護醫療指導醫師學會 - 台灣學會</category>
-    <description>【消息】taemsp2017@gmail.com（來源：台灣緊急救護醫療指導醫師學會）</description>
-  </item>
-  <item>
-    <title>【消息】指導醫師資訊整合系統 登入頁 (nfa.gov.tw)</title>
-    <link>https://nfaemsap3.nfa.gov.tw/MMS/</link>
-    <guid>https://nfaemsap3.nfa.gov.tw/MMS/</guid>
-    <pubDate>None</pubDate>
-    <category>台灣緊急救護醫療指導醫師學會 - 台灣學會</category>
-    <description>【消息】指導醫師資訊整合系統 登入頁 (nfa.gov.tw)（來源：台灣緊急救護醫療指導醫師學會）</description>
-  </item>
-  <item>
-    <title>【消息】個人:醫療指導醫師入會申請連結https://forms.gle/RxQobu2FoVewH6Qs5</title>
-    <link>https://forms.gle/RxQobu2FoVewH6Qs5</link>
-    <guid>https://forms.gle/RxQobu2FoVewH6Qs5</guid>
-    <pubDate>None</pubDate>
-    <category>台灣緊急救護醫療指導醫師學會 - 台灣學會</category>
-    <description>【消息】個人:醫療指導醫師入會申請連結https://forms.gle/RxQobu2FoVewH6Qs5（來源：台灣緊急救護醫療指導醫師學會）</description>
   </item>
   <item>
     <title>【消息】ACLS 2007新課程規範</title>
@@ -486,6 +430,62 @@
     <pubDate>None</pubDate>
     <category>台灣心肌梗塞學會 - 台灣學會</category>
     <description>【消息】特選環球會議（來源：台灣心肌梗塞學會）</description>
+  </item>
+  <item>
+    <title>【消息】| 🔥 2026 TAMIS 超級心光大道｜第四場巡迴《領悟》 公告日期：2026 / 6 / 23</title>
+    <link>https://tamis.org.tw/activity/44/1261</link>
+    <guid>https://tamis.org.tw/activity/44/1261</guid>
+    <pubDate>None</pubDate>
+    <category>台灣心肌梗塞學會 - 台灣學會</category>
+    <description>【消息】| 🔥 2026 TAMIS 超級心光大道｜第四場巡迴《領悟》 公告日期：2026 / 6 / 23（來源：台灣心肌梗塞學會）</description>
+  </item>
+  <item>
+    <title>【消息】| 「到院前心肌梗塞救護大作戰 TAMIS Got Talent!」趣味競賽報名開跑！ 公告日期：2026 / 6 / 5</title>
+    <link>https://tamis.org.tw/activity/44/1258</link>
+    <guid>https://tamis.org.tw/activity/44/1258</guid>
+    <pubDate>None</pubDate>
+    <category>台灣心肌梗塞學會 - 台灣學會</category>
+    <description>【消息】| 「到院前心肌梗塞救護大作戰 TAMIS Got Talent!」趣味競賽報名開跑！ 公告日期：2026 / 6 / 5（來源：台灣心肌梗塞學會）</description>
+  </item>
+  <item>
+    <title>【消息】| 【2026第五屆金心獎-台灣最佳心肌梗塞緊急救護員/救護團隊】甄選公告 公告日期：2026 / 6 / 5</title>
+    <link>https://tamis.org.tw/activity/44/1257</link>
+    <guid>https://tamis.org.tw/activity/44/1257</guid>
+    <pubDate>None</pubDate>
+    <category>台灣心肌梗塞學會 - 台灣學會</category>
+    <description>【消息】| 【2026第五屆金心獎-台灣最佳心肌梗塞緊急救護員/救護團隊】甄選公告 公告日期：2026 / 6 / 5（來源：台灣心肌梗塞學會）</description>
+  </item>
+  <item>
+    <title>【課程】★★★ 學會醫事課程開課一覽表 ★★★</title>
+    <link>https://www.tmed.com.tw/site_item_content_2.php?site_map_item_id=3</link>
+    <guid>https://www.tmed.com.tw/site_item_content_2.php?site_map_item_id=3</guid>
+    <pubDate>None</pubDate>
+    <category>臺灣醫事繼續教育學會 - 台灣學會</category>
+    <description>【課程】★★★ 學會醫事課程開課一覽表 ★★★（來源：臺灣醫事繼續教育學會）</description>
+  </item>
+  <item>
+    <title>【課程】★★★ 高雄中山、鳯山、路竹、台中教室長照課程開課一覽表 ★★★</title>
+    <link>https://www.tmed.com.tw/site_item_content_2.php?site_map_item_id=106</link>
+    <guid>https://www.tmed.com.tw/site_item_content_2.php?site_map_item_id=106</guid>
+    <pubDate>None</pubDate>
+    <category>臺灣醫事繼續教育學會 - 台灣學會</category>
+    <description>【課程】★★★ 高雄中山、鳯山、路竹、台中教室長照課程開課一覽表 ★★★（來源：臺灣醫事繼續教育學會）</description>
+  </item>
+  <item>
+    <title>【課程】【代轉】大語言模型與串接醫療 AI 應用系列課程即將推出</title>
+    <link>https://www.medinfo.org.tw</link>
+    <guid>https://www.medinfo.org.tw</guid>
+    <pubDate>None</pubDate>
+    <category>台灣醫學資訊學會 - 台灣學會</category>
+    <description>【課程】【代轉】大語言模型與串接醫療 AI 應用系列課程即將推出（來源：台灣醫學資訊學會）</description>
+  </item>
+  <item>
+    <title>【課程】【代轉】臺大醫院舉辦「臺大醫院131週年院慶-數位與智慧醫療國 際研討會」，歡迎報名參加！</title>
+    <link>https://www.medinfo.org.tw</link>
+    <guid>https://www.medinfo.org.tw</guid>
+    <pubDate>None</pubDate>
+    <category>台灣醫學資訊學會 - 台灣學會</category>
+    <description>【課程】【代轉】臺大醫院舉辦「臺大醫院131週年院慶-數位與智慧醫療國 際研討會」，歡迎報名參加！（來源：台灣醫學資訊學會）</description>
   </item>
 </channel>
 </rss>
