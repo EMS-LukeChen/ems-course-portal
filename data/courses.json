@@ -1,9 +1,19 @@
 {
-  "updated": "2026-06-26T01:47:41.926921+00:00",
-  "count": 240,
-  "course_count": 125,
-  "news_count": 115,
+  "updated": "2026-06-26T02:08:02.403216+00:00",
+  "count": 245,
+  "course_count": 121,
+  "news_count": 124,
   "items": [
+    {
+      "id": "271c7e786ba4",
+      "title": "2026第十七屆第一次會員大會暨學術研討會 社團法人台灣急診醫學會",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-06-26",
+      "deadline": null,
+      "url": "https://www.sem.org.tw/Activity/A/Details/32620"
+    },
     {
       "id": "d7b0209ac9c3",
       "title": "甲115350",
@@ -23,6 +33,36 @@
       "date": "2026-06-26",
       "deadline": null,
       "url": "http://www.sgecm.org.tw/edu_info.asp?id=1723"
+    },
+    {
+      "id": "c8f312b5112b",
+      "title": "戰傷與外傷處置的整合視角：輸血、腦傷與化學武器威脅 臺北榮總急診醫學部",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-06-28",
+      "deadline": null,
+      "url": "https://www.sem.org.tw/Activity/B/Details/32901"
+    },
+    {
+      "id": "fe7ab61246e6",
+      "title": "健康台灣深耕計畫 : 守護兒童、拒絕傷害 臺灣兒童死因探討與青少年自殺的辨識與防治 臺北榮總兒童醫學部",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-06-28",
+      "deadline": null,
+      "url": "https://www.sem.org.tw/Activity/B/Details/32900"
+    },
+    {
+      "id": "6cdbc2d92f99",
+      "title": "115年住院醫師初階災難訓練課程(南區)【線上+實體】 社團法人台灣急診醫學會",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-02",
+      "deadline": null,
+      "url": "https://www.sem.org.tw/Activity/A/Details/33032"
     },
     {
       "id": "f103d17614c4",
@@ -45,6 +85,26 @@
       "url": "http://www.trauma.org.tw/index.asp?/21.html"
     },
     {
+      "id": "6e89d2b0fe74",
+      "title": "夏季山域溪谷自救搜救知能安全講習 社團法人台灣急診醫學會、馬偕紀念醫院急診醫學部野外醫學中心",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-08",
+      "deadline": null,
+      "url": "https://www.sem.org.tw/Activity/A/Details/33048"
+    },
+    {
+      "id": "1bacf010c6e9",
+      "title": "115年急診基礎超音波課程 國立臺灣大學醫學院附設醫院急診醫學部",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-09",
+      "deadline": null,
+      "url": "https://www.sem.org.tw/Activity/B/Details/33052"
+    },
+    {
       "id": "452b7eab7397",
       "title": "2026.7.18 台灣復甦照護學會Holistic and Patient-Centered Critical Care研討會及工作坊開放報名",
       "source": "中華民國重症醫學會",
@@ -53,6 +113,16 @@
       "date": "2026-07-18",
       "deadline": null,
       "url": "http://course.tsccm.org.tw/df_info.asp?/967.html"
+    },
+    {
+      "id": "6581b870efd0",
+      "title": "115年度中毒個案討論會–中區 社團法人台灣急診醫學會、秀傳紀念醫院",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-20",
+      "deadline": null,
+      "url": "https://www.sem.org.tw/Activity/A/Details/32964"
     },
     {
       "id": "5bd23fc6becf",
@@ -83,6 +153,16 @@
       "date": "2026-07-25",
       "deadline": null,
       "url": "https://www.tebma.org.tw/event/list"
+    },
+    {
+      "id": "44140ae5ad0b",
+      "title": "115年師資培育工作坊 (中區) 社團法人台灣急診醫學會、中山醫學大學附設醫院",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-28",
+      "deadline": null,
+      "url": "https://www.sem.org.tw/Activity/A/Details/32647"
     },
     {
       "id": "e39eb0607545",
@@ -315,6 +395,16 @@
       "url": "https://jcmit2026.medinfo.org.tw/"
     },
     {
+      "id": "0ac54b6fc1ed",
+      "title": "2026醫療無人機友誼賽",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-03-30",
+      "deadline": null,
+      "url": "https://www.sem.org.tw/News/11/Details/1557"
+    },
+    {
       "id": "859cb4ea6bf6",
       "title": "甲115348",
       "source": "台灣老人急重症醫學會",
@@ -333,6 +423,16 @@
       "date": "2026-04-18",
       "deadline": null,
       "url": "http://www.sgecm.org.tw/edu_info.asp?id=1718"
+    },
+    {
+      "id": "d480ed6083eb",
+      "title": "轉知衛生福利部疾病管制署來函-有關「抗生素管理手冊」及「侵入性醫療處置組合式照護工作手冊」",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-04-22",
+      "deadline": null,
+      "url": "https://www.sem.org.tw/News/10/Details/1569"
     },
     {
       "id": "2847c76d4063",
@@ -365,6 +465,46 @@
       "url": "http://www.sgecm.org.tw/edu_info.asp?id=1725"
     },
     {
+      "id": "2ac09c278563",
+      "title": "公告「2026年EMS傑出成就獎」獲獎人員。",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-05-15",
+      "deadline": null,
+      "url": "https://www.sem.org.tw/News/11/Details/1583"
+    },
+    {
+      "id": "7899538cd955",
+      "title": "公告「2026年十大傑出救護技術員」獲選名單。",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-05-15",
+      "deadline": null,
+      "url": "https://www.sem.org.tw/News/11/Details/1582"
+    },
+    {
+      "id": "d15a8ee5a5b1",
+      "title": "轉知「第一屆亞太在宅急症照護國際研討會 APHaH 2026」舉辦訊息",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-05-18",
+      "deadline": null,
+      "url": "https://www.sem.org.tw/News/10/Details/1585"
+    },
+    {
+      "id": "73bf0633f23b",
+      "title": "台灣EMS相關的中英對照詞彙表",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-05-20",
+      "deadline": null,
+      "url": "https://www.sem.org.tw/News/11/Details/1586"
+    },
+    {
       "id": "312b80e8bcf6",
       "title": "甲115347",
       "source": "台灣老人急重症醫學會",
@@ -395,6 +535,16 @@
       "url": "https://www.mgems.org/260424_t1_course/"
     },
     {
+      "id": "47fe445af3a6",
+      "title": "轉知 疾病管制署公告「女性及母嬰垂直感染性傳染病防治臨床指引2026版」",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-06-02",
+      "deadline": null,
+      "url": "https://www.sem.org.tw/News/5/Details/1598"
+    },
+    {
       "id": "26eb3bb8e0c5",
       "title": "2026年玉山管理處初級救護技術員繼續教育訓練",
       "source": "中華民國大型活動緊急救護協會",
@@ -405,34 +555,54 @@
       "url": "https://www.mgems.org/260514_yushan_t1f/"
     },
     {
-      "id": "7bdd226cd243",
-      "title": "國際學術活動",
+      "id": "6938acf9f093",
+      "title": "115年度家庭暴力、性侵害防治與兒童保護案件實務教育訓練 衛生福利部桃園醫院",
       "source": "台灣急診醫學會",
       "cat": "台灣學會",
       "type": "course",
-      "date": null,
+      "date": "2026-06-03",
       "deadline": null,
-      "url": "https://www.sem.org.tw/Activity/Details/32838"
+      "url": "https://www.sem.org.tw/Activity/B/Details/32940"
     },
     {
-      "id": "d2be17971b56",
-      "title": "非學會主辦積分活動",
+      "id": "6639ba3141e8",
+      "title": "2026超音波競賽錄取隊伍公告",
       "source": "台灣急診醫學會",
       "cat": "台灣學會",
-      "type": "course",
-      "date": null,
+      "type": "news",
+      "date": "2026-06-03",
       "deadline": null,
-      "url": "https://www.sem.org.tw/Activity/Details/32900"
+      "url": "https://www.sem.org.tw/News/11/Details/1599"
     },
     {
-      "id": "8a590d4016ac",
-      "title": "學會主辦積分活動",
+      "id": "1484c306a4b9",
+      "title": "公告第十七屆理、監事候選人名單及政見",
       "source": "台灣急診醫學會",
       "cat": "台灣學會",
-      "type": "course",
-      "date": null,
+      "type": "news",
+      "date": "2026-06-04",
       "deadline": null,
-      "url": "https://www.sem.org.tw/Activity/Details/32964"
+      "url": "https://www.sem.org.tw/News/11/Details/1600"
+    },
+    {
+      "id": "03a609b501ef",
+      "title": "公告115年度急診醫學科專科醫師甄審初審合格名單",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-06-06",
+      "deadline": null,
+      "url": "https://www.sem.org.tw/News/7/Details/1603"
+    },
+    {
+      "id": "cdd928a87676",
+      "title": "《在宅急症照護手冊》",
+      "source": "台灣急診醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-06-24",
+      "deadline": null,
+      "url": "https://www.sem.org.tw/News/11/Details/1611"
     },
     {
       "id": "0f6f36b5436d",
@@ -1305,76 +1475,6 @@
       "url": "https://www.anne.education/flippedcpr.html"
     },
     {
-      "id": "1a7323e30be9",
-      "title": "2026母親節節慶關懷系列活動",
-      "source": "臺大兒童醫院",
-      "cat": "台灣急救社群",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.ntuh.gov.tw"
-    },
-    {
-      "id": "9fdb080fb678",
-      "title": "2026兒童節節慶關懷系列活動",
-      "source": "臺大兒童醫院",
-      "cat": "台灣急救社群",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.ntuh.gov.tw"
-    },
-    {
-      "id": "79f4d8162d0b",
-      "title": "2025兒童醫院聖誕節慶活動",
-      "source": "臺大兒童醫院",
-      "cat": "台灣急救社群",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.ntuh.gov.tw"
-    },
-    {
-      "id": "ed2ee3e5b76a",
-      "title": "「聽那裡說故事！」候診區說故事活動開跑囉！",
-      "source": "臺大兒童醫院",
-      "cat": "台灣急救社群",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.ntuh.gov.tw/Activity.action?q_type=A01&q_itemCode=771"
-    },
-    {
-      "id": "5bb633d2fb9b",
-      "title": "臺大醫院115年度母親節節慶關懷活動",
-      "source": "臺大兒童醫院",
-      "cat": "台灣急救社群",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.ntuh.gov.tw/Activity.action?q_type=A01&q_itemCode=1050"
-    },
-    {
-      "id": "9b54876f3cd3",
-      "title": "115年農曆春節本院服務公告",
-      "source": "臺大兒童醫院",
-      "cat": "台灣急救社群",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.ntuh.gov.tw/ntuh/News.action?q_type=-1&q_itemCode=18247"
-    },
-    {
-      "id": "c32df82d097f",
-      "title": "115年農曆春節假期特設「傳染病特別診」公告",
-      "source": "臺大兒童醫院",
-      "cat": "台灣急救社群",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.ntuh.gov.tw/ntuh/News.action?q_type=-1&q_itemCode=18245"
-    },
-    {
       "id": "4a9057508daa",
       "title": "聽見AED 六月活動",
       "source": "臺灣愛陌生安全推廣協會",
@@ -1513,56 +1613,6 @@
       "date": null,
       "deadline": null,
       "url": "https://www.jems.com/news/tx-firefighter-saves-airline-passenger-mid-flight/"
-    },
-    {
-      "id": "cc05242f9202",
-      "title": "Event & Expedition Medic Provision",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/event-expedition-medic-provision/"
-    },
-    {
-      "id": "36dc95e80ac8",
-      "title": "Courses",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/extreme-medicine-courses/"
-    },
-    {
-      "id": "cdc892f17af7",
-      "title": "Expedition & Wilderness Medicine",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/product-category/extreme-medicine-courses/expedition-wilderness-medicine/"
-    },
-    {
-      "id": "55342de8b5f8",
-      "title": "WEMFund Prolonged Field Care Course",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/extreme-medicine-courses/wemf-prolonged-field-care-course"
-    },
-    {
-      "id": "17f164e2e04b",
-      "title": "All Extreme Medicine Courses",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/product-category/extreme-medicine-courses/all-courses/"
     },
     {
       "id": "b8d5eb07b1d3",
