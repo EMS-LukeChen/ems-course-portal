@@ -1,8 +1,8 @@
 {
-  "updated": "2026-06-26T02:48:24.015910+00:00",
-  "count": 234,
-  "course_count": 110,
-  "news_count": 124,
+  "updated": "2026-06-26T03:04:05.321030+00:00",
+  "count": 241,
+  "course_count": 115,
+  "news_count": 126,
   "items": [
     {
       "id": "271c7e786ba4",
@@ -1315,6 +1315,76 @@
       "url": "https://www.anne.education/flippedcpr.html"
     },
     {
+      "id": "1a7323e30be9",
+      "title": "2026母親節節慶關懷系列活動",
+      "source": "臺大兒童醫院",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.ntuh.gov.tw"
+    },
+    {
+      "id": "9fdb080fb678",
+      "title": "2026兒童節節慶關懷系列活動",
+      "source": "臺大兒童醫院",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.ntuh.gov.tw"
+    },
+    {
+      "id": "79f4d8162d0b",
+      "title": "2025兒童醫院聖誕節慶活動",
+      "source": "臺大兒童醫院",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.ntuh.gov.tw"
+    },
+    {
+      "id": "ed2ee3e5b76a",
+      "title": "「聽那裡說故事！」候診區說故事活動開跑囉！",
+      "source": "臺大兒童醫院",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.ntuh.gov.tw/Activity.action?q_type=A01&q_itemCode=771"
+    },
+    {
+      "id": "5bb633d2fb9b",
+      "title": "臺大醫院115年度母親節節慶關懷活動",
+      "source": "臺大兒童醫院",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.ntuh.gov.tw/Activity.action?q_type=A01&q_itemCode=1050"
+    },
+    {
+      "id": "9b54876f3cd3",
+      "title": "115年農曆春節本院服務公告",
+      "source": "臺大兒童醫院",
+      "cat": "台灣急救社群",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.ntuh.gov.tw/ntuh/News.action?q_type=-1&q_itemCode=18247"
+    },
+    {
+      "id": "c32df82d097f",
+      "title": "115年農曆春節假期特設「傳染病特別診」公告",
+      "source": "臺大兒童醫院",
+      "cat": "台灣急救社群",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.ntuh.gov.tw/ntuh/News.action?q_type=-1&q_itemCode=18245"
+    },
+    {
       "id": "4a9057508daa",
       "title": "聽見AED 六月活動",
       "source": "臺灣愛陌生安全推廣協會",
@@ -2312,7 +2382,7 @@
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "http://bjsm.bmj.com/cgi/content/short/bjsports-2025-111225v2?rss=1"
+      "url": "http://gut.bmj.com/cgi/content/short/gutjnl-2026-338449v1?rss=1"
     },
     {
       "id": "8d656ad77115",
