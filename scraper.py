@@ -317,15 +317,16 @@ def scrape_trauma():
         ("/active/listB.asp", "course"),   # 學術研討會
         ("/active/listC.asp", "course"),   # 其他單位活動
     ]:
-        soup = fetch(BASE + path)
+        page_url = BASE + path
+        soup = fetch(page_url)
         if not soup: continue
-        for a in soup.select("a[href]"):
+        # 只選活動詳細頁連結（href 含 /active/index.asp?/）
+        for a in soup.select("a[href*='/active/index.asp']"):
             raw = clean(a.get_text())
-            if len(raw) < 5 or len(raw) > 500: continue
-            if any(skip in raw for skip in SKIP): continue
-            href = resolve(a.get("href",""), BASE)
+            if len(raw) < 5: continue
+            href = resolve(a.get("href",""), page_url)
             event_date, deadline = _parse_trauma_dates(raw)
-            # 標題：取截止日相關文字前的部分
+            # 標題：取「一、」前的部分，或前80字
             title = raw.split("一、")[0].strip() if "一、" in raw else raw[:80].strip()
             if len(title) < 5:
                 title = raw[:60].strip()
@@ -338,13 +339,14 @@ def scrape_trauma():
         ("/news/listA.asp", "news"),
         ("/news/listC.asp", "news"),
     ]:
-        soup = fetch(BASE + path)
+        page_url = BASE + path
+        soup = fetch(page_url)
         if not soup: continue
-        for a in soup.select("a[href]"):
+        # 只選消息詳細頁連結（href 含 /News/index.asp?/ 或 /news/index.asp?/）
+        for a in soup.select("a[href*='index.asp?/']"):
             t = clean(a.get_text())
             if len(t) < 5 or len(t) > 300: continue
-            if any(skip in t for skip in SKIP): continue
-            href = resolve(a.get("href",""), BASE)
+            href = resolve(a.get("href",""), page_url)
             parent_text = a.find_parent().get_text() if a.find_parent() else ""
             date = extract_all_dates(parent_text)
             out.append(mk(t, "台灣外傷醫學會", "台灣學會",
