@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-26T03:04:05.321030+00:00",
-  "count": 241,
-  "course_count": 115,
+  "updated": "2026-06-26T03:28:44.628897+00:00",
+  "count": 244,
+  "course_count": 118,
   "news_count": 126,
   "items": [
     {
@@ -11,7 +11,7 @@
       "cat": "台灣學會",
       "type": "course",
       "date": "2026-06-26",
-      "deadline": null,
+      "deadline": "2026-05-01",
       "url": "https://www.sem.org.tw/Activity/A/Details/32620"
     },
     {
@@ -21,7 +21,7 @@
       "cat": "台灣學會",
       "type": "course",
       "date": "2026-06-28",
-      "deadline": null,
+      "deadline": "2026-06-28",
       "url": "https://www.sem.org.tw/Activity/B/Details/32901"
     },
     {
@@ -31,7 +31,7 @@
       "cat": "台灣學會",
       "type": "course",
       "date": "2026-06-28",
-      "deadline": null,
+      "deadline": "2026-06-28",
       "url": "https://www.sem.org.tw/Activity/B/Details/32900"
     },
     {
@@ -41,12 +41,12 @@
       "cat": "台灣學會",
       "type": "course",
       "date": "2026-07-02",
-      "deadline": null,
+      "deadline": "2026-06-21",
       "url": "https://www.sem.org.tw/Activity/A/Details/33032"
     },
     {
-      "id": "f103d17614c4",
-      "title": "外傷登錄訓練課程－首次認證(南部場次)... 一、課程日期：2026年07月04日(星期六)。 二、課程地點：成大醫院 住院大樓 2樓 201會議室。三、參加資格：外傷登錄業務人員＆護理人員。",
+      "id": "1c6c2972a13a",
+      "title": "外傷登錄訓練課程－首次認證(南部場次)...",
       "source": "台灣外傷醫學會",
       "cat": "台灣學會",
       "type": "course",
@@ -55,8 +55,8 @@
       "url": "http://www.trauma.org.tw/index.asp?/22.html"
     },
     {
-      "id": "90c5fdbf8529",
-      "title": "外傷登錄訓練課程－再認證(南部場次)... 【活動資訊更新】外傷登錄訓練課程－再認證(南部場次)上課日期已調動至115年07月04日(六)一、課程日期：2026年07月05日(星期日)。二、課程地點：成大醫院 住院大樓2樓 201會議室",
+      "id": "0dbec7c61261",
+      "title": "外傷登錄訓練課程－再認證(南部場次)... 【活動資訊更新】外傷登錄訓練課程－再認證(南部場次)上課日期已調動至115年07月04日(六)",
       "source": "台灣外傷醫學會",
       "cat": "台灣學會",
       "type": "course",
@@ -71,7 +71,7 @@
       "cat": "台灣學會",
       "type": "course",
       "date": "2026-07-08",
-      "deadline": null,
+      "deadline": "2026-06-30",
       "url": "https://www.sem.org.tw/Activity/A/Details/33048"
     },
     {
@@ -81,8 +81,18 @@
       "cat": "台灣學會",
       "type": "course",
       "date": "2026-07-09",
-      "deadline": null,
+      "deadline": "2026-07-09",
       "url": "https://www.sem.org.tw/Activity/B/Details/33052"
+    },
+    {
+      "id": "6197f9d765d9",
+      "title": "2026外傷教育課程-中部地區(Ⅰ)...",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-11",
+      "deadline": "2026-06-29",
+      "url": "http://www.trauma.org.tw/index.asp?/20.html"
     },
     {
       "id": "452b7eab7397",
@@ -101,7 +111,7 @@
       "cat": "台灣學會",
       "type": "course",
       "date": "2026-07-20",
-      "deadline": null,
+      "deadline": "2026-07-20",
       "url": "https://www.sem.org.tw/Activity/A/Details/32964"
     },
     {
@@ -141,7 +151,7 @@
       "cat": "台灣學會",
       "type": "course",
       "date": "2026-07-28",
-      "deadline": null,
+      "deadline": "2026-07-13",
       "url": "https://www.sem.org.tw/Activity/A/Details/32647"
     },
     {
@@ -153,6 +163,16 @@
       "date": "2026-07-28",
       "deadline": null,
       "url": "http://www.trauma.org.tw/listC_info.asp?/132.html"
+    },
+    {
+      "id": "a04741f458bb",
+      "title": "2026外傷教育課程-南部地區(Ⅰ)...",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-08-01",
+      "deadline": "2026-07-20",
+      "url": "http://www.trauma.org.tw/index.asp?/23.html"
     },
     {
       "id": "7d39ca63a576",
@@ -183,6 +203,16 @@
       "date": "2026-08-05",
       "deadline": null,
       "url": "http://www.trauma.org.tw/listC_info.asp?/130.html"
+    },
+    {
+      "id": "42dd57436370",
+      "title": "2026外傷教育課程-北部地區(Ⅲ)...",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-08-15",
+      "deadline": "2026-08-03",
+      "url": "http://www.trauma.org.tw/index.asp?/24.html"
     },
     {
       "id": "9cffaa85be28",
@@ -431,7 +461,7 @@
       "cat": "台灣學會",
       "type": "course",
       "date": "2026-06-03",
-      "deadline": null,
+      "deadline": "2026-06-03",
       "url": "https://www.sem.org.tw/Activity/B/Details/32940"
     },
     {
