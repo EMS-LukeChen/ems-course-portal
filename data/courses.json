@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-26T02:08:02.403216+00:00",
-  "count": 245,
-  "course_count": 121,
+  "updated": "2026-06-26T02:48:24.015910+00:00",
+  "count": 234,
+  "course_count": 110,
   "news_count": 124,
   "items": [
     {
@@ -13,26 +13,6 @@
       "date": "2026-06-26",
       "deadline": null,
       "url": "https://www.sem.org.tw/Activity/A/Details/32620"
-    },
-    {
-      "id": "d7b0209ac9c3",
-      "title": "甲115350",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-06-26",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw"
-    },
-    {
-      "id": "17a1d30ba109",
-      "title": "115/6/26(五)下午台中光田醫院向上院區「全民健康保險在宅急症照護試辦計畫」教育訓練課程",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-06-26",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw/edu_info.asp?id=1723"
     },
     {
       "id": "c8f312b5112b",
@@ -215,26 +195,6 @@
       "url": "http://www.trauma.org.tw/listC_info.asp?/141.html"
     },
     {
-      "id": "31ce380ba60b",
-      "title": "甲115353",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-08-27",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw"
-    },
-    {
-      "id": "2164b1e70863",
-      "title": "【延期至115/8/27-28】115/7/27~28(一~二)急診創傷訓練課程ETTC",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-08-27",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw/edu_info.asp?id=1727"
-    },
-    {
       "id": "545abc814bc4",
       "title": "外傷案例暨專題討論會... 活動地點：新北市立土城醫院醫療大樓二樓國際會議廳 活動時間：2026/9/14 07:30～2026/9/14 08:30",
       "source": "台灣外傷醫學會",
@@ -325,36 +285,6 @@
       "url": "https://www.tebma.org.tw/event/list/view/f456947948c27dbfad9369cf46e4452b"
     },
     {
-      "id": "77360c75f091",
-      "title": "活動日期 課程代號 活 動 名 稱 活 動 地 點 積分",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-10-18",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw"
-    },
-    {
-      "id": "4669ffbccf56",
-      "title": "甲115351",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-10-18",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw"
-    },
-    {
-      "id": "e815a0a74ca9",
-      "title": "2026/10/18(日)第八屆第二次會員大會暨學術研討會(精準與永續：智慧急重症鏈－從數據預警到社區永續照護的實踐與挑戰)",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-10-18",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw/edu_info.asp?id=1724"
-    },
-    {
       "id": "c1772c700f8e",
       "title": "2026 台灣實證醫學學會學術年會",
       "source": "台灣實證醫學學會",
@@ -405,26 +335,6 @@
       "url": "https://www.sem.org.tw/News/11/Details/1557"
     },
     {
-      "id": "859cb4ea6bf6",
-      "title": "甲115348",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-04-18",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw"
-    },
-    {
-      "id": "6b2b51b918ca",
-      "title": "115/4/18(六)高齡照護共學培力會議GRACE馬偕紀念醫院場次(Geriatric Reinforcement for ACE)衰弱老人與局部關鍵肌群-第一線辨識與可逆介入的臨床範例",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-04-18",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw/edu_info.asp?id=1718"
-    },
-    {
       "id": "d480ed6083eb",
       "title": "轉知衛生福利部疾病管制署來函-有關「抗生素管理手冊」及「侵入性醫療處置組合式照護工作手冊」",
       "source": "台灣急診醫學會",
@@ -443,26 +353,6 @@
       "date": "2026-04-22",
       "deadline": null,
       "url": "http://course.tsccm.org.tw/df_info.asp?/931.html"
-    },
-    {
-      "id": "516f2f32fd10",
-      "title": "甲115352",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-04-30",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw"
-    },
-    {
-      "id": "4fb961241e22",
-      "title": "IJGE期刊 20.2期 CME學分",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-04-30",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw/edu_info.asp?id=1725"
     },
     {
       "id": "2ac09c278563",
@@ -503,26 +393,6 @@
       "date": "2026-05-20",
       "deadline": null,
       "url": "https://www.sem.org.tw/News/11/Details/1586"
-    },
-    {
-      "id": "312b80e8bcf6",
-      "title": "甲115347",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-05-22",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw"
-    },
-    {
-      "id": "d3b774ab71fc",
-      "title": "115/5/22(五)老人症候群研討會",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-05-22",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw/edu_info.asp?id=1717"
     },
     {
       "id": "24c8f9118e81",
@@ -823,36 +693,6 @@
       "date": null,
       "deadline": null,
       "url": "http://course.tsccm.org.tw/Academic/index_other.asp"
-    },
-    {
-      "id": "430630b94cec",
-      "title": "理事長的話",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw/about/chief.asp"
-    },
-    {
-      "id": "8d9261f7aec8",
-      "title": "繼續教育辦法(非長照)",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw/educate/educate.asp"
-    },
-    {
-      "id": "c887a2a1a0b9",
-      "title": "活 動 名 稱",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw"
     },
     {
       "id": "47f965572631",
@@ -1613,6 +1453,56 @@
       "date": null,
       "deadline": null,
       "url": "https://www.jems.com/news/tx-firefighter-saves-airline-passenger-mid-flight/"
+    },
+    {
+      "id": "cc05242f9202",
+      "title": "Event & Expedition Medic Provision",
+      "source": "World Extreme Medicine",
+      "cat": "國際期刊/組織",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://worldextrememedicine.com/event-expedition-medic-provision/"
+    },
+    {
+      "id": "36dc95e80ac8",
+      "title": "Courses",
+      "source": "World Extreme Medicine",
+      "cat": "國際期刊/組織",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://worldextrememedicine.com/extreme-medicine-courses/"
+    },
+    {
+      "id": "cdc892f17af7",
+      "title": "Expedition & Wilderness Medicine",
+      "source": "World Extreme Medicine",
+      "cat": "國際期刊/組織",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://worldextrememedicine.com/product-category/extreme-medicine-courses/expedition-wilderness-medicine/"
+    },
+    {
+      "id": "55342de8b5f8",
+      "title": "WEMFund Prolonged Field Care Course",
+      "source": "World Extreme Medicine",
+      "cat": "國際期刊/組織",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://worldextrememedicine.com/extreme-medicine-courses/wemf-prolonged-field-care-course"
+    },
+    {
+      "id": "17f164e2e04b",
+      "title": "All Extreme Medicine Courses",
+      "source": "World Extreme Medicine",
+      "cat": "國際期刊/組織",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://worldextrememedicine.com/product-category/extreme-medicine-courses/all-courses/"
     },
     {
       "id": "b8d5eb07b1d3",
