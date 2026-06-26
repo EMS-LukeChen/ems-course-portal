@@ -112,73 +112,63 @@ def mk(title, source, cat, url, item_type=None, date=None, deadline=None):
 # ══════════════════════════════════════════════════════
 
 def scrape_sem():
-    """台灣急診醫學會 — SPA網站，三層策略：API → 詳細頁逐頁 → 備用"""
-    import requests as _req
-    import json as _json
+    """台灣急診醫學會 — 直接爬各列表頁（HTML 靜態渲染，無需 API 或 ID 掃描）"""
+    import re as _re
     out = []
     BASE = "https://www.sem.org.tw"
 
-    # ── 第一層：試探 JSON API ─────────────────────────────
-    api_success = False
-    for act_type, itype in [("A","course"),("B","course"),("AHA","course")]:
-        for api_url in [
-            f"{BASE}/Activity/GetActivityList?actType={act_type}&pageIndex=1&pageSize=20",
-            f"{BASE}/Activity/AjaxList?type={act_type}&page=1",
-            f"{BASE}/api/activity/list?type={act_type}",
-        ]:
-            try:
-                r = _req.get(api_url, headers=HEADERS, timeout=8)
-                ct = r.headers.get("Content-Type","")
-                if r.status_code == 200 and ("json" in ct or r.text.strip().startswith("[")):
-                    data = _json.loads(r.text)
-                    items = data if isinstance(data,list) else data.get("data",data.get("items",[]))
-                    for it in (items or [])[:20]:
-                        t = clean(it.get("title","") or it.get("name","") or it.get("subject",""))
-                        if len(t) < 5: continue
-                        d = str(it.get("date","") or it.get("startDate","") or "")[:10].replace("/","-")
-                        link = it.get("url","") or (f"{BASE}/Activity/Details/{it['id']}" if it.get("id") else BASE)
-                        out.append(mk(t,"台灣急診醫學會","台灣學會",link,itype,d or None))
-                    if out:
-                        api_success = True
-                        break
-            except:
-                pass
+    # ── 課程/活動（三個分類，各自取對應 href 的 <a>）───────────────────────
+    course_pages = [
+        ("/Activity/A/Index",   "course"),   # 學會主辦積分活動
+        ("/Activity/B/Index",   "course"),   # 非學會主辦積分活動
+        ("/Activity/AHA/Index", "course"),   # AHA急救教育訓練
+    ]
+    for path, itype in course_pages:
+        soup = fetch(BASE + path)
+        if not soup: continue
+        for a in soup.select("a[href*='/Activity/'][href*='/Details/']"):
+            raw = clean(a.get_text())
+            if len(raw) < 5: continue
+            # 文字格式：「標題 主辦單位 YYYY/MM/DD 積分N 類型 狀態」
+            # 取出日期
+            m = _re.search(r"(\d{4})/(\d{1,2})/(\d{1,2})", raw)
+            date_str = f"{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}" if m else None
+            # 取出標題（日期前的部分，去掉多餘空白）
+            title = raw[:m.start()].strip() if m else raw
+            # 過濾掉純導覽文字（太短或無日期）
+            if len(title) < 4: continue
+            href = resolve(a.get("href",""), BASE)
+            out.append(mk(title, "台灣急診醫學會", "台灣學會", href, itype, date_str))
 
-    # ── 第二層：逐頁抓詳細頁（已知 ID 範圍）────────────────
-    if not api_success:
-        # 2026 年課程 ID 範圍（掃描近期200個）
-        for detail_id in range(32800, 33000):
-            url = f"{BASE}/Activity/Details/{detail_id}"
-            soup = fetch(url)
-            if not soup: continue
-            # og:title 或 title 標籤
-            og = soup.find("meta", property="og:title")
-            t_tag = soup.find("title")
-            t = og.get("content","") if og else (t_tag.get_text() if t_tag else "")
-            t = clean(t.replace("台灣急診醫學會","").replace("課程列表","").replace("-","").strip())
-            if len(t) > 5:
-                out.append(mk(t,"台灣急診醫學會","台灣學會",url,"course"))
-            time.sleep(0.3)
+    # ── 最新消息（學會公告 + 秘書處公告）─────────────────────────────────
+    news_pages = [
+        ("/News/11/Index", "news"),   # 學會公告
+        ("/News/10/Index", "news"),   # 秘書處公告
+        ("/News/12/Index", "news"),   # 年會專區
+    ]
+    for path, itype in news_pages:
+        soup = fetch(BASE + path)
+        if not soup: continue
+        for a in soup.select("a[href*='/News/'][href*='/Details/']"):
+            t = clean(a.get_text())
+            if len(t) < 5 or len(t) > 200: continue
+            if any(skip in t for skip in ["學會公告","秘書處公告","年會專區","公文來函","AHA專區"]): continue
+            # 從父元素取日期
+            # 日期在同一 <tr> 行的其他 <td> 中
+            row = a.find_parent("tr")
+            date_text = row.get_text() if row else (a.find_parent().get_text() if a.find_parent() else "")
+            m = _re.search(r"(\d{4})/(\d{1,2})/(\d{1,2})", date_text)
+            date_str = f"{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}" if m else None
+            href = resolve(a.get("href",""), BASE)
+            out.append(mk(t, "台灣急診醫學會", "台灣學會", href, itype, date_str))
 
-    # ── 備用：抓公告頁（News 頁面用詳細頁逐頁）────────────
-    if not out:
-        for news_id in range(1580, 1600):
-            url = f"{BASE}/News/Details/{news_id}"
-            soup = fetch(url)
-            if not soup: continue
-            og = soup.find("meta", property="og:title")
-            t = og.get("content","") if og else ""
-            t = clean(t.replace("台灣急診醫學會","").replace("-","").strip())
-            if len(t) > 5:
-                out.append(mk(t,"台灣急診醫學會","台灣學會",url,"news"))
-            time.sleep(0.3)
-
+    # 去重
     seen, unique = set(), []
     for it in out:
-        if it["id"] not in seen and len(it.get("title","")) > 4:
+        if it["id"] not in seen and len(it.get("title","")) > 3:
             seen.add(it["id"])
             unique.append(it)
-    return unique[:30]
+    return unique[:40]
 
 def scrape_seccm():
     """台灣急救加護醫學會 — 正確表格結構"""
