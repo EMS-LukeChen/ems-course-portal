@@ -1,9 +1,29 @@
 {
-  "updated": "2026-06-25T22:13:51.747490+00:00",
-  "count": 196,
-  "course_count": 86,
-  "news_count": 110,
+  "updated": "2026-06-26T00:48:04.951215+00:00",
+  "count": 204,
+  "course_count": 89,
+  "news_count": 115,
   "items": [
+    {
+      "id": "f103d17614c4",
+      "title": "外傷登錄訓練課程－首次認證(南部場次)... 一、課程日期：2026年07月04日(星期六)。 二、課程地點：成大醫院 住院大樓 2樓 201會議室。三、參加資格：外傷登錄業務人員＆護理人員。",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-04",
+      "deadline": null,
+      "url": "http://www.trauma.org.tw/index.asp?/22.html"
+    },
+    {
+      "id": "90c5fdbf8529",
+      "title": "外傷登錄訓練課程－再認證(南部場次)... 【活動資訊更新】外傷登錄訓練課程－再認證(南部場次)上課日期已調動至115年07月04日(六)一、課程日期：2026年07月05日(星期日)。二、課程地點：成大醫院 住院大樓2樓 201會議室",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-05",
+      "deadline": null,
+      "url": "http://www.trauma.org.tw/index.asp?/21.html"
+    },
     {
       "id": "452b7eab7397",
       "title": "2026.7.18 台灣復甦照護學會Holistic and Patient-Centered Critical Care研討會及工作坊開放報名",
@@ -23,6 +43,66 @@
       "date": "2026-07-25",
       "deadline": null,
       "url": "https://www.tebma.org.tw/event/list/view/4cb9057694d6a3a1b49e6cf5da5743e2"
+    },
+    {
+      "id": "e39eb0607545",
+      "title": "外傷重症病例討論會議... 活動地點：蘭陽院區301會議室 活動時間：2026/7/28 08:00～2026/7/28 09:00",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-28",
+      "deadline": null,
+      "url": "http://www.trauma.org.tw/listC_info.asp?/132.html"
+    },
+    {
+      "id": "7d39ca63a576",
+      "title": "一一五年度 外傷繼續教育訓練課程I... 活動地點：新竹國泰綜合醫院第一分館5樓會議室 活動時間：2026/8/3 09:00～2026/8/3 12:00",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-08-03",
+      "deadline": null,
+      "url": "http://www.trauma.org.tw/listC_info.asp?/128.html"
+    },
+    {
+      "id": "1b6d9cd31ea0",
+      "title": "一一五年度 外傷繼續教育訓練課程II... 活動地點：新竹國泰綜合醫院第一分館5樓會議室 活動時間：2026/8/4 09:00～2026/8/4 11:00",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-08-04",
+      "deadline": null,
+      "url": "http://www.trauma.org.tw/listC_info.asp?/129.html"
+    },
+    {
+      "id": "d317ad43dfb5",
+      "title": "一一五年度 外傷繼續教育訓練課程III... 活動地點：新竹國泰綜合醫院第一分館5樓會議室 活動時間：2026/8/5 09:00～2026/8/5 12:00",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-08-05",
+      "deadline": null,
+      "url": "http://www.trauma.org.tw/listC_info.asp?/130.html"
+    },
+    {
+      "id": "9cffaa85be28",
+      "title": "外傷案例暨專題討論會... 活動地點：新北市立土城醫院醫療大樓二樓國際會議廳 活動時間：2026/8/17 07:30～2026/8/17 08:30",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-08-17",
+      "deadline": null,
+      "url": "http://www.trauma.org.tw/listC_info.asp?/141.html"
+    },
+    {
+      "id": "545abc814bc4",
+      "title": "外傷案例暨專題討論會... 活動地點：新北市立土城醫院醫療大樓二樓國際會議廳 活動時間：2026/9/14 07:30～2026/9/14 08:30",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-09-14",
+      "deadline": null,
+      "url": "http://www.trauma.org.tw/listC_info.asp?/140.html"
     },
     {
       "id": "289ecb43dfc6",
@@ -113,6 +193,106 @@
       "date": "2026-06-02",
       "deadline": null,
       "url": "https://www.mgems.org/260514_yushan_t1f/"
+    },
+    {
+      "id": "0f6f36b5436d",
+      "title": "理監事名單",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.trauma.org.tw/about/index_03.asp"
+    },
+    {
+      "id": "c29799d397e2",
+      "title": "委員會名單",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.trauma.org.tw/about/index_04.asp"
+    },
+    {
+      "id": "b8640fa7ae4c",
+      "title": "本會學術教育活動",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.trauma.org.tw"
+    },
+    {
+      "id": "0d2f5785ff57",
+      "title": "學術研討會",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.trauma.org.tw/active/listB.asp"
+    },
+    {
+      "id": "f458e17f64f8",
+      "title": "其他單位活動",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.trauma.org.tw/active/listC.asp"
+    },
+    {
+      "id": "f33886bda428",
+      "title": "【公告】學會進行辦公室搬遷作業...",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.trauma.org.tw/index.asp?/66.html"
+    },
+    {
+      "id": "a8f420c627f1",
+      "title": "【ATLS課表公告】115年度第8梯次ATLS再認證課程（1150627高雄榮民總醫院）...",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.trauma.org.tw/index.asp?/65.html"
+    },
+    {
+      "id": "bfe37b4a040f",
+      "title": "公告2026年『ATLS課程』活動計劃表【含一般課程及再認證課程】_115.06.04更新...",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.trauma.org.tw/index.asp?/37.html"
+    },
+    {
+      "id": "6fd1512b7cef",
+      "title": "【ATLS報名】115年度「一般」課程報名資訊（含報名表）115.06.04更新...",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.trauma.org.tw/index.asp?/36.html"
+    },
+    {
+      "id": "5f58c84b68b2",
+      "title": "【ATLS報名】115年度「再認證」課程報名資訊（含報名表）115.06.04更新...",
+      "source": "台灣外傷醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.trauma.org.tw/index.asp?/35.html"
     },
     {
       "id": "576b1178525a",
@@ -675,56 +855,6 @@
       "url": "https://www.mgems.org/260505-7_taiwan-cyber-security/"
     },
     {
-      "id": "91790bdbec7d",
-      "title": "CPR+AED完整版3小時課程",
-      "source": "台灣運動安全暨急救技能推廣協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://sfast.innosoft.com.tw/iplm/pages/b.aspx?page=in_Meeting_list_A.html&method=In_MeetingUserResponse&in_meetingid=297C8E0AF68B4B609134923DF1F22659"
-    },
-    {
-      "id": "bf3f0e1ba292",
-      "title": "AED管理員4小時教育訓練",
-      "source": "台灣運動安全暨急救技能推廣協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://reurl.cc/qKa2WE"
-    },
-    {
-      "id": "e0f77ddf7472",
-      "title": "基本救命術指導員BLS-I課程",
-      "source": "台灣運動安全暨急救技能推廣協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://reurl.cc/eVQggR"
-    },
-    {
-      "id": "5bc9921519e2",
-      "title": "基本救命術BLS4小時課程",
-      "source": "台灣運動安全暨急救技能推廣協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://reurl.cc/4bYO9v"
-    },
-    {
-      "id": "a2470c9c35e4",
-      "title": "基本救命術BLS8小時課程",
-      "source": "台灣運動安全暨急救技能推廣協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://reurl.cc/aMEgWl"
-    },
-    {
       "id": "a8949ae88118",
       "title": "2023年活動花絮集",
       "source": "復甦照護小學堂",
@@ -963,56 +1093,6 @@
       "date": null,
       "deadline": null,
       "url": "https://www.jems.com/news/tx-firefighter-saves-airline-passenger-mid-flight/"
-    },
-    {
-      "id": "cc05242f9202",
-      "title": "Event & Expedition Medic Provision",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/event-expedition-medic-provision/"
-    },
-    {
-      "id": "36dc95e80ac8",
-      "title": "Courses",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/extreme-medicine-courses/"
-    },
-    {
-      "id": "cdc892f17af7",
-      "title": "Expedition & Wilderness Medicine",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/product-category/extreme-medicine-courses/expedition-wilderness-medicine/"
-    },
-    {
-      "id": "55342de8b5f8",
-      "title": "WEMFund Prolonged Field Care Course",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/extreme-medicine-courses/wemf-prolonged-field-care-course"
-    },
-    {
-      "id": "17f164e2e04b",
-      "title": "All Extreme Medicine Courses",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/product-category/extreme-medicine-courses/all-courses/"
     },
     {
       "id": "b8d5eb07b1d3",
@@ -1555,6 +1635,16 @@
       "url": "https://ctomsinc.com/collections/tactical-clothing"
     },
     {
+      "id": "3f6989d40c6b",
+      "title": "Joint Trauma System The Department of Defense Center of Excellence for Trauma Bold, Responsible Practice of Battlefield Medicine",
+      "source": "JTS — Joint Trauma System",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://jts.health.mil/"
+    },
+    {
       "id": "df37b5e4d0b7",
       "title": "Defense Committees on Trauma",
       "source": "JTS — Joint Trauma System",
@@ -1593,16 +1683,6 @@
       "date": null,
       "deadline": null,
       "url": "https://jts.health.mil/index.cfm/CPGs/cpgs"
-    },
-    {
-      "id": "3f6989d40c6b",
-      "title": "Joint Trauma System The Department of Defense Center of Excellence for Trauma Bold, Responsible Practice of Battlefield Medicine",
-      "source": "JTS — Joint Trauma System",
-      "cat": "戰術救護",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://jts.health.mil/"
     },
     {
       "id": "1d5a35aee639",
@@ -1932,7 +2012,7 @@
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "http://jnnp.bmj.com/cgi/content/short/jnnp-2026-338790v1?rss=1"
+      "url": "http://bjsm.bmj.com/cgi/content/short/bjsports-2025-111225v2?rss=1"
     },
     {
       "id": "8d656ad77115",
