@@ -1,8 +1,8 @@
 {
-  "updated": "2026-06-26T03:28:44.628897+00:00",
-  "count": 244,
+  "updated": "2026-06-26T08:52:24.356221+00:00",
+  "count": 243,
   "course_count": 118,
-  "news_count": 126,
+  "news_count": 125,
   "items": [
     {
       "id": "271c7e786ba4",
@@ -2203,16 +2203,6 @@
       "date": null,
       "deadline": null,
       "url": "https://www.narescue.com/education/product-information-sheets.html"
-    },
-    {
-      "id": "bf84bf2b2a81",
-      "title": "The Evolution of Combat Medicine",
-      "source": "Safeguard Medical",
-      "cat": "戰術救護",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://safeguardmedical.com/blogs/news/the-evolution-of-combat-medicine"
     },
     {
       "id": "4110ccb750ce",
