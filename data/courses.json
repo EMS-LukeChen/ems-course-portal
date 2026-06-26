@@ -1,8 +1,8 @@
 {
-  "updated": "2026-06-26T09:52:13.372664+00:00",
-  "count": 221,
-  "course_count": 97,
-  "news_count": 124,
+  "updated": "2026-06-26T10:27:28.806459+00:00",
+  "count": 231,
+  "course_count": 102,
+  "news_count": 129,
   "items": [
     {
       "id": "271c7e786ba4",
@@ -1025,6 +1025,36 @@
       "url": "https://www.mgems.org/260505-7_taiwan-cyber-security/"
     },
     {
+      "id": "e45a5f6063e9",
+      "title": "台灣野外緊急救護協會 Facebook 粉絲專頁公告",
+      "source": "台灣野外緊急救護協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://taiwanwma.org/activities?activity=1"
+    },
+    {
+      "id": "a8eefbeabc89",
+      "title": "野編公告｜協會 LINE 官方帳號、Threads、WEMS 課程整合通知",
+      "source": "台灣野外緊急救護協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://taiwanwma.org/activities?activity=2"
+    },
+    {
+      "id": "1556c31a40b6",
+      "title": "2022年高山PAC攜帶型加壓艙建置計畫 相關媒體報導",
+      "source": "台灣野外緊急救護協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://taiwanwma.org/activities?activity=3"
+    },
+    {
       "id": "91790bdbec7d",
       "title": "CPR+AED完整版3小時課程",
       "source": "台灣運動安全暨急救技能推廣協會",
@@ -1183,6 +1213,76 @@
       "date": null,
       "deadline": null,
       "url": "https://www.anne.education/flippedcpr.html"
+    },
+    {
+      "id": "1a7323e30be9",
+      "title": "2026母親節節慶關懷系列活動",
+      "source": "臺大兒童醫院",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.ntuh.gov.tw"
+    },
+    {
+      "id": "9fdb080fb678",
+      "title": "2026兒童節節慶關懷系列活動",
+      "source": "臺大兒童醫院",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.ntuh.gov.tw"
+    },
+    {
+      "id": "79f4d8162d0b",
+      "title": "2025兒童醫院聖誕節慶活動",
+      "source": "臺大兒童醫院",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.ntuh.gov.tw"
+    },
+    {
+      "id": "ed2ee3e5b76a",
+      "title": "「聽那裡說故事！」候診區說故事活動開跑囉！",
+      "source": "臺大兒童醫院",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.ntuh.gov.tw/Activity.action?q_type=A01&q_itemCode=771"
+    },
+    {
+      "id": "5bb633d2fb9b",
+      "title": "臺大醫院115年度母親節節慶關懷活動",
+      "source": "臺大兒童醫院",
+      "cat": "台灣急救社群",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.ntuh.gov.tw/Activity.action?q_type=A01&q_itemCode=1050"
+    },
+    {
+      "id": "9b54876f3cd3",
+      "title": "115年農曆春節本院服務公告",
+      "source": "臺大兒童醫院",
+      "cat": "台灣急救社群",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.ntuh.gov.tw/ntuh/News.action?q_type=-1&q_itemCode=18247"
+    },
+    {
+      "id": "c32df82d097f",
+      "title": "115年農曆春節假期特設「傳染病特別診」公告",
+      "source": "臺大兒童醫院",
+      "cat": "台灣急救社群",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.ntuh.gov.tw/ntuh/News.action?q_type=-1&q_itemCode=18245"
     },
     {
       "id": "4a9057508daa",
