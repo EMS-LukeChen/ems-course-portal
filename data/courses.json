@@ -1,8 +1,8 @@
 {
-  "updated": "2026-06-27T04:59:15.896084+00:00",
-  "count": 261,
-  "course_count": 131,
-  "news_count": 130,
+  "updated": "2026-06-27T05:17:34.082288+00:00",
+  "count": 246,
+  "course_count": 121,
+  "news_count": 125,
   "items": [
     {
       "id": "7667258bb09c",
@@ -783,106 +783,6 @@
       "date": null,
       "deadline": null,
       "url": "https://forms.gle/RxQobu2FoVewH6Qs5"
-    },
-    {
-      "id": "a9ab09ee6a61",
-      "title": "台灣急重症模擬醫學會第四屆第二次會員大會暨學術研討會時間表 4/20",
-      "source": "台灣急重症模擬醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://simulation.org.tw/annualconference2024-3/"
-    },
-    {
-      "id": "3577e5206397",
-      "title": "台灣急重症模擬醫學會第四屆第二次會員大會暨學術研討會歡迎報名參加 4/20",
-      "source": "台灣急重症模擬醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://simulation.org.tw/annualconference2024-2/"
-    },
-    {
-      "id": "cc41c445b0a8",
-      "title": "台灣急重症模擬醫學會第四屆第一次會員大會暨學術研討會時間表 12/03",
-      "source": "台灣急重症模擬醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://simulation.org.tw/annualconference2022-schedule/"
-    },
-    {
-      "id": "97776574ba48",
-      "title": "台灣急重症模擬醫學會第四屆第一次會員大會暨學術研討會 12/03",
-      "source": "台灣急重症模擬醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://simulation.org.tw/annualconference2022/"
-    },
-    {
-      "id": "f097cd1dd1e1",
-      "title": "建構以EPA為導向的模擬醫學教育 12/18",
-      "source": "台灣急重症模擬醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://simulation.org.tw/class1218/"
-    },
-    {
-      "id": "3e07947c5fd5",
-      "title": "公告第四屆理、監事候選人名單及政見",
-      "source": "台灣急重症模擬醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://simulation.org.tw/the_fourth_list_politics/"
-    },
-    {
-      "id": "00e2298de2ee",
-      "title": "第一屆全國醫學生高擬真競賽得獎名單",
-      "source": "台灣急重症模擬醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://simulation.org.tw/winners-list_2022/"
-    },
-    {
-      "id": "2ddf05f4fe17",
-      "title": "公告本會第四屆理、監事候選人自我推薦辦法",
-      "source": "台灣急重症模擬醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://simulation.org.tw/20220907news002/"
-    },
-    {
-      "id": "88270ccdb739",
-      "title": "全國醫學生高擬真競賽",
-      "source": "台灣急重症模擬醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://simulation.org.tw/20220907news001/"
-    },
-    {
-      "id": "f800c6082abf",
-      "title": "12/26 模擬醫學在超音波導引血管穿刺術的應用工作坊取消公告",
-      "source": "台灣急重症模擬醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://simulation.org.tw/class1226-2-cancel/"
     },
     {
       "id": "5ddae5a72419",
@@ -1723,56 +1623,6 @@
       "date": null,
       "deadline": null,
       "url": "https://www.jems.com/news/"
-    },
-    {
-      "id": "cc05242f9202",
-      "title": "Event & Expedition Medic Provision",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/event-expedition-medic-provision/"
-    },
-    {
-      "id": "36dc95e80ac8",
-      "title": "Courses",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/extreme-medicine-courses/"
-    },
-    {
-      "id": "cdc892f17af7",
-      "title": "Expedition & Wilderness Medicine",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/product-category/extreme-medicine-courses/expedition-wilderness-medicine/"
-    },
-    {
-      "id": "55342de8b5f8",
-      "title": "WEMFund Prolonged Field Care Course",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/extreme-medicine-courses/wemf-prolonged-field-care-course"
-    },
-    {
-      "id": "17f164e2e04b",
-      "title": "All Extreme Medicine Courses",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/product-category/extreme-medicine-courses/all-courses/"
     },
     {
       "id": "b8d5eb07b1d3",
