@@ -1,8 +1,8 @@
 {
-  "updated": "2026-06-27T03:49:34.077870+00:00",
-  "count": 306,
-  "course_count": 147,
-  "news_count": 159,
+  "updated": "2026-06-27T04:59:15.896084+00:00",
+  "count": 261,
+  "course_count": 131,
+  "news_count": 130,
   "items": [
     {
       "id": "7667258bb09c",
@@ -13,16 +13,6 @@
       "date": "2026-06-27",
       "deadline": "2026-06-15",
       "url": "http://www.trauma.org.tw/active/index.asp?/19.html"
-    },
-    {
-      "id": "995eaa17bae9",
-      "title": "台灣中區兒童過敏免疫暨風濕科病例研討會",
-      "source": "臺灣兒科醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-06-27",
-      "deadline": null,
-      "url": "https://www.pediatr.org.tw/event/content.php?id=21122"
     },
     {
       "id": "c8f312b5112b",
@@ -45,36 +35,6 @@
       "url": "https://www.sem.org.tw/Activity/B/Details/32900"
     },
     {
-      "id": "de3382c50fda",
-      "title": "115年度青少年醫學教育訓練課程-北區",
-      "source": "臺灣兒科醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-06-28",
-      "deadline": null,
-      "url": "https://www.pediatr.org.tw/event/content.php?id=21000"
-    },
-    {
-      "id": "6ad1d2a41a42",
-      "title": "115年度「兒童衛教指導服務醫師教育訓練」開始報名【115年7月1日執行兒童預防保健服務(含衛教指導)每案可申補助600元】，名額有限，額滿為止。",
-      "source": "臺灣兒科醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-07-01",
-      "deadline": null,
-      "url": "https://www.pediatr.org.tw/news/content.php?id=5128"
-    },
-    {
-      "id": "5324a8f42b58",
-      "title": "轉知-衛生福利部-公告之「生育保健之遺傳相關檢驗補助精進方案」，並自115年7月1日生效。",
-      "source": "臺灣兒科醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": "2026-07-01",
-      "deadline": null,
-      "url": "https://www.pediatr.org.tw/news/content.php?id=5178"
-    },
-    {
       "id": "6cdbc2d92f99",
       "title": "115年住院醫師初階災難訓練課程(南區)【線上+實體】 社團法人台灣急診醫學會",
       "source": "台灣急診醫學會",
@@ -83,16 +43,6 @@
       "date": "2026-07-02",
       "deadline": "2026-06-21",
       "url": "https://www.sem.org.tw/Activity/A/Details/33032"
-    },
-    {
-      "id": "01578a9a012c",
-      "title": "【訊息轉知】2026馬偕醫學大學厚生健康學院-永續厚生健康論壇2026/6/23(二)至2026/7/3(五)假MS Teams辦理，歡迎踴躍參加。",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": "2026-07-03",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=492"
     },
     {
       "id": "26138c8efa38",
@@ -265,16 +215,6 @@
       "url": "http://www.trauma.org.tw/active/index.asp?/24.html"
     },
     {
-      "id": "2164b1e70863",
-      "title": "【延期至115/8/27-28】115/7/27~28(一~二)急診創傷訓練課程ETTC",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-08-27",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw/educate/edu_info.asp?id=1727"
-    },
-    {
       "id": "032e497ba690",
       "title": "【DHA 2026】2026 International Conference on Digital Health and Medical Analytics（DHA 2026）115.09.18-20高雄科技大學",
       "source": "台灣急救加護醫學會",
@@ -375,16 +315,6 @@
       "url": "https://www.tebma.org.tw/event/list/view/f456947948c27dbfad9369cf46e4452b"
     },
     {
-      "id": "e815a0a74ca9",
-      "title": "2026/10/18(日)第八屆第二次會員大會暨學術研討會(精準與永續：智慧急重症鏈－從數據預警到社區永續照護的實踐與挑戰)",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-10-18",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw/educate/edu_info.asp?id=1724"
-    },
-    {
       "id": "c1772c700f8e",
       "title": "2026 台灣實證醫學學會學術年會",
       "source": "台灣實證醫學學會",
@@ -435,26 +365,6 @@
       "url": "https://www.sem.org.tw/News/11/Details/1557"
     },
     {
-      "id": "6b2b51b918ca",
-      "title": "115/4/18(六)高齡照護共學培力會議GRACE馬偕紀念醫院場次(Geriatric Reinforcement for ACE)衰弱老人與局部關鍵肌群-第一線辨識與可逆介入的臨床範例",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-04-18",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw/educate/edu_info.asp?id=1718"
-    },
-    {
-      "id": "6014ad41cf56",
-      "title": "【長照積分申請方式】(115/4/20更新收費辦法及審查流程)本會「長照人員繼續教育積分作業審查流程」，請務必詳閱內文，感謝配合。",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": "2026-04-20",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=383"
-    },
-    {
       "id": "d480ed6083eb",
       "title": "轉知衛生福利部疾病管制署來函-有關「抗生素管理手冊」及「侵入性醫療處置組合式照護工作手冊」",
       "source": "台灣急診醫學會",
@@ -483,16 +393,6 @@
       "date": "2026-04-25",
       "deadline": null,
       "url": "https://www.seccm.org.tw/news/acls_union_info.asp?/778.html#here"
-    },
-    {
-      "id": "4fb961241e22",
-      "title": "IJGE期刊 20.2期 CME學分",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-04-30",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw/educate/edu_info.asp?id=1725"
     },
     {
       "id": "34e42dbfcc44",
@@ -535,16 +435,6 @@
       "url": "https://www.sem.org.tw/News/10/Details/1585"
     },
     {
-      "id": "fe95925fe5bf",
-      "title": "115年度「流感疫苗教育訓練」開始報名，名額有限，額滿為止。",
-      "source": "臺灣兒科醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-05-18",
-      "deadline": null,
-      "url": "https://www.pediatr.org.tw/news/content.php?id=5129"
-    },
-    {
       "id": "73bf0633f23b",
       "title": "台灣EMS相關的中英對照詞彙表",
       "source": "台灣急診醫學會",
@@ -553,46 +443,6 @@
       "date": "2026-05-20",
       "deadline": null,
       "url": "https://www.sem.org.tw/News/11/Details/1586"
-    },
-    {
-      "id": "e5c1a45a9c07",
-      "title": "【訊息轉知】115年度「獎勵提供心血管疾病病人戒菸服務」暨「獎勵基層醫療院所提供病人戒菸服務」競賽報名",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": "2026-05-21",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=490"
-    },
-    {
-      "id": "d3b774ab71fc",
-      "title": "115/5/22(五)老人症候群研討會",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-05-22",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw/educate/edu_info.asp?id=1717"
-    },
-    {
-      "id": "c64a3c618e92",
-      "title": "【徵稿公告】第八屆第二次會員大會暨學術研討會海報論文徵稿",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": "2026-05-22",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=489"
-    },
-    {
-      "id": "24c8f9118e81",
-      "title": "2026年台北初級救護技術員繼續教育訓練",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": "2026-05-26",
-      "deadline": null,
-      "url": "https://www.mgems.org/260424_t1_course/"
     },
     {
       "id": "2539b19f690d",
@@ -613,16 +463,6 @@
       "date": "2026-06-02",
       "deadline": null,
       "url": "https://www.sem.org.tw/News/5/Details/1598"
-    },
-    {
-      "id": "26eb3bb8e0c5",
-      "title": "2026年玉山管理處初級救護技術員繼續教育訓練",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": "2026-06-02",
-      "deadline": null,
-      "url": "https://www.mgems.org/260514_yushan_t1f/"
     },
     {
       "id": "6938acf9f093",
@@ -733,16 +573,6 @@
       "date": "2026-06-26",
       "deadline": "2026-05-01",
       "url": "https://www.sem.org.tw/Activity/A/Details/32620"
-    },
-    {
-      "id": "17a1d30ba109",
-      "title": "115/6/26(五)下午台中光田醫院向上院區「全民健康保險在宅急症照護試辦計畫」教育訓練課程",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-06-26",
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw/educate/edu_info.asp?id=1723"
     },
     {
       "id": "9afcb996c69a",
@@ -1105,26 +935,6 @@
       "url": "http://course.tsccm.org.tw/Academic/index_other.asp"
     },
     {
-      "id": "8d3e1d729df3",
-      "title": "【重要公告】老人衛教照護個管師認証課程證書展延辦法公佈",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=222"
-    },
-    {
-      "id": "caed0e3769f1",
-      "title": "【重要公告】老人長照（LTCT）種子教官人員證書展延辦法公佈",
-      "source": "台灣老人急重症醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=117"
-    },
-    {
       "id": "47f965572631",
       "title": "國際學術研討會",
       "source": "台灣心肌梗塞學會",
@@ -1475,26 +1285,6 @@
       "url": "https://www.tana.org.tw/news/learn_info.asp?/786.html"
     },
     {
-      "id": "b098da9f2e27",
-      "title": "理事長的話",
-      "source": "台灣運動醫學學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.sma.org.tw/index.html"
-    },
-    {
-      "id": "b262c448b308",
-      "title": "本屆理監事",
-      "source": "台灣運動醫學學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.sma.org.tw/about3.html"
-    },
-    {
       "id": "5bfcff8d3c72",
       "title": "理監事名單",
       "source": "台灣運動醫學醫學會",
@@ -1543,106 +1333,6 @@
       "date": null,
       "deadline": null,
       "url": "https://www.tasm.org.tw/EL/seminar.asp"
-    },
-    {
-      "id": "a686d2261317",
-      "title": "國內學術研討會",
-      "source": "臺灣兒科醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.pediatr.org.tw/event/"
-    },
-    {
-      "id": "5e7af15986f1",
-      "title": "國外學術研討會",
-      "source": "臺灣兒科醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.pediatr.org.tw/event/abroad.php"
-    },
-    {
-      "id": "f9519035ae6f",
-      "title": "專科訓練醫院",
-      "source": "臺灣兒科醫學會",
-      "cat": "台灣學會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.pediatr.org.tw/doctor/training.php"
-    },
-    {
-      "id": "08dede6895bc",
-      "title": "新型冠狀病毒(2019-nCoV)感染兒科重症照護的特殊考量(公告第三版)",
-      "source": "臺灣兒科醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.pediatr.org.tw/member/guidelines_content.php?id=33"
-    },
-    {
-      "id": "c882249c61ba",
-      "title": "2025年青山宮繞境活動",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.mgems.org/251210_festival/"
-    },
-    {
-      "id": "140fdaafeed9",
-      "title": "2026年臺北101公益垂直馬拉松",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.mgems.org/260509_taipei-101/"
-    },
-    {
-      "id": "b68c7da13251",
-      "title": "2026年台新女生路跑",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.mgems.org/26-04-12-women-run/"
-    },
-    {
-      "id": "8d4b48f3d817",
-      "title": "2026 南山人壽臺北國道馬拉松",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.mgems.org/2026-taipei-highway-marathron/"
-    },
-    {
-      "id": "cb82e9f03a2b",
-      "title": "2026年舒跑杯路跑賽",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.mgems.org/260510_sports-run/"
-    },
-    {
-      "id": "f88b895cb5ea",
-      "title": "2026年台灣資安大會",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.mgems.org/260505-7_taiwan-cyber-security/"
     },
     {
       "id": "e45a5f6063e9",
@@ -2345,46 +2035,6 @@
       "url": "https://www.foamfrat.com/shop-merch"
     },
     {
-      "id": "70d34a5fccd1",
-      "title": "JOIN TODAY",
-      "source": "The Medical Lounge",
-      "cat": "資料庫/媒體",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.themedicallounge.co.uk/bundles/PHEM-Academy"
-    },
-    {
-      "id": "0698483439b7",
-      "title": "Enroll for free",
-      "source": "The Medical Lounge",
-      "cat": "資料庫/媒體",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.themedicallounge.co.uk/enroll/3262146"
-    },
-    {
-      "id": "a56497f44850",
-      "title": "View more courses",
-      "source": "The Medical Lounge",
-      "cat": "資料庫/媒體",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.themedicallounge.co.uk/collections"
-    },
-    {
-      "id": "222cb12ad6aa",
-      "title": "Join Today!",
-      "source": "The Medical Lounge",
-      "cat": "資料庫/媒體",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.themedicallounge.co.uk/bundles/PHEM-Academy"
-    },
-    {
       "id": "17fc455f2e13",
       "title": "Committee for TacticalEmergency Casualty Care C-TECC",
       "source": "C-TECC",
@@ -2963,106 +2613,6 @@
       "date": null,
       "deadline": null,
       "url": "https://emj.bmj.com/content/43/5"
-    },
-    {
-      "id": "9dd6c03c53e8",
-      "title": "A Review of Bicarbonate Use in Common Clinical Scenarios",
-      "source": "Journal of Emergency Medicine",
-      "cat": "國際期刊/組織",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.jem-journal.com/article/S0736-4679(23)00263-9/fulltext"
-    },
-    {
-      "id": "25f878775f05",
-      "title": "BRASH Syndrome: Bradycardia, Renal Failure, AV Blockade, Shock, and Hyperkalemia",
-      "source": "Journal of Emergency Medicine",
-      "cat": "國際期刊/組織",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.jem-journal.com/article/S0736-4679(20)30399-1/fulltext"
-    },
-    {
-      "id": "8289b1f13c63",
-      "title": "Uvula Necrosis, an Atypical Presentation of Sore Throat",
-      "source": "Journal of Emergency Medicine",
-      "cat": "國際期刊/組織",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.jem-journal.com/article/S0736-4679(11)01107-3/fulltext"
-    },
-    {
-      "id": "9190387a73a7",
-      "title": "A Nationwide Analysis of Hospital Disposition After Tracheal Intubation Among Elderly Patients Admitted From the Emergency Department",
-      "source": "Journal of Emergency Medicine",
-      "cat": "國際期刊/組織",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.jem-journal.com/article/S0736-4679(26)00182-4/fulltext"
-    },
-    {
-      "id": "600b50bb548b",
-      "title": "In Case You Missed It: Updates in the Evaluation and Management of Pulmonary Embolism in 2025",
-      "source": "Journal of Emergency Medicine",
-      "cat": "國際期刊/組織",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.jem-journal.com/article/S0736-4679(26)00192-7/fulltext"
-    },
-    {
-      "id": "5acc4d37f1d7",
-      "title": "European Resuscitation Council Guidelines 2025 Adult Advanced Life Support",
-      "source": "Resuscitation Journal",
-      "cat": "國際期刊/組織",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.resuscitationjournal.com/article/S0300-9572(25)00281-3/fulltext"
-    },
-    {
-      "id": "e0a0b890424f",
-      "title": "European Resuscitation Council Guidelines 2025 Paediatric Life Support",
-      "source": "Resuscitation Journal",
-      "cat": "國際期刊/組織",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.resuscitationjournal.com/article/S0300-9572(25)00279-5/fulltext"
-    },
-    {
-      "id": "e196ebda1959",
-      "title": "European Resuscitation Council Guidelines 2025 Special Circumstances in Resuscitation",
-      "source": "Resuscitation Journal",
-      "cat": "國際期刊/組織",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.resuscitationjournal.com/article/S0300-9572(25)00265-5/fulltext"
-    },
-    {
-      "id": "0b7c66570f50",
-      "title": "Sex-specific effects of manual pressure augmentation during defibrillation: a mechanistic hypothesis",
-      "source": "Resuscitation Journal",
-      "cat": "國際期刊/組織",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.resuscitationjournal.com/article/S0300-9572(26)00232-7/fulltext"
-    },
-    {
-      "id": "e88ee27b3d82",
-      "title": "Paramedic-assessed quality of bystander CPR is associated with survival in out-of-hospital cardiac arrest",
-      "source": "Resuscitation Journal",
-      "cat": "國際期刊/組織",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.resuscitationjournal.com/article/S0300-9572(26)00234-0/fulltext"
     }
   ]
 }
