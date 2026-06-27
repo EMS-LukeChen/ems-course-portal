@@ -1,8 +1,8 @@
 {
-  "updated": "2026-06-27T05:17:34.082288+00:00",
-  "count": 246,
-  "course_count": 121,
-  "news_count": 125,
+  "updated": "2026-06-27T09:12:09.992844+00:00",
+  "count": 269,
+  "course_count": 134,
+  "news_count": 135,
   "items": [
     {
       "id": "7667258bb09c",
@@ -445,6 +445,16 @@
       "url": "https://www.sem.org.tw/News/11/Details/1586"
     },
     {
+      "id": "24c8f9118e81",
+      "title": "2026年台北初級救護技術員繼續教育訓練",
+      "source": "中華民國大型活動緊急救護協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": "2026-05-26",
+      "deadline": null,
+      "url": "https://www.mgems.org/260424_t1_course/"
+    },
+    {
       "id": "2539b19f690d",
       "title": "【重症復健聯甄課程】中區「重症運動會」重症早期復健研討會-115.05.31(日)臺中榮總研究大樓",
       "source": "台灣急救加護醫學會",
@@ -463,6 +473,16 @@
       "date": "2026-06-02",
       "deadline": null,
       "url": "https://www.sem.org.tw/News/5/Details/1598"
+    },
+    {
+      "id": "26eb3bb8e0c5",
+      "title": "2026年玉山管理處初級救護技術員繼續教育訓練",
+      "source": "中華民國大型活動緊急救護協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": "2026-06-02",
+      "deadline": null,
+      "url": "https://www.mgems.org/260514_yushan_t1f/"
     },
     {
       "id": "6938acf9f093",
@@ -783,6 +803,106 @@
       "date": null,
       "deadline": null,
       "url": "https://forms.gle/RxQobu2FoVewH6Qs5"
+    },
+    {
+      "id": "a9ab09ee6a61",
+      "title": "台灣急重症模擬醫學會第四屆第二次會員大會暨學術研討會時間表 4/20",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://simulation.org.tw/annualconference2024-3/"
+    },
+    {
+      "id": "3577e5206397",
+      "title": "台灣急重症模擬醫學會第四屆第二次會員大會暨學術研討會歡迎報名參加 4/20",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://simulation.org.tw/annualconference2024-2/"
+    },
+    {
+      "id": "cc41c445b0a8",
+      "title": "台灣急重症模擬醫學會第四屆第一次會員大會暨學術研討會時間表 12/03",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://simulation.org.tw/annualconference2022-schedule/"
+    },
+    {
+      "id": "97776574ba48",
+      "title": "台灣急重症模擬醫學會第四屆第一次會員大會暨學術研討會 12/03",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://simulation.org.tw/annualconference2022/"
+    },
+    {
+      "id": "f097cd1dd1e1",
+      "title": "建構以EPA為導向的模擬醫學教育 12/18",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://simulation.org.tw/class1218/"
+    },
+    {
+      "id": "3e07947c5fd5",
+      "title": "公告第四屆理、監事候選人名單及政見",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://simulation.org.tw/the_fourth_list_politics/"
+    },
+    {
+      "id": "00e2298de2ee",
+      "title": "第一屆全國醫學生高擬真競賽得獎名單",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://simulation.org.tw/winners-list_2022/"
+    },
+    {
+      "id": "2ddf05f4fe17",
+      "title": "公告本會第四屆理、監事候選人自我推薦辦法",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://simulation.org.tw/20220907news002/"
+    },
+    {
+      "id": "88270ccdb739",
+      "title": "全國醫學生高擬真競賽",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://simulation.org.tw/20220907news001/"
+    },
+    {
+      "id": "f800c6082abf",
+      "title": "12/26 模擬醫學在超音波導引血管穿刺術的應用工作坊取消公告",
+      "source": "台灣急重症模擬醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://simulation.org.tw/class1226-2-cancel/"
     },
     {
       "id": "5ddae5a72419",
@@ -1235,6 +1355,66 @@
       "url": "https://www.tasm.org.tw/EL/seminar.asp"
     },
     {
+      "id": "c882249c61ba",
+      "title": "2025年青山宮繞境活動",
+      "source": "中華民國大型活動緊急救護協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.mgems.org/251210_festival/"
+    },
+    {
+      "id": "140fdaafeed9",
+      "title": "2026年臺北101公益垂直馬拉松",
+      "source": "中華民國大型活動緊急救護協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.mgems.org/260509_taipei-101/"
+    },
+    {
+      "id": "b68c7da13251",
+      "title": "2026年台新女生路跑",
+      "source": "中華民國大型活動緊急救護協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.mgems.org/26-04-12-women-run/"
+    },
+    {
+      "id": "8d4b48f3d817",
+      "title": "2026 南山人壽臺北國道馬拉松",
+      "source": "中華民國大型活動緊急救護協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.mgems.org/2026-taipei-highway-marathron/"
+    },
+    {
+      "id": "cb82e9f03a2b",
+      "title": "2026年舒跑杯路跑賽",
+      "source": "中華民國大型活動緊急救護協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.mgems.org/260510_sports-run/"
+    },
+    {
+      "id": "f88b895cb5ea",
+      "title": "2026年台灣資安大會",
+      "source": "中華民國大型活動緊急救護協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.mgems.org/260505-7_taiwan-cyber-security/"
+    },
+    {
       "id": "e45a5f6063e9",
       "title": "台灣野外緊急救護協會 Facebook 粉絲專頁公告",
       "source": "台灣野外緊急救護協會",
@@ -1623,6 +1803,56 @@
       "date": null,
       "deadline": null,
       "url": "https://www.jems.com/news/"
+    },
+    {
+      "id": "cc05242f9202",
+      "title": "Event & Expedition Medic Provision",
+      "source": "World Extreme Medicine",
+      "cat": "國際期刊/組織",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://worldextrememedicine.com/event-expedition-medic-provision/"
+    },
+    {
+      "id": "36dc95e80ac8",
+      "title": "Courses",
+      "source": "World Extreme Medicine",
+      "cat": "國際期刊/組織",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://worldextrememedicine.com/extreme-medicine-courses/"
+    },
+    {
+      "id": "cdc892f17af7",
+      "title": "Expedition & Wilderness Medicine",
+      "source": "World Extreme Medicine",
+      "cat": "國際期刊/組織",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://worldextrememedicine.com/product-category/extreme-medicine-courses/expedition-wilderness-medicine/"
+    },
+    {
+      "id": "55342de8b5f8",
+      "title": "WEMFund Prolonged Field Care Course",
+      "source": "World Extreme Medicine",
+      "cat": "國際期刊/組織",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://worldextrememedicine.com/extreme-medicine-courses/wemf-prolonged-field-care-course"
+    },
+    {
+      "id": "17f164e2e04b",
+      "title": "All Extreme Medicine Courses",
+      "source": "World Extreme Medicine",
+      "cat": "國際期刊/組織",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://worldextrememedicine.com/product-category/extreme-medicine-courses/all-courses/"
     },
     {
       "id": "b8d5eb07b1d3",
