@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-27T00:40:39.294702+00:00",
-  "count": 198,
-  "course_count": 90,
+  "updated": "2026-06-27T03:08:35.207287+00:00",
+  "count": 191,
+  "course_count": 83,
   "news_count": 108,
   "items": [
     {
@@ -45,6 +45,16 @@
       "url": "https://www.tebma.org.tw/event/list/view/11642ac2dab56a383c16166183e39187"
     },
     {
+      "id": "d1fcafdd1566",
+      "title": "TSP Annual Conference 2026｜台灣醫療救護學會年度學術研討會",
+      "source": "台灣醫療救護學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-10-02",
+      "deadline": null,
+      "url": "https://twparamedicine.org/"
+    },
+    {
       "id": "009c255ace66",
       "title": "2026台灣實證醫學學會種子師資培訓工作坊",
       "source": "台灣實證醫學學會",
@@ -85,24 +95,104 @@
       "url": "https://www.tsccm.org.tw/news/df_info.asp?/931.html"
     },
     {
-      "id": "24c8f9118e81",
-      "title": "2026年台北初級救護技術員繼續教育訓練",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
+      "id": "9afcb996c69a",
+      "title": "【南&北區-開放報名】115年高級心臟救命術學員課程示範教學 ACLS Provider Demo Course",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
       "type": "course",
-      "date": "2026-05-26",
+      "date": null,
       "deadline": null,
-      "url": "https://www.mgems.org/260424_t1_course/"
+      "url": "https://www.seccm.org.tw/news/acls_course_info.asp?/800.html#here"
     },
     {
-      "id": "26eb3bb8e0c5",
-      "title": "2026年玉山管理處初級救護技術員繼續教育訓練",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
+      "id": "c79f1f73f270",
+      "title": "115年度高級心臟救命術指導員課程通過名單及試教須知",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
       "type": "course",
-      "date": "2026-06-02",
+      "date": null,
       "deadline": null,
-      "url": "https://www.mgems.org/260514_yushan_t1f/"
+      "url": "https://www.seccm.org.tw/news/acls_course_info.asp?/799.html#here"
+    },
+    {
+      "id": "5e2d1a2feb19",
+      "title": "【南&北區-全部開放報名】114年高級心臟救命術學員課程示範教學 ACLS Provider Demo Course",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.seccm.org.tw/news/acls_course_info.asp?/737.html#here"
+    },
+    {
+      "id": "07a35bb7ea4a",
+      "title": "114年度高級心臟救命術指導員課程通過名單及試教須知",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.seccm.org.tw/news/acls_course_info.asp?/736.html#here"
+    },
+    {
+      "id": "cad3198ad392",
+      "title": "【ACLS聯委會-上課提醒通知】114年度ACLS Instructor Course第二階段-114.05.24-25 中國醫藥大學新竹附設醫院",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.seccm.org.tw/news/acls_course_info.asp?/733.html#here"
+    },
+    {
+      "id": "7d465ab655ff",
+      "title": "【重症聯甄-更新講堂】What is New in 2025 ACLS: Post Post-Arrest Care 114.12.13 台大醫學院501講堂",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.seccm.org.tw/news/acls_course_info.asp?/771.html#here"
+    },
+    {
+      "id": "c7342b55cf44",
+      "title": "【114.05.24公告建議函】建議各醫院或開課單位將 ACLS 指導 員 （不限醫師）每小時授課鐘點費酌量調整至新臺幣 2,500 元。",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.seccm.org.tw/news/acls_course_info.asp?/742.html#here"
+    },
+    {
+      "id": "335fa7b327f1",
+      "title": "因應新冠肺炎疫情影響,ACLS聯委會線上決議ACLS指導員證書有效期限為民國112年屆滿者，無須受限教學時數案，耑此公告",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.seccm.org.tw/news/acls_course_info.asp?/500.html#here"
+    },
+    {
+      "id": "d5eddcf9d840",
+      "title": "因應新冠肺炎疫情影響,ACLS聯委會線上會議決議109年度和110年度ACLS指導員證書到期自動展延案,耑此公告",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.seccm.org.tw/news/acls_course_info.asp?/414.html#here"
+    },
+    {
+      "id": "70935911de29",
+      "title": "因應新冠肺炎疫情影響，109年到期之ACLS證書原證書效期順延一年，ACLS Instructor證書延長一年展延，耑此公告。",
+      "source": "台灣急救加護醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.seccm.org.tw/news/acls_course_info.asp?/270.html#here"
     },
     {
       "id": "576b1178525a",
@@ -645,116 +735,6 @@
       "url": "https://www.tasm.org.tw/EL/seminar.asp"
     },
     {
-      "id": "c882249c61ba",
-      "title": "2025年青山宮繞境活動",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.mgems.org/251210_festival/"
-    },
-    {
-      "id": "140fdaafeed9",
-      "title": "2026年臺北101公益垂直馬拉松",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.mgems.org/260509_taipei-101/"
-    },
-    {
-      "id": "b68c7da13251",
-      "title": "2026年台新女生路跑",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.mgems.org/26-04-12-women-run/"
-    },
-    {
-      "id": "8d4b48f3d817",
-      "title": "2026 南山人壽臺北國道馬拉松",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.mgems.org/2026-taipei-highway-marathron/"
-    },
-    {
-      "id": "cb82e9f03a2b",
-      "title": "2026年舒跑杯路跑賽",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.mgems.org/260510_sports-run/"
-    },
-    {
-      "id": "f88b895cb5ea",
-      "title": "2026年台灣資安大會",
-      "source": "中華民國大型活動緊急救護協會",
-      "cat": "台灣協會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.mgems.org/260505-7_taiwan-cyber-security/"
-    },
-    {
-      "id": "91790bdbec7d",
-      "title": "CPR+AED完整版3小時課程",
-      "source": "台灣運動安全暨急救技能推廣協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://sfast.innosoft.com.tw/iplm/pages/b.aspx?page=in_Meeting_list_A.html&method=In_MeetingUserResponse&in_meetingid=297C8E0AF68B4B609134923DF1F22659"
-    },
-    {
-      "id": "bf3f0e1ba292",
-      "title": "AED管理員4小時教育訓練",
-      "source": "台灣運動安全暨急救技能推廣協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://reurl.cc/qKa2WE"
-    },
-    {
-      "id": "e0f77ddf7472",
-      "title": "基本救命術指導員BLS-I課程",
-      "source": "台灣運動安全暨急救技能推廣協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://reurl.cc/eVQggR"
-    },
-    {
-      "id": "5bc9921519e2",
-      "title": "基本救命術BLS4小時課程",
-      "source": "台灣運動安全暨急救技能推廣協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://reurl.cc/4bYO9v"
-    },
-    {
-      "id": "a2470c9c35e4",
-      "title": "基本救命術BLS8小時課程",
-      "source": "台灣運動安全暨急救技能推廣協會",
-      "cat": "台灣協會",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://reurl.cc/aMEgWl"
-    },
-    {
       "id": "a8949ae88118",
       "title": "2023年活動花絮集",
       "source": "復甦照護小學堂",
@@ -983,56 +963,6 @@
       "date": null,
       "deadline": null,
       "url": "https://www.jems.com/news/"
-    },
-    {
-      "id": "cc05242f9202",
-      "title": "Event & Expedition Medic Provision",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/event-expedition-medic-provision/"
-    },
-    {
-      "id": "36dc95e80ac8",
-      "title": "Courses",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/extreme-medicine-courses/"
-    },
-    {
-      "id": "cdc892f17af7",
-      "title": "Expedition & Wilderness Medicine",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/product-category/extreme-medicine-courses/expedition-wilderness-medicine/"
-    },
-    {
-      "id": "55342de8b5f8",
-      "title": "WEMFund Prolonged Field Care Course",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/extreme-medicine-courses/wemf-prolonged-field-care-course"
-    },
-    {
-      "id": "17f164e2e04b",
-      "title": "All Extreme Medicine Courses",
-      "source": "World Extreme Medicine",
-      "cat": "國際期刊/組織",
-      "type": "course",
-      "date": null,
-      "deadline": null,
-      "url": "https://worldextrememedicine.com/product-category/extreme-medicine-courses/all-courses/"
     },
     {
       "id": "b8d5eb07b1d3",
@@ -1575,6 +1505,16 @@
       "url": "https://ctomsinc.com/collections/tactical-clothing"
     },
     {
+      "id": "3f6989d40c6b",
+      "title": "Joint Trauma System The Department of Defense Center of Excellence for Trauma Bold, Responsible Practice of Battlefield Medicine",
+      "source": "JTS — Joint Trauma System",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://jts.health.mil/"
+    },
+    {
       "id": "df37b5e4d0b7",
       "title": "Defense Committees on Trauma",
       "source": "JTS — Joint Trauma System",
@@ -1613,16 +1553,6 @@
       "date": null,
       "deadline": null,
       "url": "https://jts.health.mil/index.cfm/CPGs/cpgs"
-    },
-    {
-      "id": "3f6989d40c6b",
-      "title": "Joint Trauma System The Department of Defense Center of Excellence for Trauma Bold, Responsible Practice of Battlefield Medicine",
-      "source": "JTS — Joint Trauma System",
-      "cat": "戰術救護",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://jts.health.mil/"
     },
     {
       "id": "1d5a35aee639",
