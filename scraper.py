@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
+requests.packages.urllib3.disable_warnings()
 
 OUTPUT_JSON = Path("data/courses.json")
 OUTPUT_DOCS_JSON = Path("docs/data/courses.json")
@@ -55,20 +56,65 @@ def extract_all_dates(text):
             except: pass
     return sorted(set(dates))
 
+def _date_matches(text):
+    """Return (date, start, end) tuples in text order."""
+    if not text:
+        return []
+    matches = []
+    patterns = [
+        r"(\d{4})[./-](\d{1,2})[./-](\d{1,2})",
+        r"(\d{4})年\s*(\d{1,2})月\s*(\d{1,2})日",
+        r"(\d{2,3})[./-](\d{1,2})[./-](\d{1,2})",
+        r"(\d{2,3})年\s*(\d{1,2})月\s*(\d{1,2})日",
+    ]
+    for pat in patterns:
+        for m in re.finditer(pat, text):
+            try:
+                y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+                if 100 <= y <= 130:
+                    y += 1911
+                if 2020 <= y <= 2035 and 1 <= mo <= 12 and 1 <= d <= 31:
+                    matches.append((f"{y:04d}-{mo:02d}-{d:02d}", m.start(), m.end()))
+            except Exception:
+                pass
+    return sorted(set(matches), key=lambda x: (x[1], x[2], x[0]))
+
 def parse_dates_from_title(title):
     title = title or ""
     result = {"event_date": None, "deadline": None}
-    deadline_kw = re.search(r"報名截止|截止日期?|報名至|最後報名|deadline|last.day", title, re.I)
+    matches = _date_matches(title)
+    if not matches:
+        return result
+
+    deadline_patterns = [
+        r"報名截止", r"截止日期?", r"報名至", r"報名時間", r"最後報名",
+        r"早鳥", r"優惠", r"即日起至", r"受理至", r"至.*截止",
+        r"deadline", r"last.day",
+    ]
+    deadline_kw = re.search("|".join(deadline_patterns), title, re.I)
     if deadline_kw:
-        before = extract_all_dates(title[:deadline_kw.start()])
-        after  = extract_all_dates(title[deadline_kw.end():])
-        result["deadline"] = before[-1] if before else (after[0] if after else None)
-        all_d = extract_all_dates(title)
-        rest  = [d for d in all_d if d != result["deadline"]]
-        result["event_date"] = sorted(rest)[-1] if rest else (all_d[-1] if all_d else None)
+        near = [
+            (abs(start - deadline_kw.start()), date, start, end)
+            for date, start, end in matches
+            if start >= deadline_kw.start() - 20
+        ]
+        if near:
+            near.sort()
+            result["deadline"] = near[0][1]
+
+    if not result["deadline"]:
+        for date, start, end in matches:
+            tail = title[end:end + 4]
+            if re.search(r"(前|止|截止)", tail):
+                result["deadline"] = date
+                break
+
+    all_d = sorted({d for d, _, _ in matches})
+    if result["deadline"]:
+        rest = [d for d in all_d if d != result["deadline"]]
+        result["event_date"] = rest[-1] if rest else all_d[-1]
     else:
-        all_d = extract_all_dates(title)
-        result["event_date"] = all_d[-1] if all_d else None
+        result["event_date"] = all_d[-1]
     return result
 
 def classify_type(title):
@@ -102,7 +148,7 @@ def _get_session(host):
     })
     try:
         # 先訪問首頁，讓伺服器設定 Session Cookie
-        s.get(f"http://{host}/", timeout=10, allow_redirects=True)
+        s.get(f"http://{host}/", timeout=10, allow_redirects=True, verify=False)
         time.sleep(0.5)
     except: pass
     _SESSION_CACHE[host] = s
@@ -125,7 +171,7 @@ def fetch(url, timeout=10, encoding=None):
         _s.headers["Referer"] = f"http://{_host}/"
         for attempt in range(2):
             try:
-                r = _s.get(url, timeout=timeout, allow_redirects=True)
+                r = _s.get(url, timeout=timeout, allow_redirects=True, verify=False)
                 r.raise_for_status()
                 r.encoding = encoding or r.apparent_encoding or "utf-8"
                 return BeautifulSoup(r.text, "html.parser")
@@ -146,7 +192,7 @@ def fetch(url, timeout=10, encoding=None):
     }
     for attempt in range(2):  # 最多重試一次
         try:
-            r = requests.get(url, headers=_headers, timeout=timeout, allow_redirects=True)
+            r = requests.get(url, headers=_headers, timeout=timeout, allow_redirects=True, verify=False)
             r.raise_for_status()
             # 指定編碼（Big5 優先，否則自動偵測）
             r.encoding = encoding or r.apparent_encoding or "utf-8"
@@ -1888,6 +1934,177 @@ def build_rss(items):
 # ══════════════════════════════════════════════════════
 # 主程式
 # ══════════════════════════════════════════════════════
+def _text_get(url, timeout=15):
+    """Fetch text for newer Taiwan sites that use CSV/JSON/AJAX feeds."""
+    r = requests.get(url, headers=HEADERS, timeout=timeout, allow_redirects=True, verify=False)
+    r.raise_for_status()
+    try:
+        return r.content.decode("utf-8-sig")
+    except Exception:
+        r.encoding = r.apparent_encoding or "utf-8"
+        return r.text
+
+def _csv_dicts(url):
+    import csv, io
+    return list(csv.DictReader(io.StringIO(_text_get(url))))
+
+def _first_url(text, fallback):
+    m = re.search(r"https?://[^\s<>'\"]+", text or "")
+    return m.group(0) if m else fallback
+
+def _date_from_any(*parts):
+    dates = extract_all_dates(" ".join(p or "" for p in parts))
+    return dates[-1] if dates else None
+
+def _courseish(text):
+    return any(k in (text or "") for k in ["課程", "訓練", "研討", "工作坊", "報名", "講習", "活動", "繼續教育", "急救", "救命術", "NRP"])
+
+def scrape_twparamedicine():
+    out = []
+    url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQfiEDEtIn6BJMw1VPnVLOps_mi2fgitOb7B8t9Wx0rEnpnuocIcvKEaGj_5q2M22la4oQPrd-tiE3N/pub?output=csv"
+    for row in _csv_dicts(url):
+        title = clean(row.get("title_zh") or row.get("title_en"))
+        if not title: continue
+        tag = clean(row.get("tag") or row.get("committee"))
+        body = clean(row.get("desc_zh") or row.get("desc_en"))
+        link = clean(row.get("link")) or _first_url(body, "https://twparamedicine.org/news.html")
+        itype = "course" if _courseish(tag + title + body[:80]) else "news"
+        out.append(mk(title, "台灣醫療救護學會", "台灣學會", link, itype, _date_from_any(row.get("date"), title, body)))
+    return out[:30]
+
+def scrape_twdmat():
+    out = []
+    url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSV1Hj2V0Xc1MMFSVime2_EmGN9_Gh30UGLt0eK29w-g8SJcurqDvhPrm0GXlrLfA4ChkqDVbzmmc6Q/pub?output=csv"
+    for row in _csv_dicts(url):
+        if clean(row.get("Status")).lower() not in ("true", "1", "yes", "y"): continue
+        title = clean(row.get("Title_zh") or row.get("Title_en"))
+        if not title: continue
+        cat_text = clean(row.get("Category_zh") or row.get("Category_en"))
+        body = clean(row.get("Summary_zh") or row.get("Description_zh"))
+        itype = "course" if _courseish(cat_text + title + body[:80]) else "news"
+        link = clean(row.get("Link_URL")) or "https://twdmat.org/"
+        out.append(mk(title, "台灣災難醫療隊發展協會", "台灣協會", link, itype, _date_from_any(title, body)))
+    return out[:20]
+
+def scrape_emt():
+    out = []
+    base = "https://www.emt.org.tw/temtaf/"
+    try:
+        data = requests.get(base + "CmWelcome_getNews", headers=HEADERS, timeout=15, verify=False).json()
+        for n in data.get("news", []):
+            title = clean(n.get("title"))
+            if not title: continue
+            category = clean(n.get("category"))
+            itype = "course" if category == "C" or _courseish(title) else "news"
+            url = base + "GpBulletinDtl?bulletin=" + clean(n.get("bullId"))
+            out.append(mk(title, "中華緊急救護技術員協會", "台灣協會", url, itype, _date_from_any(n.get("date"), title)))
+    except Exception as e:
+        log(f"    [warn] EMT JSON 失敗: {e}")
+    return out[:20]
+
+def scrape_tafm():
+    out = []
+    base = "https://www.tafm.org.tw"
+    soup = fetch(base + "/ehc-tafm/s/index.htm")
+    if not soup: return out
+    for a in soup.select("a[href*='/news_news/article/']"):
+        title = clean(a.get_text())
+        if len(title) < 5: continue
+        parent = a.find_parent(["li", "div"]) or a
+        out.append(mk(title, "台灣家庭醫學醫學會", "台灣學會", resolve(a.get("href"), base), "news", _date_from_any(parent.get_text(" "))))
+    for a in soup.select("a[href*='/edu/scheduleInfo1/schedule/']"):
+        title = clean(a.get_text())
+        if len(title) < 5: continue
+        parent = a.find_parent(["li", "div"]) or a
+        out.append(mk(title, "台灣家庭醫學醫學會", "台灣學會", resolve(a.get("href"), base), "course", _date_from_any(title, parent.get_text(" "))))
+    seen, unique = set(), []
+    for it in out:
+        if it["id"] not in seen:
+            seen.add(it["id"]); unique.append(it)
+    return unique[:30]
+
+def scrape_dpac():
+    out = []
+    base = "https://dpac.org.tw"
+    soup = fetch(base + "/")
+    if not soup: return out
+    for a in soup.select("a[href]"):
+        title = clean(a.get_text(" "))
+        href = resolve(a.get("href"), base)
+        if len(title) < 4 or href.startswith("javascript"): continue
+        if not any(p in href for p in ["/post/", "/opg/", "/blog"]): continue
+        itype = "course" if _courseish(title) else "news"
+        out.append(mk(title, "彰化縣防災協會（DPAC）", "台灣協會", href, itype, _date_from_any(title)))
+    seen, unique = set(), []
+    for it in out:
+        if it["id"] not in seen:
+            seen.add(it["id"]); unique.append(it)
+    return unique[:20]
+
+def scrape_webtema():
+    out = []
+    feed = "https://temataiwan.blogspot.com/feeds/posts/default?alt=json&max-results=20"
+    try:
+        data = requests.get(feed, headers=HEADERS, timeout=15, verify=False).json()
+        for entry in data.get("feed", {}).get("entry", []):
+            title = clean(entry.get("title", {}).get("$t"))
+            if not title: continue
+            link = next((l.get("href") for l in entry.get("link", []) if l.get("rel") == "alternate"), "https://temataiwan.blogspot.com/")
+            published = entry.get("published", {}).get("$t", "")[:10]
+            out.append(mk(title, "台灣緊急應變管理協會", "台灣協會", link, "course" if _courseish(title) else "news", published or None))
+    except Exception as e:
+        log(f"    [warn] WEBTEMA feed 失敗: {e}")
+    return out[:20]
+
+def scrape_tsn():
+    out = []
+    base = "https://tsn-neonatology.com/"
+    for endpoint, itype in [("news_list.aspx?q=get&r=1&newsKind=", "news"), ("event_list.aspx?q=get&r=1", "course")]:
+        try:
+            data = requests.get(base + endpoint, headers={**HEADERS, "X-Requested-With": "XMLHttpRequest"}, timeout=15, verify=False).json()
+            for row in data.get("list", {}).get("items", []):
+                title = clean(row.get("Title"))
+                if not title: continue
+                page = "event_content.aspx" if itype == "course" else "news_content.aspx"
+                url = base + f"{page}?id={row.get('Id')}"
+                date = _date_from_any(row.get("StartDate"), row.get("PublishDate"), title)
+                out.append(mk(title, "台灣新生兒科醫學會", "台灣學會", url, itype, date))
+        except Exception as e:
+            log(f"    [warn] TSN {itype} 失敗: {e}")
+    return out[:40]
+
+def scrape_sma():
+    out = []
+    base = "https://www.sma.org.tw/"
+    soup = fetch(base + "news.html")
+    if not soup: return out
+    for a in soup.select("a[href]"):
+        title = clean(a.get_text(" "))
+        href = resolve(a.get("href"), base)
+        if len(title) < 5 or any(s in title for s in ["首頁", "關於學會", "相關網站", "聯絡"]): continue
+        if "news" in href or "form" in href or _courseish(title):
+            out.append(mk(title, "台灣運動醫學學會", "台灣學會", href, "course" if _courseish(title) else "news", _date_from_any(title)))
+    return out[:15]
+
+def scrape_pediatr():
+    out = []
+    base = "https://www.pediatr.org.tw"
+    for path, itype in [("/", None), ("/news/", "news"), ("/event/", "course"), ("/event/calendar.php", "course")]:
+        soup = fetch(base + path)
+        if not soup: continue
+        for a in soup.select("a[href]"):
+            title = clean(a.get_text(" "))
+            href = resolve(a.get("href"), base)
+            if len(title) < 5 or title.isdigit(): continue
+            if any(p in href for p in ["/news/content.php", "/event/content.php", "/event/list.php"]) or _courseish(title):
+                parent = a.find_parent(["tr", "li", "div"]) or a
+                out.append(mk(title, "臺灣兒科醫學會", "台灣學會", href, itype or ("course" if "/event/" in href or _courseish(title) else "news"), _date_from_any(parent.get_text(" "), title)))
+    seen, unique = set(), []
+    for it in out:
+        if it["id"] not in seen:
+            seen.add(it["id"]); unique.append(it)
+    return unique[:30]
+
 SCRAPERS = [
     # ── 台灣學會 ──
     ("台灣急診醫學會",              scrape_sem),
@@ -2001,11 +2218,53 @@ def limit_per_source(results):
 
     return out_courses + out_news
 
+SOURCE_ALIASES = {
+    "AHA": ["AHA — American Heart Association"],
+    "JTS": ["JTS — Joint Trauma System"],
+    "彰化縣防災協會": ["彰化縣防災協會（DPAC）"],
+    "台灣野外地區緊急救護協會": ["台灣野外緊急救護協會"],
+    "Tactical Medicine": ["Tactical Medicine Training & Equipment"],
+}
+
+def load_previous_items():
+    for path in (OUTPUT_JSON, OUTPUT_DOCS_JSON):
+        try:
+            if path.exists():
+                data = json.loads(path.read_text(encoding="utf-8"))
+                return data.get("items", []) or []
+        except Exception as e:
+            log(f"  [warn] 舊資料讀取失敗 {path}: {e}")
+    return []
+
+def source_keys(name, items=None):
+    keys = [name] + SOURCE_ALIASES.get(name, [])
+    if items:
+        for it in items:
+            src = it.get("source")
+            if src and src not in keys:
+                keys.append(src)
+    return keys
+
+def previous_for_source(previous_by_source, name, items=None):
+    out = []
+    seen = set()
+    for key in source_keys(name, items):
+        for it in previous_by_source.get(key, []):
+            if it.get("id") not in seen:
+                seen.add(it.get("id"))
+                out.append(it)
+    return out
+
 def main():
     log(f"\n{'='*55}")
     log(f"緊急救護課程爬蟲 v3  {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     log(f"每單位：課程(同月最多{MAX_PER_MONTH}筆,未來無限) + 消息(同月最多{MAX_PER_MONTH}筆)")
     log(f"{'='*55}")
+
+    previous_items = load_previous_items()
+    previous_by_source = {}
+    for it in previous_items:
+        previous_by_source.setdefault(it.get("source"), []).append(it)
 
     all_items = []
     for name, fn in SCRAPERS:
@@ -2013,12 +2272,21 @@ def main():
         try:
             raw = fn()
             results = limit_per_source(raw)
+            if not results:
+                preserved = previous_for_source(previous_by_source, name, raw)
+                if preserved:
+                    results = preserved
+                    log(f"  [preserve] 本次 0 筆，沿用舊資料 {len(preserved)} 筆")
             courses = [r for r in results if r.get("type")=="course"]
             news    = [r for r in results if r.get("type")=="news"]
             log(f"  課程:{len(courses)}  消息:{len(news)}  (原始:{len(raw)}筆)")
             all_items.extend(results)
         except Exception as e:
             log(f"  [error] {e}")
+            preserved = previous_for_source(previous_by_source, name)
+            if preserved:
+                log(f"  [preserve] 爬蟲錯誤，沿用舊資料 {len(preserved)} 筆")
+                all_items.extend(preserved)
         time.sleep(0.5)
 
     # 去重
