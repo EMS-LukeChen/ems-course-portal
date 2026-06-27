@@ -169,53 +169,63 @@ def scrape_sem():
     return unique[:30]
 
 def scrape_seccm():
-    """台灣急救加護醫學會 — 正確表格結構"""
+    """台灣急救加護醫學會 — 正確表格結構（確認可抓）"""
     out = []
     BASE = "https://www.seccm.org.tw"
-    # 各類課程列表頁（表格：日期 / 標題 / 地點）
-    course_pages = [
-        "/news/acls_course.asp",       # ACLS委員會課程
-        "/news/acls_union.asp",        # 聯甄課程
-        "/news/acls_class.asp",        # ACLS課程舉辦單位
-        "/news/acls_NotUnion.asp",     # 非聯甄課程
-    ]
-    for path in course_pages:
+
+    # 1. ACLS委員會課程（格式：日期/標題/地點，含a連結）
+    for path, itype in [
+        ("/news/acls_course.asp", "course"),   # ACLS委員會課程
+        ("/news/acls_NotUnion.asp", "course"), # 非聯甄課程
+    ]:
         soup = fetch(BASE + path)
         if not soup: continue
         for row in soup.select("table tr"):
-            cols = row.find_all(["td","th"])
+            cols = row.find_all("td")
             if len(cols) < 2: continue
-            # 找標題欄位（含連結或文字）
-            for i, col in enumerate(cols):
+            # 日期在第1欄，標題在第2欄（有連結）
+            date_text = cols[0].get_text() if cols else ""
+            date = extract_all_dates(date_text)
+            # 找標題（第2欄以後最長的含連結欄位）
+            for col in cols[1:]:
                 a = col.find("a")
-                t = clean(col.get_text())
                 if a:
                     t = clean(a.get_text())
-                if len(t) < 8 or len(t) > 200: continue
-                if any(k in t for k in ["課程","ACLS","PALS","訓練","工作坊","研討","Provider","Instructor"]):
-                    # 日期從其他欄位取得
-                    all_text = row.get_text()
-                    date = extract_all_dates(all_text)
-                    href = resolve(a.get("href","") if a else "", BASE)
+                    if len(t) < 5 or len(t) > 200: continue
+                    href = resolve(a.get("href",""), BASE)
                     out.append(mk(t, "台灣急救加護醫學會", "台灣學會",
-                                  href, "course", date[-1] if date else None))
+                                  href, itype, date[-1] if date else None))
                     break
-    # 最新消息（公告列表）
-    soup2 = fetch(BASE + "/orgNews/News_list.asp")
+
+    # 2. 首頁最新消息（acls_course.asp 已確認有資料，首頁也有）
+    soup2 = fetch(BASE + "/")
     if soup2:
-        for row in soup2.select("table tr"):
+        # 首頁列表（ul/li 或 table 格式）
+        for a in soup2.select("a[href*='acls_course_info'], a[href*='orgnews'], a[href*='News_info']"):
+            t = clean(a.get_text())
+            if len(t) < 5 or len(t) > 200: continue
+            parent = a.find_parent(["li","tr","div"])
+            date = extract_all_dates(parent.get_text() if parent else t)
+            out.append(mk(t, "台灣急救加護醫學會", "台灣學會",
+                          resolve(a.get("href",""), BASE), None,
+                          date[-1] if date else None))
+
+    # 3. 公告列表
+    soup3 = fetch(BASE + "/orgNews/News_list.asp")
+    if soup3:
+        for row in soup3.select("table tr"):
             a = row.find("a")
             if not a: continue
             t = clean(a.get_text())
-            if len(t) < 5: continue
+            if len(t) < 5 or len(t) > 200: continue
             date = extract_all_dates(row.get_text())
             out.append(mk(t, "台灣急救加護醫學會", "台灣學會",
                           resolve(a.get("href",""), BASE), "news",
                           date[-1] if date else None))
-    # 去重
+
     seen, unique = set(), []
     for it in out:
-        if it["id"] not in seen:
+        if it["id"] not in seen and len(it.get("title","")) > 4:
             seen.add(it["id"])
             unique.append(it)
     return unique[:50]
@@ -270,34 +280,53 @@ def scrape_disaster():
     return out[:25]
 
 def scrape_twparamedicine():
-    """台灣醫療救護學會 — 課程與最新消息"""
+    """台灣醫療救護學會 — 網站動態載入，改抓靜態錨點與已知固定資訊"""
     out = []
     BASE = "https://twparamedicine.org"
-    # 課程頁面
-    for path, itype in [
-        ("/training.html", "course"),
-        ("/index.html", None),
-        ("/news.html", "news"),
-    ]:
-        soup = fetch(BASE + path)
-        if not soup: continue
-        for row in soup.select("article, .post, li, tr"):
-            a = row.find("a")
-            if not a: continue
+
+    # 1. 課程頁面（training.html — 靜態課程模組說明）
+    soup = fetch(BASE + "/training.html")
+    if soup:
+        # 抓頁面上可見的課程報名連結（如 Google Form 或 reurl 連結）
+        for a in soup.select("a[href]"):
             t = clean(a.get_text())
+            href = a.get("href","")
+            if len(t) < 5 or len(t) > 200: continue
+            if any(skip in t for skip in ["關於","聯絡","首頁","登入","加入","學會","願景"]): continue
+            # 只抓外部報名連結或活動頁
+            if any(k in href for k in ["reurl","forms.gle","kktix","accupass","docs.google","eventbrite"]):
+                date = extract_all_dates(t)
+                out.append(mk(t, "台灣醫療救護學會", "台灣學會",
+                              href, "course", date[-1] if date else None))
+
+    # 2. 首頁（抓靜態可見的新聞連結）
+    soup2 = fetch(BASE + "/")
+    if soup2:
+        for a in soup2.select("a[href]"):
+            t = clean(a.get_text())
+            href = a.get("href","")
             if len(t) < 8 or len(t) > 200: continue
-            # 過濾導覽連結
-            if any(skip in t for skip in ["關於","聯絡","首頁","登入","English"]): continue
-            date = extract_all_dates(row.get_text())
-            out.append(mk(t, "台灣醫療救護學會", "台灣學會",
-                          resolve(a.get("href",""), BASE), itype,
-                          date[-1] if date else None))
+            if any(skip in t for skip in ["關於","聯絡","首頁","登入","加入","學會","更多"]): continue
+            if any(k in href for k in ["/news","/event","/post","reurl","forms"]):
+                date = extract_all_dates(t)
+                out.append(mk(t, "台灣醫療救護學會", "台灣學會",
+                              resolve(href, BASE), None,
+                              date[-1] if date else None))
+
+    # 3. 加入已知固定活動（Annual Conference 2026/10/2-3）
+    out.append(mk(
+        "TSP Annual Conference 2026｜台灣醫療救護學會年度學術研討會",
+        "台灣醫療救護學會", "台灣學會",
+        "https://twparamedicine.org/",
+        "course", "2026-10-02"
+    ))
+
     seen, unique = set(), []
     for it in out:
-        if it["id"] not in seen:
+        if it["id"] not in seen and len(it.get("title","")) > 4:
             seen.add(it["id"])
             unique.append(it)
-    return unique[:30]
+    return unique[:20]
 
 def scrape_taemsp():
     """台灣緊急救護醫療指導醫師學會"""
