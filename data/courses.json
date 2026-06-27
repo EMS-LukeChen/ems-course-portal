@@ -1,8 +1,8 @@
 {
-  "updated": "2026-06-27T09:28:07.294872+00:00",
-  "count": 269,
-  "course_count": 134,
-  "news_count": 135,
+  "updated": "2026-06-27T10:37:19.071654+00:00",
+  "count": 376,
+  "course_count": 200,
+  "news_count": 176,
   "items": [
     {
       "id": "7667258bb09c",
@@ -13,6 +13,16 @@
       "date": "2026-06-27",
       "deadline": "2026-06-15",
       "url": "http://www.trauma.org.tw/active/index.asp?/19.html"
+    },
+    {
+      "id": "995eaa17bae9",
+      "title": "台灣中區兒童過敏免疫暨風濕科病例研討會",
+      "source": "臺灣兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-06-27",
+      "deadline": null,
+      "url": "https://www.pediatr.org.tw/content.php?id=21122&page=1"
     },
     {
       "id": "c8f312b5112b",
@@ -35,6 +45,86 @@
       "url": "https://www.sem.org.tw/Activity/B/Details/32900"
     },
     {
+      "id": "7d3ddae0a687",
+      "title": "新生兒高級急救救命術(NRP)",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-06-28",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28302"
+    },
+    {
+      "id": "880ac09b937d",
+      "title": "健康台灣深耕計畫 : 守護兒童、拒絕傷害 臺灣兒童死因探討與青少年自殺的辨識與防治",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-06-28",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28267"
+    },
+    {
+      "id": "de3382c50fda",
+      "title": "115年度青少年醫學教育訓練課程-北區",
+      "source": "臺灣兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-06-28",
+      "deadline": null,
+      "url": "https://www.pediatr.org.tw/event/content.php?id=21000"
+    },
+    {
+      "id": "59d7c1d2f086",
+      "title": "2026 台灣兒童伊比力斯協會年度學術會議暨第十四屆第二次會員大會",
+      "source": "臺灣兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-06-28",
+      "deadline": null,
+      "url": "https://www.pediatr.org.tw/event/content.php?id=21056"
+    },
+    {
+      "id": "8e8b44ac3342",
+      "title": "以家庭為中心-學齡前兒童的情緒調節困難與評估處遇",
+      "source": "臺灣兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-06-28",
+      "deadline": null,
+      "url": "https://www.pediatr.org.tw/event/content.php?id=21089"
+    },
+    {
+      "id": "e22b03c287f9",
+      "title": "新生兒高級救命術NRP認證課程",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-01",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28299"
+    },
+    {
+      "id": "6ad1d2a41a42",
+      "title": "115年度「兒童衛教指導服務醫師教育訓練」開始報名【115年7月1日執行兒童預防保健服務(含衛教指導)每案可申補助600元】，名額有限，額滿為止。",
+      "source": "臺灣兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-01",
+      "deadline": null,
+      "url": "https://www.pediatr.org.tw/news/content.php?id=5128"
+    },
+    {
+      "id": "5324a8f42b58",
+      "title": "轉知-衛生福利部-公告之「生育保健之遺傳相關檢驗補助精進方案」，並自115年7月1日生效。",
+      "source": "臺灣兒科醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-07-01",
+      "deadline": null,
+      "url": "https://www.pediatr.org.tw/news/content.php?id=5178"
+    },
+    {
       "id": "6cdbc2d92f99",
       "title": "115年住院醫師初階災難訓練課程(南區)【線上+實體】 社團法人台灣急診醫學會",
       "source": "台灣急診醫學會",
@@ -43,6 +133,36 @@
       "date": "2026-07-02",
       "deadline": "2026-06-21",
       "url": "https://www.sem.org.tw/Activity/A/Details/33032"
+    },
+    {
+      "id": "3e349788866f",
+      "title": "婦幼聯合討論會",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-02",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28304"
+    },
+    {
+      "id": "01578a9a012c",
+      "title": "【訊息轉知】2026馬偕醫學大學厚生健康學院-永續厚生健康論壇2026/6/23(二)至2026/7/3(五)假MS Teams辦理，歡迎踴躍參加。",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-07-03",
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=492"
+    },
+    {
+      "id": "63f18f968928",
+      "title": "《關鍵轉譯》：國民法官法庭中「醫療．社政．司法」 跨專業對話與出庭作證工作坊",
+      "source": "臺灣兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-03",
+      "deadline": null,
+      "url": "https://www.pediatr.org.tw/content.php?id=21109&page=1"
     },
     {
       "id": "26138c8efa38",
@@ -75,6 +195,36 @@
       "url": "http://www.trauma.org.tw/active/index.asp?/22.html"
     },
     {
+      "id": "7152e211ae93",
+      "title": "高級小兒救命術APLS+PALS Provider Course",
+      "source": "臺灣兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-04",
+      "deadline": null,
+      "url": "https://www.pediatr.org.tw/content.php?id=21110&page=1"
+    },
+    {
+      "id": "d7df1da45a75",
+      "title": "PALS & APLS Provider Course 高級兒童救命術訓練課程",
+      "source": "臺灣兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-04",
+      "deadline": null,
+      "url": "https://www.pediatr.org.tw/content.php?id=21104&page=1"
+    },
+    {
+      "id": "ef103e53569b",
+      "title": "兒童急重症醫療照顧品質提升研討會",
+      "source": "臺灣兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-04",
+      "deadline": null,
+      "url": "https://www.pediatr.org.tw/content.php?id=21081&page=1"
+    },
+    {
       "id": "0dbec7c61261",
       "title": "外傷登錄訓練課程－再認證(南部場次)... 【活動資訊更新】外傷登錄訓練課程－再認證(南部場次)上課日期已調動至115年07月04日(六)",
       "source": "台灣外傷醫學會",
@@ -85,6 +235,26 @@
       "url": "http://www.trauma.org.tw/active/index.asp?/21.html"
     },
     {
+      "id": "2db8cf96bfe9",
+      "title": "生產事故救濟10週年國際研討會",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-05",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28295"
+    },
+    {
+      "id": "c8abc6c822df",
+      "title": "臺東縣衛生局 幼兒專責教育訓練",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-06",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28307"
+    },
+    {
       "id": "6e89d2b0fe74",
       "title": "夏季山域溪谷自救搜救知能安全講習 社團法人台灣急診醫學會、馬偕紀念醫院急診醫學部野外醫學中心",
       "source": "台灣急診醫學會",
@@ -93,6 +263,16 @@
       "date": "2026-07-08",
       "deadline": "2026-06-30",
       "url": "https://www.sem.org.tw/Activity/A/Details/33048"
+    },
+    {
+      "id": "f8a9622624b9",
+      "title": "北區聯合病例討論會",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-08",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28125"
     },
     {
       "id": "1bacf010c6e9",
@@ -115,6 +295,56 @@
       "url": "http://www.trauma.org.tw/active/index.asp?/20.html"
     },
     {
+      "id": "9aa374314838",
+      "title": "年度學術研討會-115.7.11(六) 第一天",
+      "source": "台灣家庭醫學醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-11",
+      "deadline": null,
+      "url": "https://www.tafm.org.tw/ehc-tafm/s/w/edu/scheduleInfo1/schedule/4596fa6fe70547e890686fb6e5cd0f95"
+    },
+    {
+      "id": "5ef29a335835",
+      "title": "115.7.11-12年度學術研討會暨會員代表大會活動通知 （兩天的精彩活動,早鳥優惠115.6.12前）",
+      "source": "台灣家庭醫學醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-07-11",
+      "deadline": null,
+      "url": "https://www.tafm.org.tw/ehc-tafm/s/w/news_news/article/cc74ef8393d440cdb740fbe59711414d"
+    },
+    {
+      "id": "4553302df918",
+      "title": "接軌國際共譜新章~波士頓的P A S：龍蝦、紅襪隊時空交織的知識微醺饗宴",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-11",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28318"
+    },
+    {
+      "id": "6aca5801bd8a",
+      "title": "年度學術研討會-115.7.12(日) 第二天",
+      "source": "台灣家庭醫學醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-12",
+      "deadline": null,
+      "url": "https://www.tafm.org.tw/ehc-tafm/s/w/edu/scheduleInfo1/schedule/d7d7efaccd2b420abc2af8a0a0e55379"
+    },
+    {
+      "id": "60a91704384e",
+      "title": "115年度桃園市幼兒專責醫師經驗分享交流會",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-12",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28321"
+    },
+    {
       "id": "6c7acf9af5b5",
       "title": "【重症聯甄】Holistic and Patient-Centered Critical Care 115.07.18 國泰人壽大樓B1國際會議廳",
       "source": "台灣急救加護醫學會",
@@ -133,6 +363,26 @@
       "date": "2026-07-18",
       "deadline": null,
       "url": "http://course.tsccm.org.tw/df_info.asp?/967.html"
+    },
+    {
+      "id": "bbb192d60883",
+      "title": "2026 台灣DDH疾病認證交流與學術討論會暨中華民國小兒骨科醫學會年會",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-18",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28282"
+    },
+    {
+      "id": "5717fdac3e00",
+      "title": "台日美國際學術研討會-兒科重症全方位臨床診療新視野",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-19",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28308"
     },
     {
       "id": "6581b870efd0",
@@ -185,6 +435,36 @@
       "url": "https://www.tebma.org.tw/event/list"
     },
     {
+      "id": "10cb223b7d6d",
+      "title": "母乳哺育種子講師繼續教育訓練「創意教學設計與實作」工作坊",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-25",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28279"
+    },
+    {
+      "id": "7a9d938e31f6",
+      "title": "2026.07.25 台灣運動醫學學會年度學術研討會-桃園福容A8",
+      "source": "台灣運動醫學學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-25",
+      "deadline": null,
+      "url": "https://forms.gle/2baLpvQBMTdRJLdf6"
+    },
+    {
+      "id": "590836896c0e",
+      "title": "台灣遺傳性血管性水腫罕病關懷協會2026夏季聯誼會暨照護醫師訓練課程",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-07-26",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28319"
+    },
+    {
       "id": "44140ae5ad0b",
       "title": "115年師資培育工作坊 (中區) 社團法人台灣急診醫學會、中山醫學大學附設醫院",
       "source": "台灣急診醫學會",
@@ -205,6 +485,46 @@
       "url": "http://www.trauma.org.tw/active/index.asp?/23.html"
     },
     {
+      "id": "8977206603ef",
+      "title": "新生兒高級急救救命術(NRP)訓練課程",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-08-02",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28276"
+    },
+    {
+      "id": "3b1c1cb3baa5",
+      "title": "2026年新生兒高級救命術",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-08-02",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28303"
+    },
+    {
+      "id": "11f27d6efee9",
+      "title": "優化兒童醫療照護 核心醫院計畫 學術討論會",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-08-02",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28316"
+    },
+    {
+      "id": "214c59cf5b62",
+      "title": "新生兒高級急救術(NRP)訓練課程",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-08-07",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28309"
+    },
+    {
       "id": "42dd57436370",
       "title": "2026外傷教育課程-北部地區(Ⅲ)...",
       "source": "台灣外傷醫學會",
@@ -213,6 +533,56 @@
       "date": "2026-08-15",
       "deadline": "2026-08-03",
       "url": "http://www.trauma.org.tw/active/index.asp?/24.html"
+    },
+    {
+      "id": "ed7881378c62",
+      "title": "115年新生兒高級救命術(NRP)訓練課程",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-08-15",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28312"
+    },
+    {
+      "id": "78891fbd589f",
+      "title": "中華民國小兒骨科醫學會2026嬰兒髖關節超音波研習課程",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-08-15",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28277"
+    },
+    {
+      "id": "c75ab53df448",
+      "title": "雲嘉區聯合病例討論會",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-08-15",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28142"
+    },
+    {
+      "id": "4a927816cc75",
+      "title": "南區聯合病例討論會",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-08-15",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/event_content.aspx?id=28136"
+    },
+    {
+      "id": "2164b1e70863",
+      "title": "【延期至115/8/27-28】115/7/27~28(一~二)急診創傷訓練課程ETTC",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-08-27",
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/educate/edu_info.asp?id=1727"
     },
     {
       "id": "032e497ba690",
@@ -315,6 +685,26 @@
       "url": "https://www.tebma.org.tw/event/list/view/f456947948c27dbfad9369cf46e4452b"
     },
     {
+      "id": "e815a0a74ca9",
+      "title": "2026/10/18(日)第八屆第二次會員大會暨學術研討會(精準與永續：智慧急重症鏈－從數據預警到社區永續照護的實踐與挑戰)",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-10-18",
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/educate/edu_info.asp?id=1724"
+    },
+    {
+      "id": "610ba8878908",
+      "title": "2026/11/07-11/11 野外高級救命術",
+      "source": "台灣醫療救護學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-11-07",
+      "deadline": null,
+      "url": "https://miasan.com/event/wals20261107/?fbclid=IwY2xjawRuixxleHRuA2FlbQIxMABicmlkETFHbDJMVTZ0ZEF5aFFXR1N3c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHiNf2LUzOJweFDHmBDgvG9ogJyNIuWYsykxsKNd1nvYrgTGqQl1ZVN8WtHWO_aem_vHJ8ecQX3dwiLOp4TEq-jA&brid=YWdncwH-PTH6wTwISkL3dltxbfuo"
+    },
+    {
       "id": "c1772c700f8e",
       "title": "2026 台灣實證醫學學會學術年會",
       "source": "台灣實證醫學學會",
@@ -355,6 +745,16 @@
       "url": "https://jcmit2026.medinfo.org.tw/"
     },
     {
+      "id": "4383834cfaf9",
+      "title": "「AZ協力・大家醫起」會員優惠專案（至2026年12月31日止）",
+      "source": "台灣家庭醫學醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-12-31",
+      "deadline": null,
+      "url": "https://www.tafm.org.tw/ehc-tafm/s/w/news_news/article/dcccd63b98914f918a7616e025e82342"
+    },
+    {
       "id": "0ac54b6fc1ed",
       "title": "2026醫療無人機友誼賽",
       "source": "台灣急診醫學會",
@@ -363,6 +763,116 @@
       "date": "2026-03-30",
       "deadline": null,
       "url": "https://www.sem.org.tw/News/11/Details/1557"
+    },
+    {
+      "id": "7f4d31c6dcd4",
+      "title": "臺南市立安南醫院委託中國醫藥大學興建經營誠徵 兒童重症暨加護病房專責醫師",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-03-31",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/news_content.aspx?id=550"
+    },
+    {
+      "id": "ce6c753d149a",
+      "title": "[Yahoo新聞]國內外人才聚集PERIC研討會 聚焦醫療救護與災難應對",
+      "source": "台灣醫療救護學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-04-04",
+      "deadline": null,
+      "url": "https://tw.news.yahoo.com/%E5%9C%8B%E5%85%A7%E4%BA%BA%E6%89%8D%E8%81%9A%E9%9B%86peric%E7%A0%94%E8%A8%8E%E6%9C%83-%E8%81%9A%E7%84%A6%E9%86%AB%E7%99%82%E6%95%91%E8%AD%B7%E8%88%87%E7%81%BD%E9%9B%A3%E6%87%89%E5%B0%8D-101501935.html"
+    },
+    {
+      "id": "913049138341",
+      "title": "小兒爆炸傷實務手冊",
+      "source": "台灣醫療救護學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-04-04",
+      "deadline": null,
+      "url": "https://www.forward.org.tw/team/manuals/pbip"
+    },
+    {
+      "id": "28e7b48579e3",
+      "title": "【衛教】歡迎索取-生之初100天的關鍵力量_守護剖腹產嬰兒腸道菌叢與健康手冊。",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-04-07",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/news_content.aspx?id=552"
+    },
+    {
+      "id": "2565b1d6645f",
+      "title": "從一條細線，到一個網絡：醫院災害風險溝通的侷限與重建",
+      "source": "台灣緊急應變管理協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": "2026-04-07",
+      "deadline": null,
+      "url": "https://temataiwan.blogspot.com/2026/04/blog-post.html"
+    },
+    {
+      "id": "ee4242c4b275",
+      "title": "PERIC論文摘要徵件中",
+      "source": "台灣醫療救護學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-04-08",
+      "deadline": null,
+      "url": "http://perictsp.org"
+    },
+    {
+      "id": "812ee78e3d5a",
+      "title": "【2026-04-11 EMS保背計畫課程】圓滿達成！💪",
+      "source": "台灣醫療救護學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-04-13",
+      "deadline": null,
+      "url": "https://twparamedicine.org/news.html"
+    },
+    {
+      "id": "9fc03d6e57f3",
+      "title": "1 + 1 ≠ 2：醫院災害應變演習中的整合謬誤",
+      "source": "台灣緊急應變管理協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": "2026-04-13",
+      "deadline": null,
+      "url": "https://temataiwan.blogspot.com/2026/04/1-1-2.html"
+    },
+    {
+      "id": "6b2b51b918ca",
+      "title": "115/4/18(六)高齡照護共學培力會議GRACE馬偕紀念醫院場次(Geriatric Reinforcement for ACE)衰弱老人與局部關鍵肌群-第一線辨識與可逆介入的臨床範例",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-04-18",
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/educate/edu_info.asp?id=1718"
+    },
+    {
+      "id": "6014ad41cf56",
+      "title": "【長照積分申請方式】(115/4/20更新收費辦法及審查流程)本會「長照人員繼續教育積分作業審查流程」，請務必詳閱內文，感謝配合。",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-04-20",
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=383"
+    },
+    {
+      "id": "52eee3667356",
+      "title": "醫院災害應變通報的三層架構 - 用《金字塔原理》讓現場通報變成指揮可用的資訊",
+      "source": "台灣緊急應變管理協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": "2026-04-21",
+      "deadline": null,
+      "url": "https://temataiwan.blogspot.com/2026/04/blog-post_21.html"
     },
     {
       "id": "d480ed6083eb",
@@ -385,6 +895,16 @@
       "url": "http://course.tsccm.org.tw/df_info.asp?/931.html"
     },
     {
+      "id": "e8125c65c902",
+      "title": "🚑 【EMS 專屬】遇到超難搬的地形？安全通報沒下文？全新「EMS 職業安全衛生平台」上線啦！",
+      "source": "台灣醫療救護學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-04-23",
+      "deadline": null,
+      "url": "https://ems-ohs.org"
+    },
+    {
       "id": "918887570239",
       "title": "<公佈報到編號>【重症聯甄】急加2026春季會-115.04.25(六)台大醫學院",
       "source": "台灣急救加護醫學會",
@@ -395,6 +915,66 @@
       "url": "https://www.seccm.org.tw/news/acls_union_info.asp?/778.html#here"
     },
     {
+      "id": "6593f3b6210b",
+      "title": "國際期刊-醫療救護與緊急應變JPER",
+      "source": "台灣醫療救護學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-04-27",
+      "deadline": null,
+      "url": "https://www.ipress.tw/J0233"
+    },
+    {
+      "id": "9262addf4bcf",
+      "title": "先看見風險，才能守護安全：台北市立聯合醫院仁愛院區危害脆弱度分析工作坊",
+      "source": "台灣緊急應變管理協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": "2026-04-28",
+      "deadline": null,
+      "url": "https://temataiwan.blogspot.com/2026/04/blog-post_28.html"
+    },
+    {
+      "id": "91f56edae6a5",
+      "title": "醫院多地點災害應變，與單一地點災害有何不同？",
+      "source": "台灣緊急應變管理協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": "2026-04-28",
+      "deadline": null,
+      "url": "https://temataiwan.blogspot.com/2026/04/blog-post_931.html"
+    },
+    {
+      "id": "4fb961241e22",
+      "title": "IJGE期刊 20.2期 CME學分",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-04-30",
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/educate/edu_info.asp?id=1725"
+    },
+    {
+      "id": "83e37e8ea7fd",
+      "title": "讓DMAT動起來：一場從課程到演習的整合訓練",
+      "source": "台灣緊急應變管理協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": "2026-05-04",
+      "deadline": null,
+      "url": "https://temataiwan.blogspot.com/2026/05/dmat.html"
+    },
+    {
+      "id": "cb9d9c065e5d",
+      "title": "從「同」與「異」出發：醫院臨床單位火災演習設計的關鍵思維",
+      "source": "台灣緊急應變管理協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": "2026-05-04",
+      "deadline": null,
+      "url": "https://temataiwan.blogspot.com/2026/05/blog-post.html"
+    },
+    {
       "id": "34e42dbfcc44",
       "title": "2026外傷教育課程-北部地區(Ⅰ)...",
       "source": "台灣外傷醫學會",
@@ -403,6 +983,36 @@
       "date": "2026-05-09",
       "deadline": "2026-04-27",
       "url": "http://www.trauma.org.tw/active/index.asp?/17.html"
+    },
+    {
+      "id": "253b39777e3d",
+      "title": "2026 緊急服務人員身心健康年報",
+      "source": "台灣醫療救護學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-05-11",
+      "deadline": null,
+      "url": "https://twparamedicine.org/MH_annual_report_2026.html"
+    },
+    {
+      "id": "0ea634ffa703",
+      "title": "《當災害發生在醫院》系列：當火災讓醫院失能 － 從加拿大兒童醫院火災看醫院持續運作",
+      "source": "台灣緊急應變管理協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": "2026-05-11",
+      "deadline": null,
+      "url": "https://temataiwan.blogspot.com/2026/05/blog-post_11.html"
+    },
+    {
+      "id": "f036cfbec7c1",
+      "title": "轉知-中華民國醫師公會全國聯合會-檢送「特定美容醫學處置暨美容醫學手術之訓練及繼續教育課程課綱」及「特定美容醫學處置及美容醫學手術案例認定作業規範」",
+      "source": "臺灣兒科醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-05-12",
+      "deadline": null,
+      "url": "https://www.pediatr.org.tw/content.php?id=5157&page=1"
     },
     {
       "id": "2ac09c278563",
@@ -435,6 +1045,26 @@
       "url": "https://www.sem.org.tw/News/10/Details/1585"
     },
     {
+      "id": "5495a45891cc",
+      "title": "因應 6 月腸病毒高峰期：本會受邀澎湖縣分享實證醫學建議，守護幼兒遠離重症威脅。",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-05-18",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/news_content.aspx?id=558"
+    },
+    {
+      "id": "fe95925fe5bf",
+      "title": "115年度「流感疫苗教育訓練」開始報名，名額有限，額滿為止。",
+      "source": "臺灣兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-05-18",
+      "deadline": null,
+      "url": "https://www.pediatr.org.tw/news/content.php?id=5129"
+    },
+    {
       "id": "73bf0633f23b",
       "title": "台灣EMS相關的中英對照詞彙表",
       "source": "台灣急診醫學會",
@@ -443,6 +1073,56 @@
       "date": "2026-05-20",
       "deadline": null,
       "url": "https://www.sem.org.tw/News/11/Details/1586"
+    },
+    {
+      "id": "a34eb1c48e1e",
+      "title": "「風險高」還是「風險低」？——從固有風險與剩餘風險重新理解醫院HVA",
+      "source": "台灣緊急應變管理協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": "2026-05-20",
+      "deadline": null,
+      "url": "https://temataiwan.blogspot.com/2026/05/hva.html"
+    },
+    {
+      "id": "c115ce0737e1",
+      "title": "【TEMTA 05/21 客服暫停公告】",
+      "source": "中華緊急救護技術員協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": "2026-05-21",
+      "deadline": null,
+      "url": "https://www.emt.org.tw/temtaf/GpBulletinDtl?bulletin=20260521093603"
+    },
+    {
+      "id": "e5c1a45a9c07",
+      "title": "【訊息轉知】115年度「獎勵提供心血管疾病病人戒菸服務」暨「獎勵基層醫療院所提供病人戒菸服務」競賽報名",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-05-21",
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=490"
+    },
+    {
+      "id": "d3b774ab71fc",
+      "title": "115/5/22(五)老人症候群研討會",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-05-22",
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/educate/edu_info.asp?id=1717"
+    },
+    {
+      "id": "c64a3c618e92",
+      "title": "【徵稿公告】第八屆第二次會員大會暨學術研討會海報論文徵稿",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-05-22",
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=489"
     },
     {
       "id": "24c8f9118e81",
@@ -455,6 +1135,16 @@
       "url": "https://www.mgems.org/260424_t1_course/"
     },
     {
+      "id": "60c0346ec643",
+      "title": "從年度 HVA 到持續性的醫院風險監控與登錄機制",
+      "source": "台灣緊急應變管理協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": "2026-05-29",
+      "deadline": null,
+      "url": "https://temataiwan.blogspot.com/2026/05/hva_0476356131.html"
+    },
+    {
       "id": "2539b19f690d",
       "title": "【重症復健聯甄課程】中區「重症運動會」重症早期復健研討會-115.05.31(日)臺中榮總研究大樓",
       "source": "台灣急救加護醫學會",
@@ -463,6 +1153,16 @@
       "date": "2026-05-31",
       "deadline": null,
       "url": "https://www.seccm.org.tw/news/acls_union_info.asp?/788.html#here"
+    },
+    {
+      "id": "7efa46f6aeb5",
+      "title": "EMS職業安全行動計畫2026-2029",
+      "source": "台灣醫療救護學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-06-01",
+      "deadline": null,
+      "url": "https://drive.google.com/file/d/1cUupWALUnyFxdfFuQBK0UXdqdlyK9VQa/view?usp=drive_link"
     },
     {
       "id": "47fe445af3a6",
@@ -575,6 +1275,86 @@
       "url": "http://www.trauma.org.tw/active/index.asp?/18.html"
     },
     {
+      "id": "59320d4390ea",
+      "title": "【重要公告】NRP第九版全新版講義已於115年6月10日正式上線",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-06-10",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/news_content.aspx?id=559"
+    },
+    {
+      "id": "b20d7c928cd0",
+      "title": "《當災害發生在醫院》系列：當醫院本身成為戰場 － 從以色列Rambam醫學中心看戰時醫院持續運作",
+      "source": "台灣緊急應變管理協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": "2026-06-10",
+      "deadline": null,
+      "url": "https://temataiwan.blogspot.com/2026/06/rambam.html"
+    },
+    {
+      "id": "fe05598f4c9f",
+      "title": "【1150617梯次】北區 初級救護技術員(EMT-1+) 繼續教育訓練 上課資訊",
+      "source": "中華緊急救護技術員協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": "2026-06-12",
+      "deadline": null,
+      "url": "https://www.emt.org.tw/temtaf/GpBulletinDtl?bulletin=20260612102556"
+    },
+    {
+      "id": "5fe62fd625c4",
+      "title": "當計畫遇上現實：從美式足球看災害應變中的「調整」能力",
+      "source": "台灣緊急應變管理協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": "2026-06-15",
+      "deadline": null,
+      "url": "https://temataiwan.blogspot.com/2026/06/blog-post.html"
+    },
+    {
+      "id": "aaa58169d3b5",
+      "title": "轉知-台灣家庭醫學醫學會-「醫事人員急性病毒性肝炎防治教育訓練」課程，敬請踴躍參加。",
+      "source": "臺灣兒科醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-06-15",
+      "deadline": null,
+      "url": "https://www.pediatr.org.tw/content.php?id=5173&page=1"
+    },
+    {
+      "id": "b0df15b8213c",
+      "title": "115年度兒科專科醫師甄審報名",
+      "source": "臺灣兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-06-18",
+      "deadline": null,
+      "url": "https://www.pediatr.org.tw/news/content.php?id=5169"
+    },
+    {
+      "id": "d893523f8feb",
+      "title": "【衛教】第一份送給寶寶的健康禮物，從認識呼吸道細胞融合病毒（RSV）開始！",
+      "source": "台灣新生兒科醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": "2026-06-22",
+      "deadline": null,
+      "url": "https://tsn-neonatology.com/news_content.aspx?id=560"
+    },
+    {
+      "id": "8dc8234f3455",
+      "title": "從設備到系統：6-L災害整備模型",
+      "source": "台灣緊急應變管理協會",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": "2026-06-22",
+      "deadline": null,
+      "url": "https://temataiwan.blogspot.com/2026/06/6-l.html"
+    },
+    {
       "id": "cdd928a87676",
       "title": "《在宅急症照護手冊》",
       "source": "台灣急診醫學會",
@@ -585,6 +1365,16 @@
       "url": "https://www.sem.org.tw/News/11/Details/1611"
     },
     {
+      "id": "368143db5e24",
+      "title": "【1150630梯次】北區 初級救護技術員(EMT-1+) 繼續教育訓練 上課資訊",
+      "source": "中華緊急救護技術員協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": "2026-06-24",
+      "deadline": null,
+      "url": "https://www.emt.org.tw/temtaf/GpBulletinDtl?bulletin=20260624153417"
+    },
+    {
       "id": "271c7e786ba4",
       "title": "2026第十七屆第一次會員大會暨學術研討會 社團法人台灣急診醫學會",
       "source": "台灣急診醫學會",
@@ -593,6 +1383,36 @@
       "date": "2026-06-26",
       "deadline": "2026-05-01",
       "url": "https://www.sem.org.tw/Activity/A/Details/32620"
+    },
+    {
+      "id": "0dae5ab0d874",
+      "title": "【1150704梯次】 北區初級救護技術員(EMT-1) 教育訓練 上課資訊",
+      "source": "中華緊急救護技術員協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": "2026-06-26",
+      "deadline": null,
+      "url": "https://www.emt.org.tw/temtaf/GpBulletinDtl?bulletin=20260626132059"
+    },
+    {
+      "id": "8593bf6550bb",
+      "title": "花蓮慈濟醫院【以疾病照護為中心的危害脆弱度分析】工作坊",
+      "source": "台灣緊急應變管理協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": "2026-06-26",
+      "deadline": null,
+      "url": "https://temataiwan.blogspot.com/2026/06/blog-post_26.html"
+    },
+    {
+      "id": "17a1d30ba109",
+      "title": "115/6/26(五)下午台中光田醫院向上院區「全民健康保險在宅急症照護試辦計畫」教育訓練課程",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": "2026-06-26",
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/educate/edu_info.asp?id=1723"
     },
     {
       "id": "9afcb996c69a",
@@ -1095,6 +1915,66 @@
       "url": "https://www.medinfo.org.tw"
     },
     {
+      "id": "99a161013946",
+      "title": "綠色家庭醫師認證課程-台大",
+      "source": "台灣家庭醫學醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tafm.org.tw/ehc-tafm/s/w/edu/scheduleInfo1/schedule/4dff611b82af4356ab8ea259d0364354"
+    },
+    {
+      "id": "16c79580692e",
+      "title": "115年「友善性病門診專業醫師」基礎認證課程",
+      "source": "台灣家庭醫學醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tafm.org.tw/ehc-tafm/s/w/edu/scheduleInfo1/schedule/1961118b165c410bab8b819ba72866db"
+    },
+    {
+      "id": "127cbc57f2a4",
+      "title": "115年流感疫苗教育訓練 (中國醫)",
+      "source": "台灣家庭醫學醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tafm.org.tw/ehc-tafm/s/w/edu/scheduleInfo1/schedule/80c132fb475244b188de52487d9743f1"
+    },
+    {
+      "id": "d67b0cfc69be",
+      "title": "115年度學術研討會海報論文審查結果",
+      "source": "台灣家庭醫學醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tafm.org.tw/ehc-tafm/s/w/news_news/article/aa13dafea94d4326aaffaa4012436b3e"
+    },
+    {
+      "id": "d952f3c5b6ea",
+      "title": "115年流感疫苗教育訓練開課了，歡迎報名參加！",
+      "source": "台灣家庭醫學醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tafm.org.tw/ehc-tafm/s/w/news_news/article/7f0cb6d9500f48a79d38798ff4fb9537"
+    },
+    {
+      "id": "a850421e172e",
+      "title": "【重要公告】轉知衛福部公告修正「家庭醫學科專科醫師甄審原則」，並自即日生效。",
+      "source": "台灣家庭醫學醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tafm.org.tw/ehc-tafm/s/w/news_news/article/0e00976c95ae444c976c7ad92105cee0"
+    },
+    {
       "id": "9cf11eaf5a41",
       "title": "學術與臨床並行｜【課程招生】第十三屆高級燒傷急救照護術（AEBC）暨第八屆換證課程",
       "source": "臺灣燒傷暨傷口照護學會",
@@ -1445,6 +2325,26 @@
       "url": "https://taiwanwma.org/activities?activity=3"
     },
     {
+      "id": "b0ce758cc972",
+      "title": "援手計畫 3.0",
+      "source": "台灣災難醫療隊發展協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://twdmat.org/"
+    },
+    {
+      "id": "7ca1ca773b13",
+      "title": "北區基地",
+      "source": "台灣災難醫療隊發展協會",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://twdmat.org/"
+    },
+    {
       "id": "91790bdbec7d",
       "title": "CPR+AED完整版3小時課程",
       "source": "台灣運動安全暨急救技能推廣協會",
@@ -1493,6 +2393,96 @@
       "date": null,
       "deadline": null,
       "url": "https://reurl.cc/aMEgWl"
+    },
+    {
+      "id": "f3ee11ec280f",
+      "title": "線上報名",
+      "source": "彰化縣防災協會（DPAC）",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://dpac.org.tw/post/RegistrationInstructions"
+    },
+    {
+      "id": "acb979cd351a",
+      "title": "專區｜基礎急救教育",
+      "source": "彰化縣防災協會（DPAC）",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://dpac.org.tw/opg/basic_first_aid"
+    },
+    {
+      "id": "e20d31f1f660",
+      "title": "關注｜聽語障急救",
+      "source": "彰化縣防災協會（DPAC）",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://dpac.org.tw/opg/vulnerable"
+    },
+    {
+      "id": "c30d0dad7535",
+      "title": "緊急救援隊(115)招募中！",
+      "source": "彰化縣防災協會（DPAC）",
+      "cat": "台灣協會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://dpac.org.tw/opg/rescue"
+    },
+    {
+      "id": "07855191ccda",
+      "title": "職人｜戰術,野外,救護",
+      "source": "彰化縣防災協會（DPAC）",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://dpac.org.tw/opg/In-depth_first_aid"
+    },
+    {
+      "id": "d452be88049a",
+      "title": "全國｜內政部防災士",
+      "source": "彰化縣防災協會（DPAC）",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://dpac.org.tw/opg/dpacdrv"
+    },
+    {
+      "id": "5b5cb621409c",
+      "title": "國際｜人道援助標準",
+      "source": "彰化縣防災協會（DPAC）",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://dpac.org.tw/opg/sphere"
+    },
+    {
+      "id": "02de2a9c7bdf",
+      "title": "停課、取消與退費辦法",
+      "source": "彰化縣防災協會（DPAC）",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://dpac.org.tw/post/cancel"
+    },
+    {
+      "id": "f4a118a5d6a3",
+      "title": "更多訊息",
+      "source": "彰化縣防災協會（DPAC）",
+      "cat": "台灣協會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://dpac.org.tw/blog"
     },
     {
       "id": "a8949ae88118",
@@ -2693,6 +3683,86 @@
       "date": null,
       "deadline": null,
       "url": "https://emj.bmj.com/content/43/5"
+    },
+    {
+      "id": "8d3e1d729df3",
+      "title": "【重要公告】老人衛教照護個管師認証課程證書展延辦法公佈",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=222"
+    },
+    {
+      "id": "caed0e3769f1",
+      "title": "【重要公告】老人長照（LTCT）種子教官人員證書展延辦法公佈",
+      "source": "台灣老人急重症醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "http://www.sgecm.org.tw/news/news_info.asp?doc-id=117"
+    },
+    {
+      "id": "51fb926a1999",
+      "title": "點此填寫報名單",
+      "source": "台灣運動醫學學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://forms.gle/2baLpvQBMTdRJLdf6"
+    },
+    {
+      "id": "a686d2261317",
+      "title": "國內學術研討會",
+      "source": "臺灣兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.pediatr.org.tw/event/"
+    },
+    {
+      "id": "5e7af15986f1",
+      "title": "國外學術研討會",
+      "source": "臺灣兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.pediatr.org.tw/event/abroad.php"
+    },
+    {
+      "id": "f9519035ae6f",
+      "title": "專科訓練醫院",
+      "source": "臺灣兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.pediatr.org.tw/doctor/training.php"
+    },
+    {
+      "id": "7c1a2f5c6dcd",
+      "title": "115年「兒童發展篩檢服務教育訓練」-中區",
+      "source": "臺灣兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.pediatr.org.tw/content.php?id=20925"
+    },
+    {
+      "id": "dbfaa71b952d",
+      "title": "雲嘉南區兒科基層事務聯誼會夏季學術研討會",
+      "source": "臺灣兒科醫學會",
+      "cat": "台灣學會",
+      "type": "course",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.pediatr.org.tw/content.php?id=21032"
     }
   ]
 }
