@@ -30,6 +30,6 @@ jobs:
         run: |
           git config user.name  "EMS Course Bot"
           git config user.email "bot@emsipbyluke.netlify.app"
-          git add data/courses.json docs/feed.xml
+          git add data/courses.json docs/data/courses.json docs/feed.xml
           git diff --staged --quiet || git commit -m "自動更新課程資料 $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
