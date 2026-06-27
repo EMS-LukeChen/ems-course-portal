@@ -226,8 +226,19 @@ const DAY_ZH=['日','一','二','三','四','五','六'];
 
 async function loadData(){
   try{
-    const res=await fetch('https://raw.githubusercontent.com/ems-luke/ems-supply-station/main/data/courses.json');
-    if(!res.ok)throw new Error('HTTP '+res.status);
+    const sources=[
+      'data/courses.json?v='+Date.now(),
+      'https://raw.githubusercontent.com/ems-luke/ems-supply-station/main/data/courses.json?v='+Date.now()
+    ];
+    let res,lastErr;
+    for(const src of sources){
+      try{
+        res=await fetch(src,{cache:'no-store'});
+        if(res.ok)break;
+        lastErr=new Error('HTTP '+res.status);
+      }catch(err){lastErr=err;}
+    }
+    if(!res||!res.ok)throw lastErr||new Error('無法載入資料');
     const j=await res.json();
     ALL=j.items||[];
     if(j.updated){

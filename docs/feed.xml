@@ -2,26 +2,146 @@
 <rss version="2.0">
 <channel>
   <title>緊急救護資訊入口網 — 課程與最新消息</title>
-  <link>https://ems-luke.github.io/ems-supply-station/</link>
+  <link>https://emsipbyluke.netlify.app</link>
   <description>自動彙整台灣及國際急救相關單位課程與最新消息</description>
   <language>zh-TW</language>
-  <lastBuildDate>Sat, 27 Jun 2026 03:34:30 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 27 Jun 2026 03:49:34 +0000</lastBuildDate>
   <ttl>180</ttl>
   <item>
-    <title>【課程】學會主辦 115年住院醫師初階災難訓練課程(南區)【線上+實體】</title>
-    <link>https://www.sem.org.tw/Activity/Details/33032</link>
-    <guid>https://www.sem.org.tw/Activity/Details/33032</guid>
-    <pubDate>2026-07-02</pubDate>
-    <category>台灣急診醫學會 - 台灣學會</category>
-    <description>【課程】學會主辦 115年住院醫師初階災難訓練課程(南區)【線上+實體】（來源：台灣急診醫學會）</description>
+    <title>【課程】2026外傷教育課程-桃竹苗地區(Ⅰ)...</title>
+    <link>http://www.trauma.org.tw/active/index.asp?/19.html</link>
+    <guid>http://www.trauma.org.tw/active/index.asp?/19.html</guid>
+    <pubDate>2026-06-27</pubDate>
+    <category>台灣外傷醫學會 - 台灣學會</category>
+    <description>【課程】2026外傷教育課程-桃竹苗地區(Ⅰ)...（來源：台灣外傷醫學會）</description>
   </item>
   <item>
-    <title>【課程】學會主辦 夏季山域溪谷自救搜救知能安全講習</title>
-    <link>https://www.sem.org.tw/Activity/Details/33048</link>
-    <guid>https://www.sem.org.tw/Activity/Details/33048</guid>
+    <title>【課程】台灣中區兒童過敏免疫暨風濕科病例研討會</title>
+    <link>https://www.pediatr.org.tw/event/content.php?id=21122</link>
+    <guid>https://www.pediatr.org.tw/event/content.php?id=21122</guid>
+    <pubDate>2026-06-27</pubDate>
+    <category>臺灣兒科醫學會 - 台灣學會</category>
+    <description>【課程】台灣中區兒童過敏免疫暨風濕科病例研討會（來源：臺灣兒科醫學會）</description>
+  </item>
+  <item>
+    <title>【課程】戰傷與外傷處置的整合視角：輸血、腦傷與化學武器威脅 臺北榮總急診醫學部</title>
+    <link>https://www.sem.org.tw/Activity/B/Details/32901</link>
+    <guid>https://www.sem.org.tw/Activity/B/Details/32901</guid>
+    <pubDate>2026-06-28</pubDate>
+    <category>台灣急診醫學會 - 台灣學會</category>
+    <description>【課程】戰傷與外傷處置的整合視角：輸血、腦傷與化學武器威脅 臺北榮總急診醫學部（來源：台灣急診醫學會）</description>
+  </item>
+  <item>
+    <title>【課程】健康台灣深耕計畫 : 守護兒童、拒絕傷害 臺灣兒童死因探討與青少年自殺的辨識與防治 臺北榮總兒童醫學部</title>
+    <link>https://www.sem.org.tw/Activity/B/Details/32900</link>
+    <guid>https://www.sem.org.tw/Activity/B/Details/32900</guid>
+    <pubDate>2026-06-28</pubDate>
+    <category>台灣急診醫學會 - 台灣學會</category>
+    <description>【課程】健康台灣深耕計畫 : 守護兒童、拒絕傷害 臺灣兒童死因探討與青少年自殺的辨識與防治 臺北榮總兒童醫學部（來源：台灣急診醫學會）</description>
+  </item>
+  <item>
+    <title>【課程】115年度青少年醫學教育訓練課程-北區</title>
+    <link>https://www.pediatr.org.tw/event/content.php?id=21000</link>
+    <guid>https://www.pediatr.org.tw/event/content.php?id=21000</guid>
+    <pubDate>2026-06-28</pubDate>
+    <category>臺灣兒科醫學會 - 台灣學會</category>
+    <description>【課程】115年度青少年醫學教育訓練課程-北區（來源：臺灣兒科醫學會）</description>
+  </item>
+  <item>
+    <title>【課程】115年度「兒童衛教指導服務醫師教育訓練」開始報名【115年7月1日執行兒童預防保健服務(含衛教指導)每案可申補助600元】，名額有限，額滿為止。</title>
+    <link>https://www.pediatr.org.tw/news/content.php?id=5128</link>
+    <guid>https://www.pediatr.org.tw/news/content.php?id=5128</guid>
+    <pubDate>2026-07-01</pubDate>
+    <category>臺灣兒科醫學會 - 台灣學會</category>
+    <description>【課程】115年度「兒童衛教指導服務醫師教育訓練」開始報名【115年7月1日執行兒童預防保健服務(含衛教指導)每案可申補助600元】，名額有限，額滿為止。（來源：臺灣兒科醫學會）</description>
+  </item>
+  <item>
+    <title>【消息】轉知-衛生福利部-公告之「生育保健之遺傳相關檢驗補助精進方案」，並自115年7月1日生效。</title>
+    <link>https://www.pediatr.org.tw/news/content.php?id=5178</link>
+    <guid>https://www.pediatr.org.tw/news/content.php?id=5178</guid>
+    <pubDate>2026-07-01</pubDate>
+    <category>臺灣兒科醫學會 - 台灣學會</category>
+    <description>【消息】轉知-衛生福利部-公告之「生育保健之遺傳相關檢驗補助精進方案」，並自115年7月1日生效。（來源：臺灣兒科醫學會）</description>
+  </item>
+  <item>
+    <title>【課程】115年住院醫師初階災難訓練課程(南區)【線上+實體】 社團法人台灣急診醫學會</title>
+    <link>https://www.sem.org.tw/Activity/A/Details/33032</link>
+    <guid>https://www.sem.org.tw/Activity/A/Details/33032</guid>
+    <pubDate>2026-07-02</pubDate>
+    <category>台灣急診醫學會 - 台灣學會</category>
+    <description>【課程】115年住院醫師初階災難訓練課程(南區)【線上+實體】 社團法人台灣急診醫學會（來源：台灣急診醫學會）</description>
+  </item>
+  <item>
+    <title>【消息】【訊息轉知】2026馬偕醫學大學厚生健康學院-永續厚生健康論壇2026/6/23(二)至2026/7/3(五)假MS Teams辦理，歡迎踴躍參加。</title>
+    <link>http://www.sgecm.org.tw/news/news_info.asp?doc-id=492</link>
+    <guid>http://www.sgecm.org.tw/news/news_info.asp?doc-id=492</guid>
+    <pubDate>2026-07-03</pubDate>
+    <category>台灣老人急重症醫學會 - 台灣學會</category>
+    <description>【消息】【訊息轉知】2026馬偕醫學大學厚生健康學院-永續厚生健康論壇2026/6/23(二)至2026/7/3(五)假MS Teams辦理，歡迎踴躍參加。（來源：台灣老人急重症醫學會）</description>
+  </item>
+  <item>
+    <title>【課程】【重症復健聯甄課程-無需積分,免費參加!】東區「重症運動會」重症早期復健研討會-115.07.04花蓮慈濟醫院</title>
+    <link>https://www.seccm.org.tw/news/acls_union_info.asp?/802.html#here</link>
+    <guid>https://www.seccm.org.tw/news/acls_union_info.asp?/802.html#here</guid>
+    <pubDate>2026-07-04</pubDate>
+    <category>台灣急救加護醫學會 - 台灣學會</category>
+    <description>【課程】【重症復健聯甄課程-無需積分,免費參加!】東區「重症運動會」重症早期復健研討會-115.07.04花蓮慈濟醫院（來源：台灣急救加護醫學會）</description>
+  </item>
+  <item>
+    <title>【課程】【重症聯甄課程】2026重症呼吸器實作課程115.07.04-台中榮總教學大樓1樓</title>
+    <link>https://www.seccm.org.tw/news/acls_union_info.asp?/801.html#here</link>
+    <guid>https://www.seccm.org.tw/news/acls_union_info.asp?/801.html#here</guid>
+    <pubDate>2026-07-04</pubDate>
+    <category>台灣急救加護醫學會 - 台灣學會</category>
+    <description>【課程】【重症聯甄課程】2026重症呼吸器實作課程115.07.04-台中榮總教學大樓1樓（來源：台灣急救加護醫學會）</description>
+  </item>
+  <item>
+    <title>【課程】外傷登錄訓練課程－首次認證(南部場次)...</title>
+    <link>http://www.trauma.org.tw/active/index.asp?/22.html</link>
+    <guid>http://www.trauma.org.tw/active/index.asp?/22.html</guid>
+    <pubDate>2026-07-04</pubDate>
+    <category>台灣外傷醫學會 - 台灣學會</category>
+    <description>【課程】外傷登錄訓練課程－首次認證(南部場次)...（來源：台灣外傷醫學會）</description>
+  </item>
+  <item>
+    <title>【課程】外傷登錄訓練課程－再認證(南部場次)... 【活動資訊更新】外傷登錄訓練課程－再認證(南部場次)上課日期已調動至115年07月04日(六)</title>
+    <link>http://www.trauma.org.tw/active/index.asp?/21.html</link>
+    <guid>http://www.trauma.org.tw/active/index.asp?/21.html</guid>
+    <pubDate>2026-07-05</pubDate>
+    <category>台灣外傷醫學會 - 台灣學會</category>
+    <description>【課程】外傷登錄訓練課程－再認證(南部場次)... 【活動資訊更新】外傷登錄訓練課程－再認證(南部場次)上課日期已調動至115年07月04日(六)（來源：台灣外傷醫學會）</description>
+  </item>
+  <item>
+    <title>【課程】夏季山域溪谷自救搜救知能安全講習 社團法人台灣急診醫學會、馬偕紀念醫院急診醫學部野外醫學中心</title>
+    <link>https://www.sem.org.tw/Activity/A/Details/33048</link>
+    <guid>https://www.sem.org.tw/Activity/A/Details/33048</guid>
     <pubDate>2026-07-08</pubDate>
     <category>台灣急診醫學會 - 台灣學會</category>
-    <description>【課程】學會主辦 夏季山域溪谷自救搜救知能安全講習（來源：台灣急診醫學會）</description>
+    <description>【課程】夏季山域溪谷自救搜救知能安全講習 社團法人台灣急診醫學會、馬偕紀念醫院急診醫學部野外醫學中心（來源：台灣急診醫學會）</description>
+  </item>
+  <item>
+    <title>【課程】115年急診基礎超音波課程 國立臺灣大學醫學院附設醫院急診醫學部</title>
+    <link>https://www.sem.org.tw/Activity/B/Details/33052</link>
+    <guid>https://www.sem.org.tw/Activity/B/Details/33052</guid>
+    <pubDate>2026-07-09</pubDate>
+    <category>台灣急診醫學會 - 台灣學會</category>
+    <description>【課程】115年急診基礎超音波課程 國立臺灣大學醫學院附設醫院急診醫學部（來源：台灣急診醫學會）</description>
+  </item>
+  <item>
+    <title>【課程】2026外傷教育課程-中部地區(Ⅰ)...</title>
+    <link>http://www.trauma.org.tw/active/index.asp?/20.html</link>
+    <guid>http://www.trauma.org.tw/active/index.asp?/20.html</guid>
+    <pubDate>2026-07-11</pubDate>
+    <category>台灣外傷醫學會 - 台灣學會</category>
+    <description>【課程】2026外傷教育課程-中部地區(Ⅰ)...（來源：台灣外傷醫學會）</description>
+  </item>
+  <item>
+    <title>【課程】【重症聯甄】Holistic and Patient-Centered Critical Care 115.07.18 國泰人壽大樓B1國際會議廳</title>
+    <link>https://www.seccm.org.tw/news/acls_union_info.asp?/805.html#here</link>
+    <guid>https://www.seccm.org.tw/news/acls_union_info.asp?/805.html#here</guid>
+    <pubDate>2026-07-18</pubDate>
+    <category>台灣急救加護醫學會 - 台灣學會</category>
+    <description>【課程】【重症聯甄】Holistic and Patient-Centered Critical Care 115.07.18 國泰人壽大樓B1國際會議廳（來源：台灣急救加護醫學會）</description>
   </item>
   <item>
     <title>【消息】2026.7.18 台灣復甦照護學會Holistic and Patient-Centered Critical Care研討會及工作坊開放報名</title>
@@ -32,12 +152,20 @@
     <description>【消息】2026.7.18 台灣復甦照護學會Holistic and Patient-Centered Critical Care研討會及工作坊開放報名（來源：中華民國重症醫學會）</description>
   </item>
   <item>
-    <title>【課程】學會主辦 115年度中毒個案討論會–中區</title>
-    <link>https://www.sem.org.tw/Activity/Details/32964</link>
-    <guid>https://www.sem.org.tw/Activity/Details/32964</guid>
+    <title>【課程】115年度中毒個案討論會–中區 社團法人台灣急診醫學會、秀傳紀念醫院</title>
+    <link>https://www.sem.org.tw/Activity/A/Details/32964</link>
+    <guid>https://www.sem.org.tw/Activity/A/Details/32964</guid>
     <pubDate>2026-07-20</pubDate>
     <category>台灣急診醫學會 - 台灣學會</category>
-    <description>【課程】學會主辦 115年度中毒個案討論會–中區（來源：台灣急診醫學會）</description>
+    <description>【課程】115年度中毒個案討論會–中區 社團法人台灣急診醫學會、秀傳紀念醫院（來源：台灣急診醫學會）</description>
+  </item>
+  <item>
+    <title>【課程】【重症聯甄】超值價!即日開放報名~急救重症傷口皮膚照護工作坊-115.07.25 秀傳紀念醫院</title>
+    <link>https://www.seccm.org.tw/news/acls_union_info.asp?/804.html#here</link>
+    <guid>https://www.seccm.org.tw/news/acls_union_info.asp?/804.html#here</guid>
+    <pubDate>2026-07-25</pubDate>
+    <category>台灣急救加護醫學會 - 台灣學會</category>
+    <description>【課程】【重症聯甄】超值價!即日開放報名~急救重症傷口皮膚照護工作坊-115.07.25 秀傳紀念醫院（來源：台灣急救加護醫學會）</description>
   </item>
   <item>
     <title>【課程】2026 Ai實證簡報力工作坊</title>
@@ -64,12 +192,44 @@
     <description>【課程】2026/07/25(六) Ai實證簡報力工作坊（來源：台灣實證醫學學會）</description>
   </item>
   <item>
-    <title>【課程】學會主辦 115年師資培育工作坊 (中區)</title>
-    <link>https://www.sem.org.tw/Activity/Details/32647</link>
-    <guid>https://www.sem.org.tw/Activity/Details/32647</guid>
+    <title>【課程】115年師資培育工作坊 (中區) 社團法人台灣急診醫學會、中山醫學大學附設醫院</title>
+    <link>https://www.sem.org.tw/Activity/A/Details/32647</link>
+    <guid>https://www.sem.org.tw/Activity/A/Details/32647</guid>
     <pubDate>2026-07-28</pubDate>
     <category>台灣急診醫學會 - 台灣學會</category>
-    <description>【課程】學會主辦 115年師資培育工作坊 (中區)（來源：台灣急診醫學會）</description>
+    <description>【課程】115年師資培育工作坊 (中區) 社團法人台灣急診醫學會、中山醫學大學附設醫院（來源：台灣急診醫學會）</description>
+  </item>
+  <item>
+    <title>【課程】2026外傷教育課程-南部地區(Ⅰ)...</title>
+    <link>http://www.trauma.org.tw/active/index.asp?/23.html</link>
+    <guid>http://www.trauma.org.tw/active/index.asp?/23.html</guid>
+    <pubDate>2026-08-01</pubDate>
+    <category>台灣外傷醫學會 - 台灣學會</category>
+    <description>【課程】2026外傷教育課程-南部地區(Ⅰ)...（來源：台灣外傷醫學會）</description>
+  </item>
+  <item>
+    <title>【課程】2026外傷教育課程-北部地區(Ⅲ)...</title>
+    <link>http://www.trauma.org.tw/active/index.asp?/24.html</link>
+    <guid>http://www.trauma.org.tw/active/index.asp?/24.html</guid>
+    <pubDate>2026-08-15</pubDate>
+    <category>台灣外傷醫學會 - 台灣學會</category>
+    <description>【課程】2026外傷教育課程-北部地區(Ⅲ)...（來源：台灣外傷醫學會）</description>
+  </item>
+  <item>
+    <title>【課程】【延期至115/8/27-28】115/7/27~28(一~二)急診創傷訓練課程ETTC</title>
+    <link>http://www.sgecm.org.tw/educate/edu_info.asp?id=1727</link>
+    <guid>http://www.sgecm.org.tw/educate/edu_info.asp?id=1727</guid>
+    <pubDate>2026-08-27</pubDate>
+    <category>台灣老人急重症醫學會 - 台灣學會</category>
+    <description>【課程】【延期至115/8/27-28】115/7/27~28(一~二)急診創傷訓練課程ETTC（來源：台灣老人急重症醫學會）</description>
+  </item>
+  <item>
+    <title>【課程】【DHA 2026】2026 International Conference on Digital Health and Medical Analytics（DHA 2026）115.09.18-20高雄科技大學</title>
+    <link>https://www.seccm.org.tw/news/acls_NotUnion_info.asp?/783.html#here</link>
+    <guid>https://www.seccm.org.tw/news/acls_NotUnion_info.asp?/783.html#here</guid>
+    <pubDate>2026-09-18</pubDate>
+    <category>台灣急救加護醫學會 - 台灣學會</category>
+    <description>【課程】【DHA 2026】2026 International Conference on Digital Health and Medical Analytics（DHA 2026）115.09.18-20高雄科技大學（來源：台灣急救加護醫學會）</description>
   </item>
   <item>
     <title>【消息】重症會員早鳥報名優惠-2026.9.18~20 【第七屆亞太急性腎損傷與連續性腎替代療法大會】</title>
@@ -112,12 +272,12 @@
     <description>【課程】2026系統性文獻回顧與統合分析工作坊(秋季班)（來源：台灣實證醫學學會）</description>
   </item>
   <item>
-    <title>【課程】TSP Annual Conference 2026｜台灣醫療救護學會年度學術研討會</title>
-    <link>https://twparamedicine.org/</link>
-    <guid>https://twparamedicine.org/</guid>
-    <pubDate>2026-10-02</pubDate>
-    <category>台灣醫療救護學會 - 台灣學會</category>
-    <description>【課程】TSP Annual Conference 2026｜台灣醫療救護學會年度學術研討會（來源：台灣醫療救護學會）</description>
+    <title>【消息】【年度盛會CALL FOR ABSTRACT!】 SECC Congress 2026 Taipei 暨2026智慧急重症醫療國際會議_115.10.3-4台大醫院國際會議中心</title>
+    <link>https://www.seccm.org.tw/orgNews/News_info.asp?/793.html#here</link>
+    <guid>https://www.seccm.org.tw/orgNews/News_info.asp?/793.html#here</guid>
+    <pubDate>2026-10-03</pubDate>
+    <category>台灣急救加護醫學會 - 台灣學會</category>
+    <description>【消息】【年度盛會CALL FOR ABSTRACT!】 SECC Congress 2026 Taipei 暨2026智慧急重症醫療國際會議_115.10.3-4台大醫院國際會議中心（來源：台灣急救加護醫學會）</description>
   </item>
   <item>
     <title>【課程】2026/10/03-04(六、日)台灣實證醫學學會種子師資培訓工作坊2026-03-22</title>
@@ -142,6 +302,14 @@
     <pubDate>2026-10-04</pubDate>
     <category>台灣實證醫學學會 - 台灣學會</category>
     <description>【課程】2026台灣實證醫學學會種子師資培訓工作坊（來源：台灣實證醫學學會）</description>
+  </item>
+  <item>
+    <title>【課程】2026/10/18(日)第八屆第二次會員大會暨學術研討會(精準與永續：智慧急重症鏈－從數據預警到社區永續照護的實踐與挑戰)</title>
+    <link>http://www.sgecm.org.tw/educate/edu_info.asp?id=1724</link>
+    <guid>http://www.sgecm.org.tw/educate/edu_info.asp?id=1724</guid>
+    <pubDate>2026-10-18</pubDate>
+    <category>台灣老人急重症醫學會 - 台灣學會</category>
+    <description>【課程】2026/10/18(日)第八屆第二次會員大會暨學術研討會(精準與永續：智慧急重症鏈－從數據預警到社區永續照護的實踐與挑戰)（來源：台灣老人急重症醫學會）</description>
   </item>
   <item>
     <title>【課程】2026 台灣實證醫學學會學術年會</title>
@@ -176,6 +344,38 @@
     <description>【課程】JCMIT 2026 國際醫學資訊聯合研討會（來源：台灣醫學資訊學會）</description>
   </item>
   <item>
+    <title>【消息】2026醫療無人機友誼賽</title>
+    <link>https://www.sem.org.tw/News/11/Details/1557</link>
+    <guid>https://www.sem.org.tw/News/11/Details/1557</guid>
+    <pubDate>2026-03-30</pubDate>
+    <category>台灣急診醫學會 - 台灣學會</category>
+    <description>【消息】2026醫療無人機友誼賽（來源：台灣急診醫學會）</description>
+  </item>
+  <item>
+    <title>【課程】115/4/18(六)高齡照護共學培力會議GRACE馬偕紀念醫院場次(Geriatric Reinforcement for ACE)衰弱老人與局部關鍵肌群-第一線辨識與可逆介入的臨床範例</title>
+    <link>http://www.sgecm.org.tw/educate/edu_info.asp?id=1718</link>
+    <guid>http://www.sgecm.org.tw/educate/edu_info.asp?id=1718</guid>
+    <pubDate>2026-04-18</pubDate>
+    <category>台灣老人急重症醫學會 - 台灣學會</category>
+    <description>【課程】115/4/18(六)高齡照護共學培力會議GRACE馬偕紀念醫院場次(Geriatric Reinforcement for ACE)衰弱老人與局部關鍵肌群-第一線辨識與可逆介入的臨床範例（來源：台灣老人急重症醫學會）</description>
+  </item>
+  <item>
+    <title>【消息】【長照積分申請方式】(115/4/20更新收費辦法及審查流程)本會「長照人員繼續教育積分作業審查流程」，請務必詳閱內文，感謝配合。</title>
+    <link>http://www.sgecm.org.tw/news/news_info.asp?doc-id=383</link>
+    <guid>http://www.sgecm.org.tw/news/news_info.asp?doc-id=383</guid>
+    <pubDate>2026-04-20</pubDate>
+    <category>台灣老人急重症醫學會 - 台灣學會</category>
+    <description>【消息】【長照積分申請方式】(115/4/20更新收費辦法及審查流程)本會「長照人員繼續教育積分作業審查流程」，請務必詳閱內文，感謝配合。（來源：台灣老人急重症醫學會）</description>
+  </item>
+  <item>
+    <title>【消息】轉知衛生福利部疾病管制署來函-有關「抗生素管理手冊」及「侵入性醫療處置組合式照護工作手冊」</title>
+    <link>https://www.sem.org.tw/News/10/Details/1569</link>
+    <guid>https://www.sem.org.tw/News/10/Details/1569</guid>
+    <pubDate>2026-04-22</pubDate>
+    <category>台灣急診醫學會 - 台灣學會</category>
+    <description>【消息】轉知衛生福利部疾病管制署來函-有關「抗生素管理手冊」及「侵入性醫療處置組合式照護工作手冊」（來源：台灣急診醫學會）</description>
+  </item>
+  <item>
     <title>【消息】2026.4.22-23 6th World Sepsis Congress 各專題錄影, 歡迎觀看分享</title>
     <link>http://course.tsccm.org.tw/df_info.asp?/931.html</link>
     <guid>http://course.tsccm.org.tw/df_info.asp?/931.html</guid>
@@ -184,308 +384,108 @@
     <description>【消息】2026.4.22-23 6th World Sepsis Congress 各專題錄影, 歡迎觀看分享（來源：中華民國重症醫學會）</description>
   </item>
   <item>
-    <title>【消息】轉函-台灣家庭醫學醫學會「醫事人員急性病毒性肝炎防治教育訓練」相關訊息</title>
-    <link>https://www.sem.org.tw/News/Details/1607</link>
-    <guid>https://www.sem.org.tw/News/Details/1607</guid>
-    <pubDate>2026-06-11</pubDate>
-    <category>台灣急診醫學會 - 台灣學會</category>
-    <description>【消息】轉函-台灣家庭醫學醫學會「醫事人員急性病毒性肝炎防治教育訓練」相關訊息（來源：台灣急診醫學會）</description>
+    <title>【課程】&lt;公佈報到編號&gt;【重症聯甄】急加2026春季會-115.04.25(六)台大醫學院</title>
+    <link>https://www.seccm.org.tw/news/acls_union_info.asp?/778.html#here</link>
+    <guid>https://www.seccm.org.tw/news/acls_union_info.asp?/778.html#here</guid>
+    <pubDate>2026-04-25</pubDate>
+    <category>台灣急救加護醫學會 - 台灣學會</category>
+    <description>【課程】&lt;公佈報到編號&gt;【重症聯甄】急加2026春季會-115.04.25(六)台大醫學院（來源：台灣急救加護醫學會）</description>
   </item>
   <item>
-    <title>【消息】轉知部桃與南區、北區緊急醫療應變中心共同辦理「2026災難期間醫療照護者之角色國際研討會」活動</title>
-    <link>https://www.sem.org.tw/News/Details/1608</link>
-    <guid>https://www.sem.org.tw/News/Details/1608</guid>
-    <pubDate>2026-06-12</pubDate>
-    <category>台灣急診醫學會 - 台灣學會</category>
-    <description>【消息】轉知部桃與南區、北區緊急醫療應變中心共同辦理「2026災難期間醫療照護者之角色國際研討會」活動（來源：台灣急診醫學會）</description>
+    <title>【課程】IJGE期刊 20.2期 CME學分</title>
+    <link>http://www.sgecm.org.tw/educate/edu_info.asp?id=1725</link>
+    <guid>http://www.sgecm.org.tw/educate/edu_info.asp?id=1725</guid>
+    <pubDate>2026-04-30</pubDate>
+    <category>台灣老人急重症醫學會 - 台灣學會</category>
+    <description>【課程】IJGE期刊 20.2期 CME學分（來源：台灣老人急重症醫學會）</description>
   </item>
   <item>
-    <title>【消息】函轉衛生福利部委託臺灣皮膚科醫學會協助玻尿酸降解酶專案進口相關事宜</title>
-    <link>https://www.sem.org.tw/News/Details/1609</link>
-    <guid>https://www.sem.org.tw/News/Details/1609</guid>
-    <pubDate>2026-06-16</pubDate>
-    <category>台灣急診醫學會 - 台灣學會</category>
-    <description>【消息】函轉衛生福利部委託臺灣皮膚科醫學會協助玻尿酸降解酶專案進口相關事宜（來源：台灣急診醫學會）</description>
-  </item>
-  <item>
-    <title>【消息】函轉中國醫藥大學附設醫院「第十六屆身心介面國際研討會暨2026年國際營養精神醫學研究學會區域會議」論文徵稿延至6/30截止</title>
-    <link>https://www.sem.org.tw/News/Details/1610</link>
-    <guid>https://www.sem.org.tw/News/Details/1610</guid>
-    <pubDate>2026-06-17</pubDate>
-    <category>台灣急診醫學會 - 台灣學會</category>
-    <description>【消息】函轉中國醫藥大學附設醫院「第十六屆身心介面國際研討會暨2026年國際營養精神醫學研究學會區域會議」論文徵稿延至6/30截止（來源：台灣急診醫學會）</description>
-  </item>
-  <item>
-    <title>【消息】《在宅急症照護手冊》</title>
-    <link>https://www.sem.org.tw/News/Details/1611</link>
-    <guid>https://www.sem.org.tw/News/Details/1611</guid>
-    <pubDate>2026-06-24</pubDate>
-    <category>台灣急診醫學會 - 台灣學會</category>
-    <description>【消息】《在宅急症照護手冊》（來源：台灣急診醫學會）</description>
-  </item>
-  <item>
-    <title>【課程】學會主辦 2026第十七屆第一次會員大會暨學術研討會</title>
-    <link>https://www.sem.org.tw/Activity/Details/32620</link>
-    <guid>https://www.sem.org.tw/Activity/Details/32620</guid>
-    <pubDate>2026-06-26</pubDate>
-    <category>台灣急診醫學會 - 台灣學會</category>
-    <description>【課程】學會主辦 2026第十七屆第一次會員大會暨學術研討會（來源：台灣急診醫學會）</description>
-  </item>
-  <item>
-    <title>【課程】2026第十七屆第一次會員大會暨學術研討會 社團法人台灣急診醫學會 2026/06/26 積分 16 學會主辦 報名截止</title>
-    <link>https://www.sem.org.tw/Activity/A/Details/32620</link>
-    <guid>https://www.sem.org.tw/Activity/A/Details/32620</guid>
-    <pubDate>2026-06-26</pubDate>
-    <category>台灣急診醫學會 - 台灣學會</category>
-    <description>【課程】2026第十七屆第一次會員大會暨學術研討會 社團法人台灣急診醫學會 2026/06/26 積分 16 學會主辦 報名截止（來源：台灣急診醫學會）</description>
-  </item>
-  <item>
-    <title>【課程】115年住院醫師初階災難訓練課程(南區)【線上+實體】 社團法人台灣急診醫學會 2026/07/02 積分 13 學會主辦 報名截止</title>
-    <link>https://www.sem.org.tw/Activity/A/Details/33032</link>
-    <guid>https://www.sem.org.tw/Activity/A/Details/33032</guid>
-    <pubDate>2026-06-26</pubDate>
-    <category>台灣急診醫學會 - 台灣學會</category>
-    <description>【課程】115年住院醫師初階災難訓練課程(南區)【線上+實體】 社團法人台灣急診醫學會 2026/07/02 積分 13 學會主辦 報名截止（來源：台灣急診醫學會）</description>
-  </item>
-  <item>
-    <title>【課程】夏季山域溪谷自救搜救知能安全講習 社團法人台灣急診醫學會、馬偕紀念醫院急診醫學部野外醫學中心 2026/07/08 積分 7 學會主辦 尚有 5 名額</title>
-    <link>https://www.sem.org.tw/Activity/A/Details/33048</link>
-    <guid>https://www.sem.org.tw/Activity/A/Details/33048</guid>
-    <pubDate>2026-06-26</pubDate>
-    <category>台灣急診醫學會 - 台灣學會</category>
-    <description>【課程】夏季山域溪谷自救搜救知能安全講習 社團法人台灣急診醫學會、馬偕紀念醫院急診醫學部野外醫學中心 2026/07/08 積分 7 學會主辦 尚有 5 名額（來源：台灣急診醫學會）</description>
-  </item>
-  <item>
-    <title>【課程】115年度中毒個案討論會–中區 社團法人台灣急診醫學會、秀傳紀念醫院 2026/07/20 積分 3 學會主辦 尚有 7 名額</title>
-    <link>https://www.sem.org.tw/Activity/A/Details/32964</link>
-    <guid>https://www.sem.org.tw/Activity/A/Details/32964</guid>
-    <pubDate>2026-06-26</pubDate>
-    <category>台灣急診醫學會 - 台灣學會</category>
-    <description>【課程】115年度中毒個案討論會–中區 社團法人台灣急診醫學會、秀傳紀念醫院 2026/07/20 積分 3 學會主辦 尚有 7 名額（來源：台灣急診醫學會）</description>
-  </item>
-  <item>
-    <title>【消息】【公告】學會進行辦公室搬遷作業...</title>
-    <link>http://www.trauma.org.tw/news/index.asp?/66.html</link>
-    <guid>http://www.trauma.org.tw/news/index.asp?/66.html</guid>
-    <pubDate>None</pubDate>
+    <title>【課程】2026外傷教育課程-北部地區(Ⅰ)...</title>
+    <link>http://www.trauma.org.tw/active/index.asp?/17.html</link>
+    <guid>http://www.trauma.org.tw/active/index.asp?/17.html</guid>
+    <pubDate>2026-05-09</pubDate>
     <category>台灣外傷醫學會 - 台灣學會</category>
-    <description>【消息】【公告】學會進行辦公室搬遷作業...（來源：台灣外傷醫學會）</description>
+    <description>【課程】2026外傷教育課程-北部地區(Ⅰ)...（來源：台灣外傷醫學會）</description>
   </item>
   <item>
-    <title>【消息】【ATLS課表公告】115年度第8梯次ATLS再認證課程（1150627高雄榮民總醫院）...</title>
-    <link>http://www.trauma.org.tw/news/index.asp?/65.html</link>
-    <guid>http://www.trauma.org.tw/news/index.asp?/65.html</guid>
-    <pubDate>None</pubDate>
-    <category>台灣外傷醫學會 - 台灣學會</category>
-    <description>【消息】【ATLS課表公告】115年度第8梯次ATLS再認證課程（1150627高雄榮民總醫院）...（來源：台灣外傷醫學會）</description>
+    <title>【消息】公告「2026年EMS傑出成就獎」獲獎人員。</title>
+    <link>https://www.sem.org.tw/News/11/Details/1583</link>
+    <guid>https://www.sem.org.tw/News/11/Details/1583</guid>
+    <pubDate>2026-05-15</pubDate>
+    <category>台灣急診醫學會 - 台灣學會</category>
+    <description>【消息】公告「2026年EMS傑出成就獎」獲獎人員。（來源：台灣急診醫學會）</description>
   </item>
   <item>
-    <title>【消息】公告2026年『ATLS課程』活動計劃表【含一般課程及再認證課程】_115.06.04更新...</title>
-    <link>http://www.trauma.org.tw/news/index.asp?/37.html</link>
-    <guid>http://www.trauma.org.tw/news/index.asp?/37.html</guid>
-    <pubDate>None</pubDate>
-    <category>台灣外傷醫學會 - 台灣學會</category>
-    <description>【消息】公告2026年『ATLS課程』活動計劃表【含一般課程及再認證課程】_115.06.04更新...（來源：台灣外傷醫學會）</description>
+    <title>【消息】公告「2026年十大傑出救護技術員」獲選名單。</title>
+    <link>https://www.sem.org.tw/News/11/Details/1582</link>
+    <guid>https://www.sem.org.tw/News/11/Details/1582</guid>
+    <pubDate>2026-05-15</pubDate>
+    <category>台灣急診醫學會 - 台灣學會</category>
+    <description>【消息】公告「2026年十大傑出救護技術員」獲選名單。（來源：台灣急診醫學會）</description>
   </item>
   <item>
-    <title>【消息】【ATLS報名】115年度「一般」課程報名資訊（含報名表）115.06.04更新...</title>
-    <link>http://www.trauma.org.tw/news/index.asp?/36.html</link>
-    <guid>http://www.trauma.org.tw/news/index.asp?/36.html</guid>
-    <pubDate>None</pubDate>
-    <category>台灣外傷醫學會 - 台灣學會</category>
-    <description>【消息】【ATLS報名】115年度「一般」課程報名資訊（含報名表）115.06.04更新...（來源：台灣外傷醫學會）</description>
+    <title>【消息】轉知「第一屆亞太在宅急症照護國際研討會 APHaH 2026」舉辦訊息</title>
+    <link>https://www.sem.org.tw/News/10/Details/1585</link>
+    <guid>https://www.sem.org.tw/News/10/Details/1585</guid>
+    <pubDate>2026-05-18</pubDate>
+    <category>台灣急診醫學會 - 台灣學會</category>
+    <description>【消息】轉知「第一屆亞太在宅急症照護國際研討會 APHaH 2026」舉辦訊息（來源：台灣急診醫學會）</description>
   </item>
   <item>
-    <title>【消息】【ATLS報名】115年度「再認證」課程報名資訊（含報名表）115.06.04更新...</title>
-    <link>http://www.trauma.org.tw/news/index.asp?/35.html</link>
-    <guid>http://www.trauma.org.tw/news/index.asp?/35.html</guid>
-    <pubDate>None</pubDate>
-    <category>台灣外傷醫學會 - 台灣學會</category>
-    <description>【消息】【ATLS報名】115年度「再認證」課程報名資訊（含報名表）115.06.04更新...（來源：台灣外傷醫學會）</description>
+    <title>【課程】115年度「流感疫苗教育訓練」開始報名，名額有限，額滿為止。</title>
+    <link>https://www.pediatr.org.tw/news/content.php?id=5129</link>
+    <guid>https://www.pediatr.org.tw/news/content.php?id=5129</guid>
+    <pubDate>2026-05-18</pubDate>
+    <category>臺灣兒科醫學會 - 台灣學會</category>
+    <description>【課程】115年度「流感疫苗教育訓練」開始報名，名額有限，額滿為止。（來源：臺灣兒科醫學會）</description>
   </item>
   <item>
-    <title>【消息】本學會災難醫學專科甄審辦法 🔗</title>
-    <link>https://drive.google.com/file/d/1jg_csfv2mdUllqJx2EEkWvPDWHy_LO27/view?usp=sharing</link>
-    <guid>https://drive.google.com/file/d/1jg_csfv2mdUllqJx2EEkWvPDWHy_LO27/view?usp=sharing</guid>
-    <pubDate>None</pubDate>
-    <category>台灣災難醫學會 - 台灣學會</category>
-    <description>【消息】本學會災難醫學專科甄審辦法 🔗（來源：台灣災難醫學會）</description>
+    <title>【消息】台灣EMS相關的中英對照詞彙表</title>
+    <link>https://www.sem.org.tw/News/11/Details/1586</link>
+    <guid>https://www.sem.org.tw/News/11/Details/1586</guid>
+    <pubDate>2026-05-20</pubDate>
+    <category>台灣急診醫學會 - 台灣學會</category>
+    <description>【消息】台灣EMS相關的中英對照詞彙表（來源：台灣急診醫學會）</description>
   </item>
   <item>
-    <title>【課程】機構:醫療指導醫師繼續教育訓練認證申請連結https://forms.gle/wRpfnT6FwUaPYZ7j8</title>
-    <link>https://forms.gle/wRpfnT6FwUaPYZ7j8</link>
-    <guid>https://forms.gle/wRpfnT6FwUaPYZ7j8</guid>
-    <pubDate>None</pubDate>
-    <category>台灣緊急救護醫療指導醫師學會 - 台灣學會</category>
-    <description>【課程】機構:醫療指導醫師繼續教育訓練認證申請連結https://forms.gle/wRpfnT6FwUaPYZ7j8（來源：台灣緊急救護醫療指導醫師學會）</description>
+    <title>【消息】【訊息轉知】115年度「獎勵提供心血管疾病病人戒菸服務」暨「獎勵基層醫療院所提供病人戒菸服務」競賽報名</title>
+    <link>http://www.sgecm.org.tw/news/news_info.asp?doc-id=490</link>
+    <guid>http://www.sgecm.org.tw/news/news_info.asp?doc-id=490</guid>
+    <pubDate>2026-05-21</pubDate>
+    <category>台灣老人急重症醫學會 - 台灣學會</category>
+    <description>【消息】【訊息轉知】115年度「獎勵提供心血管疾病病人戒菸服務」暨「獎勵基層醫療院所提供病人戒菸服務」競賽報名（來源：台灣老人急重症醫學會）</description>
   </item>
   <item>
-    <title>【消息】理監事會及秘書處</title>
-    <link>https://www.taemsp.com/my-project-4</link>
-    <guid>https://www.taemsp.com/my-project-4</guid>
-    <pubDate>None</pubDate>
-    <category>台灣緊急救護醫療指導醫師學會 - 台灣學會</category>
-    <description>【消息】理監事會及秘書處（來源：台灣緊急救護醫療指導醫師學會）</description>
+    <title>【課程】115/5/22(五)老人症候群研討會</title>
+    <link>http://www.sgecm.org.tw/educate/edu_info.asp?id=1717</link>
+    <guid>http://www.sgecm.org.tw/educate/edu_info.asp?id=1717</guid>
+    <pubDate>2026-05-22</pubDate>
+    <category>台灣老人急重症醫學會 - 台灣學會</category>
+    <description>【課程】115/5/22(五)老人症候群研討會（來源：台灣老人急重症醫學會）</description>
   </item>
   <item>
-    <title>【消息】Notifications</title>
-    <link>https://www.taemsp.com/notifications</link>
-    <guid>https://www.taemsp.com/notifications</guid>
-    <pubDate>None</pubDate>
-    <category>台灣緊急救護醫療指導醫師學會 - 台灣學會</category>
-    <description>【消息】Notifications（來源：台灣緊急救護醫療指導醫師學會）</description>
+    <title>【消息】【徵稿公告】第八屆第二次會員大會暨學術研討會海報論文徵稿</title>
+    <link>http://www.sgecm.org.tw/news/news_info.asp?doc-id=489</link>
+    <guid>http://www.sgecm.org.tw/news/news_info.asp?doc-id=489</guid>
+    <pubDate>2026-05-22</pubDate>
+    <category>台灣老人急重症醫學會 - 台灣學會</category>
+    <description>【消息】【徵稿公告】第八屆第二次會員大會暨學術研討會海報論文徵稿（來源：台灣老人急重症醫學會）</description>
   </item>
   <item>
-    <title>【消息】指導醫師資訊整合系統 登入頁 (nfa.gov.tw)</title>
-    <link>https://nfaemsap3.nfa.gov.tw/MMS/</link>
-    <guid>https://nfaemsap3.nfa.gov.tw/MMS/</guid>
-    <pubDate>None</pubDate>
-    <category>台灣緊急救護醫療指導醫師學會 - 台灣學會</category>
-    <description>【消息】指導醫師資訊整合系統 登入頁 (nfa.gov.tw)（來源：台灣緊急救護醫療指導醫師學會）</description>
+    <title>【課程】2026年台北初級救護技術員繼續教育訓練</title>
+    <link>https://www.mgems.org/260424_t1_course/</link>
+    <guid>https://www.mgems.org/260424_t1_course/</guid>
+    <pubDate>2026-05-26</pubDate>
+    <category>中華民國大型活動緊急救護協會 - 台灣協會</category>
+    <description>【課程】2026年台北初級救護技術員繼續教育訓練（來源：中華民國大型活動緊急救護協會）</description>
   </item>
   <item>
-    <title>【消息】個人:醫療指導醫師入會申請連結https://forms.gle/RxQobu2FoVewH6Qs5</title>
-    <link>https://forms.gle/RxQobu2FoVewH6Qs5</link>
-    <guid>https://forms.gle/RxQobu2FoVewH6Qs5</guid>
-    <pubDate>None</pubDate>
-    <category>台灣緊急救護醫療指導醫師學會 - 台灣學會</category>
-    <description>【消息】個人:醫療指導醫師入會申請連結https://forms.gle/RxQobu2FoVewH6Qs5（來源：台灣緊急救護醫療指導醫師學會）</description>
-  </item>
-  <item>
-    <title>【消息】ACLS 2007新課程規範</title>
-    <link>http://course.tsccm.org.tw/Academic/acls01.asp</link>
-    <guid>http://course.tsccm.org.tw/Academic/acls01.asp</guid>
-    <pubDate>None</pubDate>
-    <category>中華民國重症醫學會 - 台灣學會</category>
-    <description>【消息】ACLS 2007新課程規範（來源：中華民國重症醫學會）</description>
-  </item>
-  <item>
-    <title>【消息】ACLS 課程推薦書籍</title>
-    <link>http://course.tsccm.org.tw/Academic/acls02.asp</link>
-    <guid>http://course.tsccm.org.tw/Academic/acls02.asp</guid>
-    <pubDate>None</pubDate>
-    <category>中華民國重症醫學會 - 台灣學會</category>
-    <description>【消息】ACLS 課程推薦書籍（來源：中華民國重症醫學會）</description>
-  </item>
-  <item>
-    <title>【消息】重症課程(重症學分)</title>
-    <link>https://www.tsccm.org.tw/od/Academic/index.asp?act_kindid=1</link>
-    <guid>https://www.tsccm.org.tw/od/Academic/index.asp?act_kindid=1</guid>
-    <pubDate>None</pubDate>
-    <category>中華民國重症醫學會 - 台灣學會</category>
-    <description>【消息】重症課程(重症學分)（來源：中華民國重症醫學會）</description>
-  </item>
-  <item>
-    <title>【消息】聯甄課程(聯甄學分)</title>
-    <link>https://www.tsccm.org.tw/od/Academic/index.asp?act_kindid=2</link>
-    <guid>https://www.tsccm.org.tw/od/Academic/index.asp?act_kindid=2</guid>
-    <pubDate>None</pubDate>
-    <category>中華民國重症醫學會 - 台灣學會</category>
-    <description>【消息】聯甄課程(聯甄學分)（來源：中華民國重症醫學會）</description>
-  </item>
-  <item>
-    <title>【消息】申請學分(重症學分)</title>
-    <link>http://course.tsccm.org.tw/Academic/index_other.asp</link>
-    <guid>http://course.tsccm.org.tw/Academic/index_other.asp</guid>
-    <pubDate>None</pubDate>
-    <category>中華民國重症醫學會 - 台灣學會</category>
-    <description>【消息】申請學分(重症學分)（來源：中華民國重症醫學會）</description>
-  </item>
-  <item>
-    <title>【課程】國際學術研討會</title>
-    <link>https://tamis.org.tw/activity/60</link>
-    <guid>https://tamis.org.tw/activity/60</guid>
-    <pubDate>None</pubDate>
-    <category>台灣心肌梗塞學會 - 台灣學會</category>
-    <description>【課程】國際學術研討會（來源：台灣心肌梗塞學會）</description>
-  </item>
-  <item>
-    <title>【課程】| 心臟超音波實戰課！💪 2026 POCUS Workshop 帶你打開「影像透視眼」👀 公告日期：2026 / 2 / 11</title>
-    <link>https://tamis.org.tw/activity/44/1242</link>
-    <guid>https://tamis.org.tw/activity/44/1242</guid>
-    <pubDate>None</pubDate>
-    <category>台灣心肌梗塞學會 - 台灣學會</category>
-    <description>【課程】| 心臟超音波實戰課！💪 2026 POCUS Workshop 帶你打開「影像透視眼」👀 公告日期：2026 / 2 / 11（來源：台灣心肌梗塞學會）</description>
-  </item>
-  <item>
-    <title>【消息】TAMIS Academy</title>
-    <link>https://tamis.org.tw/activity/41</link>
-    <guid>https://tamis.org.tw/activity/41</guid>
-    <pubDate>None</pubDate>
-    <category>台灣心肌梗塞學會 - 台灣學會</category>
-    <description>【消息】TAMIS Academy（來源：台灣心肌梗塞學會）</description>
-  </item>
-  <item>
-    <title>【消息】特選環球會議</title>
-    <link>https://tamis.org.tw/activity/42</link>
-    <guid>https://tamis.org.tw/activity/42</guid>
-    <pubDate>None</pubDate>
-    <category>台灣心肌梗塞學會 - 台灣學會</category>
-    <description>【消息】特選環球會議（來源：台灣心肌梗塞學會）</description>
-  </item>
-  <item>
-    <title>【消息】| 🔥 2026 TAMIS 超級心光大道｜第四場巡迴《領悟》 公告日期：2026 / 6 / 23</title>
-    <link>https://tamis.org.tw/activity/44/1261</link>
-    <guid>https://tamis.org.tw/activity/44/1261</guid>
-    <pubDate>None</pubDate>
-    <category>台灣心肌梗塞學會 - 台灣學會</category>
-    <description>【消息】| 🔥 2026 TAMIS 超級心光大道｜第四場巡迴《領悟》 公告日期：2026 / 6 / 23（來源：台灣心肌梗塞學會）</description>
-  </item>
-  <item>
-    <title>【消息】| 「到院前心肌梗塞救護大作戰 TAMIS Got Talent!」趣味競賽報名開跑！ 公告日期：2026 / 6 / 5</title>
-    <link>https://tamis.org.tw/activity/44/1258</link>
-    <guid>https://tamis.org.tw/activity/44/1258</guid>
-    <pubDate>None</pubDate>
-    <category>台灣心肌梗塞學會 - 台灣學會</category>
-    <description>【消息】| 「到院前心肌梗塞救護大作戰 TAMIS Got Talent!」趣味競賽報名開跑！ 公告日期：2026 / 6 / 5（來源：台灣心肌梗塞學會）</description>
-  </item>
-  <item>
-    <title>【消息】| 【2026第五屆金心獎-台灣最佳心肌梗塞緊急救護員/救護團隊】甄選公告 公告日期：2026 / 6 / 5</title>
-    <link>https://tamis.org.tw/activity/44/1257</link>
-    <guid>https://tamis.org.tw/activity/44/1257</guid>
-    <pubDate>None</pubDate>
-    <category>台灣心肌梗塞學會 - 台灣學會</category>
-    <description>【消息】| 【2026第五屆金心獎-台灣最佳心肌梗塞緊急救護員/救護團隊】甄選公告 公告日期：2026 / 6 / 5（來源：台灣心肌梗塞學會）</description>
-  </item>
-  <item>
-    <title>【課程】★★★ 學會醫事課程開課一覽表 ★★★</title>
-    <link>https://www.tmed.com.tw/site_item_content_2.php?site_map_item_id=3</link>
-    <guid>https://www.tmed.com.tw/site_item_content_2.php?site_map_item_id=3</guid>
-    <pubDate>None</pubDate>
-    <category>臺灣醫事繼續教育學會 - 台灣學會</category>
-    <description>【課程】★★★ 學會醫事課程開課一覽表 ★★★（來源：臺灣醫事繼續教育學會）</description>
-  </item>
-  <item>
-    <title>【課程】★★★ 高雄中山、鳯山、路竹、台中教室長照課程開課一覽表 ★★★</title>
-    <link>https://www.tmed.com.tw/site_item_content_2.php?site_map_item_id=106</link>
-    <guid>https://www.tmed.com.tw/site_item_content_2.php?site_map_item_id=106</guid>
-    <pubDate>None</pubDate>
-    <category>臺灣醫事繼續教育學會 - 台灣學會</category>
-    <description>【課程】★★★ 高雄中山、鳯山、路竹、台中教室長照課程開課一覽表 ★★★（來源：臺灣醫事繼續教育學會）</description>
-  </item>
-  <item>
-    <title>【課程】【代轉】大語言模型與串接醫療 AI 應用系列課程即將推出</title>
-    <link>https://www.medinfo.org.tw</link>
-    <guid>https://www.medinfo.org.tw</guid>
-    <pubDate>None</pubDate>
-    <category>台灣醫學資訊學會 - 台灣學會</category>
-    <description>【課程】【代轉】大語言模型與串接醫療 AI 應用系列課程即將推出（來源：台灣醫學資訊學會）</description>
-  </item>
-  <item>
-    <title>【課程】【代轉】臺大醫院舉辦「臺大醫院131週年院慶-數位與智慧醫療國 際研討會」，歡迎報名參加！</title>
-    <link>https://www.medinfo.org.tw</link>
-    <guid>https://www.medinfo.org.tw</guid>
-    <pubDate>None</pubDate>
-    <category>台灣醫學資訊學會 - 台灣學會</category>
-    <description>【課程】【代轉】臺大醫院舉辦「臺大醫院131週年院慶-數位與智慧醫療國 際研討會」，歡迎報名參加！（來源：台灣醫學資訊學會）</description>
-  </item>
-  <item>
-    <title>【消息】訂購《醫療資訊雜誌》價格調漲公告！</title>
-    <link>https://www.medinfo.org.tw</link>
-    <guid>https://www.medinfo.org.tw</guid>
-    <pubDate>None</pubDate>
-    <category>台灣醫學資訊學會 - 台灣學會</category>
-    <description>【消息】訂購《醫療資訊雜誌》價格調漲公告！（來源：台灣醫學資訊學會）</description>
+    <title>【課程】【重症復健聯甄課程】中區「重症運動會」重症早期復健研討會-115.05.31(日)臺中榮總研究大樓</title>
+    <link>https://www.seccm.org.tw/news/acls_union_info.asp?/788.html#here</link>
+    <guid>https://www.seccm.org.tw/news/acls_union_info.asp?/788.html#here</guid>
+    <pubDate>2026-05-31</pubDate>
+    <category>台灣急救加護醫學會 - 台灣學會</category>
+    <description>【課程】【重症復健聯甄課程】中區「重症運動會」重症早期復健研討會-115.05.31(日)臺中榮總研究大樓（來源：台灣急救加護醫學會）</description>
   </item>
 </channel>
 </rss>
