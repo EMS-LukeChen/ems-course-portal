@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T04:47:55.526109+00:00",
+  "updated": "2026-06-28T10:20:05.433024+00:00",
   "count": 338,
   "course_count": 188,
   "news_count": 150,
@@ -2845,6 +2845,16 @@
       "url": "https://safeguardmedical.com/blogs/news/the-evolution-of-combat-medicine"
     },
     {
+      "id": "73b3c87b595d",
+      "title": "Venezuela Earthquake Relief - $25 Donation",
+      "source": "Tactical Medicine Training & Equipment",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-25?_pos=1&_sid=d83111e11&_ss=r"
+    },
+    {
       "id": "06d62997c07e",
       "title": "Venezuela Earthquake Relief - $100 Donation",
       "source": "Tactical Medicine Training & Equipment",
@@ -2852,7 +2862,7 @@
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-100?_pos=1&_sid=663efd09b&_ss=r"
+      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-100?_pos=2&_sid=d83111e11&_ss=r"
     },
     {
       "id": "bb4260c858ac",
@@ -2862,7 +2872,17 @@
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-50?_pos=2&_sid=663efd09b&_ss=r"
+      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-50?_pos=3&_sid=d83111e11&_ss=r"
+    },
+    {
+      "id": "02ed41e80745",
+      "title": "Venezuela Earthquake Relief - $250 Donation",
+      "source": "Tactical Medicine Training & Equipment",
+      "cat": "戰術救護",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-250?_pos=4&_sid=d83111e11&_ss=r"
     },
     {
       "id": "681fa7fe6bdf",
@@ -2872,27 +2892,7 @@
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-500?_pos=3&_sid=663efd09b&_ss=r"
-    },
-    {
-      "id": "435122e501b7",
-      "title": "Venezuela Earthquake Medical Relief Gift Card",
-      "source": "Tactical Medicine Training & Equipment",
-      "cat": "戰術救護",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-medical-relief-gift-card?_pos=4&_sid=663efd09b&_ss=r"
-    },
-    {
-      "id": "5224942b5b77",
-      "title": "html sitemap blogs",
-      "source": "Tactical Medicine Training & Equipment",
-      "cat": "戰術救護",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.tactical-medicine.com/pages/html-sitemap-blogs?_pos=5&_sid=663efd09b&_ss=r"
+      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-500?_pos=5&_sid=d83111e11&_ss=r"
     },
     {
       "id": "715383a36e2a",
