@@ -1,8 +1,8 @@
 {
-  "updated": "2026-06-28T10:20:05.433024+00:00",
-  "count": 338,
+  "updated": "2026-06-28T16:29:34.168669+00:00",
+  "count": 339,
   "course_count": 188,
-  "news_count": 150,
+  "news_count": 151,
   "items": [
     {
       "id": "c8f312b5112b",
@@ -2165,6 +2165,16 @@
       "url": "https://www.itrauma.org/education/compare-itls/"
     },
     {
+      "id": "e25b3fc55cf6",
+      "title": "MA Duck Boat Tips Over on Ramp with 31 People Onboard, Sending 11 to the Hospital",
+      "source": "JEMS",
+      "cat": "國際期刊/組織",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.jems.com/news/ma-duck-boat-tips-over-on-ramp-with-31-people-onboard-sending-11-to-the-hospital/"
+    },
+    {
       "id": "a39f65225f1e",
       "title": "News Feed",
       "source": "JEMS",
@@ -2852,7 +2862,7 @@
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-25?_pos=1&_sid=d83111e11&_ss=r"
+      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-25?_pos=1&_sid=032315788&_ss=r"
     },
     {
       "id": "06d62997c07e",
@@ -2862,7 +2872,7 @@
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-100?_pos=2&_sid=d83111e11&_ss=r"
+      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-100?_pos=2&_sid=032315788&_ss=r"
     },
     {
       "id": "bb4260c858ac",
@@ -2872,7 +2882,7 @@
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-50?_pos=3&_sid=d83111e11&_ss=r"
+      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-50?_pos=3&_sid=032315788&_ss=r"
     },
     {
       "id": "02ed41e80745",
@@ -2882,7 +2892,7 @@
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-250?_pos=4&_sid=d83111e11&_ss=r"
+      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-250?_pos=4&_sid=032315788&_ss=r"
     },
     {
       "id": "681fa7fe6bdf",
@@ -2892,7 +2902,7 @@
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-500?_pos=5&_sid=d83111e11&_ss=r"
+      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-500?_pos=5&_sid=032315788&_ss=r"
     },
     {
       "id": "715383a36e2a",
