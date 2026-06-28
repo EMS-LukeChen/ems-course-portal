@@ -623,62 +623,157 @@ def scrape_emt():
 
 def scrape_taiwanwma():
     """台灣野外緊急救護協會
-    網站為 Vue SPA，活動資料硬編碼於 JS bundle（index-Cppx5rTh.js），無後端 API。
-    直接對應網站實際的 6 筆活動，連結指向各活動詳細頁。
+    網站為 Vue SPA，/activities 的 HTML 只有空的 #app。
+    活動資料目前打包在 /assets/index-*.js 裡，需先找 bundle 再解析活動物件。
     """
     BASE = "https://taiwanwma.org"
     ACTIVITIES_PAGE = BASE + "/activities"
 
-    # 對應網站 JS 中 ws = ae([...]) 的 6 筆活動
-    activities = [
-        {
-            "id": 1,
-            "title": "台灣野外緊急救護協會 Facebook 粉絲專頁公告",
-            "type": "news",
-            "date": None,
-        },
-        {
-            "id": 2,
-            "title": "野編公告｜協會 LINE 官方帳號、Threads、WEMS 課程整合通知",
-            "type": "news",
-            "date": None,
-        },
-        {
-            "id": 3,
-            "title": "2022年高山PAC攜帶型加壓艙建置計畫 相關媒體報導",
-            "type": "news",
-            "date": None,
-        },
-        {
-            "id": 4,
-            "title": "115年度 PAC攜帶型加壓艙操作者認證課程 報名開放中",
-            "type": "course",
-            "date": "2026-01-01",
-        },
-        {
-            "id": 5,
-            "title": "115年度 BLS基本救命術暨野外活動常見傷害與急救密集訓練班 報名開放中",
-            "type": "course",
-            "date": "2026-01-01",
-        },
-        {
-            "id": 6,
-            "title": "115年度 WMAI國際野外急救課程（WFA / WAFA / Bridge to WFR）報名開放中",
-            "type": "course",
-            "date": "2026-01-01",
-        },
-    ]
+    def js_string_value(obj, key):
+        m = re.search(rf'{key}:("(?:\\.|[^"\\])*")', obj)
+        if not m:
+            return None
+        try:
+            return json.loads(m.group(1))
+        except Exception:
+            return None
+
+    def js_template_value(obj, key):
+        m = re.search(rf"{key}:`(.*?)`", obj, re.S)
+        return m.group(1) if m else ""
+
+    def scan_matching(s, pos, open_ch, close_ch):
+        depth, quote, esc, i = 1, None, False, pos
+        while i < len(s):
+            ch = s[i]
+            if quote:
+                if esc:
+                    esc = False
+                elif ch == "\\":
+                    esc = True
+                elif ch == quote:
+                    quote = None
+                i += 1
+                continue
+            if ch in "\"'`":
+                quote = ch
+                i += 1
+                continue
+            if ch == open_ch:
+                depth += 1
+            elif ch == close_ch:
+                depth -= 1
+                if depth == 0:
+                    return i
+            i += 1
+        return -1
+
+    def split_js_objects(array_text):
+        objects = []
+        depth, quote, esc, obj_start = 0, None, False, None
+        for i, ch in enumerate(array_text):
+            if quote:
+                if esc:
+                    esc = False
+                elif ch == "\\":
+                    esc = True
+                elif ch == quote:
+                    quote = None
+                continue
+            if ch in "\"'`":
+                quote = ch
+                continue
+            if ch == "{":
+                if depth == 0:
+                    obj_start = i
+                depth += 1
+            elif ch == "}":
+                depth -= 1
+                if depth == 0 and obj_start is not None:
+                    objects.append(array_text[obj_start:i + 1])
+                    obj_start = None
+        return objects
+
+    def infer_year(title, text):
+        years = [int(y) for y in re.findall(r"(20[2-3]\d)", title + " " + text)]
+        if years:
+            return max(years)
+        m = re.search(r"(\d{3})\s*年度", title + " " + text)
+        if m:
+            return int(m.group(1)) + 1911
+        return datetime.now(timezone.utc).year
+
+    def activity_date(title, html):
+        plain = clean(BeautifulSoup(html or "", "html.parser").get_text(" "))
+        dates = set(extract_all_dates(title + " " + plain))
+        year = infer_year(title, plain)
+        for mo, day in re.findall(r"(?<!\d)(\d{1,2})\s*/\s*(\d{1,2})(?!\d)", plain):
+            try:
+                mo_i, day_i = int(mo), int(day)
+                if 1 <= mo_i <= 12 and 1 <= day_i <= 31:
+                    dates.add(f"{year:04d}-{mo_i:02d}-{day_i:02d}")
+            except Exception:
+                pass
+        for mo, day in re.findall(r"(?<!\d)(\d{1,2})\s*月\s*(\d{1,2})\s*[日號]", plain):
+            try:
+                mo_i, day_i = int(mo), int(day)
+                if 1 <= mo_i <= 12 and 1 <= day_i <= 31:
+                    dates.add(f"{year:04d}-{mo_i:02d}-{day_i:02d}")
+            except Exception:
+                pass
+        return sorted(dates)[-1] if dates else None
+
+    try:
+        page = requests.get(ACTIVITIES_PAGE, headers=HEADERS, timeout=15, verify=False)
+        page.raise_for_status()
+        soup = BeautifulSoup(page.text, "html.parser")
+        asset = None
+        for script in soup.select("script[src]"):
+            src = script.get("src") or ""
+            if "/assets/index-" in src and src.endswith(".js"):
+                asset = resolve(src, BASE)
+                break
+        if not asset:
+            log("    [warn] taiwanwma 找不到 JS bundle")
+            return []
+
+        js = requests.get(asset, headers=HEADERS, timeout=20, verify=False)
+        js.raise_for_status()
+        text = js.text
+        marker = "const ws=ae(["
+        start = text.find(marker)
+        if start < 0:
+            log("    [warn] taiwanwma 找不到活動資料陣列")
+            return []
+        start += len(marker)
+        end = scan_matching(text, start, "[", "]")
+        if end < 0:
+            log("    [warn] taiwanwma 活動資料陣列解析失敗")
+            return []
+        activities = split_js_objects(text[start:end])
+    except Exception as e:
+        log(f"    [warn] taiwanwma JS 讀取失敗: {e}")
+        return []
 
     out = []
-    for act in activities:
-        url = f"{ACTIVITIES_PAGE}?activity={act['id']}"
+    for obj in activities:
+        act_id = re.search(r"id:(\d+)", obj)
+        title = js_string_value(obj, "title")
+        link = js_string_value(obj, "link")
+        status = js_string_value(obj, "statusClass")
+        full = js_template_value(obj, "fullDescription")
+        if not act_id or not title:
+            continue
+        url = resolve(link or f"/activities?activity={act_id.group(1)}", BASE)
+        item_type = "course" if status == "open" else "news"
+        date = activity_date(title, full) if item_type == "course" else None
         out.append(mk(
-            act["title"],
+            title,
             "台灣野外緊急救護協會",
             "台灣協會",
             url,
-            act["type"],
-            date=act["date"],
+            item_type,
+            date=date,
         ))
     return out
 
@@ -2255,6 +2350,27 @@ def previous_for_source(previous_by_source, name, items=None):
                 out.append(it)
     return out
 
+def keep_within_expiry_window(items, now=None):
+    from datetime import timedelta
+    now = now or datetime.now(timezone.utc)
+    cutoff = (now - timedelta(days=30)).strftime("%Y-%m-%d")
+    out = []
+    for it in items:
+        d = it.get("date")
+        if not d or d >= cutoff:
+            out.append(it)
+    return out
+
+def merge_with_previous_recent(current, previous):
+    merged = []
+    seen = set()
+    for it in current + keep_within_expiry_window(previous):
+        item_id = it.get("id")
+        if item_id and item_id not in seen:
+            seen.add(item_id)
+            merged.append(it)
+    return merged
+
 def main():
     log(f"\n{'='*55}")
     log(f"緊急救護課程爬蟲 v3  {datetime.now().strftime('%Y-%m-%d %H:%M')}")
@@ -2270,13 +2386,22 @@ def main():
     for name, fn in SCRAPERS:
         log(f"\n> {name}")
         try:
-            raw = fn()
+            raw = fn() or []
             results = limit_per_source(raw)
+            previous = previous_for_source(previous_by_source, name, raw)
+            previous_limited = limit_per_source(previous) if previous else []
             if not results:
-                preserved = previous_for_source(previous_by_source, name, raw)
+                preserved = keep_within_expiry_window(previous_limited)
                 if preserved:
                     results = preserved
                     log(f"  [preserve] 本次 0 筆，沿用舊資料 {len(preserved)} 筆")
+            elif previous_limited and len(results) < len(previous_limited):
+                merged = merge_with_previous_recent(results, previous_limited)
+                merged_limited = limit_per_source(merged)
+                added = len(merged_limited) - len(results)
+                if added > 0:
+                    results = merged_limited
+                    log(f"  [preserve] 本次比舊資料少，補回一個月內舊資料 {added} 筆")
             courses = [r for r in results if r.get("type")=="course"]
             news    = [r for r in results if r.get("type")=="news"]
             log(f"  課程:{len(courses)}  消息:{len(news)}  (原始:{len(raw)}筆)")
@@ -2285,6 +2410,7 @@ def main():
             log(f"  [error] {e}")
             preserved = previous_for_source(previous_by_source, name)
             if preserved:
+                preserved = keep_within_expiry_window(limit_per_source(preserved))
                 log(f"  [preserve] 爬蟲錯誤，沿用舊資料 {len(preserved)} 筆")
                 all_items.extend(preserved)
         time.sleep(0.5)
@@ -2296,30 +2422,25 @@ def main():
             seen.add(it["id"])
             unique.append(it)
 
-    # 過濾：過期資料只保留近3個月
-    from datetime import timedelta
+    # 過濾：過期資料只保留近1個月
     now = datetime.now(timezone.utc)
-    cutoff = (now - timedelta(days=90)).strftime("%Y-%m-%d")
-    filtered = []
-    for it in unique:
-        d = it.get("date")
-        if not d:
-            filtered.append(it)       # 無日期：保留
-        elif d >= cutoff:
-            filtered.append(it)       # 3個月內或未來：保留
-        # 超過3個月的過期資料：捨棄
-    unique = filtered
+    unique = keep_within_expiry_window(unique, now)
 
-    # 排序：日期由近至遠（未來在上，無日期在最後）
+    # 排序：效期內在前；過期資料在後，並由過期日期近至遠
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    def date_num(ds):
+        try:
+            return int(str(ds).replace("-", ""))
+        except Exception:
+            return 99999999
+
     def sort_key(x):
         d = x.get("date")
         if not d:
-            return (2, "9999-99-99")   # 無日期排最後
+            return (1, 0)              # 無日期：排在有效日期後、過期日期前
         if d >= today:
-            return (0, d)              # 未來/今天：由近至遠排最前
-        else:
-            return (1, d)              # 已過期（3個月內）：排中間，由近至遠
+            return (0, date_num(d))    # 今天/未來：日期近的在前
+        return (2, -date_num(d))       # 已過期（1個月內）：越接近今天越前
     unique.sort(key=sort_key)
 
     output = {
