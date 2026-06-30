@@ -1,28 +1,18 @@
 {
-  "updated": "2026-06-29T21:15:40.009433+00:00",
-  "count": 338,
-  "course_count": 188,
-  "news_count": 150,
+  "updated": "2026-06-30T11:35:13.427419+00:00",
+  "count": 337,
+  "course_count": 186,
+  "news_count": 151,
   "items": [
     {
-      "id": "79731aad3bdd",
-      "title": "第十七屆理、監事當選名單",
-      "source": "台灣急診醫學會",
-      "cat": "台灣學會",
+      "id": "507f11938159",
+      "title": "醫院究竟準備要撐多久？從災害、危機到戰爭，重新思考醫院的物資儲備策略",
+      "source": "台灣緊急應變管理協會",
+      "cat": "台灣協會",
       "type": "news",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "deadline": null,
-      "url": "https://www.sem.org.tw/News/11/Details/1612"
-    },
-    {
-      "id": "7619e60cf6d3",
-      "title": "公告AILS Training Course通過名單 (115.06.23~115.06.24)",
-      "source": "台灣急診醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": "2026-06-29",
-      "deadline": null,
-      "url": "https://www.sem.org.tw/News/11/Details/1613"
+      "url": "https://temataiwan.blogspot.com/2026/06/blog-post_30.html"
     },
     {
       "id": "e22b03c287f9",
@@ -1235,6 +1225,16 @@
       "url": "https://www.tafm.org.tw/ehc-tafm/s/w/edu/scheduleInfo1/schedule/80c132fb475244b188de52487d9743f1"
     },
     {
+      "id": "a850421e172e",
+      "title": "【重要公告】轉知衛福部公告修正「家庭醫學科專科醫師甄審原則」，並自即日生效。",
+      "source": "台灣家庭醫學醫學會",
+      "cat": "台灣學會",
+      "type": "news",
+      "date": null,
+      "deadline": null,
+      "url": "https://www.tafm.org.tw/ehc-tafm/s/w/news_news/article/0e00976c95ae444c976c7ad92105cee0"
+    },
+    {
       "id": "d67b0cfc69be",
       "title": "115年度學術研討會海報論文審查結果",
       "source": "台灣家庭醫學醫學會",
@@ -1253,16 +1253,6 @@
       "date": null,
       "deadline": null,
       "url": "https://www.tafm.org.tw/ehc-tafm/s/w/news_news/article/7f0cb6d9500f48a79d38798ff4fb9537"
-    },
-    {
-      "id": "a850421e172e",
-      "title": "【重要公告】轉知衛福部公告修正「家庭醫學科專科醫師甄審原則」，並自即日生效。",
-      "source": "台灣家庭醫學醫學會",
-      "cat": "台灣學會",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.tafm.org.tw/ehc-tafm/s/w/news_news/article/0e00976c95ae444c976c7ad92105cee0"
     },
     {
       "id": "9cf11eaf5a41",
@@ -2825,54 +2815,54 @@
       "url": "https://safeguardmedical.com/blogs/news/the-evolution-of-combat-medicine"
     },
     {
-      "id": "73b3c87b595d",
-      "title": "Venezuela Earthquake Relief - $25 Donation",
+      "id": "4110ccb750ce",
+      "title": "Tasmanian Tiger Medic Assault Pack - MK II (Standard)",
       "source": "Tactical Medicine Training & Equipment",
       "cat": "戰術救護",
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-25?_pos=1&_sid=a650863bf&_ss=r"
+      "url": "https://www.tactical-medicine.com/products/tasmanian-tiger-medic-assault-pack-mk-ii-standard"
     },
     {
-      "id": "06d62997c07e",
-      "title": "Venezuela Earthquake Relief - $100 Donation",
+      "id": "c7e010eeb627",
+      "title": "The HEMGUARD® Targeted Pressure Bandage",
       "source": "Tactical Medicine Training & Equipment",
       "cat": "戰術救護",
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-100?_pos=2&_sid=a650863bf&_ss=r"
+      "url": "https://www.tactical-medicine.com/products/thehemguard-r-targeted-pressure-bandage"
     },
     {
-      "id": "bb4260c858ac",
-      "title": "Venezuela Earthquake Relief - $50 Donation",
+      "id": "59b9bcaf3a5b",
+      "title": "Elite Bags PARAMED Backpack",
       "source": "Tactical Medicine Training & Equipment",
       "cat": "戰術救護",
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-50?_pos=3&_sid=a650863bf&_ss=r"
+      "url": "https://www.tactical-medicine.com/products/elite-bags-paramed-backpack"
     },
     {
-      "id": "02ed41e80745",
-      "title": "Venezuela Earthquake Relief - $250 Donation",
+      "id": "0694954ed379",
+      "title": "MED-TAC ALS Oxygen Trauma Backpack w/Modular Pouch System",
       "source": "Tactical Medicine Training & Equipment",
       "cat": "戰術救護",
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-250?_pos=4&_sid=a650863bf&_ss=r"
+      "url": "https://www.tactical-medicine.com/products/med-tac-als-oxygen-trauma-backpack-w-modular-pouch-system"
     },
     {
-      "id": "681fa7fe6bdf",
-      "title": "Venezuela Earthquake Relief - $500 Donation",
+      "id": "7f27b5999ba6",
+      "title": "Tasmanian Tiger Modular Medic Combat Pack 18",
       "source": "Tactical Medicine Training & Equipment",
       "cat": "戰術救護",
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "https://www.tactical-medicine.com/products/venezuela-earthquake-relief-500?_pos=5&_sid=a650863bf&_ss=r"
+      "url": "https://www.tactical-medicine.com/products/tasmanian-tiger-modular-medic-combat-pack-18"
     },
     {
       "id": "715383a36e2a",
@@ -3022,7 +3012,7 @@
       "type": "news",
       "date": null,
       "deadline": null,
-      "url": "http://bmjopen.bmj.com/cgi/content/short/16/6/e105740?rss=1"
+      "url": "http://thorax.bmj.com/cgi/content/short/thorax-2026-225169v1?rss=1"
     },
     {
       "id": "8d656ad77115",
@@ -3055,24 +3045,24 @@
       "url": "https://emj.bmj.com/content/43/Suppl_2"
     },
     {
-      "id": "c8f312b5112b",
-      "title": "戰傷與外傷處置的整合視角：輸血、腦傷與化學武器威脅 臺北榮總急診醫學部",
+      "id": "79731aad3bdd",
+      "title": "第十七屆理、監事當選名單",
       "source": "台灣急診醫學會",
       "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-06-28",
-      "deadline": "2026-06-28",
-      "url": "https://www.sem.org.tw/Activity/B/Details/32901"
+      "type": "news",
+      "date": "2026-06-29",
+      "deadline": null,
+      "url": "https://www.sem.org.tw/News/11/Details/1612"
     },
     {
-      "id": "fe7ab61246e6",
-      "title": "健康台灣深耕計畫 : 守護兒童、拒絕傷害 臺灣兒童死因探討與青少年自殺的辨識與防治 臺北榮總兒童醫學部",
+      "id": "7619e60cf6d3",
+      "title": "公告AILS Training Course通過名單 (115.06.23~115.06.24)",
       "source": "台灣急診醫學會",
       "cat": "台灣學會",
-      "type": "course",
-      "date": "2026-06-28",
-      "deadline": "2026-06-28",
-      "url": "https://www.sem.org.tw/Activity/B/Details/32900"
+      "type": "news",
+      "date": "2026-06-29",
+      "deadline": null,
+      "url": "https://www.sem.org.tw/News/11/Details/1613"
     },
     {
       "id": "de3382c50fda",
