@@ -1,8 +1,8 @@
 {
-  "updated": "2026-07-02T08:36:26.239703+00:00",
-  "count": 331,
+  "updated": "2026-07-02T16:25:02.643318+00:00",
+  "count": 330,
   "course_count": 180,
-  "news_count": 151,
+  "news_count": 150,
   "items": [
     {
       "id": "6cdbc2d92f99",
@@ -2063,16 +2063,6 @@
       "date": null,
       "deadline": null,
       "url": "https://www.jems.com/news/"
-    },
-    {
-      "id": "e25b3fc55cf6",
-      "title": "MA Duck Boat Tips Over on Ramp with 31 People Onboard, Sending 11 to the Hospital",
-      "source": "JEMS",
-      "cat": "國際期刊/組織",
-      "type": "news",
-      "date": null,
-      "deadline": null,
-      "url": "https://www.jems.com/news/ma-duck-boat-tips-over-on-ramp-with-31-people-onboard-sending-11-to-the-hospital/"
     },
     {
       "id": "cc05242f9202",
